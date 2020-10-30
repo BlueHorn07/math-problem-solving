@@ -2,7 +2,7 @@
 title: "Lagrange Theorem"
 layout: post
 use_math: true
-tags: ["Modern Algebra"]
+tags: ["Modern Algebra1"]
 ---
 
 ### 서론
