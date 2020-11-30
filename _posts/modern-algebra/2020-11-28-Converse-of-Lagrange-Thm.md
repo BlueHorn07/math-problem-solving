@@ -20,7 +20,7 @@ Lagrange 정리는 Group $G$와 subgroup $H$ 사이의 관계를 기술한 정�
 
 <hr>
 
-## Converge of Lagrange Thm
+## Converse of Lagrange Thm
 
 Lagrange 정리의 역은 다음과 같다.
 
@@ -70,9 +70,11 @@ $\sigma \in A_4$인 $\sigma$는 세 가지 형태를 가진다.
 2. $\sigma = (i \; j)(x \; y) \implies \sigma^2 = (i \; k \; j) \in H$
 3. $\sigma = (i \; j \; k) \implies \sigma^2 = (i \; k \; j) \in H$
 
+[^2]
+
 따라서 모든 3-cycle이 $H$에 속하게 된다. (+ identity인 $(1)$도 포함)
 
-\# of 3-cycle = $\binom{4}{3} \times 2 = 8$[^2]
+\# of 3-cycle = $\binom{4}{3} \times 2 = 8$[^3]
 
 여기에 identity인 $(1)$까지 포함하면, $\lvert H \rvert = 8+1 = 9$
 
@@ -84,4 +86,6 @@ $\sigma \in A_4$인 $\sigma$는 세 가지 형태를 가진다.
 
 [^1]: "subgroup의 index가 2이면, Normal subgroup이다."라는 정리를 활용한 부분이다.
 
-[^2]: 집합 $\\{i, j, k\\}$에서 $(i \; j \; k)$와 $(i \; k \; j)$가 가능하므로 $\binom{4}{3}$에서 $\times 2$를 해준다.
+[^2]: $A_4$에는 even permutation만 존재하기 때문에 odd permutation인 $(w \; x \; y \; z)$는 고려하지 않는다.
+
+[^3]: 집합 $\\{i, j, k\\}$에서 $(i \; j \; k)$와 $(i \; k \; j)$가 가능하므로 $\binom{4}{3}$에서 $\times 2$를 해준다.
