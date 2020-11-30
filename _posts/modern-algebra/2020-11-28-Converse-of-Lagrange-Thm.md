@@ -67,7 +67,7 @@ $$
 $\sigma \in A_4$인 $\sigma$는 세 가지 형태를 가진다.
 
 1. $\sigma=(1) \implies \sigma^2 = (1) \in H$
-2. $\sigma = (i \; j)(x \; y) \implies \sigma^2 = (i \; k \; j) \in H$
+2. $\sigma = (i \; j)(x \; y) \implies \sigma^2 = (1) \in H$
 3. $\sigma = (i \; j \; k) \implies \sigma^2 = (i \; k \; j) \in H$
 
 [^2]
