@@ -3,7 +3,7 @@ author:
   name: bluehorn07
   email: bluehornblues@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  "The essence of mathematicslies in its freedom"
+  "The essence of mathematics lies in its freedom" - Cantor
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
@@ -17,9 +17,6 @@ minima:
     # twitter: jekyllrb
     # facebook: jekyll
     # linkedin: jekyll
-    # youtube: jekyll
-    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    # youtube_channel_name: CloudCannon
     # GitLab instances
     # gitlab:
     # - username: jekyll
