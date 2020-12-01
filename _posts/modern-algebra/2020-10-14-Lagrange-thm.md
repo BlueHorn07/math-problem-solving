@@ -21,7 +21,7 @@ tags: ["Modern Algebra1"]
 | if $H$ is a subgrop of a group $G$, then $\|H\| \mid \|G\|$, in other words, $\|H\| = [G:H] \|G\|$. |
 
 ### equivalent relation과 coset
-우리는 집합 위에 정의된 **equivelent relatio**n $\sim$가 집합을 분할한다는 사실을 알고 있다. 그리고 $\sim$에 의해 집합을 나누는 부분집합을 **equivalent class**라고 한다.
+우리는 집합 위에 정의된 **equivelent relatio**n $\sim$가 집합을 분할한다는 사실을 알고 있다. 그리고 $\sim$에 의해 집합을 분할하는 부분집합을 **equivalent class**라고 한다.
 
 equivalent relation $\sim_{L}$을 다음과 같이 정의하자. $a \sim_{L} b = a^{-1}b \in H$ 
 

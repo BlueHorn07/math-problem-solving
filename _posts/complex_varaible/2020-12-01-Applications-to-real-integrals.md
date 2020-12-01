@@ -144,7 +144,7 @@ $$
 \int^{\infty}_{0} {f(x) \; dx} \quad \textrm{or} \quad \int^{\infty}_{-\infty} {f(x) \; dx}
 $$
 
-**<u>Impropert integral</u>**은 적분 범위에 $\infty$가 있는 것이 특징이다.
+**<u>Improper integral</u>**은 적분 범위에 $\infty$가 있는 것이 특징이다.
 
 이것 역시 예제를 통해 **residue**를 어떻게 쓰는지 살펴보자.
 
@@ -158,7 +158,7 @@ $$
 
 **<u>Sol.</u>** <br>
 
-먼저, **improper integral**을 극한을 명시한 형태로 다시 써보자.
+먼저, **improper integral**을 극한과 함께 다시 써보자.
 
 $$
 \int^{\infty}_{-\infty} \frac{1}{1+x^2} dx = \lim_{R \rightarrow \infty} \int^{R}_{-R} \frac{1}{1+x^2} dx
@@ -252,7 +252,7 @@ $$
 일반적으로 **improper integral**과 **Cauchy P.V.**를 같다고 단정할 순 없음!
 
 **<u>Example.</u>**<br>
-Calculate both impropert integral and Cauchy P.V.
+Calculate both improper integral and Cauchy P.V.
 
 $$
 \int^{\infty}_{-\infty} x \; dx

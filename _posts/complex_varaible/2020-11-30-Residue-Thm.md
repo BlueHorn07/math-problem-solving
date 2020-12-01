@@ -1,5 +1,5 @@
 ---
-title: "Residue Thm"
+title: "Residue Theorem"
 layout: post
 use_math: true
 tags: ["Complex Variable"]
@@ -133,7 +133,7 @@ $$
 
 <hr>
 
-### Cauchy's residue Thm
+### Cauchy's residue Theorem
 
 $$
 \oint_{C} {f(z) dz}
