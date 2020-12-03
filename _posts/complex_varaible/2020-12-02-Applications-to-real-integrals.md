@@ -171,7 +171,7 @@ Let $f(z) = \frac{1}{1+x^2}$, THEN there are two **<u>poles</u>** at $z=i$ and $
 이제 적분할 cantour를 다음과 같이 잡아보자.
 
 <div style="text-align: center;">
-  <img src="{{relative_url}}/assets/img/gaussian_integral.png" style="width: 50%;" >
+  <img src="{{site.url}}/assets/img/gaussian_integral.png" style="width: 50%;" >
 </div>
 
 그리고 cantour 적분을 해보면,
