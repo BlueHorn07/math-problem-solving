@@ -170,7 +170,7 @@ $$
 \end{aligned}
 $$
 
-$n$개의 singular point가 있을 때에도 하나의 singular point를 포함하는 cantour 적분으로 분리해 계산하면 된다.
+$n$개의 singular point가 있을 때에도 하나의 singular point를 포함하는 contour 적분으로 분리해 계산하면 된다.
 
 <br>
 

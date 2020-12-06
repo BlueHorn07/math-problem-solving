@@ -98,11 +98,11 @@ $$
 \end{aligned}
 $$
 
-이제 $f(z)$의 pole과 cantour 사이 포함 관계를 잘 파악하여 적분을 잘 수행한다.
+이제 $f(z)$의 pole과 contour 사이 포함 관계를 잘 파악하여 적분을 잘 수행한다.
 
 <br>
 
-$z=\sqrt{2} -  1 < 1$ 이므로 $z=\sqrt{2} -  1$는 cantour $\lvert z \rvert < 1$ 내부에 존재한다.
+$z=\sqrt{2} -  1 < 1$ 이므로 $z=\sqrt{2} -  1$는 contour $\lvert z \rvert < 1$ 내부에 존재한다.
 
 따라서 $f(z)$에 대한 적분은 $z=\sqrt{2} -  1$에 대한 residue를 구하는 것으로 쉽게 구할 수 있다!
 
@@ -168,13 +168,13 @@ Let $f(z) = \frac{1}{1+x^2}$, THEN there are two **<u>poles</u>** at $z=i$ and $
 
 <br>
 
-이제 적분할 cantour를 다음과 같이 잡아보자.
+이제 적분할 contour를 다음과 같이 잡아보자.
 
 <div style="text-align: center;">
-  <img src="{{relative_url}}/assets/img/gaussian_integral.png" style="width: 50%;" >
+  <img src="{{site.url}}/mathematics/assets/img/gaussian_integral.png" style="width: 50%;" >
 </div>
 
-그리고 cantour 적분을 해보면,
+그리고 contour 적분을 해보면,
 
 $$
 \oint_{D_R} f(z) dz = \int^{R}_{-R} f(z) dz + \int_{C_R} f(z) dz
