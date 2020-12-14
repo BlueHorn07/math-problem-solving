@@ -234,7 +234,7 @@ where $C$ is the circle $\lvert z \rvert = 2$ with the positive orientation.
 
 ### 맺음말
 
-Residue Thm을 잘 활용하면, 실수 영역에서 풀면 아주 복잡한 적분들은 복소수 영역을 활용해 쉽게 풀 수 있다!!
+Residue Thm을 잘 활용하면, 실수 영역에서 풀면 복잡했던 적분들을 복소수 영역에서 쉽게 풀 수 있다!!
 
 가우스 적분이 좋은 예이다.
 
