@@ -94,7 +94,7 @@ inversion mapping $w = \frac{1}{z}$는 $z$를 x-축으로 반전시키고, 길�
 
 $\frac{1}{r}$을 취하기 때문에 복소수 $z$가 원점 $O$에 가까워질 수록 image가 발산한다.
 
-#### Extend complex plane; $\mathbb{C} \cup \\{ \infty \\}$
+#### Extended complex plane; $\mathbb{C} \cup \\{ \infty \\}$
 
 Transform $T(z)$를 nice하게 정의하기 위해서 $\\{ \infty \\}$를 추가해 이미지 영역을 확장시킨다.
 
@@ -111,7 +111,7 @@ For a transform $T(z) = \frac{1}{z}$, Let $T(0) = \infty$ and $T(\infty) = 0$, T
 
 [^1]
 
-원래 $T(z)$는 $0$에서 값이 정의되지 않는다. 그런데 Extend complex plane을 생각해서 $T(0) = \infty$로 값을 부여하는 것이다. 즉, $\infty$라는 한 점을 추가해 Image space를 $\mathbb{C}$에서 $\mathbb{C} \cup \\{ \infty \\}$로 확장한다면, $T(z)$를 $z=0$에서까지 continuous하게 만들 수 있다.
+원래 $T(z)$는 $0$에서 값이 정의되지 않는다. 그런데 Extended complex plane을 생각해서 $T(0) = \infty$로 값을 부여하는 것이다. 즉, $\infty$라는 한 점을 추가해 Image space를 $\mathbb{C}$에서 $\mathbb{C} \cup \\{ \infty \\}$로 확장한다면, $T(z)$를 $z=0$에서까지 continuous하게 만들 수 있다.
 
 $$
 \lim_{z \rightarrow 0} {T(z)} = \infty = T(0)
@@ -213,4 +213,4 @@ $A$, $D$에 따른 경우를 표로 분류하면 아래와 같다.
 
 <hr>
 
-[^1]: 참고로 이런 Extend Complex Plane을 "Riemann Sphere"라고도 한다. 이 Sphere를 사용하면, 복소평면 상의 모든 점을 구의 표면을 매핑시킬 수 있다!
+[^1]: 참고로 이런 Extended Complex Plane을 "Riemann Sphere"라고도 한다. 이 Sphere를 사용하면, 복소평면 상의 모든 점을 구의 표면을 매핑시킬 수 있다!
