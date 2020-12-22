@@ -87,7 +87,7 @@ $$
 - primative function
 - Bounds for integrals: ML-inequality
 - Cauchy-Goursat Theorem
-  - Cauchy's proof (feat. Grean's theorem)
+  - Cauchy's proof (feat. Green's theorem)
   - Goursat's proof
 - Cauchy’s Integral Formula
 - Applications
@@ -132,6 +132,16 @@ $$
 a_n = \frac{1}{2\pi i} \oint_{C} \frac{f(w)}{(w-z_0)^{n+1}} dw \quad \textrm{and} \quad b_n = \frac{1}{2\pi i} \oint_{C} f(w)(w-z_0)^{n-1} dw
 $$
 
+</div>
+
+- Convergence Tests
+  - ratio test
+  - root test
+- Uniformly Convergent
+  - $g_n(x) = x^n$ on $[0, 1]$ doesn't uniformly converge.
+
+<div class="img-wrapper">
+  <img src="https://solitaryroad.com/c453/ole5.gif">
 </div>
 
 - Talyor Series
