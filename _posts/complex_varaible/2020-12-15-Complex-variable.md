@@ -9,12 +9,45 @@ hidden: true
 <br>
 
 #### Complex functions
+
+<div class="statement" markdown="1">
+
+<span class="statement-title">Cauchy-Riemann Equation</span>
+
+$f(z) = u(x, y) + i v(x, y)$ is **<u>analytic</u>** in a domain $D$<br>
+iff the first partial derivatives of $u$ and $v$ satisfy
+
+$$
+\begin{aligned}
+  u_x &= v_y \\
+  u_y &= -v_x
+\end{aligned}
+$$
+
+</div>
+
+<div class="statement" markdown="1">
+
+
+
+IF $f(z) = u(x, y) + i u(x, y)$ is **<u>analytic</u>** in a domain $D$, THEN both $u$ and $v$ are **<u>harmonic functions</u>**.
+
+<span class="statement-title">Laplace's Equations and Harmonic functions</span>
+
+A real valued function $H(x, y)$ is harmonic in a domain $D$, IF it satisfies Laplace equations:
+
+$$
+H_{xx} + H_{yy} = 0
+$$
+
+</div>
+
 - Triangle inequality
 - $n$-th root of $z$
 - Complex Limit & Continuity & Derivative
-- Analytic functions
-- Cauchy-Riemann equations
-- Laplace's Equation & Harmonic functions
+- Analytic Functions
+- Cauchy-Riemann Equation
+  - Laplace's Equation & Harmonic functions
 - Elementary complex functions
   - Exponential functions; $\exp z$
   - Trigonometric functions; $\cos z$, $\sin z$, $\tan z$
@@ -23,12 +56,85 @@ hidden: true
   - Power functions; $z^c$
 
 #### Contour Integrals
+
+<div class="statement" markdown="1">
+
+<span class="statement-title">Cauchy-Goursat Theorem</span>
+
+Let $f(z)$ be an **<u>analytic</u>** function in a domain $D$. THEN, 
+
+$$
+  \oint_{C} f(z) dz = 0
+$$
+
+for any simple closed curve $C$ whose interior is contained in $D$.
+
+</div>
+
+<div class="statement">
+
+<span class="statement-title">Cauchy's Integral Formula</span>
+
+$$
+  f(z_0) = \frac{1}{2\pi i} \oint_{C} \frac{f(z)}{z-z_0} dz
+$$
+
+// 함숫값 $f(z_0)$를 적분을 통해 구할 수 있다는 의미를 가진다.
+
+</div>
+
+- Length of Curve; $\lvert C \rvert$
+- primative function
+- Bounds for integrals: ML-inequality
 - Cauchy-Goursat Theorem
-- Cauchy’s integral formula
+  - Cauchy's proof (feat. Grean's theorem)
+  - Goursat's proof
+- Cauchy’s Integral Formula
 - Applications
+  - Liouville’s Theroem
 
 #### Power Series
-- Talor Series
+
+<div class="statement" markdown="1">
+
+<span class="statement-title">Talyor Series</span>
+
+If $f(z)$ is **<u>analytic</u>** at $z_0$, and $f(z)$ is analytic through the disk $\lvert z-z_0 \rvert < R_0$.
+
+THEN, $f(z)$ has a power series representation
+
+$$
+f(z) = \sum^{\infty}_{n=0} a_n (z-z_0)^n \quad (\lvert z-z_0 \rvert < R_0)
+$$
+
+where
+
+$$
+a_n = \frac{f^{(n)}(z_0)}{n!} = \frac{1}{2\pi i} \oint_{C} \frac{f(z)}{(z-z_0)^{n+1}} dz
+$$
+
+</div>
+
+<div class="statement" markdown="1">
+
+<span class="statement-title">Laurent Series</span>
+
+Supp. that a function $f(z)$ is analytic throughout a domain $D$ containing an annular region $R_1 \le \lvert z-z_0 \rvert \le R_2$. THEN, $f(z)$ can be represented as the Laurnet series
+
+
+$$
+f(z) = \sum^{\infty}_{n=0} a_n (z-z_0)^n + \sum^{\infty}_{n=1} \frac{b_n}{(z-z_0)^n} \quad (R_1 \le \lvert z-z_0 \rvert < R_2)
+$$
+
+The coefficient of the Laurent series are given by
+
+$$
+a_n = \frac{1}{2\pi i} \oint_{C} \frac{f(w)}{(w-z_0)^{n+1}} dw \quad \textrm{and} \quad b_n = \frac{1}{2\pi i} \oint_{C} f(w)(w-z_0)^{n-1} dw
+$$
+
+</div>
+
+- Talyor Series
 - Laurent Series
 
 #### Residue
