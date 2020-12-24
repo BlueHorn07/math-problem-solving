@@ -12,18 +12,26 @@ tags: ["Modern Algebra1"]
 - equivalent relation에 의한 분할
 - coset $aH$
 - index $[G:H]$
-- (Lagrange Thm) $\|H\| \mid \|G\|$
+- (Lagrange Thm) $\lvert H \rvert \mid \lvert G \rvert$
 
 <hr>
 
 ## Lagrange Theorem
 
-| if $H$ is a subgrop of a group $G$, then $\|H\| \mid \|G\|$, in other words, $\|H\| = [G:H] \|G\|$. |
+<div class="statement" markdown="1">
+
+If $H$ is a subgrop of a group $G$, then $\lvert H \rvert \mid \lvert G \rvert$, in other words, $\lvert G \rvert = [G:H] \lvert H \rvert$. 
+
+</div>
 
 ### equivalent relation과 coset
 우리는 집합 위에 정의된 **equivelent relatio**n $\sim$가 집합을 분할한다는 사실을 알고 있다. 그리고 $\sim$에 의해 집합을 분할하는 부분집합을 **equivalent class**라고 한다.
 
-equivalent relation $\sim_{L}$을 다음과 같이 정의하자. $a \sim_{L} b = a^{-1}b \in H$ 
+equivalent relation $\sim_{L}$을 다음과 같이 정의하자. 
+
+$$
+a \sim_{L} b \iff a^{-1}b \in H
+$$
 
 그러면, $a \in G$에 대해 $\sim_{L}$에 의해 $a$와 relate 되는 것들의 집합인 equivalent class $\bar{a}$는 다음과 같다.
 
@@ -46,7 +54,7 @@ coset $aH$의 형태만 익숙하다면, $aH$가 단순히 $H$에 $a \in G$를 �
 ### equivalent class에 의한 partition
 앞에서 말했듯 equivalent relation은 equivelant class로 집합을 분할한다. 따라서 relation $\sim_{L}$의 equivalent class $aH$는 집합 $G$의 분할의 일부분이다.
 
-우리는 모든 $aH$에 대해서 $\|H\| = \|aH\|$임을 보일 수 있다.
+우리는 모든 $aH$에 대해서 $\lvert H \rvert = \lvert aH \rvert$임을 보일 수 있다.
 
 함수 $\phi : H \rightarrow aH$를 $\phi(h) = ah$로 정의하면 $\phi$는 1-1 & onto이다.
 
@@ -56,7 +64,7 @@ $\phi(h_1) = \phi(h_2) \implies ah_1 = ah_2 \implies h_1 = h_2$
 ii) [onto] <br>
 For $x = ah \in aH$, there exist an inverse image $h \in H$ s.t. $\phi(h)=ah$.
 
-1-1 & onto인 $\phi : H \rightarrow aH$가 존재하므로 $\|H\| = \|aH\|$이며, $H$의 모든 coset은 $H$와 동일한 cardinality를 갖는다.[^1]
+1-1 & onto인 $\phi : H \rightarrow aH$가 존재하므로 $\lvert H \rvert = \lvert aH \rvert$이며, $H$의 모든 coset은 $H$와 동일한 cardinality를 갖는다.[^1]
 
 군 $G$를 coset의 분할로 다시 쓰면
 
@@ -73,14 +81,14 @@ $$G = {a_1}H {\cup\mkern-11.5mu\cdot\mkern5mu} {a_2}H {\cup\mkern-11.5mu\cdot\mk
 $$|G| = |{a_1}H| + |{a_2}H| + \cdots + |{a_m}H| = m |H|$$
 </div>
 
-따라서 $\|H\| \mid \|G\|$가 성립한다! $\blacksquare$
+따라서 $\lvert H \rvert \mid \lvert G \rvert$가 성립한다! $\blacksquare$
 
 ### Index of subgroup
-앞에서 정의한 # of distinc coset인 $m$을 $[G:H]$로 정의하자. 그러면, $\|G\| = m \|H\| = [G:H] \|H\|$가 된다.
+앞에서 정의한 # of distinc coset인 $m$을 $[G:H]$로 정의하자. 그러면, $\lvert G \rvert = m \lvert H \rvert = [G:H] \lvert H \rvert$가 된다.
 
-$[G:H]$를 index of subgroup $H$라고 하며, Lagrange theorem의 결과인 $\|G\| = [G:H] \|H\|$로 정의한다. $\blacksquare$
+$[G:H]$를 index of subgroup $H$라고 하며, Lagrange theorem의 결과인 $\lvert G \rvert = [G:H] \lvert H \rvert$로 정의한다. $\blacksquare$
 
-또는 $H \leq G$을 통해 $[G:H] = \cfrac{\|G\|}{\|H\|}$로 간단하게 쓸 수 있다.
+또는 $H \leq G$을 통해 $[G:H] = \cfrac{\lvert G \rvert}{\lvert H \rvert}$로 간단하게 쓸 수 있다.
 
 <hr>
 
@@ -93,11 +101,11 @@ Lagrange Theorem 증명의 흐름은 아래와 같다.
 - equivalent relation $\sim_{L}$ 정의
 - equivalent class $aH$ 정의
 - equivalent relation의 특징인 집합의 분할 이용
-- 그 과정에서 $\|H\| = \|aH\|$임을 증명
+- 그 과정에서 $\lvert H \rvert = \lvert aH \rvert$임을 증명
 - number of distinct coset을 정의하는데에 필요한 $aH = bH$의 조건 제시
 - 군 $G$를 distinct coset의 union으로 표현
-- 이를 바탕으로 $\|G\|$를 $m\|H\|$로 표현
-- 결론인 $\|H\| \mid \|G\|$ 제시
+- 이를 바탕으로 $\lvert G \rvert$를 $m\lvert H \rvert$로 표현
+- 결론인 $\lvert H \rvert \mid \lvert G \rvert$ 제시
 
 <hr>
 

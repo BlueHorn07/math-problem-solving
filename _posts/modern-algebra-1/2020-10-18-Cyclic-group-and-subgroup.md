@@ -12,7 +12,11 @@ tags: ["Modern Algebra1"]
 
 ### Cyclic group and its subgroup
 
-| Every subgroup of cyclic group is also cyclic. |
+<div class="statement" markdown="1">
+
+Every subgroup of cyclic group is also cyclic.
+
+</div>
 
 Let $G = \left<a\right>$ be a cyclic group, and $H \leq G$.
 
