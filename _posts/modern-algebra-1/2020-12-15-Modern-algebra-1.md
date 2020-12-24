@@ -67,9 +67,9 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
 
 </div>
 
-- homomorphism
-- Cayley's Theorem
-- Factor Group
+- [Homomorphism + 문풀]({{"2020/12/24/Group-Homo-Iso.html" | relative_url}})
+- [Cayley's Theorem]({{"2020/12/24/Cayley-Theorem.html" | relative_url}})
+- [Factor Group]({{"2020/12/24/Factor-Group.html" | relative_url}})
   - Application
 - Fundamental Homomorphism Theorem(FHT); 1st Isomorphism Thm
 - Three Isomorphism Theorems
