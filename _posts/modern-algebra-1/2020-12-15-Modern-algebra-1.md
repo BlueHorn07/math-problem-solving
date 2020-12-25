@@ -73,7 +73,7 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
 <div class="statement" markdown="1">
 
 $$
-H \triangleleft G \iff gHg^{-1} \subseteq H \quad (\forall g \in G)
+H \trianglelefteq G \iff gHg^{-1} \subseteq H \quad (\forall g \in G)
 $$
 
 </div>
@@ -83,12 +83,13 @@ $$
   - from homomorphism
   - Auto-morphism
     - inner automorphism $\sigma_g$
-  - Application
-- Fundamental Homomorphism Theorem(FHT); 1st Isomorphism Thm
+- [Fundamental Homomorphism Theorem(FHT)]({{"2020/12/25/Fundamental-Homo-theorem.html" | relative_url}}); 1st Isomorphism Thm
+  - Canonical homomorphism $\gamma: G \longrightarrow G/H \quad (H \trianglelefteq G)$
+- [Simple Group]({{"2020/12/25/Simple-Group.html" | relative_url}}) (index-2 group)
+- [Factor Group - Appliaction]({{"2020/12/25/Factor-Group-Application.html" | relative_url}})
 - Three Isomorphism Theorems
 - Sylow Theorem
   - Application
-- Simple Group
 - [Converse of Lagrange Thm]({{"2020/11/28/Converse-of-Lagrange-Thm.html" | relative_url}})
 
 ### Ring & Field
