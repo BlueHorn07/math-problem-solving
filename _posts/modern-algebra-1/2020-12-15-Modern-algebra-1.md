@@ -69,7 +69,20 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
 
 - [Homomorphism + 문풀]({{"2020/12/24/Group-Homo-Iso.html" | relative_url}})
 - [Cayley's Theorem]({{"2020/12/24/Cayley-Theorem.html" | relative_url}})
+
+<div class="statement" markdown="1">
+
+$$
+H \triangleleft G \iff gHg^{-1} \subseteq H \quad (\forall g \in G)
+$$
+
+</div>
+
 - [Factor Group]({{"2020/12/24/Factor-Group.html" | relative_url}})
+  - from normal subgroups
+  - from homomorphism
+  - Auto-morphism
+    - inner automorphism $\sigma_g$
   - Application
 - Fundamental Homomorphism Theorem(FHT); 1st Isomorphism Thm
 - Three Isomorphism Theorems
