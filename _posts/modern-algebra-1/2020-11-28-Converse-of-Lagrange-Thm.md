@@ -14,7 +14,7 @@ tags: ["Modern Algebra1"]
 
 <div class="statement" markdown="1">
 
-For a group $G$, and subgroup $H <= G$, $\lvert H \rvert \mid \lvert G \rvert$
+For a group $G$, and subgroup $H \le G$, $\lvert H \rvert \mid \lvert G \rvert$
 
 </div>
 
