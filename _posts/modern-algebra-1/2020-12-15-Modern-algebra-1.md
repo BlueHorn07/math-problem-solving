@@ -123,7 +123,7 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
   - Bezout's Identity
   - Charasteric of Ring; $\textrm{Char}(R)$
 - [Integral Domain]({{"2020/12/06/Field.html" | relative_url}})
-  - [Ring $\implies$ Integral Domain]({{"2020/12/06/Field.html#field-implies-integral-domain" | relative_url}})
+  - [Field $\implies$ Integral Domain]({{"2020/12/06/Field.html#field-implies-integral-domain" | relative_url}})
   - [Finite integral domain $\implies$ Field]({{"2020/12/06/Field.html#finite-integral-domain-implies-field" | relative_url}})
 
 <hr>

@@ -42,6 +42,10 @@ Group $G$에 대해, $\lvert G \rvert$의 약수를 order로 갖는 subgroup이 
 
 $A_4$의 order는 $\frac{24}{2}=12$이다. 하지만, $A_4$는 order 6인 subgroup을 가지지 않는다!
 
+<br>
+
+<div class="math-statement" markdown="1">
+
 (pf) **proof by contradiction**
 
 Supp. $A_4$ has a subgroup $H$ of order 6.
@@ -55,6 +59,8 @@ $$
 $$
 
 즉, $H$의 index가 2이므로 $H$는 $A_4$의 **Normal subgroup**이다[^1]; $H \triangleleft A_4$
+
+<br>
 
 THEN, $A_4 = H {\cup\mkern-13mu\cdot\mkern5mu} \sigma H$이고, $\dfrac{A_4}{H} = \\{e, a \\} = \\{ H, \sigma H\\}$ for all $\sigma \ne H$
 
@@ -89,6 +95,8 @@ $\sigma \in A_4$인 $\sigma$는 세 가지 형태를 가진다.
 이것은 $\lvert H \rvert = 6$이라는 가정에 모순된다!
 
 따라서 $A_4$에서 $\lvert H \rvert = 6$인 subgroup은 존재하지 않는다.
+
+</div>
 
 <hr>
 
