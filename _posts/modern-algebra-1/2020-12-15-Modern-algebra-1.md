@@ -165,6 +165,17 @@ $$
 - [Quotient Field]({{"2020/12/19/Qutient-Field.html" | relative_url}}) (= Field of Qutients; 분수체)
   - Extend integral domain $D$ into field $F$.
     - Extend $\mathbb{Z}$ into $\mathbb{Q}$
+
+<br>
+
+- [Ring of Polynomials]({{"2020/12/27/Polynomial-Ring.html" | relative_url}})
+  - [Evaluation Homomorphism]({{"2020/12/27/Polynomial-Ring.html#evaluation-homomorphism" | relative_url}}); $\phi_\alpha$
+  - [Division Algorithm for Polynomial Ring]({{"2020/12/27/Polynomial-Ring.html#division-algorithm-for-polynomial-ring" | relative_url}})
+  - [zero of polynomial]({{"2020/12/27/Polynomial-Ring.html#zero-of-polynomial" | relative_url}})
+  - [Factor Theorem]({{"2020/12/27/Polynomial-Ring.html#factor-theorem" | relative_url}}); 인수 정리
+  - cyclic group embedding
+- Irreducible Polynomials
+
 <div class="statement" markdown="1">
 
 <span class="statement-title">Eisenstein Criteria</span><br>
@@ -185,8 +196,6 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
 
 </div>
 
-- Ring of Polynomials
-- Irreducible Polynomials
 - Eisenstein Criteria
 - Group Ring
 
