@@ -41,6 +41,8 @@ Then,
 <br>
 <hr>
 
+#### Lemma 34.4
+
 <span class="statement-title">Lemma.</span><br>
 
 <div class="statement" markdown="1">
@@ -137,6 +139,8 @@ $$
 </div>
 
 <br>
+
+##### $H$ join $K$
 
 <span class="statement-title">Definition.</span> $H$ join $K$<br>
 

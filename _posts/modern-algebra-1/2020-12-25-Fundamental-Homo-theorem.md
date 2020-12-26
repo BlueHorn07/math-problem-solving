@@ -12,6 +12,8 @@ tags: ["Modern Algebra1"]
 
 FHT를 살펴보기 전에 간단한 Factor Group Homomorphism에 대해 살펴보자.
 
+#### Canonical Homomorphism
+
 <span class="statement-title">Theorem.</span><br>
 
 <div class="statement" markdown="1">
