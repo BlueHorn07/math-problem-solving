@@ -110,11 +110,12 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
   - [Ring homormophism & isomorphism]({{"2020/12/05/Ring-1.html#ring-homomorphism" | relative_url}})
   - Unity; multiplicative identity
   - [division ring]({{"2020/12/05/Ring-2.html#division-ring" | relative_url}})
+  - [Field & Skew Field]({{"2020/12/05/Ring-2.html#field--skew-field" | relative_url}})
   - [Quaternion]({{"2020/12/05/Ring-2.html#quternion" | relative_url}})
   - [zero-divisor]({{"2020/12/05/Ring-2.html#zero-divisor" | relative_url}})
 - [Integral Domain]({{"2020/12/06/Field.html" | relative_url}})
-  - Ring ~ Integral Domain
-  - [Field & Skew Field]({{"2020/12/05/Ring-2.html#field--skew-field" | relative_url}})
+  - [Ring $\implies$ Integral Domain]({{"2020/12/06/Field.html#field-implies-integral-domain" | relative_url}})
+  - [Finite integral domain $\implies$ Field]({{"2020/12/06/Field.html#finite-integral-domain-implies-field" | relative_url}})
 
 <div class="statement" markdown="1">
 
