@@ -191,3 +191,13 @@ $15 \mid n(n^{32}-1)$이다.
 
 </div>
 
+<br>
+<hr>
+
+Fermat's Little Theorem은 Ring의 Multiplicative group으로부터 쉽게 유도할 수 있는 성질이었다 ㅎㅎ
+
+하.지.만.!
+
+Euler 형님이 우리를 위해 FLT를 일반화 해주셨다 ㅠㅠ
+
+[Euler's Theorem]({{"2020/12/26/Euler-Thm.html" | relative_url}})
