@@ -6,6 +6,7 @@ tags: ["Modern Algebra1"]
 hidden: true
 ---
 
+<br>
 
 <div class="img-wrapper">
   <img src="{{ "/assets/img/group_meme.jpg" | relative_url }}">
@@ -174,7 +175,6 @@ $$
   - [zero of polynomial]({{"2020/12/27/Polynomial-Ring.html#zero-of-polynomial" | relative_url}})
   - [Factor Theorem]({{"2020/12/27/Polynomial-Ring.html#factor-theorem" | relative_url}}); 인수 정리
   - cyclic group embedding
-- Irreducible Polynomials
 
 <div class="statement" markdown="1">
 
@@ -196,8 +196,13 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
 
 </div>
 
-- Eisenstein Criteria
+- Irreducible Polynomials
+  - Eisenstein Criteria
+
+<hr>
+
 - Group Ring
+  - Ideal
 
 ### Appendix
 
