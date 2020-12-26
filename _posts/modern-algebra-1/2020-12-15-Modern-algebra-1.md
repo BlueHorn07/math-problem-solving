@@ -63,6 +63,8 @@ Where $p_i$ are primes, not necessarily distinct, and $r_i$ are positive integer
 
 <div class="statement" markdown="1">
 
+condition for operation well-definedness on Factor group
+
 $$
 H \trianglelefteq G \iff gHg^{-1} \subseteq H \quad (\forall g \in G)
 $$
@@ -105,13 +107,14 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
 ### Ring & Field
 - Ring [1]({{"2020/12/05/Ring-1.html" | relative_url}}), [2]({{"2020/12/05/Ring-2.html" | relative_url}})
   - commutative ring
-  - ring homormophism & isomorphism
-  - division ring
-  - Quaternion
-  - zero-divisor
+  - [Ring homormophism & isomorphism]({{"2020/12/05/Ring-1.html#ring-homomorphism" | relative_url}})
+  - Unity; multiplicative identity
+  - [division ring]({{"2020/12/05/Ring-2.html#division-ring" | relative_url}})
+  - [Quaternion]({{"2020/12/05/Ring-2.html#quternion" | relative_url}})
+  - [zero-divisor]({{"2020/12/05/Ring-2.html#zero-divisor" | relative_url}})
 - [Integral Domain]({{"2020/12/06/Field.html" | relative_url}})
   - Ring ~ Integral Domain
-  - Field & Skew Field
+  - [Field & Skew Field]({{"2020/12/05/Ring-2.html#field--skew-field" | relative_url}})
 
 <div class="statement" markdown="1">
 
@@ -168,6 +171,17 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
 - Eisenstein Criteria
 - Group Ring
 
+### Appendix
+
+<div class="statement" markdown="1">
+
+For a homormophism $\phi$,
+
+if $\ker \phi = \\{ e \\}$, then $\phi$ is 1-1.
+
+</div>
+
+<br>
 <hr>
 
 [^1]: Sylow Theorem 할 때도 잠깐 나온다!
