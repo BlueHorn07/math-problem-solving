@@ -6,8 +6,10 @@ tags: ["Modern Algebra1"]
 hidden: true
 ---
 
-<br>
-<hr>
+
+<div class="img-wrapper">
+  <img src="{{ "/assets/img/group_meme.jpg" | relative_url }}">
+</div>
 
 #### 참고 교재
 - 『A First Course in Abstract Algebra』 Fraleigh, 7th ed.
@@ -50,22 +52,11 @@ Where $p_i$ are primes, not necessarily distinct, and $r_i$ are positive integer
 </div>
 
 - Decomposable & Indecomposable group
-- p-group
+- $p$-group [^1]
 
 <hr>
 
-### Isomorphism Theorems
-
-<div class="statement" markdown="1">
-
-<span class="statement-title">Fundamental Homomorphism Theorem</span><br>
-
-Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
-
-1. $\phi[G]$ is a group.
-2. ${G}/{\ker \phi} \cong \phi[G]$
-
-</div>
+### Factor Group & Homomorphisms
 
 - [Homomorphism + 문풀]({{"2020/12/24/Group-Homo-Iso.html" | relative_url}})
 - [Cayley's Theorem]({{"2020/12/24/Cayley-Theorem.html" | relative_url}})
@@ -83,14 +74,33 @@ $$
   - from homomorphism
   - Auto-morphism
     - inner automorphism $\sigma_g$
+
+<div class="statement" markdown="1">
+
+<span class="statement-title">Fundamental Homomorphism Theorem</span><br>
+
+Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
+
+1. $\phi[G]$ is a group.
+2. ${G}/{\ker \phi} \cong \phi[G]$
+
+</div>
+
 - [Fundamental Homomorphism Theorem(FHT)]({{"2020/12/25/Fundamental-Homo-theorem.html" | relative_url}}); 1st Isomorphism Thm
-  - Canonical homomorphism $\gamma: G \longrightarrow G/H \quad (H \trianglelefteq G)$
+  - [Canonical homomorphism]({{"2020/12/25/Fundamental-Homo-theorem.html#canonical-homomorphism" | relative_url}}) $\gamma: G \longrightarrow G/H \quad (H \trianglelefteq G)$
 - [Simple Group]({{"2020/12/25/Simple-Group.html" | relative_url}}) (index-2 group)
-- [Factor Group - Appliaction]({{"2020/12/25/Factor-Group-Application.html" | relative_url}})
-- Three Isomorphism Theorems
-- Sylow Theorem
-  - Application
-- [Converse of Lagrange Thm]({{"2020/11/28/Converse-of-Lagrange-Thm.html" | relative_url}})
+- [Factor Group - Appliaction]({{"2020/12/25/Factor-Group-Application.html" | relative_url}}')
+  - [Converse of Lagrange Thm]({{"2020/11/28/Converse-of-Lagrange-Thm.html" | relative_url}})
+- [Three Isomorphism Theorems]({{"2020/12/25/Isomorphism-Thm.html" | relative_url}})
+- [Three Sylow Theorems]({{"2020/12/26/Sylow-thm.html" | relative_url}})
+  - [$p$-group]({{"2020/12/26/Sylow-thm.html#p-group" | relative_url}})
+  - [normalizer]({{"2020/12/26/Sylow-thm.html#normalizer" | relative_url}}) of $H$ in $G$; $N_G(H)$
+  - [Sylow $p$-group]({{"2020/12/26/Sylow-thm.html#sylow-p-group" | relative_url}})
+  - [Application 1]({{"2020/12/26/Sylow-thm-Application-1.html" | relative_url}})
+  - [Application 2]({{"2020/12/26/Sylow-thm-Application-2.html" | relative_url}})
+  - [Examples]({{"2020/12/26/Sylow-thm-Application-2.html#sylow-theorem---examples" | relative_url}})
+    - [Type-1]({{"2020/12/26/Sylow-thm-Application-2.html#type-1" | relative_url}})
+    - [Type-2]({{"2020/12/26/Sylow-thm-Application-2.html#type-2" | relative_url}})
 
 ### Ring & Field
 - Ring [1]({{"2020/12/05/Ring-1.html" | relative_url}}), [2]({{"2020/12/05/Ring-2.html" | relative_url}})
@@ -157,3 +167,7 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
 - Irreducible Polynomials
 - Eisenstein Criteria
 - Group Ring
+
+<hr>
+
+[^1]: Sylow Theorem 할 때도 잠깐 나온다!
