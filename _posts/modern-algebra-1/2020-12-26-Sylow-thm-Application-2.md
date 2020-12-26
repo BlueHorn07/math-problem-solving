@@ -99,9 +99,9 @@ $kp + 1 = 1$ 또는 $kp + 1 = q$이다.
 
 <br>
 
-만약 $kp + 1 = q$라면, 이것은 명제에서 가정한 $p \not\equiv 1$ (mod $p$) 조건에 모순된다!
+만약 $kp + 1 = q$라면, 이것은 명제에서 가정한 $q \not\equiv 1$ (mod $p$) 조건에 모순된다!
 
-따라서 $kp + 1 = m = 1$이고, Sylow $p$-subgroup의 수는 단 하나이다.
+따라서 $m = kp + 1 = 1$이고, Sylow $p$-subgroup의 수는 단 하나이다.
 
 따라서 Sylow $p$-subgroup은 **normal subgroup**이다.
 
