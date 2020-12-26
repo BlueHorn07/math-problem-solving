@@ -61,6 +61,8 @@ Where $p_i$ are primes, not necessarily distinct, and $r_i$ are positive integer
 - [Homomorphism + 문풀]({{"2020/12/24/Group-Homo-Iso.html" | relative_url}})
 - [Cayley's Theorem]({{"2020/12/24/Cayley-Theorem.html" | relative_url}})
 
+<hr>
+
 <div class="statement" markdown="1">
 
 condition for operation well-definedness on Factor group
@@ -76,6 +78,8 @@ $$
   - from homomorphism
   - Auto-morphism
     - inner automorphism $\sigma_g$
+
+<hr>
 
 <div class="statement" markdown="1">
 
@@ -97,6 +101,9 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
 - [Three Sylow Theorems]({{"2020/12/26/Sylow-thm.html" | relative_url}})
   - [$p$-group]({{"2020/12/26/Sylow-thm.html#p-group" | relative_url}})
   - [normalizer]({{"2020/12/26/Sylow-thm.html#normalizer" | relative_url}}) of $H$ in $G$; $N_G(H)$
+
+<hr>
+
   - [Sylow $p$-group]({{"2020/12/26/Sylow-thm.html#sylow-p-group" | relative_url}})
   - [Application 1]({{"2020/12/26/Sylow-thm-Application-1.html" | relative_url}})
   - [Application 2]({{"2020/12/26/Sylow-thm-Application-2.html" | relative_url}})
@@ -113,9 +120,13 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
   - [Field & Skew Field]({{"2020/12/05/Ring-2.html#field--skew-field" | relative_url}})
   - [Quaternion]({{"2020/12/05/Ring-2.html#quternion" | relative_url}})
   - [zero-divisor]({{"2020/12/05/Ring-2.html#zero-divisor" | relative_url}})
+  - Bezout's Identity
+  - Charasteric of Ring; $\textrm{Char}(R)$
 - [Integral Domain]({{"2020/12/06/Field.html" | relative_url}})
   - [Ring $\implies$ Integral Domain]({{"2020/12/06/Field.html#field-implies-integral-domain" | relative_url}})
   - [Finite integral domain $\implies$ Field]({{"2020/12/06/Field.html#finite-integral-domain-implies-field" | relative_url}})
+
+<hr>
 
 <div class="statement" markdown="1">
 
@@ -128,6 +139,9 @@ a^{p-1} \equiv 1 \quad (\textrm{mod} \; p)
 $$
 
 </div>
+
+- [Fermat's Little Theorem]({{"2020/12/26/Fermat-little-theorem.html" | relative_url}})
+  - [Examples]({{"2020/12/26/Fermat-little-theorem.html#examples" | relative_url}})
 
 <div class="statement" markdown="1">
 
@@ -143,8 +157,10 @@ $$
 
 </div>
 
-- Fermat's Little Theorem
 - Euler's Theorem
+
+<hr>
+
 - [Quotient Field]({{"2020/12/19/Qutient-Field.html" | relative_url}})
 
 <div class="statement" markdown="1">
