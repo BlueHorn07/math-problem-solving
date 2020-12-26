@@ -88,7 +88,7 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
 
 - [Fundamental Homomorphism Theorem(FHT)]({{"2020/12/25/Fundamental-Homo-theorem.html" | relative_url}}); 1st Isomorphism Thm
   - [Canonical homomorphism]({{"2020/12/25/Fundamental-Homo-theorem.html#canonical-homomorphism" | relative_url}}) $\gamma: G \longrightarrow G/H \quad (H \trianglelefteq G)$
-- [Simple Group]({{"2020/12/25/Simple-Group.html" | relative_url}}) (index-2 group)
+- [index-2 group is normal]({{"2020/12/25/index-2-Group.html" | relative_url}})
 - [Factor Group - Appliaction]({{"2020/12/25/Factor-Group-Application.html" | relative_url}}')
   - [Converse of Lagrange Thm]({{"2020/11/28/Converse-of-Lagrange-Thm.html" | relative_url}})
 - [Three Isomorphism Theorems]({{"2020/12/25/Isomorphism-Thm.html" | relative_url}})
