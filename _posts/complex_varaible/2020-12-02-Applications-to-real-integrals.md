@@ -135,7 +135,6 @@ $$
 $$
 
 <br>
-
 <hr>
 
 ### Improper integral
@@ -223,7 +222,6 @@ $$
 $\blacksquare$
 
 <br>
-
 <hr>
 
 **<u>Definition.</u>** improper integral <br>

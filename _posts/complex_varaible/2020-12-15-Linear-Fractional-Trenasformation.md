@@ -19,7 +19,6 @@ $$
 Linear Fractional Trans.의 각 케이스를 살펴보자!
 
 <br>
-
 <hr>
 
 ##### (1) $ad - bc = 0$
@@ -52,7 +51,6 @@ $$
 우리가 $ad - bc \ne 0$이라고 가정한다면, Linear Fractional Transform은 미분값이 $0$이 되지 않는다!!
 
 <br>
-
 <hr>
 
 #### some special cases
@@ -66,7 +64,6 @@ $w = \dfrac{az + b}{0z + 1} = az + b$; Linear Transformation
 $w = \dfrac{0z + 1}{1z + 0} = \dfrac{1}{z}$; Inversion Transformation
 
 <br>
-
 <hr>
 
 ##### Inverse of Linear Frational Transformation
@@ -83,7 +80,6 @@ $$
 즉, Inverse Transform 역시 Linear Fractional Trnasformation이다!
 
 <br>
-
 <hr>
 
 ##### Linear Fractional Transform + Extended Complex Plane
@@ -95,7 +91,6 @@ $w = T(z) = \frac{az + b}{cz + d}$는 $z = -\frac{d}{c}$에서 정의되지 않�
   - 만약 $c=0$이라면, $T\left(\infty\right) = \infty$
 
 <br>
-
 <hr>
 
 #### Properties of L.F. Transform
@@ -139,7 +134,6 @@ $$
 </div>
 
 <br>
-
 <hr>
 
 **<u>Definition.</u>**; Fixed points<br>
@@ -173,7 +167,6 @@ at most two fixed points
 - $d-a = 0$, $b=0$ : $T(z) = z$; $\mathbb{C}$
 
 <br>
-
 <hr>
 
 **<u>Lemma.</u>**<br>

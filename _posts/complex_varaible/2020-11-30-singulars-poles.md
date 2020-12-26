@@ -260,7 +260,6 @@ f(z) = (z-z_0)^{m}g(z), \quad g(z_0) \ne 0
 $$
 
 <br>
-
 <hr>
 
 **<u>Theorem.</u>**<br>
