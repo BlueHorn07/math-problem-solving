@@ -31,7 +31,7 @@ $$
 $A = a \cdot e^{i\alpha}$, $z = r \cdot e^{i\theta}$라고 두면, $w$는 $w = (ar) \cdot e^{i(\theta + \alpha)}$가 된다.
 
 <div class="img-wrapper">
-  <img src= "{{ "/assets/img/Complex_Varaible/linear_transform_1.png" | relative_url }}" style="width:50%;">
+  <img src="{{ "/assets/img/Complex_Varaible/linear_transform_1.png" | relative_url }}" style="width:50%;">
 </div>
 
 - 각도 $\alpha$ 만큼 Domain이 회전 이동
