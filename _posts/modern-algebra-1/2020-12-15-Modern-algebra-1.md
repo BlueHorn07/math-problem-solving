@@ -212,6 +212,31 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
 - [Ring Homomorphism & Factor Ring]({{"2020/12/27/Factor-rings-Ideal.html" | relative_url}})
   - Factor Ring well-definedness
   - [Ideal]({{"2020/12/27/Factor-rings-Ideal.html#ideal" | relative_url}})
+- [Maximal & Prime Ideals]({{"2020/12/27/maximal-and-prime-ideal.html" | relative_url}})
+  - maximal ideal
+    - maximal ideal makes factor group as field.
+  - prime ideal
+    - prime ideal makes factor group as integral domain.
+- [Principle Ideal]({{"2020/12/27/principle-ideal.html" | relative_url}})
+  - Principle Integral Domain; PID
+- [Ideal Structure]({{"2020/12/27/Ideal-structure.html" | relative_url}})
+  - prime element
+  - irreducible element
+
+<hr>
+
+### Factorization
+
+- Unique Factorization Domain; UFD
+  - Every PID is UFD
+- Fundamental Theorem of Arithmetic
+- Guass Lemma
+  - (primative) $\times$ (primative) = (primative)
+- Euclid Domain
+
+
+- primality implies irreducibility
+- irreducibility might not implies primality
 
 ### Appendix
 
