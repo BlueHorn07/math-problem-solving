@@ -196,13 +196,18 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
 
 </div>
 
-- Irreducible Polynomials
+- [Irreducible Polynomials]({{"2020/12/27/Irreducible-poly.html" | relative_url}})
   - Eisenstein Criteria
+- [Non-commutative Examples]({{"2020/12/27/non-commutative-example.html" | relative_url}})
+- [Group Rings & Group Algebras]({{"2020/12/27/group-algebra.html" | relative_url}})
+  - Group Ring; $R(G)$
+  - Groupo Algebra; $F(G)$
+  - The Quoternions; $\mathbb{H}$
+  - Wedderburn's Theorem
 
 <hr>
 
-- Group Ring
-  - Ideal
+- Factor Rings & Ideals
 
 ### Appendix
 

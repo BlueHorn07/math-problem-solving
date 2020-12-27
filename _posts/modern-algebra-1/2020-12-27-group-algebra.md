@@ -1,0 +1,123 @@
+---
+title: "Group Rings & Group Algebras"
+layout: post
+use_math: true
+tags: ["Modern Algebra1"]
+---
+
+### 서론
+2020-2학기, 대학에서 '현대대수1' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
+
+<br>
+
+### Group Rings & Group Algebras
+
+<span class="statement-title">Definition.</span> Group Ring<br>
+
+<div class="statement" markdown="1">
+
+Let $G = \\{ g_i \mid i \in I \\}$ be a **<u>group</u>** under multiplicity, and 
+
+let $R$ be a **<u>commutative ring</u>** with non-zero unity.
+
+Let $R(G)$ be the set of all formal sums
+
+$$
+\sum_{i \in I} {a_i g_i}
+$$
+
+where finite number of $a_i$ are non-zero.
+
+</div>
+
+<span class="statement-title">Properties.</span><br>
+
+- $(R(G), +)$ is abelian group.
+
+$$
+\left( \sum_{i \in I} {a_i g_i} \right) + \left( \sum_{i \in I} {b_i g_i} \right) = \sum_{i \in I} {(a_i + b_i) g_i}
+$$
+
+- multiplicity is closed.
+
+$$
+\left( \sum_{i \in I} {a_i g_i} \right) \cdot \left( \sum_{i \in I} {b_i g_i} \right) = \sum_{i \in I} \left({ \sum_{g_j g_k = g_i} } {a_j b_k}\right) g_i 
+$$
+
+- Associativity
+
+<div style="text-align: center;">
+    생-략
+</div>
+
+<br>
+
+Group Ring과 Polynomial의 차이는 power에 있다.
+
+- Polynomial은 power를 $\mathbb{N}$으로 표현하는 반면
+- Group Ring은 power를 $g_i \in G$로 표현한다.
+
+<br>
+
+<span class="statement-title">Theorem.</span><br>
+
+<div class="statement" markdown="1">
+
+If $G$ is any group written multiplicatively, and $R$ is a commutative ring with non-zero unity,
+
+then $(R(G), +, \cdot\;)$ is a ring.
+
+</div>
+
+위에서 진행했던 과정들이 이 정리의 증명이 된다.
+
+<br>
+
+<span class="statement-title">Definition.</span>Group Ring & Group Algebra<br>
+
+<div class="statement" markdown="1">
+
+위와 같은 Ring $R(G)$를 "**<u>Group Ring</u>**"라고 한다.
+
+만약 $F$가 Field라면, $F(G)$는 "**<u>Group Algebra</u>**"라고 한다.
+
+</div>
+
+※ Note: Group Algebra $F(G)$에서도 zero-divisor는 존재할 수 있다!!
+
+<br>
+<hr>
+
+### The Quoternions
+
+**<big>The Quternions $\mathbb{H}$</big>**
+- non-commutative division ring
+- skew field
+- $\mathbb{H} \cong \mathbb{R} \times \mathbb{R} \times \mathbb{R} \times \mathbb{R}$
+
+<span class="statement-title">Properties.</span><br>
+
+- quoternion addition
+- quoternion multiplication
+- quoternion conjugate; $\bar{q}$
+- quoternion inverse; $(q)^{-1} = \dfrac{\bar{q}}{ {\lvert q \rvert}^2 }$
+
+<br>
+
+<span class="statement-title">Theorem.</span><br>
+
+<div class="statement" markdown="1">
+
+The quoternions forms a **<u>skew field</u>** under $+$ and $\cdot\;$.
+
+</div>
+
+<br>
+
+<span class="statement-title">Theorem.</span> Wedderburn's Theorem<br>
+
+<div class="statement" markdown="1">
+
+Every finite division ring is a field.
+
+</div>
