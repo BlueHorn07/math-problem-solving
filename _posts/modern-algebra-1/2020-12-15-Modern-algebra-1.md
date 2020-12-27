@@ -103,7 +103,7 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
   - [$p$-group]({{"2020/12/26/Sylow-thm.html#p-group" | relative_url}})
   - [normalizer]({{"2020/12/26/Sylow-thm.html#normalizer" | relative_url}}) of $H$ in $G$; $N_G(H)$
 
-<hr>
+### Advanced Group Theory
 
   - [Sylow $p$-group]({{"2020/12/26/Sylow-thm.html#sylow-p-group" | relative_url}})
   - [Application 1]({{"2020/12/26/Sylow-thm-Application-1.html" | relative_url}})
@@ -207,7 +207,11 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
 
 <hr>
 
-- Factor Rings & Ideals
+### Factor Rings & Ideals
+
+- [Ring Homomorphism & Factor Ring]({{"2020/12/27/Factor-rings-Ideal.html" | relative_url}})
+  - Factor Ring well-definedness
+  - [Ideal]({{"2020/12/27/Factor-rings-Ideal.html#ideal" | relative_url}})
 
 ### Appendix
 
