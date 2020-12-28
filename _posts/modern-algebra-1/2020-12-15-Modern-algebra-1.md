@@ -220,6 +220,9 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
   - Prime Ideal
     - Prime Ideal makes factor group as integral domain.
   - Maximal Ideal implies Prime Ideal
+- [Prime Field]({{"2020/12/28/Prime-Field.html" | relative_url}})
+  - $\textrm{Char}$와 sub-ring / sub-field 사이의 관계
+  - $\mathbb{Z}_p$, $\mathbb{Q}$ are Prime Field
 - [Principle Ideal]({{"2020/12/27/principle-ideal.html" | relative_url}})
   - Principle Integral Domain; PID
 - [Ideal Structure]({{"2020/12/27/Ideal-structure.html" | relative_url}})

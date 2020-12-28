@@ -49,12 +49,13 @@ $\left< x \right>$은 unity $1$을 포함하지 않는다. 즉 $\left< x \right>
 
 <div class="statement" markdown="1">
 
-If $F$ is a field, every ideal in $F[x]$ is principle.
+If $F$ is a field, every ideal in $F[x]$ is principle. <small>($F[x]$ is PID)</small>
 
 </div>
 
 <span class="statement-title">proof</span><br>
 
+<details>
 <div class="math-statement" markdown="1">
 
 Let $N \trianglelefteq F[x]$. 
@@ -74,6 +75,8 @@ Then, $g(x) \in F$ is a constant function. 그리고 $N$이 group이므로 $N$�
 
 따라서 Ideal인 $N$에 대해 $1 \in N$이므로 앞에서 보인 정리에 의해 $N = F[x]$이다.
 
+<div class="statement" markdown="1">
+
 ($N = F[x]$이라는게 말이 되나 근데??)
 
 ㄴ Yes! 잘 생각해보니까 말이 된다. ideal $N$을 애초에 $F[x]$로 잡으면 $N = F[x]$가 된다.
@@ -89,6 +92,8 @@ $$
 $$
 
 이므로 $\left< 1 \right> = F[x]$가 된다.
+
+</div>
 
 <br>
 
@@ -106,5 +111,54 @@ $g(x)$는 정의상 $N$의 non-zero minimal degree elt이므로 $r(x) \in N$라�
 따라서 $f(x) = g(x) q(x)$이고, 이것은 $N = \left< g(x) \right>$를 의미한다.
 
 </div>
+</details>
 
+<hr>
+<br>
 
+<span class="statement-title">Theorem </span><br>
+
+<div class="statement" markdown="1">
+
+Let $F$ be a Field, and $0 \ne p(x) \in F[x]$.
+
+$\left< p(x) \right>$ is maximal ideal
+
+$\iff$ $p(x)$ is irreducible in $F[x]$.
+
+</div>
+
+주로 왼쪽 방향의 명제를 더 자주 사용한다!!
+
+<br>
+<hr>
+
+<span class="statement-title">Theorem</span><br>
+
+<div class="statement" markdown="1">
+
+Let $p(x) \in F[x]$
+
+$p(x)$ irreducible in $F[x]$
+
+$\iff$ $p(x)$ is prime element of $F[x]$.
+
+</div>
+
+<br>
+<hr>
+
+<span class="statement-title">Theorem</span><br>
+
+<div class="statement" markdown="1">
+
+$D$: Integral Domain
+
+Prime element in $D$ $\implies$ Irreducible in $D$
+
+일반적으로 역방향은 성립하지 않는다!!
+
+</div>
+
+<br>
+<hr>
