@@ -98,13 +98,13 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
 - [index-2 group is normal]({{"2020/12/25/index-2-Group.html" | relative_url}})
 - [Factor Group - Appliaction]({{"2020/12/25/Factor-Group-Application.html" | relative_url}}')
   - [Converse of Lagrange Thm]({{"2020/11/28/Converse-of-Lagrange-Thm.html" | relative_url}})
+
+### Advanced Group Theory
+
 - [Three Isomorphism Theorems]({{"2020/12/25/Isomorphism-Thm.html" | relative_url}})
 - [Three Sylow Theorems]({{"2020/12/26/Sylow-thm.html" | relative_url}})
   - [$p$-group]({{"2020/12/26/Sylow-thm.html#p-group" | relative_url}})
   - [normalizer]({{"2020/12/26/Sylow-thm.html#normalizer" | relative_url}}) of $H$ in $G$; $N_G(H)$
-
-### Advanced Group Theory
-
   - [Sylow $p$-group]({{"2020/12/26/Sylow-thm.html#sylow-p-group" | relative_url}})
   - [Application 1]({{"2020/12/26/Sylow-thm-Application-1.html" | relative_url}})
   - [Application 2]({{"2020/12/26/Sylow-thm-Application-2.html" | relative_url}})
@@ -125,7 +125,7 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
   - Charasteric of Ring; $\textrm{Char}(R)$
 - [Integral Domain]({{"2020/12/06/Field.html" | relative_url}})
   - [Field $\implies$ Integral Domain]({{"2020/12/06/Field.html#field-implies-integral-domain" | relative_url}})
-  - [Finite integral domain $\implies$ Field]({{"2020/12/06/Field.html#finite-integral-domain-implies-field" | relative_url}})
+  - [Finite Integral Domain $\implies$ Field]({{"2020/12/06/Field.html#finite-integral-domain-implies-field" | relative_url}})
 
 <hr>
 
