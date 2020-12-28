@@ -27,6 +27,7 @@ minima:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
+  - search.md
   - topic.md
   - about.md
 
@@ -39,7 +40,7 @@ plugins:
 
 
 markdown: kramdown # kramdown is advanced version of markdown
-  
+
 kramdown:
   auto_ids: true
 
@@ -47,3 +48,12 @@ highlighter: rouge # Jekyll only support 'rouge' syntax highlighter
 
 plugins:
   - jemoji
+
+tipue_search:
+  include:
+    pages: false
+    collections: []
+  exclude:
+    files: [search.html, index.html, tags.html]
+    categories: []
+    tags: []
