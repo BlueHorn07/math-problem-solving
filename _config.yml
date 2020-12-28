@@ -54,6 +54,6 @@ tipue_search:
     pages: false
     collections: []
   exclude:
-    files: [search.html, index.html, tags.html]
+    files: [search.md, index.md, about.md, tags.html]
     categories: []
     tags: []
