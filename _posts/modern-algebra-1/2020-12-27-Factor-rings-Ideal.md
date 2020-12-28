@@ -57,9 +57,25 @@ Let $\phi$ be a homo- of a ring $R$ onto a ring $R'$.
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1" style="text-align: center;">
+<div class="math-statement" markdown="1">
 
-생-략
+3번 명제만 증명을 해보자.
+
+<details markdown="1">
+<summary>3번 명제에 대한 증명</summary>
+
+(1) Closure
+
+For $\phi(x), \phi(y) \in \phi(R)$, 
+
+$\phi(x) + \phi(y) = \phi(x+y)$
+
+$\phi(x)\cdot\phi(y) = \phi(x \cdot y)$
+
+\* comment: 처음에 $x, y \in \phi(R)$로 시작해서 증명을 복잡하게 생각했다. $\phi$와 함께 바로 원소 $\phi(x), \phi(y)$를 잡으면 정말 쉽게 증명할 수 있는 명제다!
+
+</details>
+
 
 </div>
 
@@ -101,11 +117,14 @@ $$
 (a + H)(b + H) := ab + H
 $$
 
-iff $ah, hb \in H$ for all $a, b \in R$ and $h \in H$.
+$\iff$ $aH \subseteq H$, $Hb \subseteq H$ for all $a, b \in R$.
 
 </div>
 
 <span class="statement-title">proof.</span><br>
+
+<details>
+<summary>($\impliedby$)</summary>
 
 <div class="math-statement" markdown="1">
 
@@ -119,9 +138,14 @@ $$
 (a+h_1)(b+h_2) = ab + ah_2 + h_1 b + h_1 h_2
 $$
 
-처음 가정에 의해 $ah_2, h_1,b, h_1 h_2 \in H$이므로 $(a+h_1)(b+h_2) \in (ab + H)$이다. $\blacksquare$
+처음 가정에 의해 $ah_2, h_1 b, h_1 h_2 \in H$이므로 $(a+h_1)(b+h_2) \in (ab + H)$이다. $\blacksquare$
 
 </div>
+
+</details>
+
+<details>
+<summary>($\implies$)</summary>
 
 <div class="math-statement" markdown="1">
 
@@ -144,11 +168,13 @@ $\blacksquare$
 
 </div>
 
+</details>
+
 <br>
 
-Group Theory에선 **<u>Normal subgroup</u>**은 **<u>Factor group</u>**의 연산을 잘 정의하는 데에 중요한 조건이 되었다.
+Group Theory에선 **<u>Normal subgroup</u>**이 **<u>Factor group</u>**의 연산을 잘 정의하는 데에 중요한 조건이 되었다.
 
-마찬가지로 Ring theory에서도 좋은 **<u>Normal sub-ring</u>**을 골라 **<u>Factor Ring</u>**을 정의할 수 있다!!
+마찬가지로 Ring Theory에서도 좋은 **<u>Normal sub-ring</u>**을 골라 **<u>Factor Ring</u>**을 정의할 수 있다!!
 
 바로 위의 정리는 Factor Ring 연산이 well-defined 되기 위해서
 

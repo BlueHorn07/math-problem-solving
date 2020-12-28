@@ -132,6 +132,8 @@ Homo- 가 존재함을 보이는 건 머리를 잘 굴려서 생각해내면 되
 <br>
 <span class="statement-title">Theorem.</span><br>
 
+<div class="statement" markdown="1">
+
 Let $\phi$ be a group homo-, Show that 
 
 If $\lvert G \rvert < \infty$, then 
@@ -139,12 +141,21 @@ If $\lvert G \rvert < \infty$, then
 1. $\lvert \phi[G] \rvert < \infty$
 2. $\lvert \phi[G] \rvert$ divides $\lvert G \rvert$
 
+</div>
+
 <br>
 <span class="statement-title">proof.</span><br>
 
 <div class="math-statement" markdown="1">
 
-1번은 $\phi$가 well-defined 함수라면, $G$의 원소 하나를 $G'$의 원소 하나로 대응시킬 것이기 때문에 당연히 $\lvert \phi[G] \rvert < \infty$가 된다.
+1번은 $\phi$가 well-defined 함수라면, <br>
+$G$의 원소 하나를 $G'$의 원소 하나로 대응시킬 것이기 때문에 당연히 $\lvert \phi[G] \rvert < \infty$가 된다.
+
+</div>
+
+<details>
+<summary>2번 명제에 대한 증명</summary>
+<div class="math-statement" markdown="1">
 
 2번은 $\lvert \phi[G] \rvert$가 $\lvert G \rvert$의 약수라는 점에서 힌트를 얻어 Lagrange Thm을 생각해내고, "그럼 $\lvert \phi[G] \rvert$와 동형일 subgroup $H$가 존재하지 않을까"라고 생각해서 해결하였다.
 
@@ -189,7 +200,5 @@ $\phi^{-1} \left[ \phi [G] \right] \le G$이므로 Lagrange Thm에 의해 $\lver
 이때, $\lvert \phi[G] \rvert = \lvert \phi^{-1} \left[ \phi [G] \right] \rvert$이므로 $\lvert \phi[G] \rvert \mid \lvert G \rvert$이다. $\blacksquare$
 
 </div>
-
-
-
+</details>
 
