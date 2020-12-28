@@ -8,7 +8,7 @@ tags: ["Modern Algebra1"]
 ### 서론
 2020-2학기, 대학에서 '현대대수1' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-<br>
+<hr>
 
 ### Group Rings & Group Algebras
 
@@ -73,7 +73,7 @@ then $(R(G), +, \cdot\;)$ is a ring.
 
 <br>
 
-<span class="statement-title">Definition.</span>Group Ring & Group Algebra<br>
+<span class="statement-title">Definition.</span> Group Ring & Group Algebra<br>
 
 <div class="statement" markdown="1">
 
@@ -83,12 +83,10 @@ then $(R(G), +, \cdot\;)$ is a ring.
 
 </div>
 
-※ Note: Group Algebra $F(G)$에서도 zero-divisor는 존재할 수 있다!!
-
 <br>
 <hr>
 
-### The Quoternions
+### The Quaternions
 
 **<big>The Quternions $\mathbb{H}$</big>**
 - non-commutative division ring
@@ -97,10 +95,10 @@ then $(R(G), +, \cdot\;)$ is a ring.
 
 <span class="statement-title">Properties.</span><br>
 
-- quoternion addition
-- quoternion multiplication
-- quoternion conjugate; $\bar{q}$
-- quoternion inverse; $(q)^{-1} = \dfrac{\bar{q}}{ {\lvert q \rvert}^2 }$
+- Quaternion addition
+- Quaternion multiplication
+- Quaternion conjugate; $\bar{q}$
+- Quaternion inverse; $(q)^{-1} = \dfrac{\bar{q}}{ {\lvert q \rvert}^2 }$
 
 <br>
 
@@ -108,7 +106,7 @@ then $(R(G), +, \cdot\;)$ is a ring.
 
 <div class="statement" markdown="1">
 
-The quoternions forms a **<u>skew field</u>** under $+$ and $\cdot\;$.
+The Quaternions forms a **<u>skew field</u>** under $+$ and $\cdot\;$.
 
 </div>
 
@@ -121,3 +119,14 @@ The quoternions forms a **<u>skew field</u>** under $+$ and $\cdot\;$.
 Every finite division ring is a field.
 
 </div>
+
+<details markdown="1">
+<summary>Comment</summary>
+
+아무리 생각해봐도 Quaternions로 이루어진 finite division ring을 구상할 수가 없었다 ㅠㅠ ($\mathbb{R} \le \mathbb{H}$ 제외)  
+
+추측하건데, Quaternion $H$로는 finite sub-ring을 만들 수 없는게 아닌가 생각하고 있다 ㅠㅠ
+
+(잘 생각해보면, $\mathbb{Z}$나 $\mathbb{Q}$에서도 둘로부터 finite sub-ring을 만드는 건 불가능 하긴 했다 ㅋㅋㅋ)
+
+</details>

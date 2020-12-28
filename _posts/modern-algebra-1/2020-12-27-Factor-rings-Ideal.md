@@ -229,3 +229,27 @@ Then $R/I$ is a ring.
 - the set of additive left coset is semi-group?
 - Associativity?
 - Distributive Law?
+
+<br>
+<hr>
+
+<span class="statement-title">Theorem.</span> canonical homomorphism on ring<br>
+
+Let $I \trianglelefteq R$, then
+
+$$
+\begin{aligned}
+    \phi: R &\longrightarrow R / I \\
+            r & \longmapsto rI
+\end{aligned}
+$$
+
+<br>
+
+<span class="statement-title">Theorem.</span> FHT on ring<br>
+
+$$
+R / {\ker \phi} \cong \phi[R]
+$$
+
+

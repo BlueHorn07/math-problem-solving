@@ -244,7 +244,7 @@ if $f(\alpha) = 0$, then $\alpha$ is a zero of $f(x)$.
 
 ### Factor Theorem
 
-<span class="statement-title">Corollary.</span>Factor Theorem; 인수 정리<br>
+<span class="statement-title">Corollary.</span> Factor Theorem; 인수 정리<br>
 
 <div class="statement" markdown="1">
 

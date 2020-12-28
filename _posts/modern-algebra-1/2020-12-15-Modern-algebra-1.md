@@ -201,9 +201,10 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
 - [Non-commutative Examples]({{"2020/12/27/non-commutative-example.html" | relative_url}})
 - [Group Rings & Group Algebras]({{"2020/12/27/group-algebra.html" | relative_url}})
   - Group Ring; $R(G)$
-  - Groupo Algebra; $F(G)$
-  - The Quoternions; $\mathbb{H}$
+  - Group Algebra; $F(G)$
+  - The Quaternions; $\mathbb{H}$
   - Wedderburn's Theorem
+    - "Every finite division ring is a field."
 
 <hr>
 
@@ -213,10 +214,12 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
   - Factor Ring well-definedness
   - [Ideal]({{"2020/12/27/Factor-rings-Ideal.html#ideal" | relative_url}})
 - [Maximal & Prime Ideals]({{"2020/12/27/maximal-and-prime-ideal.html" | relative_url}})
-  - maximal ideal
-    - maximal ideal makes factor group as field.
-  - prime ideal
-    - prime ideal makes factor group as integral domain.
+  - Ideal + unity = Ring
+  - Maximal Ideal
+    - Maximal Ideal makes factor group as field.
+  - Prime Ideal
+    - Prime Ideal makes factor group as integral domain.
+  - Maximal Ideal implies Prime Ideal
 - [Principle Ideal]({{"2020/12/27/principle-ideal.html" | relative_url}})
   - Principle Integral Domain; PID
 - [Ideal Structure]({{"2020/12/27/Ideal-structure.html" | relative_url}})
@@ -233,7 +236,7 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
 - Guass Lemma
   - (primative) $\times$ (primative) = (primative)
 - Euclid Domain
-
+- Fermat's Theorem on Sums of Two Squares; 페르마의 두 제곱수 정리
 
 - primality implies irreducibility
 - irreducibility might not implies primality
@@ -247,6 +250,58 @@ For a homormophism $\phi$,
 if $\ker \phi = \\{ e \\}$, then $\phi$ is 1-1.
 
 </div>
+
+<br>
+
+<div class="statement" markdown="1">
+
+<span class="statement-title">Ring-Domain-Field</span><br>
+
+- Field $\implies$ Integral Domain
+- Finite Integral Domain $\implies$ Field
+- Finite Division Ring $\implies$ Field <small>(Wedderburn’s Theorem)</small>
+
+</div>
+
+<div class="statement" markdown="1">
+
+<span class="statement-title">헷갈리는 조합 1</span><br>
+
+- Quotient Field
+- Factor Ring
+
+</div>
+
+<div class="statement" markdown="1">
+
+<span class="statement-title">헷갈리는 조합 2</span><br>
+
+- **<u>Factor</u>** Ring <small>Ring / Ideal</small>
+- **<u>Factor</u>** Theorem
+- Unique **<u>Factorization</u>** Domain(UFD)
+
+</div>
+
+<div class="statement" markdown="1">
+
+<span class="statement-title">Homomorphism 모음</span><br>
+
+- canonical homoomprhism <small>(= natural homomorphism)</small>
+  - (Group) $\phi: G \longrightarrow G / N$
+  - (Ring) $\phi: R \longrightarrow R / I$
+- evaluation homomorphism
+
+</div>
+
+<div class="statement" markdown="1">
+
+<span class="statement-title">Maximal Ideal 모음</span><br>
+
+- $p\mathbb{Z}$ is Maximal Ideal.
+- Factor Ring from Maximal Ideal = Field
+
+</div>
+
 
 <br>
 <hr>
