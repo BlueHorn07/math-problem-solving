@@ -151,18 +151,24 @@ $$
 
 ($\implies$) Supp. multiplication of cosets is well-defined.
 
-Let $a \in R$, and consider coset product $(a+H)H$.
+Let $a \in R$, and consider coset product $(a+H)(0 + H)$.
 
 Then,
 
 $$
-(a + H)H = a0 + H = 0 + H = H
+\begin{aligned}
+    (a + H)(0 + H) &= a0 + aH + H0 + HH \\
+                   &= 0 + aH + 0 + H \\
+                   &= aH + H \\
+                   &= a0 + H  = H \quad (\textrm{by definition of operation})
+\end{aligned}
 $$
 
-위의 식에서 $a+H$에서 $a$를 선택하고, $\forall \; h \in H$를 선택한다면,<br>
-$ah \in H$인 결과를 볼 수 있다.
+위의 식에서 $aH$는 $H$의 원소가 되어야 한다.
 
-마찬가지로 반대로 $H(b+H)$를 진행하면 $hb \in H$를 확인할 수 있다.
+따라서 $aH \subseteq H$가 된다!
+
+마찬가지로 반대로 $H(b+H)$를 진행하면 $Hb \subseteq H$를 확인할 수 있다.
 
 $\blacksquare$
 
