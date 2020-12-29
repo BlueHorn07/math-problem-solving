@@ -14,7 +14,7 @@ tags: ["Modern Algebra1"]
 
 <div class="statement" markdown="1">
 
-Let $F$ be a field, then $F[x]$ is a **<u>Principle Ideal Domain</u>**
+Let $F$ be a field, then $F[x]$ is a **<u>Principal Ideal Domain</u>**
 
 </div>
 

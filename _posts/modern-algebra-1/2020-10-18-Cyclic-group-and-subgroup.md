@@ -26,7 +26,7 @@ Then, we will check that $H=\\{(a^n)^k \mid k \in \mathbb{Z} \\}$.
 
 Let's think of a set $S$ s.t. $S := \\{ n \in \mathbb{N} \mid a^n \in H\\} \subset \mathbb{N}$, and $S \neq \emptyset$ ($\because$ $a^0=e \in H$).
 
-Because $S \subset \mathbb{N}$ we can pick $n$ as the smallest elt from $S$ by Well-ordered set principle.
+Because $S \subset \mathbb{N}$ we can pick $n$ as the smallest elt from $S$ by Well-ordered Set Principle.
 
 And it is trivial that $\left<{a^n}\right> \leq H$.
 
