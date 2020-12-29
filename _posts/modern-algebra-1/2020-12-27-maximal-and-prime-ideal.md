@@ -1,5 +1,5 @@
 ---
-title: "maximal ideal & prime ideal"
+title: "Maximal Ideal & Prime Ideal"
 layout: post
 use_math: true
 tags: ["Modern Algebra1"]
@@ -61,13 +61,11 @@ Let Ideal $I \triangleleft F$ be a proper ideal.
 
 Supp. $I \ne \\{ 0 \\}$ to be non-trivial ideal.
 
-For $i \in I$, there exist it inverse $i^{-1}$ in $F$. <small>(Ring에서와는 달리 inverse element가 존재한다.)</small>
+For $i \in I$, there exist it inverse $i^{-1}$ in $F$. <small>(Ring과 달리 inverse element가 존재한다.)</small>
 
 since $I$ is ideal, $i^{-1}I \subseteq I$.
 
-따라서
-
-$i^{-1} i = 1 \in I$
+따라서 $i^{-1} i = 1 \in I$
 
 Ideal $I$에 대해 $1 \in I$라면, 위에서 증명한 정리에 의해 $I = F$가 된다.
 
@@ -142,7 +140,7 @@ $\mathbb{Z}$가 abelian이므로 모든 subgroup은 normal subgroup이다.
 
 <div class="statement" markdown="1">
 
-$R$: commutative ring + unity
+$R$ : commutative ring + unity
 
 $M \triangleleft R$ : maximal ideal
 
@@ -150,19 +148,19 @@ $\iff$ $R / M$ is a Field.
 
 </div>
 
-<span class="statement-title">proof.</span> <br>
+<span class="statement-title">proof.</span><br>
 
 <details>
 <summary>($\implies$)</summary>
 <div class="math-statement" markdown="1">
 
-($\implies$) Supp. $M$ is maximal ideal.
+($\implies$) Supp. $M$ is a Maximal Ideal.
 
 (Goal) $R/M$ is a Field.
 
-Since $M$ is ideal, $R/M$ is a ring.
+Since $M$ is an Ideal, $R/M$ is a Ring.
 
-Also, $R$ is commutative, $R/M$ is commutative ring.
+Also, $R$ is commutative, $R/M$ is a Commutative Ring.
 
 (Check) inverse exist?
 
@@ -189,9 +187,9 @@ $$
 \end{aligned}
 $$
 
-$rs$를 $(r)$로 바꾸었다. $(r)$는 $r$에 대한 multiplicative modulo라고 생각하자.
+$rs$를 $(r)$로 바꾸었다. $(r)=rR$로 $r$로 생성된 [Principal Ideal]({{"2020/12/27/principal-ideal.html" | relative_url}})이다.
 
-$M + (r)$은 Ideal이다.
+Claim. $M + (r)$은 Ideal이다.
 
 <div class="statement" markdown="1">
 
@@ -226,7 +224,52 @@ p.s. 교수님이 수업 때 하신 증명인데 뭔가 이상하게 마음에 �
 <summary>($\impliedby$)</summary>
 <div class="math-statement" markdown="1">
 
-바빠서 일단은 생-략
+Supp. $R/M$ : Field
+
+Let $M < N \trianglelefteq R$.
+
+Then, For $r \in N \setminus M$, $\overline{r} \ne M$ and $\overline{r} \in R/M$.
+
+이때, $R/M$이 Field이므로, $\overline{r} \cdot \overline{s} = \overline{1}$인 $\overline{s} \in R/M$가 존재한다. ($s \in R$)
+
+Claim. coset $M + (r) = M + rR$ is an Ideal.
+
+<div class="statement" markdown="1">
+
+(앞에서 확인했던 방식대로 Ideal임을 확인하면 된다.)
+
+</div>
+
+따라서 $M + (r)$은 Ideal이다.
+
+<br>
+
+$s \in R$이므로 $1 \in M + (r)$이 된다.
+
+<div class="statement" markdown="1">
+
+$M$ is a Maximal Ideal $\implies$ $0 \in M$.
+
+$0 + r \cdot s = 1$ for some $s \in R$. 
+
+</div>
+
+Ideal이 $1$을 포함하고 있으므로 $M + (r) = R$이 된다.
+
+이때, $M < N$이고, $r \in N \setminus M$이므로
+
+$M + (r) \subseteq N$이다.
+
+그런데, $M + (r) = R$이므로 $R \subseteq N$이다.
+
+따라서 $N = R$이다.
+
+<br>
+
+즉, $M < N \trianglelefteq R$에 대해 $N = R$이 되므로
+
+$M$ is a Maximal Ideal. $\blacksquare$
+
 
 </div>
 </details>
@@ -295,6 +338,71 @@ $N \trianglelefteq R$이 prime ideal이라면, $a \in N$은 prime elt over $R$�
 <br>
 <hr>
 
+#### Prime Ideal generates Integral Domain
+
+<span class="statement-title">Theorem.</span><br>
+
+<div class="statement" markdown="1">
+
+$R$ : commutative ring + unity.
+
+$N \triangleleft R$ : Prime Ideal
+
+$\iff$ $R/N$ is an integral domain.
+
+</div>
+
+<span class="statement-title">proof.</span><br>
+
+<details>
+<summary>($\implies$)</summary>
+<div class="math-statement" markdown="1">
+
+Supp. $N$ is a Prime Ideal, and $\overline{a} \cdot \overline{b} = \overline{0}$ for some $a, b \in R$.
+
+(Goal) $\overline{a} = \overline{0}$ or $\overline{b} = \overline{0}$ in $R/N$.
+
+$$
+\begin{aligned}
+    &\overline{a} \overline{b} = \overline{ab} = \overline{0} = N \\
+    &\implies ab \in N \\
+    &\implies a \in N \quad \textrm{or} \quad b \in N \qquad (N \; \textrm{is a Prime Ideal})
+\end{aligned}
+$$
+
+만약 $a \in N$라면, $\overline{a} = \overline{0}$이 된다.
+
+이것이 곧 $R/N$이 Integral Domain임을 의미한다. $\blacksquare$
+
+</div>
+</details>
+
+<details>
+<summary>($\impliedby$)</summary>
+<div class="math-statement" markdown="1">
+
+Supp. $R/N$ is an Integral Domain.
+
+(Goal) $N$ : Prime Ideal
+
+Let $a, b \in R$ s.t. $ab \in N$.
+
+(Goal) show $a \in N$ or $b \in N$
+
+Since $ab \in N$, $\overline{ab} = \overline{0}$ in $R/N$.
+
+Since $R/N$ is an integral domain, $\overline{a} = 0$ or $\overline{b} = 0$.
+
+따라서 $a \in N$ or $b \in N$.
+
+이것은 $N$이 Prime Ideal임을 의미한다. $\blacksquare$
+
+</div>
+</details>
+
+<br>
+<hr>
+
 <span class="statement-title">Theorem.</span> Maximal Ideal implies Prime Ideal<br>
 
 <div class="statement" markdown="1">
@@ -302,3 +410,21 @@ $N \trianglelefteq R$이 prime ideal이라면, $a \in N$은 prime elt over $R$�
 Any Maximal Ideal of commutative ring is also a Prime Ideal.
 
 </div>
+
+<span class="statement-title">proof.</span><br>
+
+<details>
+<div class="math-statement" markdown="1">
+
+Any Field is an Integral Domain.
+
+($N$ : Maximal Ideal) $\iff$ ($R/N$ : Field) 
+
+$\implies$ ($R/N$ : Integral Domain) $\iff$ ($N$ : Prime Ideal)
+
+따라서 Maximal Ideal은 Prime Ideal이다. $\blacksquare$
+
+</div>
+</details>
+
+
