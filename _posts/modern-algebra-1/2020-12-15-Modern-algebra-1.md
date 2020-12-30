@@ -233,10 +233,10 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
 
 ### Factorization
 
-- Unique Factorization Domain; UFD
+- Unique Factorization Domain; UFD [1]({{"2020/12/27/Unique-Factorization-Domain-1.html" | relative_url}}), [2]({{"2020/12/27/Unique-Factorization-Domain-2.html" | relative_url}})
   - Every PID is UFD
 - Fundamental Theorem of Arithmetic
-- Guass Lemma
+- Guass's Lemma
   - (primitive) $\times$ (primitive) = (primitive)
 - Euclid Domain
 - Fermat's Theorem on Sums of Two Squares; 페르마의 두 제곱수 정리

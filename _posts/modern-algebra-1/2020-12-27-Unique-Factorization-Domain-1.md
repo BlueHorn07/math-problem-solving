@@ -54,3 +54,7 @@ Then, $n=m$, and there exist a permutation $\sigma \in S_n$ s.t. $p_i = q_{\sigm
 </div>
 
 - [herzig's note](https://www.math.toronto.edu/~herzig/UFDs.pdf)
+
+<hr>
+
+UFD로부터 유도할 수 있는 명제들은 [UFD - 2]({{"2020/12/27/Unique-Factorization-Domain-2.html" | relative_url}})에서 이어집니다.
