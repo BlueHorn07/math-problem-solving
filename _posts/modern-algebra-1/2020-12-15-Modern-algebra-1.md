@@ -237,7 +237,7 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
   - Every PID is UFD
 - Fundamental Theorem of Arithmetic
 - Guass Lemma
-  - (primative) $\times$ (primative) = (primative)
+  - (primitive) $\times$ (primitive) = (primitive)
 - Euclid Domain
 - Fermat's Theorem on Sums of Two Squares; 페르마의 두 제곱수 정리
 

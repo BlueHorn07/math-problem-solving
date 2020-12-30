@@ -84,7 +84,7 @@ $$
 </div>
 
 - Length of Curve; $\lvert C \rvert$
-- primative function
+- primitive function
 - Bounds for integrals: ML-inequality
 - Cauchy-Goursat Theorem
   - Cauchy's proof (feat. Green's theorem)
