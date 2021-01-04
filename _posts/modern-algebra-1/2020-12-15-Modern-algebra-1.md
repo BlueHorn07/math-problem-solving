@@ -223,11 +223,17 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
 - [Prime Field]({{"2020/12/28/Prime-Field.html" | relative_url}})
   - $\textrm{Char}$와 sub-ring / sub-field 사이의 관계
   - $\mathbb{Z}_p$, $\mathbb{Q}$ are Prime Field
+
+<div class="statement" markdown="1">
+Prime ideals generalize the concept of primality to more general commutative rings.
+</div>
+
+- [Prime & Irreducible Element]({{"2020/12/27/Prime-Irreducible-Element.html" | relative_url}})
+  - Prime Element
+  - Irreducible Element
 - [Principal Ideal]({{"2020/12/27/principal-ideal.html" | relative_url}})
   - Principal Integral Domain; PID
-- [Ideal Structure]({{"2020/12/27/Ideal-structure.html" | relative_url}})
-  - prime element
-  - irreducible element
+
 
 <hr>
 
@@ -302,7 +308,8 @@ if $\ker \phi = \\{ e \\}$, then $\phi$ is 1-1.
 
 - $p\mathbb{Z}$ is Maximal Ideal.
 - Factor Ring from Maximal Ideal = Field
-
+- $F[x]$ is a Field and $p(x) \in F[x]$
+  - $\left< p(x) \right>$ is a Maximal Ideal $iff$ $p(x)$ is irreducible in $F[x]$.
 </div>
 
 
