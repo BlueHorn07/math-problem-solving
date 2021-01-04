@@ -44,16 +44,60 @@ $a = by = (ax)y = axy$
 
 <div class="statement" markdown="1">
 
-- Every $a \in D$ ,which is non-zero & not a unit, can be written as product of irreducibles.
+- Every $a \in D$ ,which is a non-zero & non-unit, can be written as a product of irreducibles.
 - This decomposition is **unique up to reordering**, and **up to associates**.
 
-Assume that two decomposition $a = p_1 \cdots p_n = q_1 \cdots q_m$ (all $p_i$, $q_i$ are irreducibles)
+Assume that two decompositions $a = p_1 \cdots p_n = q_1 \cdots q_m$ (all $p_i$, $q_i$ are irreducibles)
 
-Then, $n=m$, and there exist a permutation $\sigma \in S_n$ s.t. $p_i = q_{\sigma(i)}$ are **associates** for all $i=1, ..., n$.
+Then, $n=m$, and there exist a permutation $\sigma \in S_n$ s.t. $p_i = q_{\sigma(i)}$ are **associates** for all $i=1, \dots, n$.
 
 </div>
 
 - [herzig's note](https://www.math.toronto.edu/~herzig/UFDs.pdf)
+
+<br>
+<hr>
+
+<span class="statement-title">Theorem.</span><br>
+<div class="statement" markdown="1">
+
+$D$: Integral Domain
+
+$D$ is an UFD 
+
+$\iff$ Every non-zero elt is a product of finitely many prime elt.
+
+</div>
+
+<span class="statement-title">Theorem.</span><br>
+<div class="statement" markdown="1">
+
+In UFD, irreducible elt is also a prime elt.
+
+</div>
+
+<span class="statement-title">proof.</span><br>
+<details>
+<div class="math-statement" markdown="1">
+
+Let $d \in D$ be a irreducible element.
+
+Let $d \mid ab$ for some $a, b \in D$, then
+
+$ab = d\cdot e$ for some $e \in D$.
+
+then, $ab = (a_1 ... a_n)(b_1 ... b_m) = d \cdot (e_1 ... e_k)$
+
+그러면, $d$는 $d ~ a_i$ or 
+
+
+</div>
+</details>
+
+<br>
+
+<span class="statement-title">Theorem.</span><br>
+
 
 <hr>
 
