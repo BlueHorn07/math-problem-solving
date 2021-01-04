@@ -12,6 +12,21 @@ hidden: true
   <img src="{{ "/assets/img/group_meme.jpg" | relative_url }}">
 </div>
 
+<div class="math-statement" markdown="1">
+
+[목차]
+
+- [Group](#group)
+  - [Fundamental Theorem of Finitely Generated Abelian Group](#fundamental-theorem-of-finitely-generated-abelian-group)
+- [Factor Group & Homomorphism](#factor-group--homomorphism)
+- [Advanced Group Theory](#advanced-group-theory)
+- [Ring & Field](#ring--field)
+- [Factor Ring & Ideal](#factor-ring--ideal)
+- [Advanced Ring & Field Theory](#advanced-ring--field-theory)
+- [Appendix](#appendix)
+
+</div>
+
 #### 참고 교재
 - 『A First Course in Abstract Algebra』 Fraleigh, 7th ed.
 - 『Abstract Algebra』 Dummit & Foote, 3rd ed.
@@ -57,7 +72,7 @@ Where $p_i$ are primes, not necessarily distinct, and $r_i$ are positive integer
 
 <hr>
 
-### Factor Group & Homomorphisms
+### Factor Group & Homomorphism
 
 - [Homomorphism + 문풀]({{"2020/12/24/Group-Homo-Iso.html" | relative_url}})
 - [Cayley's Theorem]({{"2020/12/24/Cayley-Theorem.html" | relative_url}})
@@ -208,7 +223,7 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
 
 <hr>
 
-### Factor Rings & Ideals
+### Factor Ring & Ideal
 
 - [Ring Homomorphism & Factor Ring]({{"2020/12/27/Factor-rings-Ideal.html" | relative_url}})
   - Factor Ring well-definedness
@@ -237,7 +252,7 @@ Prime ideals generalize the concept of primality to more general commutative rin
 
 <hr>
 
-### Factorization
+### Advanced Ring & Field Theory
 
 - Unique Factorization Domain; UFD [1]({{"2020/12/27/Unique-Factorization-Domain-1.html" | relative_url}}), [2]({{"2020/12/27/Unique-Factorization-Domain-2.html" | relative_url}})
   - Every PID is UFD
@@ -247,8 +262,6 @@ Prime ideals generalize the concept of primality to more general commutative rin
 - Euclid Domain
 - Fermat's Theorem on Sums of Two Squares; 페르마의 두 제곱수 정리
 
-- primality implies irreducibility
-- irreducibility might not implies primality
 
 ### Appendix
 
