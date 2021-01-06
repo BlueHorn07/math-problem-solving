@@ -243,9 +243,9 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
 Prime ideals generalize the concept of primality to more general commutative rings.
 </div>
 
-- [Prime & Irreducible Element]({{"2020/12/27/Prime-Irreducible-Element.html" | relative_url}})
-  - Prime Element
-  - Irreducible Element
+- [Prime & Irreducible element]({{"2020/12/27/Prime-Irreducible-Element.html" | relative_url}})
+  - Prime element
+  - Irreducible element
 - [Principal Ideal]({{"2020/12/27/principal-ideal.html" | relative_url}})
   - Principal Integral Domain; PID
 
@@ -254,7 +254,9 @@ Prime ideals generalize the concept of primality to more general commutative rin
 
 ### Advanced Ring & Field Theory
 
-- Unique Factorization Domain; UFD [1]({{"2020/12/27/Unique-Factorization-Domain-1.html" | relative_url}}), [2]({{"2020/12/27/Unique-Factorization-Domain-2.html" | relative_url}})
+- [Unique Factorization Domain]({{"2020/12/27/Unique-Factorization-Domain-1.html#unique-factorization-domain" | relative_url}}); UFD [1]({{"2020/12/27/Unique-Factorization-Domain-1.html" | relative_url}}), [2]({{"2020/12/27/Unique-Factorization-Domain-2.html" | relative_url}})
+  - [Associate / Associated element]({{"2020/12/27/Unique-Factorization-Domain-1.html#associates--associated-element" | relative_url}})
+  - In UFD, Irreducible elt is also a Prime elt.
   - Every PID is UFD
 - Fundamental Theorem of Arithmetic
 - Guass's Lemma

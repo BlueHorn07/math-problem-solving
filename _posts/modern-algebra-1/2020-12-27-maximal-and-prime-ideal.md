@@ -403,7 +403,9 @@ Since $R/N$ is an integral domain, $\overline{a} = 0$ or $\overline{b} = 0$.
 <br>
 <hr>
 
-<span class="statement-title">Theorem.</span> Maximal Ideal implies Prime Ideal<br>
+#### Maximal Ideal implies Prime Ideal
+
+<span class="statement-title">Theorem.</span><br>
 
 <div class="statement" markdown="1">
 

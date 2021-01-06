@@ -1,5 +1,5 @@
 ---
-title: "Prime & Irreducible Element"
+title: "Prime & Irreducible element"
 layout: post
 use_math: true
 tags: ["Modern Algebra1"]
@@ -83,7 +83,7 @@ $$
 
 $D$: Integral Domain
 
-Prime Element in $D$ $\implies$ Irreducible in $D$
+Prime element in $D$ $\implies$ Irreducible in $D$
 
 일반적으로 역방향은 성립하지 않는다!!
 
