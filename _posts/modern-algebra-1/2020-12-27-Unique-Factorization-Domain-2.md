@@ -8,7 +8,7 @@ tags: ["Modern Algebra1"]
 ### 서론
 2020-2학기, 대학에서 '현대대수1' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-UFD의 첫번째 포스트는 [이곳]({{"2020/12/27/Unique-Factorization-Domain-1.html" | relative_url}})에서 볼 수 있습니다.
+UFD에 대한 첫번째 포스트는 [이곳]({{"2020/12/27/Unique-Factorization-Domain-1.html" | relative_url}})에서 볼 수 있습니다.
 
 <hr>
 
@@ -21,13 +21,33 @@ UFD의 첫번째 포스트는 [이곳]({{"2020/12/27/Unique-Factorization-Domain
 <span class="statement-title">Properties.</span> PID<br>
 
 - For a Field $F$,  Every $F[x]$ is PID.
-- Irreducible element $\equiv$ Prime element
+- <span style="color:red">Irreducible element $\equiv$ Prime element</span>
 
 <br>
 
 <span class="statement-title">Properties.</span> UFD<br>
 
-- Irreducible element $\equiv$ Prime element
+- <span style="color:red">Irreducible element $\equiv$ Prime element</span>
+
+<br>
+
+증명은 두 가지 step으로 진행된다.
+
+먼저 PID가 UFD의 **첫번째 조건**인 
+
+<div style="text-align:center">
+<big>“UFD의 모든 non-zero & non-unit 원소는 finite number of irreducibles로 factorization된다.”</big>
+</div><br>
+
+를 만족함을 증명한다.
+
+그리고 UFD의 **두번째 조건**인
+
+<div style="text-align:center">
+<big>“Factorization is same upto reordering and associates”</big>
+</div><br>
+
+를 증명한다!!
 
 <br>
 <hr>
@@ -162,9 +182,9 @@ $u_1 \cdots u_r = 1 \cdots q_{r+1} (x) \cdots q_s (x)$가 된다.
 
 $R$: commutative ring + unity.
 
-Let $N_1 \subseteq N_2 \subseteq \cdots $ be an ascending chain of ideals $N_i$ in $R$.
+Let $N_1 \subseteq N_2 \subseteq \cdots $ be an **<u>ascending chain of ideals</u>** $N_i$ in $R$.
 
-Then, $N = \cup_i N_i$ is an Ideal in $R$.
+Then, $N = \cup_i N_i$ is an **<u>Ideal</u>** in $R$.
 
 </div>
 
@@ -198,6 +218,148 @@ Therefore, $N$ is an Ideal. $\blacksquare$
 
 </div>
 </details>
+
+<br>
+
+Lemma 45.9로부터 PID에 대한 ACC<small>(Ascedning Chain Condition)</small>을 유도할 수 있다!!
+
+<span class="statement-title">Lemma 45.10</span><br>
+<div class="statement" markdown="1">
+
+Let $D$ be a PID.
+
+If $N_1 \subseteq N_2 \subseteq \cdots$ is an **ascending chain of ideals** $N_i$,
+
+then there exist a positive integer $r$ s.t. $N_r = N_s$ for all $s \ge r$.
+
+<br>
+
+Equivalently, every **strictly ascending chain of ideals** in a PID is of finite length.
+
+</div>
+
+그래서 우리는 아래와 같이 기술한다.
+
+<div style="text-align:center">
+
+<big>"The <b>ACC</b><small>(Ascending Chain Condition)</small> holds for ideals in a <b>PID</b>."</big>
+
+</div>
+
+<span class="statement-title">proof.</span><br>
+<details>
+<div class="math-statement" markdown="1">
+
+By Lemma 45.9, we know that $N = \cup_{i} N_i$ is an ideal of $D$.
+
+Since, now, $D$ is a PID, $N = \left< c \right>$ for some $c \in D$.
+
+Since $N = \cup_{i} N_i$, we must have $c \in N_r$ for some $r \in \mathbb{Z}^{+}$.
+
+Therefore, for $s \ge r$, we have
+
+$$
+\left< c \right> \subseteq N_r \subseteq N_s \subseteq N = \left< c \right>
+$$
+
+Thus $N_r = N_s$ for $s \ge r$.
+
+</div>
+</details>
+
+
+<br>
+
+이 정리로부터 아래의 성질이 유도된다.
+
+- $b$ divides $a$ $\iff$ $\left< a \right> \subseteq \left< b \right>$.
+- $a$ and $b$ are associates $\iff$ $\left< a \right> = \left< b \right>$.
+
+이 성질을 이용하면, PID가 UFD가 되기 위한 첫번째 조건인
+
+"UFD의 모든 non-zero & non-unit 원소는 finite number of irreducibles로 factorization된다."
+
+를 증명할 수 있다!!
+
+<br>
+<hr>
+
+<span class="statement-title">Theorem 45.11</span><br>
+
+<div class="statement" markdown="1">
+
+Let $D$ be a PID.
+
+Every non-zero & non-unit elt in $D$ is a product of irreducibles.
+
+</div>
+
+<span class="statement-title">proof</span><br>
+
+<details>
+<div class="math-statement" markdown="1">
+
+Let $a$ be a non-zero & non-unit elt in $D$.
+
+(Step 1) show $a$ has at least one irreducible factor.
+
+If $a$ is already irreducible, we are done!
+
+If $a$ is not an irreducible, 
+
+then $a = a_1 b_1$, where neither $a_1$ nor $b_1$ is a unit. <br>
+<small>(만약 $a_1$와 $b_1$이 둘다 unit이라면, $a$가 unit이 되기 때문이다.)</small>
+
+앞에서 보인 성질에 의해 
+
+$$
+\left< a \right> \subseteq \left< a_1 \right>
+$$
+
+이다.
+
+이때, $\left< a \right> = \left< a_1 \right>$가 되는 경우는 $a$와 $a_1$이 associate 하는 경우다. 하지만 이럴 경우 $b_1$이 unit이 되므로 모순이다.
+
+따라서 등호를 뺀 $\left< a \right> \subset \left< a_1 \right>$가 성립한다.
+
+<br>
+
+이제 $a_1$에서 시작해 위의 과정을 계속해서 적용하면, **strictly ascending chain of ideals**를 얻는다.
+
+$$
+\left< a \right> \subset \left< a_1 \right> \subset \left< a_2 \right> \subset \cdots
+$$
+
+앞에서 보인 ACC (Lemma 45.10)에 의해 이 chain은 어떤 $\left< a_r \right>$에서 끝나며 $a_r$은 irreducible해야 한다.<br>
+<small>(PID에서 모든 principal ideal은 prime elt에 의해 유도된다. 이때 PID에선 prime과 irreducible이 동치이기 때문에 $a_r$은 prime이면서 irreducible이다!)</small>
+
+따라서 $a$는 irreducible factor $a_r$을 갖는다.
+
+<br>
+
+우리가 유도한 바를 정리하자.
+
+for non-zero & non-unit elt $a$, $a = p_1 c_1$ for an irreducible $p_1$ and $c_1$ not a unit.
+
+In this way, we want do same thing on $c_1$; $c_1 = p_2 c_2$.
+
+Then we get this ascedning chain of ideals.
+
+$$
+\left< a \right> \subset \left< c_1 \right> \subset \left< c_2 \right> \subset \cdots
+$$
+
+By Lemma 45.10, this chain must terminate at for some $p_r$.
+
+Therefore $a = p_1 p_2 \cdots p_r$.
+
+This means, in PID, non-zero & non-unit can be factorized into a product of irreducibles. $\blacksquare$
+
+</div>
+</details>
+
+<br>
+<hr>
 
 
 
