@@ -53,4 +53,5 @@ tipue_search:
 
 # build option
 # ref: https://yangeok.github.io/blog/2019/05/21/jekyll-caching.html
-incremental: true
+# incremental: true
+# limit_posts: 5
