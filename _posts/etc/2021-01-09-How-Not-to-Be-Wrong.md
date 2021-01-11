@@ -121,6 +121,8 @@ tags: ["독서"]
 
 -> 마치 "**큰 수의 법칙**"과도 비슷한 느낌이다!
 
+<br>
+
 "**기대값의 가산성**(Additivity of Expectation)"
 
 -> Linearity of Expectation
