@@ -173,6 +173,8 @@ $u_1 \cdots u_r = 1 \cdots q_{r+1} (x) \cdots q_s (x)$가 된다.
 <br>
 <hr>
 
+### 1st Condition
+
 #### Ascending Chain Condition (ACC)
 
 이번에는 **집합론**에서도 등장하는 명제를 다룬다. 생각보다 중요한 명제다.
@@ -284,7 +286,7 @@ Thus $N_r = N_s$ for $s \ge r$.
 <br>
 <hr>
 
-<span class="statement-title">Theorem 45.11</span><br>
+<span class="statement-title">Theorem 45.11</span> proof of 1st condition<br>
 
 <div class="statement" markdown="1">
 
@@ -361,16 +363,217 @@ This means, in PID, non-zero & non-unit can be factorized into a product of irre
 <br>
 <hr>
 
+### 2nd Condition
 
+앞에서도 언급했던 정리인데 다시 한번 살펴보자! 우리의 목표는 아래의 정리를 일반화하는 것이다.
+
+<span class="statement-title">Theorem 23.20</span><br>
+
+<div class="statement" markdown="1">
+
+If $F$ is a **<u>Field</u>**, then every non-constant polynomial $f(x) \in F[x]$ can be factored in $F[x]$ into a **<u>product of irreducible polynomials</u>**.
+
+The product of irreducible poylnomials is unique except for order and unit.
+
+</div>
 
 <br>
 <hr>
 
-<span class="statement-title">Theorem.</span><br>
+#### Maximal ~ Irreducible
+
+<span class="statement-title">Theorem 27.25</span><br>
 
 <div class="statement" markdown="1">
 
-Every PID is UFD.
+An ideal $\left< p(x) \right> \ne \\{0\\}$ of $F[x]$ is **<u>maximal</u>**
+
+$\iff$ $p(x)$ is **<u>irreducible</u>** over $F$.
+
+</div>
+
+<br>
+
+<span class="statement-title">Lemma 45.12</span> (Generalization of Thm 27.25)<br>
+
+<div class="statement" markdown="1">
+
+An ideal $\left< p \right>$ in a PID is **<u>maximal</u>** 
+
+$\iff$ $p$ is an **<u>irreducible</u>**.
+
+</div>
+
+<span class="statement-title">proof</span><br>
+
+<details>
+<summary>($\implies$)</summary>
+<div class="math-statement" markdown="1">
+
+Supp. $\left< p \right>$ be a maximal ideal of PID $D$.
+
+Supp that $p=ab$ in $D$.
+
+Then, $\left< p \right> \subseteq \left< a \right>$.
+
+(Case 1) Supp. that $\left< p \right> = \left< a \right>$.
+
+Then $p$ and $a$ would be associates, so $b$ must be a unit.<br>
+($b$가 $p$-$a$ 사이 unit의 역할을 하는 것)
+
+(Case 2) If $\left< p \right> \ne \left< a \right>$
+
+then we must have $\left< a \right> = \left< 1 \right> = D$,
+
+since $\left< p \right>$ is **maximal**.
+
+Then $a$ and $1$ are associates, so $a$ is a unit.
+
+Thus, if $p = ab$, either $a$ or $b$ must be a unit.
+
+This means $p$ is an irreducible of $D$. $\blacksquare$
+
+</div>
+</details>
+
+<details>
+<summary>($\impliedby$)</summary>
+<div class="math-statement" markdown="1">
+
+Supp. $p$ is an irreducible in $D$.
+
+If $\left< p \right> \subseteq \left< a \right>$, we must have $p = ab$.
+
+(Case 1) If $a$ is a unit, (왜냐하면 $p$가 irreducible)
+
+then $\left< a \right> = \left< 1 \right> = D$.
+
+(Case 2) If $a$ is not a unit,
+
+then $b$ must be a unit. (왜냐하면 $p$가 irreducible)
+
+So there exist $u \in D$ s.t. $bu = 1$.
+
+Then $pu = a(bu) = a$, so $\left< a \right> \subseteq \left< p \right>$.
+
+우리가 처음에 $\left< p \right> \subseteq \left< a \right>$를 가정했으므로 결국 $\left< p \right> = \left< a \right>$가 된다.
+
+<br>
+
+정리하면, $\left< p \right> \subseteq \left< a \right>$는
+
+(Case 1) $\left< a \right> = D$ 또는 
+
+(Case 2) $\left< p \right> = \left< a \right>$ and $\left< p \right> \ne D$ ($a$ is not unit) 또는
+
+$p$ would be a unit ($a$, $b$ 모두 unit일 때)
+
+<br>
+
+이것은 결국 $\left< p \right>$보다 크다고 가정한 ideal $\left< a \right>$이 $D$ 자체가 되거나 $\left< p \right>$ 자신이 된다는 말이기 때문에 $\left< p \right>$가 **<u>Maximal Ideal</u>**임을 의미한다. $\blacksquare$
+
+</div>
+</details>
+
+<br>
+<hr>
+
+#### Irreducible ~ Prime
+
+<span class="statement-title">Theorem 27.27</span><br>
+
+<div class="statement" markdown="1">
+
+Let $p(x)$ be an **irreducible polynomial** in $F[x]$. 
+
+If $p(x)$ divides $r(x)s(x)$ for $r(x), s(x) \in F[x]$,
+
+then either $p(x) \mid r(x)$ or $p(x) \mid s(x)$.
+
+</div>
+
+<br>
+
+<span class="statement-title">Lemma 45.13</span> (Generalization of Thm 27.27)<br>
+
+<div class="statement" markdown="1">
+
+In a PID, if an **irreducible** $p$ divides $ab$,
+
+then either $p \mid a$ or $p \mid b$.
+
+</div>
+
+<span class="statement-title">proof</span><br>
+
+<details>
+<div class="math-statement" markdown="1">
+
+Let $D$ be a PID, and Supp. that for an **irreducible** $p \in D$ we have $p \mid ab$.
+
+Then $(ab) \in \left< p \right>$.
+
+또한 앞에서 "Lemma 45.12"에서 **<u>PID의 irreducible elt는 maxial ideal을 생성함</u>**을 확인했다.
+
+Since every **maximal ideal** in PID is a **prime ideal** by "Corollary 27.16",
+
+$(ab) \in \left< p \right>$ implies that either $a \in \left< p \right>$ or $b \in \left< p \right>$.
+
+그리고 이것은 either $p \mid a$ or $p \mid b$를 유도한다. $\blacksquare$
+
+</div>
+</details>
+
+<br>
+
+<span class="statement-title">Corollary 45.14</span> (Generalization of Lemma 45.13)<br>
+
+<div class="statement" markdown="1">
+
+If $p$ is an irreducible in a PID and $p \mid a_1 a_2 \cdots a_n$ for $a_i \in D$.
+
+Then $p \mid a_i$ for at least one $i$.
+
+</div>
+
+사실 위에서 언급한 성질은 "**Primality**"에 대한 것이다.
+
+즉, PID의 irreducible이 prime을 유도한다는 명제가 "Lemma 45.13"이다.
+
+<br>
+
+<span class="statement-title">Example 45.16</span><br>
+
+<div class="example" markdown="1">
+
+Let $F$ be a Field, and $D$ be the sub-domain $F[x^3, xy, y^3]$ of $F[x, y]$.
+
+Then $x^3$, $xy$, $y^3$ are **<u>irreducible</u>** in $D$, but
+
+$$
+(x^3)(y^3) = (xy)(xy)(xy)
+$$
+
+Since $xy$ divides $x^3y^3$ but not $x^3$ or $y^3$, 
+
+$xy$ is not a prime.
+
+In similar way, neither $x^3$ nor $y^3$ is a prime.
+
+</div>
+
+위 예제는 Integral Domain에서는 irreducible이 prime을 의미하지 않을 수도 있다는 것을 보여준다!
+
+<br>
+<hr>
+
+이제 우리가 목표로 했던 정리, "Thm 23.20"을 일반화한 명제를 살펴보자!!
+
+<span class="statement-title">Theorem 45.17</span> (Generalization of Thm 23.20)<br>
+
+<div class="statement" style="text-align:center" markdown="1">
+
+<big>Every PID is a UFD.</big>
 
 </div>
 
@@ -378,14 +581,7 @@ Every PID is UFD.
 <hr>
 
 
-
-
-
 <span class="statement-title">Theorem.</span> Fundamental Theorem of Arithmetic<br>
-
-
-
-
 
 <br>
 

@@ -124,12 +124,19 @@ div.eq-box {
   background-color: #ffece9;
 }
 
+// example & problem
+.example {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: rgb(183, 226, 255);
+}
+
 .statement-title {
   font-weight: bold;
   text-decoration: underline;
 }
 
-// Markdown post headder anchors
+// Markdown post header anchors
 
 .header-link {
   // position: absolute;
