@@ -48,7 +48,7 @@ If $H$ is a subgrop of a group $G$, then $\lvert H \rvert \mid \lvert G \rvert$,
 - [Cyclic Group]({{"2020/10/18/Cyclic-group-and-subgroup.html" | relative_url}})
 - Symmetric Group
 - Coset
-- [Lagrange Theorem]({{"2020/10/14/Lagrange-thm.html" | relative_url}})
+- [Lagrange Theorem]({{"2020/10/14/Lagrange-thm.html" | relative_url}}) 🔥🔥
 - Permutation Group
 - orbit; cycle; transposition
 - Alternating Group
@@ -110,7 +110,7 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
 
 </div>
 
-- [Fundamental Homomorphism Theorem(FHT)]({{"2020/12/25/Fundamental-Homo-theorem.html" | relative_url}}); 1st Isomorphism Thm
+- [Fundamental Homomorphism Theorem(FHT)]({{"2020/12/25/Fundamental-Homo-theorem.html" | relative_url}}); 1st Isomorphism Thm 🔥🔥
   - [Canonical homomorphism]({{"2020/12/25/Fundamental-Homo-theorem.html#canonical-homomorphism" | relative_url}}) $\gamma: G \longrightarrow G/H \quad (H \trianglelefteq G)$
 - [index-2 group is normal]({{"2020/12/25/index-2-Group.html" | relative_url}})
 - [Factor Group - Appliaction]({{"2020/12/25/Factor-Group-Application.html" | relative_url}}')
@@ -118,14 +118,14 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
 
 ### Advanced Group Theory
 
-- [Three Isomorphism Theorems]({{"2020/12/25/Isomorphism-Thm.html" | relative_url}})
-- [Three Sylow Theorems]({{"2020/12/26/Sylow-thm.html" | relative_url}})
+- [Three Isomorphism Theorems]({{"2020/12/25/Isomorphism-Thm.html" | relative_url}}) 🔥
+- [Three Sylow Theorems]({{"2020/12/26/Sylow-thm.html" | relative_url}}) 🔥
   - [$p$-group]({{"2020/12/26/Sylow-thm.html#p-group" | relative_url}})
   - [normalizer]({{"2020/12/26/Sylow-thm.html#normalizer" | relative_url}}) of $H$ in $G$; $N_G(H)$
   - [Sylow $p$-group]({{"2020/12/26/Sylow-thm.html#sylow-p-group" | relative_url}})
-  - [Application 1]({{"2020/12/26/Sylow-thm-Application-1.html" | relative_url}})
-  - [Application 2]({{"2020/12/26/Sylow-thm-Application-2.html" | relative_url}})
-  - [Examples]({{"2020/12/26/Sylow-thm-Application-2.html#sylow-theorem---examples" | relative_url}})
+  - [Application 1]({{"2020/12/26/Sylow-thm-Application-1.html" | relative_url}}) 🔥
+  - [Application 2]({{"2020/12/26/Sylow-thm-Application-2.html" | relative_url}}) 🔥
+  - [Examples]({{"2020/12/26/Sylow-thm-Application-2.html#sylow-theorem---examples" | relative_url}}) 🔥
     - [Type-1]({{"2020/12/26/Sylow-thm-Application-2.html#type-1" | relative_url}})
     - [Type-2]({{"2020/12/26/Sylow-thm-Application-2.html#type-2" | relative_url}})
 
@@ -158,7 +158,7 @@ $$
 
 </div>
 
-- [Fermat's Little Theorem]({{"2020/12/26/Fermat-little-theorem.html" | relative_url}})
+- [Fermat's Little Theorem]({{"2020/12/26/Fermat-little-theorem.html" | relative_url}}) 🔥
   - [Examples]({{"2020/12/26/Fermat-little-theorem.html#examples" | relative_url}})
 
 <div class="statement" markdown="1">
@@ -175,7 +175,7 @@ $$
 
 </div>
 
-- [Euler's Theorem]({{"2020/12/26/Euler-Thm.html" | relative_url}})
+- [Euler's Theorem]({{"2020/12/26/Euler-Thm.html" | relative_url}}) 🔥
   - [Euler phi function]({{"2020/12/26/Euler-Thm.html#euler-phi-function" | relative_url}})
   - [Application: solve module equation]({{"2020/12/26/Euler-Thm.html#application-solve-modulo-equation" | relative_url}}) $ax \equiv b$ (mod $n$)
 <hr>
@@ -214,7 +214,7 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
 </div>
 
 - [Irreducible Polynomials]({{"2020/12/27/Irreducible-poly.html" | relative_url}})
-  - Eisenstein Criteria
+  - Eisenstein Criteria 🔥
 - [Non-commutative Examples]({{"2020/12/27/non-commutative-example.html" | relative_url}})
 - [Group Rings & Group Algebras]({{"2020/12/27/group-algebra.html" | relative_url}})
   - Group Ring; $R(G)$
@@ -231,7 +231,7 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
   - Factor Ring well-definedness
   - [Ideal]({{"2020/12/27/Factor-rings-Ideal.html#ideal" | relative_url}})
 - [Maximal & Prime Ideals]({{"2020/12/27/maximal-and-prime-ideal.html" | relative_url}})
-  - Ideal + unity = Ring
+  - Ideal + unity = Ring 🔥
   - Maximal Ideal
     - Maximal Ideal makes factor group as field.
   - Prime Ideal
@@ -257,9 +257,9 @@ Prime ideals generalize the concept of primality to more general commutative rin
 ### Advanced Ring & Field Theory
 
 - [Unique Factorization Domain]({{"2020/12/27/Unique-Factorization-Domain-1.html#unique-factorization-domain" | relative_url}}); UFD [1]({{"2020/12/27/Unique-Factorization-Domain-1.html" | relative_url}}), [2]({{"2020/12/27/Unique-Factorization-Domain-2.html" | relative_url}})
-  - [Associate / Associated element]({{"2020/12/27/Unique-Factorization-Domain-1.html#associates--associated-element" | relative_url}})
+  - [Associate / Associated element]({{"2020/12/27/Unique-Factorization-Domain-1.html#associates--associated-element" | relative_url}}) 🔥
   - In UFD, Irreducible elt is also a Prime elt.
-  - [Every PID is UFD]({{"2020/12/27/Unique-Factorization-Domain-2.html" | relative_url}})
+  - [Every PID is UFD]({{"2020/12/27/Unique-Factorization-Domain-2.html" | relative_url}}) 🔥
 - [Fundamental Theorem of Arithmetic]({{"2021/01/17/fundamental-thm-of-arithmetic.html" | relative_url}})
 - [Guass's Lemma]({{"2020/12/30/Guass-Lemma.html" | relative_url}})
   - (primitive) $\times$ (primitive) = (primitive)
@@ -267,7 +267,7 @@ Prime ideals generalize the concept of primality to more general commutative rin
 - Euclidean Domain
   - Euclidean norm
   - Euclidean Algorithm
-- Gaussian Integers
+- Gaussian Integers 🔥
   - Multiplicative norm
 - Fermat's Theorem on Sums of Two Squares; 페르마의 두 제곱수 정리
 
@@ -275,7 +275,7 @@ Prime ideals generalize the concept of primality to more general commutative rin
 
 ### Galois Theory
 
-(Continued on *Morden Algebra II* ...)
+🔥 Continued on *Morden Algebra II* ... 🔥
 
 <br>
 <hr>
