@@ -260,7 +260,7 @@ Prime ideals generalize the concept of primality to more general commutative rin
   - In UFD, Irreducible elt is also a Prime elt.
   - [Every PID is UFD]({{"2020/12/27/Unique-Factorization-Domain-2.html" | relative_url}})
 - [Fundamental Theorem of Arithmetic]({{"2021/01/17/fundamental-thm-of-arithmetic.html" | relative_url}})
-- Guass's Lemma
+- [Guass's Lemma]({{"2020/12/30/Guass-Lemma.html" | relative_url}})
   - (primitive) $\times$ (primitive) = (primitive)
 - Euclid Domain
 - Fermat's Theorem on Sums of Two Squares; 페르마의 두 제곱수 정리
