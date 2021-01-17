@@ -259,7 +259,7 @@ Prime ideals generalize the concept of primality to more general commutative rin
   - [Associate / Associated element]({{"2020/12/27/Unique-Factorization-Domain-1.html#associates--associated-element" | relative_url}})
   - In UFD, Irreducible elt is also a Prime elt.
   - [Every PID is UFD]({{"2020/12/27/Unique-Factorization-Domain-2.html" | relative_url}})
-- Fundamental Theorem of Arithmetic
+- [Fundamental Theorem of Arithmetic]({{"2021/01/17/fundamental-thm-of-arithmetic.html" | relative_url}})
 - Guass's Lemma
   - (primitive) $\times$ (primitive) = (primitive)
 - Euclid Domain
