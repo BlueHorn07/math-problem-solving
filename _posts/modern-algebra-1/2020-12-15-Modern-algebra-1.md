@@ -24,6 +24,7 @@ hidden: true
 - [Ring & Field](#ring--field)
 - [Factor Ring & Ideal](#factor-ring--ideal)
 - [Advanced Ring & Field Theory](#advanced-ring--field-theory)
+- [Galois Theory](#galois-theory)
 - [Appendix](#appendix)
 
 </div>
@@ -262,9 +263,22 @@ Prime ideals generalize the concept of primality to more general commutative rin
 - [Fundamental Theorem of Arithmetic]({{"2021/01/17/fundamental-thm-of-arithmetic.html" | relative_url}})
 - [Guass's Lemma]({{"2020/12/30/Guass-Lemma.html" | relative_url}})
   - (primitive) $\times$ (primitive) = (primitive)
-- Euclid Domain
+- [Polynomial over UFD]({{"2021/01/18/polynomial-over-UFD.html" | relative_url}})
+- Euclidean Domain
+  - Euclidean norm
+  - Euclidean Algorithm
+- Gaussian Integers
+  - Multiplicative norm
 - Fermat's Theorem on Sums of Two Squares; 페르마의 두 제곱수 정리
 
+<hr>
+
+### Galois Theory
+
+(Continued on *Morden Algebra II* ...)
+
+<br>
+<hr>
 
 ### Appendix
 
