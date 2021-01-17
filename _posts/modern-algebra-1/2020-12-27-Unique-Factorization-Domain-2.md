@@ -39,7 +39,7 @@ UFD에 대한 첫번째 포스트는 [이곳]({{"2020/12/27/Unique-Factorization
 <big>“UFD의 모든 non-zero & non-unit 원소는 finite number of irreducibles로 factorization된다.”</big>
 </div><br>
 
-를 만족함을 증명한다.
+를 만족함을 증명한다. [link](#1st-condition)
 
 그리고 UFD의 **두번째 조건**인
 
@@ -47,7 +47,7 @@ UFD에 대한 첫번째 포스트는 [이곳]({{"2020/12/27/Unique-Factorization
 <big>“Factorization is same upto reordering and associates”</big>
 </div><br>
 
-를 증명한다!!
+를 증명한다!! [link](#2nd-condition)
 
 <br>
 <hr>
@@ -524,9 +524,7 @@ $(ab) \in \left< p \right>$ implies that either $a \in \left< p \right>$ or $b \
 </div>
 </details>
 
-<br>
-
-<span class="statement-title">Corollary 45.14</span> (Generalization of Lemma 45.13)<br>
+<br><span class="statement-title">Corollary 45.14</span> (Generalization of Lemma 45.13)<br>
 
 <div class="statement" markdown="1">
 
@@ -542,7 +540,7 @@ Then $p \mid a_i$ for at least one $i$.
 
 <br>
 
-<span class="statement-title">Example 45.16</span><br>
+<br><span class="statement-title">Example 45.16</span><br>
 
 <div class="example" markdown="1">
 
@@ -569,7 +567,7 @@ In similar way, neither $x^3$ nor $y^3$ is a prime.
 
 이제 우리가 목표로 했던 정리, "Thm 23.20"을 일반화한 명제를 살펴보자!!
 
-<span class="statement-title">Theorem 45.17</span> (Generalization of Thm 23.20)<br>
+<br><span class="statement-title">Theorem 45.17</span> (Generalization of Thm 23.20)<br>
 
 <div class="statement" style="text-align:center" markdown="1">
 
@@ -577,11 +575,68 @@ In similar way, neither $x^3$ nor $y^3$ is a prime.
 
 </div>
 
+<br><span class="statement-title">proof.</span><br>
+
+<details>
+<div class="math-statement" markdown="1">
+
+Thm 45.11 shows that if $D$ is a PID, then each non-zero & non-unit $a \in D$ has a factorization into irreducibles. (1st Condition)
+
+$$
+a = p_1 p_2 \cdots p_r
+$$
+
+이제 남은 것은 위의 irreducible factorization에 대한 '유일성'을 보이는 것이다.
+
+Let $a = q_1 q_2 \cdots q_s$ be another irreucible factorization.
+
+위와 같이 또다른 irreducible factorization을 가정한다면,
+
+$$
+p_1 \mid (q_1 q_2 \cdots q_s)
+$$
+
+가 되며, 이것은 $p_1 \mid q_j$ for some $j$를 의미한다. (Cor 45.14)
+
+$q_j$의 순서를 적당히 바꿈으로써 우리는 $j=1$라고 가정할 수 있고, 따라서 $p_1 \mid q_1$가 된다.
+
+그러면, $q_1 = p_1 u_1$ for some unit $u_1$.
+
+따라서 irreducible factorization은 아래와 같이 다시 쓸 수 있다.
+
+$$
+p_1 p_2 \cdots p_r = p_1 u_1 q_2 \cdots q_s
+$$
+
+Integral Domain $D$ 아래에서의 소거법에 의해
+
+$$
+p_2 \cdots p_r = u_1 q_2 \cdots q_s
+$$
+
+가 된다.
+
+이 과정을 반복하면, 아래의 결과를 얻는다.
+
+$$
+1 = u_1 u_2 \cdots u_r \cdot q_{r+1} \cdots q_s
+$$
+
+가정에 의해 $q_j$는 모두 irreducible이므로 위의 등식이 만족하기 위해선 $r=s$가 되어야 한다.
+
+<br>
+
+종합하면 PID 아래에서 모든 non-zero & non-unit elt는 모두 unique irreducible factorization을 갖는다.
+
+그리고 Lemma 45.13에 의해 PID에선 irreducible이 prime이기 때문에 PID의 원소는 unique prime factorization을 가진다.
+
+따라서 PID는 UFD이다. $\blacksquare$
+
+</div>
+</details>
+
 <br>
 <hr>
 
-
-<span class="statement-title">Theorem.</span> Fundamental Theorem of Arithmetic<br>
-
-<br>
+PID가 UFD임을 말하는 Theorem 45.17를 통해 우리는 정수 $\mathbb{Z}$에 대한 가장 근본적인 명제인 **"Fundamental Theorem of Arithmetic"**을 유도할 수 있다!! [link]({{"2021/01/17/fundamental-thm-of-arithmetic.html" | relative_url}})
 
