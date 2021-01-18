@@ -227,7 +227,7 @@ $$
 
 #### zero of polynomial
 
-<span class="statement-title">Definition.</span>zero of polynomial; polynomail의 근<br>
+<span class="statement-title">Definition.</span>zero of polynomial; polynomial의 근<br>
 
 <div class="statement" markdown="1">
 

@@ -87,14 +87,14 @@ A polynomial is **<u>primitive</u>**, if its content equals 1.
 
 </div>
 
-- [Wikipedia - Primitive polynomail(ring theory)](https://en.wikipedia.org/wiki/Primitive_part_and_content)
+- [Wikipedia - Primitive polynomial(ring theory)](https://en.wikipedia.org/wiki/Primitive_part_and_content)
 
 <br>
 <hr>
 
 ### Gauss's Lemma
 
-<span class="statement-title">Lemma.</span><br>
+<span class="statement-title">Lemma 45.23</span><br>
 
 <div class="statement" markdown="1">
 
@@ -127,7 +127,7 @@ By definition of gcd $c$, the left polynomial $g(x)$ is a primitive polynomial. 
 <br>
 <hr>
 
-<span class="statement-title">Lemma.</span> Gauss's Lemma<br>
+<span class="statement-title">Lemma 45.25</span> Gauss's Lemma<br>
 
 <div class="statement" markdown="1">
 

@@ -119,7 +119,7 @@ $\blacksquare$
 
 If $D$ is a UFD, and $F$ is Quotient field of $D$,
 
-then a non-constant $f(x) \in D[x]$ factors into a product of two polynomails of lower degrees $r$ and $s$ in $F[x]$
+then a non-constant $f(x) \in D[x]$ factors into a product of two polynomials of lower degrees $r$ and $s$ in $F[x]$
 
 $\iff$ it has a factorization into polynomials of the same degress $r$ and $s$ in $D[x]$.
 
