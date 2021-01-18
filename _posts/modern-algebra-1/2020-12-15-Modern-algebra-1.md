@@ -264,7 +264,7 @@ Prime ideals generalize the concept of primality to more general commutative rin
 - [Guass's Lemma]({{"2020/12/30/Guass-Lemma.html" | relative_url}})
   - (primitive) $\times$ (primitive) = (primitive)
 - [Polynomial over UFD]({{"2021/01/18/polynomial-over-UFD.html" | relative_url}})
-- Euclidean Domain
+- [Euclidean Domain]({{"2021/01/18/Euclidean-domains.html" | relative_url}})
   - Euclidean norm
   - Euclidean Algorithm
 - Gaussian Integers 🔥
