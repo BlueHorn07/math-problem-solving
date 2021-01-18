@@ -267,9 +267,9 @@ Prime ideals generalize the concept of primality to more general commutative rin
 - [Euclidean Domain]({{"2021/01/18/Euclidean-domains.html" | relative_url}})
   - Euclidean norm
   - Euclidean Algorithm
-- Gaussian Integers 🔥
+- [Gaussian Integers]({{"2021/01/18/Gaussian-Integer.html" | relative_url}}) 🔥
   - Multiplicative norm
-- Fermat's Theorem on Sums of Two Squares; 페르마의 두 제곱수 정리
+- [Fermat's Theorem on Sums of Two Squares]({{"2021/01/18/Fermat-thm-on-sums-of-two-squares.html" | relative_url}}); 페르마의 두 제곱수 정리
 
 <hr>
 
