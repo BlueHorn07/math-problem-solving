@@ -54,7 +54,7 @@ Let $f(x) \in D[x]$, where $\deg f(x) > 0$.
 
 </div>
 
-<br><span class="statement-title">proof</span><br>
+<br><span class="statement-title">proof.</span><br>
 <details>
 <div class="math-statement" markdown="1">
 
@@ -125,7 +125,7 @@ $\iff$ it has a factorization into polynomials of the same degress $r$ and $s$ i
 
 </div>
 
-<br><span class="statement-title">proof</span><br>
+<br><span class="statement-title">proof.</span><br>
 <details>
 <div class="math-statement" markdown="1">
 
@@ -153,7 +153,7 @@ $D[x] \subseteq F[x]$이므로 명제의 역도 자연스럽게 성립한다.
 
 </div>
 
-<br><span class="statement-title">proof</span><br>
+<br><span class="statement-title">proof.</span><br>
 
 <div class="math-statement" markdown="1">
 
@@ -198,7 +198,7 @@ If $F$ is a field and $x_1, \cdots, x_n$ are indeterminatnes, then $F[x_1, \cdot
 
 </div>
 
-<br><span class="statement-title">proof</span><br>
+<br><span class="statement-title">proof.</span><br>
 
 <div class="math-statement" markdown="1">
 

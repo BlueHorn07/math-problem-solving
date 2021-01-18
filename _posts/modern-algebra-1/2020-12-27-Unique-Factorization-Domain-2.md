@@ -106,7 +106,7 @@ This factorization is unique up to orerding and associates.
 
 </div>
 
-<span class="statement-title">proof</span><br>
+<span class="statement-title">proof.</span><br>
 <details>
 <div class="math-statement" markdown="1">
 
@@ -296,7 +296,7 @@ Every non-zero & non-unit elt in $D$ is a product of irreducibles.
 
 </div>
 
-<span class="statement-title">proof</span><br>
+<span class="statement-title">proof.</span><br>
 
 <details>
 <div class="math-statement" markdown="1">
@@ -404,7 +404,7 @@ $\iff$ $p$ is an **<u>irreducible</u>**.
 
 </div>
 
-<span class="statement-title">proof</span><br>
+<span class="statement-title">proof.</span><br>
 
 <details>
 <summary>($\implies$)</summary>
@@ -504,7 +504,7 @@ then either $p \mid a$ or $p \mid b$.
 
 </div>
 
-<span class="statement-title">proof</span><br>
+<span class="statement-title">proof.</span><br>
 
 <details>
 <div class="math-statement" markdown="1">

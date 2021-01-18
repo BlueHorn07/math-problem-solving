@@ -83,7 +83,7 @@ Every Euclidean Domain is a PID.
 
 </div>
 
-<br><span class="statement-title">proof</span><br>
+<br><span class="statement-title">proof.</span><br>
 <details>
 <div class="math-statement" markdown="1">
 
@@ -150,7 +150,7 @@ For a E.D. with Euclidean norm $\nu$,
 
 </div>
 
-<br><span class="statement-title">proof</span><br>
+<br><span class="statement-title">proof.</span><br>
 <details>
 <div class="math-statement" markdown="1">
 

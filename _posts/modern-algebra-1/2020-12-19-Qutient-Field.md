@@ -76,7 +76,7 @@ $$
 
 이제 위에서 정의한 두 연산이 Well-defined되어 있음을 보여야 한다.
 
-<span class="statement-title">proof</span>.<br>
+<span class="statement-title">proof.</span>.<br>
 <div class="math-statement" markdown="1">
   Supp. $[(a, b)] = [(a', b')]$, and $[(c, d)] = [(c', d')]$
 
@@ -136,7 +136,7 @@ $$
 
 </div>
 
-<span class="statement-title">proof</span>.<br>
+<span class="statement-title">proof.</span>.<br>
 <div class="math-statement" markdown="1">
   Check 
 
@@ -185,7 +185,7 @@ Domain $D$를 포함하는 어떤 Field가 있다고 하자. 그러면 이 Field
 
 <br>
 
-<span class="statement-title">proof</span>.<br>
+<span class="statement-title">proof.</span>.<br>
 
 <div class="math-statement" markdown="1">
 
