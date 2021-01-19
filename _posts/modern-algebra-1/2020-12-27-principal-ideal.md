@@ -184,11 +184,11 @@ This means $p(x) = g(x) \cdot h(x)$ for some $h(x) \in F[x]$.
 
 Sine $p(x)$ is irreducible, $g(x)$ or $h(x)$ is an unit.
 
-**(Case 1)** If $h(x)$ is an unit, then $p(x) = g(x)$.
+**(Case 1)** If $h(x)$ is an unit, then $\left< p(x) \right> = \left< g(x) \right>$.
 
 This contradicts to $\left< p(x) \right> < \left< g(x) \right>$.
 
-**(Case 2)** Therefore $g(x) = 1$, then this means $\left< g(x) \right> = \left< 1 \right> = F[x]$.
+**(Case 2)** Therefore $g(x)$ is a unit, then this means $1 \in \left< g(x) \right>$ and  $\left< g(x) \right> = \left< 1 \right> = F[x]$.
 
 This means $\left< p(x) \right>$ is a Maximal Ideal. $\blacksquare$
 
