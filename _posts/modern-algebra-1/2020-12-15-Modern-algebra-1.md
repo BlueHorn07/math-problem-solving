@@ -280,6 +280,12 @@ Prime ideals generalize the concept of primality to more general commutative rin
 <br>
 <hr>
 
+### Problem Solving Series
+- [PS1]({{"2021/01/18/modern-algebra-1-ps1.html" | relative_url}})
+
+<br>
+<hr>
+
 ### Appendix
 
 <div class="statement" markdown="1">
