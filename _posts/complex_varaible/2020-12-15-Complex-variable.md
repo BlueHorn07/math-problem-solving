@@ -6,7 +6,18 @@ tags: ["Complex Variable"]
 hidden: true
 ---
 
+<div class="img-wrapper">
+<img src="{{ "/assets/img/complex-variable-meme.jpg" | relative_url}}" height="500px">
+</div>
+
 <br>
+
+- [Complex Variable - Basic]({{"2021/01/24/complex-variable-basic.html" | relative_url}})
+  - Triangle inequality
+  - Euler’s formula
+  - de Moivre’s formula
+  - $n$-th root of $z$
+  - Interior / Exteriror / Boundary
 
 #### Complex functions
 
@@ -42,8 +53,6 @@ $$
 
 </div>
 
-- Triangle inequality
-- $n$-th root of $z$
 - Complex Limit & Continuity & Derivative
 - Analytic Functions
 - Cauchy-Riemann Equation
