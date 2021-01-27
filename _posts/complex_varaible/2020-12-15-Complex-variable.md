@@ -19,7 +19,13 @@ hidden: true
   - $n$-th root of $z$
   - Interior / Exteriror / Boundary
 
-#### Complex functions
+#### Complex Functions
+
+- [Complex Analysis - Basic]({{"2021/01/26/complex-analysis-basic.html" | relative_url}})
+  - Complex Functions
+  - Complex Limit
+  - Complex Continuity
+  - Complex Derivative
 
 <div class="statement" markdown="1">
 
@@ -39,8 +45,6 @@ $$
 
 <div class="statement" markdown="1">
 
-
-
 IF $f(z) = u(x, y) + i u(x, y)$ is **<u>analytic</u>** in a domain $D$, THEN both $u$ and $v$ are **<u>harmonic functions</u>**.
 
 <span class="statement-title">Laplace's Equations and Harmonic functions</span>
@@ -53,7 +57,6 @@ $$
 
 </div>
 
-- Complex Limit & Continuity & Derivative
 - Analytic Functions
 - Cauchy-Riemann Equation
   - Laplace's Equation & Harmonic functions
