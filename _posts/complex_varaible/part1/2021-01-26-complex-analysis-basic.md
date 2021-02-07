@@ -13,6 +13,8 @@ tags: ["Complex Variable"]
 - Complex Functions
 - Complex Limit
 - Complex Continuity
+- Complex Derivatives
+- Analytic Functions
 
 <hr>
 
@@ -214,9 +216,63 @@ Supp. that $f$ is "continuous" on $R$.
 Then there exist $M$ such that
 
 $$
-\left| f(z) \right| < M \quad \textrm{for all} \;\; z \in R
+\left| f(z) \right| \le M \quad \textrm{for all} \;\; z \in R
 $$
 
 "Theorem 3"은 복소 평면에서의 "최대-최소 정리"라고 볼 수 있다!
 
 </div>
+
+<br/>
+<hr/>
+
+### Complex Derivatives
+
+<div class="statement" markdown="1">
+
+The derivative of $f$ at $z_0$ is the limit
+
+$$
+f'(z_0) = \lim_{z \rightarrow z_0} {\frac{f(z) = f(z_0)}{z-z_0}}
+$$
+
+The function $f$ is said to be "**differentiable**" when $f'(z_0)$ exists.
+
+</div>
+
+**NOTE**: differentiable $\ne$ analytic
+
+### Analytic Functions
+
+<div class="statement" markdown="1">
+
+- $f(z)$ is **<u>analytic</u>** in an open set $S$, if $f(z)$ is differentiable everywhere in $S$.
+
+- $f(z)$ is **<u>analytic</u>** at $z_0$, if $f(z)$ is analytic in some neightborhood of $z_0$.
+
+- An **<u>entire function</u>** is a function that is analytic at each point in the entire complex plane.
+
+</div>
+
+<br/>
+
+<div class="statement" markdown="1">
+
+* Polynomials are entire functions.
+
+$$
+P(z) = a_0 + a_1 z + \cdots + a_n z^n
+$$
+
+<hr/>
+
+* Rational function
+
+$$
+f(z) = \frac{P(z)}{Q(z)} \quad (P, Q: \quad \textrm{polynomials})
+$$
+
+Rational functions are analytic except at the points where $Q(z) \ne 0$.
+
+</div>
+
