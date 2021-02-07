@@ -9,8 +9,8 @@ hidden: true
 <br>
 
 <div class="img-wrapper">
-  <img src="{{ "/assets/img/group_meme.jpg" | relative_url }}"><br><br>
-  <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="bluehorn07" data-color="#FFDD00" data-emoji="🍦"  data-font="Cookie" data-text="Buy me a ice cream" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff"></script>
+  <img src="{{ "/assets/img/group_meme.jpg" | relative_url }}">
+  <br/>
 </div>
 
 <div class="math-statement" markdown="1">
