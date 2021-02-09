@@ -26,6 +26,7 @@ hidden: true
   - Complex Limit
   - Complex Continuity
   - Complex Derivative
+  - Analytic Functions
 
 <div class="statement" markdown="1">
 
@@ -57,15 +58,15 @@ $$
 
 </div>
 
-- Analytic Functions
-- Cauchy-Riemann Equation
+- [Cauchy-Riemann Equation]({{"2021/02/07/Cauchy-Riemann-Equation.html" | relative_url}})
   - Laplace's Equation & Harmonic functions
-- Elementary complex functions
-  - Exponential functions; $\exp z$
-  - Trigonometric functions; $\cos z$, $\sin z$, $\tan z$
-  - Hyperbolic functions; $\cosh z$, $\sinh z$
+  - harmonic conjugate
+- [Elementary Complex Functions]({{"2021/02/09/Elementary-Complex-Functions.html" | relative_url}})
+  - Exponential Functions; $\exp z$
+  - Trigonometric Functions; $\cos z$, $\sin z$, $\tan z$
+  - Hyperbolic Functions; $\cosh z$, $\sinh z$
   - Logarithm; $\log z$
-  - Power functions; $z^c$
+  - Power Functions; $z^c$
 
 #### Contour Integrals
 
