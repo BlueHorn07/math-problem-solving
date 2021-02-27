@@ -13,7 +13,6 @@ use_math: true
 
 🔥가 표시된 부분은 다른 주제에 비해 더 큰 중요성을 갖습니다. 해당 주제들을 통해 더 자유롭고 창조적인 생각들을 가질 수 있습니다. 😇
 
-#### [MATH203] Applied Linear Algebra
 
 #### [MATH200] Differential Equations
 
@@ -36,6 +35,12 @@ use_math: true
     - filter
   - Banach-Tarski Paradox 🔥
     - Hausdorff paradox
+
+#### [MATH203] Applied Linear Algebra
+
+#### [[MATH230] Probability and Statistics]({{"2021/02/26/Probability-and-Statistics.html" | relative_url}})
+
+
 
 <hr>
 
