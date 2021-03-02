@@ -10,6 +10,11 @@ tags: ["Probability"]
 
 <br><span class="statement-title">TOC.</span><br>
 
+- Probability
+- Additive Rule
+- Conditional Probability
+  - Independent Events
+- Product Rule
 
 <hr/>
 
@@ -121,3 +126,72 @@ $$
 A \perp B
 $$
 
+<hr/>
+
+<br><span class="statement-title">Statements.</span><br>
+
+1\. If $A \perp B$, then can $A \perp B'$?
+
+2\. If $A \perp B$, $B \perp C$, and $C \perp A$, then $A \perp (B \cap C)$?
+
+3\. If $A \perp B$ and $B \perp C$, then can $A \perp C$?
+
+4\. If $A \cap B = \emptyset$, then $A \perp B$?
+
+5\. If $A$ is independent of all, and also independent to $A$ itself.  What can be $P(A)$?
+
+<details>
+<summary>정답 보기</summary>
+<div class="math-statement" markdown="1">
+1\. Yes. We know $P(A \cap B) + P(A \cap B') = P(A)$, and $P(A \cap B) = P(A)P(B)$. 이 두 식을 잘 정리하면, $P(A \cap B') = P(A)P(B')$를 얻을 수 있다!
+
+<hr/>
+
+2\. No. 반례를 찾을 수 있다. 예를 들어 동전 두개를 던져 H/T를 기록하는 Sample Space를 생각해보자. 그리고 Event $A$, $B$, $C$를 아래와 같이 정의하자.
+
+$$
+A = \{HT, TH\} \quad B =\{HT, HH\}, \quad C = \{HT, TT\}
+$$
+
+확인을 해보면, $A$, $B$, $C$는 **pairwise independent** 하다는 걸 확인할 수 있다.
+
+하지만, $A$와 $B \cap C$가 independent한지 확인해보자.
+
+$$
+P(A \cap (B \cap C)) = \frac{1}{4} \ne P(A)P(B \cap C)
+$$
+
+즉, $A$와 $B \cap C$는 **dependent**하다! [source](https://math.stackexchange.com/a/1819542)
+
+<hr/>
+
+3\. No. 위의 예시에서 약간만 변형하면 쉽게 반례를 찾을 수 있다!!
+
+$$
+A = \{HT, TH\} \quad B =\{HT, TT\}, \quad C = \{HH, TT\}
+$$
+
+확인을 해보면, $A \perp B$, $B \perp C$인 것을 확인할 수 있다.
+
+하지만, $A \cap C = \emptyset$이기 때문에 $P(A \cap C) \ne P(A)P(C)$이다!
+
+<hr/>
+
+4\. No. 반례는 너무 간단해서 생략
+
+<hr/>
+
+5\. $P(A) = 1$ or $P(A) = 0$. 간단한 대수식을 풀면 된다. "independent to $A$ itself"가 힌트인데, $P(A \cap A) = P(A)P(A)$이므로
+
+$$
+P(A \cap A) = P(A) = P(A)P(A)
+$$
+
+를 풀면 된다. 확률의 정의에 따라 $0 \le P(A) \le 1$이므로 解는 $P(A) = 1$ or $P(A) = 0$이 된다.
+
+</div>
+</details>
+
+<hr/>
+
+이어지는 내용은 정말정말 중요하고, 유용한 \<베이즈 규칙 Bayes' Rule\>이다!!
