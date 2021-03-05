@@ -36,8 +36,7 @@ P(A) = \sum^{n}_{i=1} P(A \cap B_i)
 $$
 
 <div class="img-wrapper">
-<img src= "https://i.stack.imgur.com/Cx0CA.png
-" style="width:200px;">
+<img src= "https://i.stack.imgur.com/Cx0CA.png" style="width:200px;">
 </div>
 
 \<전체 확률의 법칙 Law of Total Probability\>는 \<Rule of Elimination\>라고도 한다.
@@ -91,4 +90,3 @@ $$
 건강한 사람과 특정 질병이 있는 사람을 구별하기 위해 시행하는 검사를 \<선별 검사\>라고 한다. 선별 검사에서 이상이 나타나면, 정밀 검사를 통해 질병의 유무를 판단한다.
 
 [이곳](https://ratsgo.github.io/statistics/2017/07/01/bayes/)의 포스트에서 다양한 실제 예제를 다루고 있어, 이곳에서 예제들을 풀어 보길 바란다.
-
