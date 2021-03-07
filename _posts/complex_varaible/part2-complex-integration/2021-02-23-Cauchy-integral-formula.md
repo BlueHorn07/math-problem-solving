@@ -18,7 +18,7 @@ tags: ["Complex Variable"]
 <br/>
 <hr/>
 
-<span class="statement-title">[Review] Theorem.</span> Goursat Theorem<br/>
+<span class="statement-title">Theorem.</span> [Review] Goursat Theorem<br/>
 
 <div class="statement" markdown="1">
 
