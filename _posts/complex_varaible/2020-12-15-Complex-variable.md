@@ -7,10 +7,12 @@ hidden: true
 ---
 
 <div class="img-wrapper">
-<img src="{{ "/assets/img/complex-variable-meme.jpg" | relative_url}}" height="500px">
+<img src="{{ "/assets/img/complex-variable-meme.jpg" | relative_url}}" height="450px">
 </div>
 
-<br>
+<hr/>
+
+### Part I - Complex Functions
 
 - [Complex Variable - Basic]({{"2021/01/24/complex-variable-basic.html" | relative_url}})
   - Triangle inequality
@@ -18,8 +20,6 @@ hidden: true
   - de Moivre’s formula
   - $n$-th root of $z$
   - Interior / Exteriror / Boundary
-
-#### Complex Functions
 
 - [Complex Analysis - Basic]({{"2021/01/26/complex-analysis-basic.html" | relative_url}})
   - Complex Functions
@@ -68,7 +68,9 @@ $$
   - Logarithm; $\log z$
   - Power Functions; $z^c$
 
-#### Contour Integrals
+<hr/>
+
+### Part II - Contour Integrals
 
 <div class="statement" markdown="1">
 
@@ -96,17 +98,26 @@ $$
 
 </div>
 
-- Length of Curve; $\lvert C \rvert$
-- primitive function
-- Bounds for integrals: ML-inequality
-- Cauchy-Goursat Theorem
+- [Contour Integrals]({{"2021/02/14/Cotour-integrals.html" | relative_url}})
+  - parametric curves
+  - Length of Curve; $\lvert C \rvert$
+- [Complex Integrations]({{"2021/02/18/Complex-Integrations.html" | relative_url}})
+  - Primitive Function
+  - Bounds for integrals: ML-inequality
+- [Cauchy-Goursat Theorem]({{"2021/02/21/Cauchy-Goursat-theorem.html" | relative_url}})
   - Cauchy's proof (feat. Green's theorem)
   - Goursat's proof
-- Cauchy’s Integral Formula
-- Applications
+- [Cauchy’s Integral Formula]({{"2021/02/23/Cauchy-integral-formula.html" | relative_url}})
+- [Extended Cauchy's Integral Formula]({{"2021/03/07/extension-of-Cauchy-integral-formula.html#extension-of-cauchys-integral-formula" | relative_url}})
+- [Applications of Cauchy Integral]({{"2021/03/07/extension-of-Cauchy-integral-formula.html#application-of-cauchy-integral" | relative_url}})
+  - Cauchy's Inequality
   - Liouville’s Theroem
+  - Fundamental Theorem of Algebra
+  - Morera's Theorem
 
-#### Power Series
+<hr/>
+
+### Part III - Power Series
 
 <div class="statement" markdown="1">
 
@@ -160,7 +171,9 @@ $$
 - Talyor Series
 - Laurent Series
 
-#### Residue
+<hr/>
+
+### Part IV - Residue
 
 <div class="img-wrapper">
   <img src="https://mathworld.wolfram.com/images/eps-gif/Contour_750.gif">
@@ -171,9 +184,18 @@ $$
 - [Formulas for residue]({{"2020/12/01/formulas-for-residue.html" | relative_url}})
 - [Applications to real integrals]({{"2020/12/02/Applications-to-real-integrals.html" | relative_url}}); integral with $\cos$, $\sin$ / improper integral
 
-#### Complex Transformation
+<hr/>
+
+### Part V - Complex Transformation
+
 - [Linear Transformation]({{"2020/12/14/Linear-Transformation.html" | relative_url}})
 - [Linear Fractional Trnasformation]({{"2020/12/15/Linear-Fractional-Trenasformation.html" | relative_url}})
 - Conformal mapping
   - $w = \sin z$
 - Laplace's Equation
+
+<hr/>
+
+### Review Problems
+
+- [Part I - Complex Functions](https://github.com/BlueHorn07/mathematics/blob/master/_posts/complex_varaible/part1-basic-complex-theory/Review-Problems-Part-I.pdf)
