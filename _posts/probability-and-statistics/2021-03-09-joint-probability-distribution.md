@@ -135,4 +135,23 @@ Q. We know the marginal pmfs $f_X (x)$ and $f_Y (y)$, can you find the joint pmf
 
 <hr/>
 
+<br><span class="statement-title">Example.</span><br>
+
+Let $(X, Y)$ have joint pdf
+
+$$
+f(x, y) = \begin{cases}
+    1 && (x, y) \in [0,1] \times [0, 1] \\
+    0 && \text{otherwise}
+\end{cases}
+$$
+
+(a) Are $X$ and $Y$ independent?
+
+(b) Let $z := \max (X, Y)$. Find the distribution of $Z$. (Hint: Find cdf of $Z$)
+
+(c) Let $w := \min (X, Y)$. Find the distribution of $W$. (Hint: Find cdf of $W$)
+
+<hr/>
+
 이번 파트에선 \<Joint Probability\>를 구하기 위해 적분을 조금 해야 했다. 하지만, 그렇게 어려운 적분은 아니기 때문에 몇번만 연습하면 금방 익숙해진다!! 😊
