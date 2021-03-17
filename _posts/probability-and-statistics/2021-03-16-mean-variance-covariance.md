@@ -11,6 +11,9 @@ tags: ["Probability"]
 <br><span class="statement-title">TOC.</span><br>
 
 - Mean; Expectation
+- Variance
+- Covariance
+  - Correlation
 
 <hr/>
 
@@ -176,7 +179,23 @@ $$
 
 앞에서 살펴봤을 때, 두 RV $X$, $Y$가 **독립**이라면, $E(XY) = E(X)E(Y)$가 되었다. 따라서 두 RV가 독립일 때는 $\text{Cov}(X, Y) = 0$이 된다! 그러나 주의할 점은 명제의 역(易)인 $\text{Cov}(X, Y) = 0$일 때, 두 RV가 항상 독립임을 보장하지는 못한다!
 
-### Correlation
+\<Covariance\>은 두 RV의 Linear Combination에 대한 분산을 구할 때도 사용한다.
+
+Let $a, b, c \in \mathbb{R}$, then
+
+$$
+\text{Var}(aX + bY + c) = a^2 \text{Var}(X) + b^2 \text{Var}(Y) + 2 \text{Cov}(X, Y)
+$$
+
+증명은 $\text{Var}(aX + bY + c)$의 의미를 그대로 전개하면 쉽게 유도할 수 있다.
+
+$$
+\text{Var}(aX + bY + c) = E\left[ \left( (X+Y) - (\mu_X + \mu_Y) \right)^2 \right]
+$$
+
+<hr/>
+
+## Correlation
 
 \<공분산\>을 좀더 보기 쉽게 Normalize 한 것이 \<**Correlation**\>이다.
 
@@ -199,8 +218,64 @@ $$
 
 위의 명제는 그 역도 성립한다. 증명은 아래의 Exercise에서 진행하겠다.
 
-<hr/>
+\<Correlation\>은 $[-1, 1]$의 값을 갖는다. 이는 \<코시-슈바르트 부등식\>을 통해 유도할 수 있다!
 
+<div class="math-statement" markdown="1">
+
+**Cauchy-Schwarrtz inequality** : 
+
+$$
+\left( \sum a_i b_i \right)^2 \le \sum a_i^2 \sum b_i^2
+$$
+
+Correlation 식을 의미에 맡게 풀어쓰면 아래와 같다.
+
+$$
+\begin{aligned}
+\text{Corr}(X, Y) &= \frac{\text{Cov}(X, Y)}{\sqrt{\text{Var}(X)} \sqrt{\text{Var}(Y)}} = \frac{E[(X-\mu_X)(Y - \mu_Y)]}{\sqrt{E[(X-\mu_X)^2]} \sqrt{E[(Y-\mu_Y)^2]}} \\
+&= \frac{\sum (X-\mu_X)(Y - \mu_Y)}{\sqrt{\sum (X-\mu_X)^2} \sqrt{\sum (Y-\mu_Y)^2}}
+\end{aligned}
+$$
+
+이제 위의 식을 제곱해서 살펴보면
+
+$$
+(\rho_{XY})^2 = \left( \frac{\sum (X-\mu_X)(Y - \mu_Y)}{\sqrt{\sum (X-\mu_X)^2} \sqrt{\sum (Y-\mu_Y)^2}} \right)^2 = \frac{\left( \sum (X-\mu_X)(Y - \mu_Y) \right)^2 }{\sum (X-\mu_X)^2 \sum (Y-\mu_Y)^2}
+$$
+
+\<코시-슈바르츠 부등식\>에서 우변을 좌변으로 이동하면, 아래와 같은 부등식이 성립한다.
+
+$$
+\frac{\left( \sum a_i b_i \right)^2}{\sum a_i^2 \sum b_i^2} \le 1
+$$
+
+이를 \<Correlation\>의 제곱식에 적용하면 아래와 같다.
+
+$$
+(\rho_{XY})^2 = \frac{\left( \sum (X-\mu_X)(Y - \mu_Y) \right)^2 }{\sum (X-\mu_X)^2 \sum (Y-\mu_Y)^2} \le 1
+$$
+
+따라서 $(\rho_{XY})^2 \le 1$이므로
+
+$$
+-1 \le \rho_{XY} \le 1
+$$
+
+$\blacksquare$
+
+</div>
+
+추가로 \<Correlation\>은 "표준화"한 RV의 공분산으로도 해석할 수 있다.
+
+$Z = \dfrac{X-\mu_X}{\sigma_X}$, $W = \dfrac{Y-\mu_Y}{\sigma_Y}$라고 표준화한다면, 이 둘의 공분산은 $X$, $Y$에 대한 Correlation과 같다.
+
+$$
+\text{Var}(Z, Y) = \text{Corr}(X, Y)
+$$
+
+딱 보면 증명 할 수 있을 것 같아서 따로 유도는 하지 않겠다.
+
+<hr/>
 
 Q1. $\text{Var}(X) = 0$는 무엇을 의미하는가?
 
@@ -218,7 +293,7 @@ Q3. Prove that if $\text{Corr}(X, Y) = 1$, then there exist $a>0$ and $b\in\math
 
 이어지는 내용에서는 \<평균\>과 \<분산\>에 대한 약간의 추가적인 내용을 살펴본다. 
 
-- Chebyshev's Inequality
+- [Chebyshev's Inequality]({{"/2021/03/17/chebyshev's-inequality.html" | relative_url}})
 
 그리고 Discrete RV에서의 기본적인 Probability Distribution을 살펴본다.
 
