@@ -293,7 +293,7 @@ Q3. Prove that if $\text{Corr}(X, Y) = 1$, then there exist $a>0$ and $b\in\math
 
 이어지는 내용에서는 \<평균\>과 \<분산\>에 대한 약간의 추가적인 내용을 살펴본다. 
 
-- [Chebyshev's Inequality]({{"/2021/03/17/chebyshev's-inequality.html" | relative_url}})
+👉 [Chebyshev's Inequality]({{"/2021/03/17/chebyshev's-inequality.html" | relative_url}})
 
 그리고 Discrete RV에서의 기본적인 Probability Distribution을 살펴본다.
 
@@ -302,3 +302,5 @@ Q3. Prove that if $\text{Corr}(X, Y) = 1$, then there exist $a>0$ and $b\in\math
 - Multinomial Distribution
 - Hypergeometric Distriubtion
 - etc...
+
+👉 [Discrete Probability Distributions]({{"/2021/03/17/discrete-probability-distributions.html" | relative_url}})
