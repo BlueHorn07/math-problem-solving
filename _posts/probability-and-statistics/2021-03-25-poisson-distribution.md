@@ -1,0 +1,170 @@
+---
+title: "Poisson Distribution"
+layout: post
+use_math: true
+tags: ["Probability"]
+---
+
+### 서론
+2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
+
+<br><span class="statement-title">TOC.</span><br>
+
+- Poisson Distribution
+  - Bernoulli Process & Poisson Process
+
+<hr/>
+
+## Poisson Distribution
+
+\<푸아송 분포 Poisson Distribution\>는 앞에서 살펴본 이항 분포의 특수한 경우이다. $\text{BIN}(n, p)$에서 $n$이 무한대로 커지고, $p$가 아주아주 작아질 때, 분포는 푸아송 분포를 만족하게 된다!
+
+그렇다면 본래 BIN이던걸 왜 푸아송 분포로 해석하는 걸까? 이 질문에 대한 답은 아래의 유튜브 영상에서 정말 잘 설명하고 있다. 한번 보고 오자.
+
+👉 [Youtube - 푸아송분포 소개](https://youtu.be/JOWYEDwqAtY?t=79)
+
+즉, $n$과 $p$의 값을 다룰 수도 없고, 정의할 수도 없을 때, 푸아송은 $np$를 $\lambda$로 두고 새로운 형태의 분포를 유도한 것이다.
+
+<span class="statement-title">Definition.</span> Poisson Distribution<br>
+
+A Poisson random variable $X$ with parameter $\lambda > 0$, denoted as  $X \sim \text{POI}(\lambda)$, and it has a pmf $f(x)$ as 
+
+$$
+f(x) = e^{-\lambda} \frac{\lambda^x}{x!} \quad \text{for} \quad x=0, 1, \dots
+$$
+
+이 푸아송 분포가 정말 pmf인지 검증해보자. 확률의 合이 1이 됨을 보이면 된다.
+
+$$
+\begin{aligned}
+\sum f(x) &= e^{-\lambda} \sum_{x=0} \frac{\lambda^x}{x!} \\
+&= e^{-\lambda} e^\lambda = 1
+\end{aligned}
+$$
+
+앞에서 푸아송 분포는 이항분포의 특수한 경우라고 소개했다. 이것을 확인해보자. 
+
+<span class="statement-title">Derivation.</span><br>
+
+Let $X \sim \text{BIN}(n, p) = \text{BIN}(n, \frac{\lambda}{n})$, then pmf $f_n (x)$ is
+
+$$
+f_n (x) = \binom{n}{x} p^x (1-p)^{n-x} = \binom{n}{x} \left( \frac{\lambda}{n}\right)^x \left( 1 - \frac{\lambda}{n}\right)^{n-x}
+$$
+
+위의 식에서 $\binom{n}{x}$를 풀어서 써보면 아래와 같고, 이것을 잘 정리해보자.
+
+$$
+\begin{aligned}
+f_n (x) &= \binom{n}{x} \left( \frac{\lambda}{n}\right)^x \left( 1 - \frac{\lambda}{n}\right)^{n-x} \\
+&= \frac{n!}{x!(n-x)!} \frac{\lambda^x}{n^x} \left( 1 - \frac{\lambda}{n}\right)^n \left( 1 - \frac{\lambda}{n}\right)^{-x} \\
+&= \frac{\lambda^x}{x!} \cdot \left( 1 - \frac{\lambda}{n}\right)^n \cdot \frac{n!}{(n-x)!} \left(\frac{1}{n}\right)^x \left( 1 - \frac{\lambda}{n}\right)^{-x} 
+\end{aligned}
+$$
+
+이제 위의 식에서 $n \rightarrow \infty$를 취하자!
+
+$$
+\begin{aligned}
+\lim_{n \rightarrow \infty} f_n (x) &= \lim_{n \rightarrow \infty} \frac{\lambda^x}{x!} \cdot \left( 1 - \frac{\lambda}{n}\right)^n \cdot \frac{n!}{(n-x)!} \left(\frac{1}{n}\right)^x \left( 1 - \frac{\lambda}{n}\right)^{-x} \\
+&= \lim_{n \rightarrow \infty} \frac{\lambda^x}{x!} \cdot e^{-\lambda} \cdot \frac{n(n-1)\cdots(n-x+1)}{n^x} \cdot \frac{(n-\lambda)^{-x}}{n^{-x}} \\
+&= \frac{\lambda^x}{x!} \cdot e^{-\lambda} \cdot 1 \cdot 1 \\
+&= \frac{\lambda^x}{x!} e^{-\lambda}
+\end{aligned}
+$$
+
+$\blacksquare$
+
+위의 유도 과정에서는 이항 분포를 사용했지만, 미분방정식으로도 푸아송 분포를 유도할 수 있다고 한다. 유도 과정에 대한 영상을 링크로 걸어둔다. 👉 [YouTube - 푸아송 분포, 미분방정식으로 유도](https://youtu.be/vGExuMJRSyU)
+
+<span class="statement-title">Theorem.</span> Law of rare events<br>
+
+$n$이 무한히 커지게 되면, 자연스럽게 확률 $p=\dfrac{\lambda}{n}$는 작아지게 된다. 하지만, 이항 분포의 성질에 따라 여전히 평균과 분산은 아래와 같을 것이다.
+
+- $\displaystyle E[X] = \lim_{n\rightarrow\infty} np = \lambda$
+- $\displaystyle \text{Var}(X) = \lim_{n\rightarrow\infty} n \frac{\lambda}{n} \left( 1 - \frac{\lambda}{n}\right) = \lambda$
+
+이런 상황에 대해 기술한 정리가 바로 \<**Law of rare event**\>이다 😎
+
+이것에 대한 증명은 평균과 분산의 정의에 입각해 식을 전개하면 된다. 증명은 추후에 기술하겠다.
+
+### Bernoulli Process & Poisson Process
+
+\<Poission Process\>를 다루기 위해선 먼저 \<Bernoulli Process\>에 대해 알아야 한다.
+
+<span class="statement-title">Definition.</span> Bernoulli Process<br>
+
+The \<**Bernoulli process**\> is a **<u>sequence</u>** of independent Bernoulli trials.
+
+At each trial $X_i$, 
+
+- $P(H) = P(X_i = 1) = p$
+- $P(T) = P(X_i = 0) = 1-p$
+
+즉, 베르누이 시행은 Binary RV Sequence $\\{ X_n : n=1, 2, \dots \\}$라고 볼 수 있다.
+
+$$
+X \sim \text{BP}(p)
+$$
+
+이런 베르누이 프로세스의 예로는 
+
+- 매일 코스피 지수의 상승/하락에 대한 binary sequence
+- 주어진 time interval에 신호가 수신되는지 아닌지에 대한 binary seq.
+
+<br/>
+
+이번에는 BP에서 극한을 취해 time intervel의 간격을 아주아주 줄인, 그래서 결국 continous한 시간축 위에서 시행되는 \<Poisson Process\>에 대해 살펴보자. 아래에 기술되는 내용은 아래의 유튜브 영상을 기준으로 작성하였다.
+
+👉 [YouTube - Definition of the Possion Process](https://youtu.be/D_EGYzqmapc)
+
+BP에서의 성질을 떠올려보자.
+
+1\. 각 time slot은 서로 독립(iid)이다.
+
+Poisson Process에서도 이 성질을 가지므로, 아래의 명제가 성립한다.
+
+"# of arrivals in disjoint time inteverals are **independent**."
+
+이것을 수식으로 표현하면 아래와 같다.
+
+$\left( N(t_2) - N(t_1) \right) \perp \left( N(t_4) - N(t_3) \right)$
+
+2\. (Time omogeneity) 각 time slot에서 arrival이 발생할 확률이 동일하다.
+
+마찬가지로 BP에서 각 time slot마다 모두 확률 $p$를 가졌기 때문에 Poission Process도 이 성질을 가진다. 이것을 기술하면,
+
+$P(k, \tau)$, the prob. of $k$ arrivals in interval of duration $\tau$ is **<u>constant</u>**.
+
+그리고 $P(k, \tau)$에 대해 이것을 $k$에 대해 모두 더하면, 그 확률의 合은 1이 된다.
+
+$$
+\sum^{\infty}_{k=0} P(k, \tau) = 1
+$$
+
+3\. small interval probability
+
+"두 arrival이 동일한 시간에 동시에 발생했다." 이런 경우를 생각해볼 수 있지 않을까? Poission Process는 이런 동시에 발생하는 사건을 없애기 위해 아래와 같이 아주 작은 interval $\delta$에 대해 아래와 같이 정의한다.
+
+$$
+P(k, \delta) \approx \begin{cases}
+    1 - \lambda \delta & \text{if} \quad k=0 \\
+    \lambda \delta & \text{if} \quad k=1 \\
+    0 & \text{if} \quad k > 1
+\end{cases}
+$$
+
+그래서 정리하면, 위와 같은 3가지 조건을 만족한다면, 우리는 그 과정을 \<**Poisson Process**\>라고 한다!
+
+<br/>
+
+$N(t)$를 "# of arrivals arrived by time $t$"라고 하자. 그러면 이 $N(t)$를 모은 sequence $\\{ N(t) : t \ge 0\\}$는 \<Possion Process\>가 된다. 또한, 개별 $N(t)$는 \<Poission Distribution\>을 따른다. 🤩
+
+$$
+N(t) \sim \text{POI}(\lambda t)
+$$
+
+<hr/>
+
+이번 포스트에서 다룬 \<Poisson Distribution\>을 끝으로 교재에서 다루는 모든 이산 확률 분포를 살펴보았다. 다음 포스트부터는 연속 RV가 갖는 \<연속 확률 분포 Continuous Distribution\>에 살펴보겠다.
+

@@ -13,7 +13,7 @@ tags: ["Probability"]
 - HyperGeometric Distribution
   - Multivariate HyperGeometric Distribution
 - Geometric Distribution
-- Negative Binomial Distribution
+  - Negative Binomial Distribution
 
 <hr/>
 
@@ -263,4 +263,6 @@ If $X \sim \text{Neg BIN}(k, p)$, then
 
 이어지는 포스트에서는 \<Poisson Distribution\>라는 이산 확률 분포의 보스가 등장한다!! Poisson은 상당히 중요하니 눈여겨 살펴보도록 하자!
 
-👉 [Possion Distribution]({{"/2021/03/25/possion-distribution.html" | relative_url}})
+👉 [Poisson Distribution]({{"/2021/03/25/poisson-distribution.html" | relative_url}})
+
+
