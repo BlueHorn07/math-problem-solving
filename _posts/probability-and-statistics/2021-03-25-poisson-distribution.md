@@ -88,7 +88,11 @@ $n$이 무한히 커지게 되면, 자연스럽게 확률 $p=\dfrac{\lambda}{n}$
 
 이것에 대한 증명은 평균과 분산의 정의에 입각해 식을 전개하면 된다. 증명은 추후에 기술하겠다.
 
-### Bernoulli Process & Poisson Process
+<hr/>
+
+## Bernoulli Process & Poisson Process
+
+### Bernoulli Process
 
 \<Poission Process\>를 다루기 위해선 먼저 \<Bernoulli Process\>에 대해 알아야 한다.
 
@@ -101,10 +105,10 @@ At each trial $X_i$,
 - $P(H) = P(X_i = 1) = p$
 - $P(T) = P(X_i = 0) = 1-p$
 
-즉, 베르누이 시행은 Binary RV Sequence $\\{ X_n : n=1, 2, \dots \\}$라고 볼 수 있다.
+즉, 베르누이 시행은 Bernoulli RV Sequence $X = \\{ X_n : n=1, 2, \dots \\}$라고 볼 수 있다.
 
 $$
-X \sim \text{BP}(p)
+X_i \sim \text{Ber}(p) \quad \text{and} \quad X \sim \text{BP}(p)
 $$
 
 이런 베르누이 프로세스의 예로는 
@@ -112,17 +116,22 @@ $$
 - 매일 코스피 지수의 상승/하락에 대한 binary sequence
 - 주어진 time interval에 신호가 수신되는지 아닌지에 대한 binary seq.
 
-<br/>
+
+### Poisson Process
 
 이번에는 BP에서 극한을 취해 time intervel의 간격을 아주아주 줄인, 그래서 결국 continous한 시간축 위에서 시행되는 \<Poisson Process\>에 대해 살펴보자. 아래에 기술되는 내용은 아래의 유튜브 영상을 기준으로 작성하였다.
 
 👉 [YouTube - Definition of the Possion Process](https://youtu.be/D_EGYzqmapc)
 
-BP에서의 성질을 떠올려보자.
+<br/>
+
+먼저 $N(t)$ 또는 $N_t$를 정의하자. 이것은 $t$시간까지 도착한 사건의 숫자를 의미하는 RV이다. BP에서의 성질들을 바탕으로 Poisson Process를 잘 정의해보자.
+
+<br/>
 
 1\. 각 time slot은 서로 독립(iid)이다.
 
-Poisson Process에서도 이 성질을 가지므로, 아래의 명제가 성립한다.
+Poisson Process도 이 성질을 가지므로, 아래의 명제가 성립한다.
 
 "# of arrivals in disjoint time inteverals are **independent**."
 
@@ -130,11 +139,17 @@ Poisson Process에서도 이 성질을 가지므로, 아래의 명제가 성립�
 
 $\left( N(t_2) - N(t_1) \right) \perp \left( N(t_4) - N(t_3) \right)$
 
-2\. (Time omogeneity) 각 time slot에서 arrival이 발생할 확률이 동일하다.
+<br/>
+
+2\. (Time homogeneity) 각 time slot에서 arrival이 발생할 확률이 동일하다.
 
 마찬가지로 BP에서 각 time slot마다 모두 확률 $p$를 가졌기 때문에 Poission Process도 이 성질을 가진다. 이것을 기술하면,
 
-$P(k, \tau)$, the prob. of $k$ arrivals in interval of duration $\tau$ is **<u>constant</u>**.
+<div style="text-align: center; margin: 4px;" markdown="1">
+
+"$P(k, \tau)$, the prob. of $k$ arrivals in interval of duration $\tau$ is **<u>constant</u>**"
+
+</div>
 
 그리고 $P(k, \tau)$에 대해 이것을 $k$에 대해 모두 더하면, 그 확률의 合은 1이 된다.
 
@@ -142,9 +157,15 @@ $$
 \sum^{\infty}_{k=0} P(k, \tau) = 1
 $$
 
+수업에선 이걸 조금 다르게 기술한 것 같다. "The distribution of $N(t) - N(s)$ only depends on $(t-s)$"
+
+$$
+N(t) - N(s) = N(t-s)
+$$
+
 3\. small interval probability
 
-"두 arrival이 동일한 시간에 동시에 발생했다." 이런 경우를 생각해볼 수 있지 않을까? Poission Process는 이런 동시에 발생하는 사건을 없애기 위해 아래와 같이 아주 작은 interval $\delta$에 대해 아래와 같이 정의한다.
+"두 arrival이 동일한 시간에 동시에 발생했다." 이런 경우를 생각할 수 있을까? 현실에서도 이런 "Same Time, Same place, Same Event"가 일어나는 건 불가능하다. Poission Process는 이런 동시에 발생하는 사건을 없애기 위해 아주 작은 interval $\delta$에 대해 아래와 같이 정의한다.
 
 $$
 P(k, \delta) \approx \begin{cases}
@@ -154,15 +175,76 @@ P(k, \delta) \approx \begin{cases}
 \end{cases}
 $$
 
+<br/>
+
 그래서 정리하면, 위와 같은 3가지 조건을 만족한다면, 우리는 그 과정을 \<**Poisson Process**\>라고 한다!
 
 <br/>
 
-$N(t)$를 "# of arrivals arrived by time $t$"라고 하자. 그러면 이 $N(t)$를 모은 sequence $\\{ N(t) : t \ge 0\\}$는 \<Possion Process\>가 된다. 또한, 개별 $N(t)$는 \<Poission Distribution\>을 따른다. 🤩
+잠깐 다시 \<Bernoulli Process\>의 시각으로 돌아와보자. $[0, t]$ 간격을 가지는 확률 변수 $X$가 있다고 하자. 그러면, 이것의 확률은 
+
+
+$$
+\begin{cases}
+  P(X = 1) = \lambda t + o(h) \\
+  P(X = 0) = 1 - \lambda t + o(h)
+\end{cases}
+$$
+
+이때 $X_i$를 "# of buses that arrive in $[t_i, t_{i+1}]$"라고 정의한다면, $X_i$에 대한 분포는 Bernoulli Distribution을 따른다.
+
+$$
+\begin{cases}
+  P(X = 1) = \lambda \cdot \dfrac{t}{n} + o(h) \\
+  P(X = 0) = 1 - \lambda \cdot \dfrac{t}{n} + o(h)
+\end{cases}
+$$
+
+$$
+X_i \sim \text{Bernoulli}\left( \frac{\lambda t}{n} \right)
+$$
+
+
+
+이때, $N(t) = X_1 + \cdots + X_n$로 둔다면, $N(t)$는 Binomial Distribution $\text{BIN}(n, \dfrac{\lambda t}{n})$을 따르게 된다.
+
+$$
+X_1 + \cdots + X_n = N(t) \sim \text{BIN}(n, \dfrac{\lambda t}{n})
+$$
+
+이때, 우리가 $n \rightarrow \infty$로 보내고 $[t_i, t_{i+1}] \rightarrow 0$가 된다면, 앞에서 언급한 \<Law of Rare event\>에 의해 Binomial Distribution이 Poisson Distribution이 된다.
+
+$$
+\text{BIN}(n, \frac{\lambda t}{n}) \approx \text{POI}(\lambda t)
+$$
+
+
+정리하면, $N(t)$를 모은 sequence $\\{ N(t) : t \ge 0\\}$는 \<Possion Process\>다. 그리고 개별 $N(t)$는 \<Poission Distribution\>을 따른다. 🤩
 
 $$
 N(t) \sim \text{POI}(\lambda t)
 $$
+
+<hr/>
+
+<span class="statement-title">Example.</span><br>
+
+Let $T$ be the time that the 1st bus arrives. What is the distribution of $T$?
+
+먼저 cdf $P(T \le t)$를 구해보자. $P(T \le t)$를 직접 구하지 말고, 반대 케이스인 $P(T > t)$를 이용해 유도해보자.
+
+$P(T > t)$, 즉 기다리는 시간 $T$가 $t$보다 커질 확률은 곧 $t$ 시간까지 도착한 버스의 수가 0이 될 확률과 같다. 즉, $N(t) = 0$의 확률과 같다. 따라서,
+
+$$
+P(T > t) = P(N(t) = 0) = e^{-\lambda t} \frac{(\lambda t)^0}{0!} = e^{-\lambda}
+$$
+
+따라서, $P(T \le t) = 1 - e^{-\lambda}$이다. 이것을 미분하면 pdf $f(x)$를 얻을 수 있다.
+
+$$
+\frac{d}{dt} P(T \le t) = \frac{d}{dt} (1 - e^{-\lambda t}) = \lambda \cdot e^{-\lambda t}
+$$
+
 
 <hr/>
 
