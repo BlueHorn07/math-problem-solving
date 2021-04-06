@@ -12,6 +12,7 @@ tags: ["Probability"]
 
 - Exponential Distribution
   - derived from Geometric Distribution
+  - mean & variance
 
 <hr/>
 
@@ -160,6 +161,49 @@ $$
 
 </details>
 
+<br/>
+
+<span class="statement-title">Theorem.</span><br>
+
+Let $X \sim \text{EXP}(\lambda)$, then 
+
+- $E[X] = \dfrac{1}{\lambda}$
+- $\text{Var}(X) = \dfrac{1}{\lambda^2}$
+
+<span class="statement-title">*Proof*.</span><br>
+
+<div class="math-statement" markdown="1">
+
+Let $Y \sim \text{EXP}(1)$, then what are the mean and variacen of $Y$?
+
+$$
+\begin{aligned}
+E[Y] &= \int^{\infty}_0 y \cdot e^{-y} \; dy = 1
+\end{aligned}
+$$
+
+Variance를 구해보면, 
+
+$$
+\begin{aligned}
+E[Y^2] = \int^{\infty}_0 y^2 \cdot e^{-y} \; dy = 2
+\end{aligned}
+$$
+
+따라서, $\text{Var}(Y) = E[Y^2] - E[Y]^2 = 2 - 1^2 = 1$.
+
+이제, $X \sim \text{EXP}(\lambda)$를 살펴보자. 우리는 앞의 \<Remark 2\>를 통해 $X = \dfrac{Y}{\lambda}$임을 알 수 있다. 따라서,
+
+$$
+E[X] = E\left[\frac{Y}{\lambda}\right] = \frac{1}{\lambda}
+$$
+
+$$
+\text{Var}(X) = \text{Var}\left( \frac{Y}{\lambda} \right) = \frac{1}{\lambda^2}
+$$
+
+</div>
+
 <hr/>
 
 <span class="statement-title">요약.</span><br>
@@ -170,9 +214,9 @@ $$
 
 <hr/>
 
-이어지는 포스트에서는 연속 확률 분포에서 \<정규 분포\>만큼이나 중요한 분포인 \<감마 분포; Gamma Distribution\>에 대해 살펴본다! 🤩
+이어지는 포스트에서는 연속 확률 분포에서 \<정규 분포\>만큼이나 중요한 분포인 \<**감마 분포; Gamma Distribution**\>에 대해 살펴본다! 🤩
 
-👉 []()
+👉 [Gamma Distribution]({{"/2021/04/05/gamma-distribution.html" | relative_url}})
 
 <hr/>
 
