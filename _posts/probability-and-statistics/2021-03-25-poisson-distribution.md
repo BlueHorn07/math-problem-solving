@@ -229,14 +229,14 @@ $$
 
 <span class="statement-title">Example.</span><br>
 
-Let $T$ be the time that the 1st bus arrives. What is the distribution of $T$?
+Let $T$ be the time that the **1st bus arrives**. What is the distribution of $T$?
 
 먼저 cdf $P(T \le t)$를 구해보자. $P(T \le t)$를 직접 구하지 말고, 반대 케이스인 $P(T > t)$를 이용해 유도해보자.
 
 $P(T > t)$, 즉 기다리는 시간 $T$가 $t$보다 커질 확률은 곧 $t$ 시간까지 도착한 버스의 수가 0이 될 확률과 같다. 즉, $N(t) = 0$의 확률과 같다. 따라서,
 
 $$
-P(T > t) = P(N(t) = 0) = e^{-\lambda t} \frac{(\lambda t)^0}{0!} = e^{-\lambda}
+P(T > t) = P(N(t) = 0) = e^{-\lambda t} \frac{(\lambda t)^0}{0!} = e^{-\lambda t}
 $$
 
 따라서, $P(T \le t) = 1 - e^{-\lambda}$이다. 이것을 미분하면 pdf $f(x)$를 얻을 수 있다.
@@ -245,6 +245,7 @@ $$
 \frac{d}{dt} P(T \le t) = \frac{d}{dt} (1 - e^{-\lambda t}) = \lambda \cdot e^{-\lambda t}
 $$
 
+뒤에서 다루겠지만, 위와 같은 pdf를 가지는 continuous distribution을 \<Exponential Distribution\>이라고 한다.
 
 <hr/>
 
