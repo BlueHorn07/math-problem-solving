@@ -11,6 +11,9 @@ tags: ["Differntial Equation"]
 <br><span class="statement-title">TOC.</span><br>
 
 - \<미분 방정식; Differntial Equation\>이란 무엇인가?
+- Type I & Type II
+- Linear DE
+  - Intergrating Factor Method
 
 <hr/>
 
@@ -62,7 +65,9 @@ $$
 
 <hr/>
 
-앞에서 DE의 두 가지 타입을 살펴봤다. 하지만, 이 두 가지 타입은 지금 소개할 **Linear DE**의 특수한 경우다.
+## Linear DE
+
+앞에서 DE의 두 가지 타입을 살펴봤다. 그런데, 이 두 가지 타입은 지금 소개할 **Linear DE**의 특수한 경우다.
 
 <span class="statement-title">Definition.</span> Linear DE<br>
 
@@ -78,7 +83,7 @@ $$
 y' = t^2 y + \sin t
 $$
 
-위와 같은 DE는 Type I도, Type II도 아니다. 그래서 아래에 소개할 방법을 이용해서 식을 변형해 Type I or II로 DE를 reduction 시켜야 한다.
+위와 같은 DE는 Type I도, Type II도 아니다. 그래서 아래에 소개할 \<**Integrating Factor**\> 방법으로 식을 변형해 Type I or II로 DE를 reduction 시켜야 한다.
 
 <span class="statement-title">Method.</span> Integrating Factor<br>
 
@@ -91,10 +96,10 @@ $$
 이제 우변에서 y의 텀을 좌변으로 옮겨주자.
 
 $$
-mu y' = \mu (ay + b) \iff \mu y' - \mu ay = \mu b 
+\mu y' = \mu (ay + b) \iff \mu y' - \mu ay = \mu b 
 $$
 
-이 상태에서 $\mu$가 $\mu' = - a \mu$라고 가정하자! (이 부분에서 잘 와닿지 않을 수도 있는데, 이렇게 지금까지의 과정을 violate 하지 않음을 상기하라!)
+이제 $\mu$에 대해 $\mu' = - a \mu$라고 가정하자! (이 부분에서 잘 와닿지 않을 수도 있는데, 이렇게 해도 지금까지의 과정을 violate 하지 않음을 상기하라!)
 
 그러면, 직전의 DE에서 좌변은
 
@@ -114,13 +119,13 @@ $$
 (\mu y)' = \mu b \quad \rightarrow \quad \mu y = \int \mu b + C \quad \implies \quad y = \frac{1}{\mu} \left( \int \mu  b + C \right)
 $$
 
-이제 앞에서 가정했던 $\mu' = - a \mu$를 해결하면 된다. 이 DE는 **Type II**이므로 마찬가질 쉽게 풀 수 있는 DE다.
+이제 앞에서 가정했던 $\mu' = - a \mu$를 해결하면 된다. 이 DE는 **Type II**이므로 마찬가지로 쉽게 풀 수 있다.
 
 $$
 \mu' = -a \mu \quad \iff \quad \frac{\mu'}{\mu} = - a(t) \quad \rightarrow \quad \ln \mu = - \int a(t) \iff \mu = e^{\displaystyle - \int a(t)}
 $$
 
-이제 $\mu$에 대한 위의 결과를 대입하면 준 DE에 대한 solution을 구한 것이다.
+이제 $\mu$에 대한 위의 결과를 대입하면 Linear DE에 대한 solution을 구한 것이다.
 
 $$
 y'(t) = a(t) y(t) + b(t) \quad\iff\quad y(t) = e^{\int a(t)} \left( \int \left(e^{-\int a(t)}\right)  b(t) +C \right)
