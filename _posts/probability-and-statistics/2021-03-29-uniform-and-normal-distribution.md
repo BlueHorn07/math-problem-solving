@@ -1,5 +1,5 @@
 ---
-title: "Continuous Probability Distribution - 1"
+title: "Uniform and Normal Distribution"
 layout: post
 use_math: true
 tags: ["Probability"]

@@ -1,0 +1,230 @@
+---
+title: "Chi-sqaure, Beta and Log-normal Distribution"
+layout: post
+use_math: true
+tags: ["Probability"]
+---
+
+### 서론
+2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
+
+<br><span class="statement-title">TOC.</span><br>
+
+- Chi-square Distribution; $\chi^2(n)$
+- Beta Distribution; $\text{Beta}(\alpha, \beta)$
+- Log-normal Distribution; $\text{LN}(\mu, \sigma^2)$
+
+<hr/>
+
+## Chi-square Distribution
+
+<span class="statement-title">Definition.</span>Chi-square Distribution<br/>
+
+A RV $X$ is called a \<**Chi-square RV**\> with <u>$n$ degrees of freedom</u>, denoted as $X \sim \chi^2(n)$, <br/>
+if it has a <span class="half_HL">Gamma distribution with $\alpha = n/2$ and $\beta=2$</span>.
+
+That is, its pdf is given by 
+
+$$
+f(x; n/2, 2) = \frac{1}{\Gamma(n/2) \cdot 2^{n/2}} \cdot x^{n/2 - 1} \cdot e^{-x/2}
+$$
+
+$$
+\chi^2(n) = \text{Gamma}\left(\frac{n}{2}, 2\right)
+$$
+
+<span class="statement-title">Remark.</span><br/>
+
+1\. If $Z \sim N(0, 1)$, then $Z^2 \sim \chi^2(1)$.
+
+<div class="math-statement" markdown="1">
+
+For $Z \sim N(0, 1)$, let $Y = Z^2$.
+
+Let's see cdf $P(Y \le y)$,
+
+$$
+\begin{aligned}
+F(y) &= P(Y \le y) = P(Z^2 \le y) \\
+     &= P(-\sqrt{y} \le Z \le \sqrt{y})
+\end{aligned}
+$$
+
+그럼 이제 정규분포 $Z$에서의 확률을 구하는 것이므로 적분식을 구성하면,
+
+$$
+\begin{aligned}
+\int^{\sqrt{y}}_{-\sqrt{y}} \frac{1}{\sqrt{2\pi}} e^{-\frac{z^2}{2}} dz &= 2 \int^{\sqrt{y}}_{0} \frac{1}{\sqrt{2\pi}} e^{-\frac{z^2}{2}} dz
+\end{aligned}
+$$
+
+위의 과정에서는 정규분포의 우함수 특성을 사용한 것이다. 위의 식에서 $z = \sqrt{x}$로 치환적분을 진행해보자.
+
+$$
+z = \sqrt{x} \iff dz = \frac{1}{2\sqrt{x}} dx
+$$
+
+그리고 적분식에 대입하면,
+
+$$
+\begin{aligned}
+2 \int^{\sqrt{y}}_{0} \frac{1}{\sqrt{2\pi}} e^{-\frac{z^2}{2}} dz &= \frac{1}{\sqrt{2\pi}} \cancel{2} \int^y_0 \frac{1}{\cancel{2}\sqrt{x}} e^{-\frac{x}{2}} dx \\
+&= \frac{1}{\sqrt{2\pi}} \int^y_0 x^{-\frac{1}{2}} e^{-\frac{x}{2}} dx
+\end{aligned}
+$$
+
+즉, $Y = Z^2$의 cdf는
+
+$$
+F(y) = \frac{1}{\sqrt{2\pi}} \int^y_0 x^{\frac{1}{2} - 1} e^{-\frac{x}{2}} dx
+$$
+
+이다. 이제 pdf를 구하기 위해 양변을 미분하면,
+
+$$
+\begin{aligned}
+f(y) = \frac{d}{dy} F(y) = \frac{1}{\sqrt{2\pi}} y^{\frac{1}{2} - 1} e^{-\frac{y}{2}}
+\end{aligned}
+$$
+
+이때, 감마함수 $\Gamma(1/2)$는 $\sqrt{\pi}$의 값을 갖는다. 따라서,
+
+$$
+\begin{aligned}
+f(y) &= \frac{1}{\sqrt{2\pi}} y^{\frac{1}{2} - 1} e^{-\frac{y}{2}} \\
+    &= \frac{1}{\Gamma(1/2) \cdot 2^{\frac{1}{2}}} \cdot y^{\frac{1}{2} - 1} e^{-\frac{y}{2}}
+\end{aligned}
+$$
+
+이것은 곧, 감마 분포 $\text{Gamma}(1/2, 2)$의 pdf와 같다! 따라서, 
+
+$$
+\left(Z(0, 1)\right)^2 \overset{D}{=} \text{Gamma}(1/2, 2) \overset{D}{=} \chi^2(1)
+$$
+
+</div>
+
+<br/>
+
+2\. If $X \sim \chi^2(n)$, then
+
+- $E[X] = n$
+- $\text{Var}(X) = 2n$
+
+## Beta Distribution
+
+<span class="statement-title">Definition.</span> Beta function; $B(\alpha, \beta)$<br/>
+
+Let $\alpha > 0$ and $\beta > 0$. A \<bet function\> is defined as 
+
+$$
+B(\alpha, \beta) = \int^1_0 x^{\alpha-1}(1-x)^{\beta-1} dx
+$$
+
+<span class="statement-title">Claim.</span><br/>
+
+$$
+B(\alpha, \beta) = \frac{\Gamma(\alpha) \Gamma(\beta)}{\Gamma(\alpha + \beta)}
+$$
+
+<div class="math-statement" markdown="1">
+
+$$
+\begin{aligned}
+\Gamma(\alpha) \Gamma(\beta) &= \left(\int^{\infty}_0 x^{\alpha - 1} e^{-x} dx\right) \cdot \left(\int^{\infty}_0 x^{\beta - 1} e^{-x} dx\right) \\
+&= \int^{\infty}_0 \int^{\infty}_0 x^{\alpha-1} y^{\beta-1} \cdot e^{-(x+y)} dx dy
+\end{aligned}
+$$
+
+위의 식에서 다음과 같이 적분변수를 치환해보자.
+
+$$
+\begin{aligned}
+x &= uv \\
+y&= u(1-v) \\
+\left| J \right| &= \left| \begin{matrix}
+    x_u & x_v \\
+    y_u & y_v
+\end{matrix} \right| = \left| \begin{matrix}
+    v & u \\
+    1-v & -u
+\end{matrix} \right| = u
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+&\int^{\infty}_0 \int^{\infty}_0 x^{\alpha-1} y^{\beta-1} \cdot e^{-(x+y)} dx dy \\
+&= \int^{\infty}_0 \int^{\infty}_0 (uv))^{\alpha-1} (u(1-v))^{\beta-1} \cdot e^{-(\cancel{uv}+u-\cancel{uv})} \; u \, dudv \\
+&= \int^{\infty}_0 \int^{\infty}_0 u^{(\alpha-1) + (\beta-1) + 1} v^{\alpha-1} (1-v)^{\beta-1} \cdot e^{-u} \; du dv \\
+&= \int^{\infty}_0 u^{\alpha + \beta-1} \cdot e^{-u} \; du \int^{\infty}_0 v^{\alpha-1} (1-v)^{\beta-1} \; dv \\
+&= \Gamma(\alpha + \beta) \cdot B(\alpha, \beta)
+\end{aligned}
+$$
+
+즉,
+
+$$
+\Gamma(\alpha)\Gamma(\beta) = \Gamma(\alpha + \beta) B(\alpha, \beta)
+$$
+
+이므로
+
+$$
+B(\alpha, \beta) = \frac{\Gamma(\alpha) \Gamma(\beta)}{\Gamma(\alpha + \beta)}
+$$
+
+$\blacksquare$
+
+</div>
+
+<span class="statement-title">Definition.</span> Beta Distribution; $\text{Beta}(\alpha, \beta)$<br/>
+
+Let $\alpha>0$ and $\beta>0$. A RV $X$ is called a \<**beta RV**\> and decnoted as $X \sim \text{Beta}(\alpha, \beta)$ if its pdf is given by
+
+$$
+f(x) = \frac{x^{\alpha - 1} \cdot (1-x)^{\beta-1}}{B(\alpha, \beta)} \quad \text{for } x \in (0, 1)
+$$
+
+<span class="statement-title">Remark.</span><br/>
+
+1\. $X \sim \text{Beta}(1, 1)$
+
+When $\alpha = \beta = 1$, then $X \sim \text{Beta}(1, 1)$ and pdf is
+
+$$
+f(x) = \frac{x^0 \cdot (1-x)^0}{B(1, 1)} = \frac{1 \cdot 1}{1} = 1
+$$
+
+($B(1, 1) = \dfrac{\Gamma(1) \cdot \Gamma(1)}{\Gamma(2)} = \dfrac{0! \cdot 0!}{1!} = 1$)
+
+즉, $\text{Beta}(1, 1)$은 Uniform distribution을 따르게 된다. 이런 점 때문에 Beta Distribution을 <span class="half_HL">generalization of the uniform distribution on $[0, 1]$</span>라고 여기기도 한다!
+
+<br/>
+
+2\. Coin Tossing
+
+"If $P(H) = p$, then we can say $p \sim \text{Unif}(0, 1)$."
+
+위의 아이디어를 확장하면,
+
+Toss a coin $n+m$ times, and then we got $n$ heads. Then the distribution of $p$ given this<small>(= got $n$ heads)</small> is
+
+$$
+p \sim \text{Beta}(n+1, m+1)
+$$
+
+<br/>
+
+3\. Expection & Variance
+
+If $X \sim \text{Beta}(\alpha, \beta)$, then
+
+- $E[X] = \dfrac{\alpha}{\alpha + \beta}$
+- $\text{Var}(X) = \dfrac{\alpha\beta}{(\alpha+\beta)^2 (\alpha+\beta+1)}$
+
+유도 과정은 추후에 추가하겠다.
+
+## Log-normal Distribution
+
+
