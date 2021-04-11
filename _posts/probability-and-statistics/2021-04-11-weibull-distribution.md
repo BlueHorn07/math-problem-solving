@@ -129,4 +129,4 @@ $$
 
 이어지는 포스트에서는 Random Variable에 간단한 변환들을 적용했을 때의 pdf를 어떻게 구할 수 있을지를 논한다. 뒷부분에는 moment을 구하는 함수인 \<MGF; Momentim Generating Function\>도 등장하기 때문에 중요한 챕터라고 할 수 있다!
 
-👉 []()
+👉 [Transformations of Random Variable]({{"/2021/04/11/transformations-of-random-variable.html" | relative_url}})
