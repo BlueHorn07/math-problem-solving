@@ -225,6 +225,62 @@ If $X \sim \text{Beta}(\alpha, \beta)$, then
 
 유도 과정은 추후에 추가하겠다.
 
+<br/>
+
+<span class="statement-title">Example.</span><br/>
+
+Let $X_1, X_2, X_3$ be $\text{Unif}(0, 1)$ and independent.
+
+Let $Y:=\max(X_1, X_2, X_3)$. Find the distribution of $Y$.
+
+<div class="math-statement" markdown="1">
+
+$$
+\begin{aligned}
+P(Y \le y) &= P(X_1 \le y, X_2 \le y, X_3 \le y) \\
+        &= P(X_1 \le y) P(X_2 \le y) P(X_3 \le y) \quad (\text{independence}) \\
+        &= y \cdot y \cdot y = y^3
+\end{aligned}
+$$
+
+따라서, pdf는 $f(y) = 3y^2$가 되고 이것은 Beta Distriubtion인 $\text{Beta}(3, 1)$의 pdf와 동일하다!!
+
+$$
+B(3, 1) = \frac{\Gamma(3)\Gamma(1)}{\Gamma(3+1)} = \frac{2! \; 0!}{3!} = \frac{1}{3}
+$$
+
+$$
+f(x) = \frac{x^{3-1}(1-x)^{1-1}}{B(3, 1)} = \frac{x^2 \cdot 0}{1/3} = 3x^2
+$$
+
+</div>
+
+
 ## Log-normal Distribution
 
+<span class="statement-title">Definition.</span><br/>
 
+A RV $X$ is called a \<log-normal RV\> if $\log X \sim N(\mu, \sigma^2)$. We denote $X \sim \text{LN}(\mu, \sigma^2)$.
+
+즉, RV $X$에 log를 취한 것이 normal distribution이 된다면, "log-normal"이라고 부르는 것이다.
+
+<br/>
+
+<span class="statement-title">Remark.</span><br/>
+
+1\. $X := e^Y$
+
+If $Y \sim N(\mu, \sigma^2)$ and $X := e^Y$, then $X \sim \text{LN}(\mu, \sigma^2)$.
+
+<br/>
+
+2\. Expectation & Variance
+
+- $E[X] = \exp \left(\mu + \frac{\sigma^2}{2} \right)$
+- $\text{Var}(X) = (e^{\sigma^2} - 1)\cdot e^{2\mu + \sigma^2}$
+
+<hr/>
+
+이어지는 포스트에서는 \<**Weibull Distribution**\>을 통해 \<결함률; Failture rate\>와 \<신뢰도; Reliability\>을 모델링한다. 이 부분은 정규 수업에서는 소개만 하고 넘어간 부분이기 때문에 관심이 있거나 꼭 필요한게 아니라면 건너 뛰어도 괜찮다.
+
+👉 [Weibull Distribution (Optional)]({{"/2021/04/11/weibull-distribution.html" | relative_url}})
