@@ -125,7 +125,7 @@ $$
 f(x_1, x_2, \dots, x_n) = f_1(x_1) f_2(x_2) \cdots f_n (x_n)
 $$
 
-for all $(x_1, x_2, \dots, x_n$ within their range.
+for all $(x_1, x_2, \dots, x_n)$ within their range.
 
 <hr/>
 
@@ -148,9 +148,9 @@ $$
 
 (a) Are $X$ and $Y$ independent?
 
-(b) Let $z := \max (X, Y)$. Find the distribution of $Z$. (Hint: Find cdf of $Z$)
+(b) Let $Z := \max (X, Y)$. Find the distribution of $Z$. (Hint: Find cdf of $Z$)
 
-(c) Let $w := \min (X, Y)$. Find the distribution of $W$. (Hint: Find cdf of $W$)
+(c) Let $W := \min (X, Y)$. Find the distribution of $W$. (Hint: Find cdf of $W$)
 
 <hr/>
 

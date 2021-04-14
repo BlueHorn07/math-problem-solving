@@ -287,7 +287,27 @@ Q2. $\text{Cov}(X, Y) = 0$이지만, 두 RV가 독립이 아닌 예를 제시하
 
 <br/>
 
-Q3. Prove that if $\text{Corr}(X, Y) = 1$, then there exist $a>0$ and $b\in\mathbb{R}$ s.t. $Y = aX + b$.
+Q3. Prove that $-1 \le \text{Corr}(X, Y) \le 1$.
+
+<br/>
+
+Q4. Prove that if $\text{Corr}(X, Y) = 1$, then there exist $a>0$ and $b\in\mathbb{R}$ s.t. $Y = aX + b$.
+
+<details class="math-statement" markdown="1">
+
+<summary>펼쳐보기</summary>
+
+A1. $p(x)$가 delta-function임을 의미한다.
+
+<hr/>
+
+A2. $Y=X^2$으로 설정하면 쉽게 보일 수 있다. 독립임을 보이기 위해 $p(x, y)$를 구해야 할 수도 있는데, 이것 역시 적절히 잘 설정해주면 쉽게 reasonable하게 디자인 할 수 있을 것이다.
+
+<hr/>
+
+A3. & A4. 👉 [이곳](http://people.math.gatech.edu/~ecroot/3225/rho_notes.pdf)의 2p를 참고하라.
+
+</details>
 
 <hr/>
 
