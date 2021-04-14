@@ -443,7 +443,7 @@ $$
 X + Y \sim \chi^2(n+m)
 $$
 
-※ $\chi^2(n) = \text{Gamma}(n/2, 1/2)$
+※ $\chi^2(n) = \text{Gamma}(n/2, 2)$
 
 <br/>
 
