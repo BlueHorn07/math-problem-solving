@@ -51,13 +51,19 @@ $$
 
 $$
 \begin{aligned}
-U &= X
+U &= X \\
 V &= X + Y
 \end{aligned}
 $$
 
 $$
 f_{U, V} (u, v) = f_{X, Y} (u, v-u) = f_X(u) f_Y(v-u)
+$$
+
+따라서,
+
+$$
+f_V (v) = \sum_u f_{U, V} (u, v) = \sum_u f_X(u) f_Y(v-u)
 $$
 
 $\blacksquare$

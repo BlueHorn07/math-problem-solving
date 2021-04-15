@@ -87,13 +87,13 @@ $$
 f_{Y_1, Y_2} (y_1, y_2) = f_{X_1, X_2} \left( w_1(y_1, y_2), w_2(y_1, y_2) \right)
 $$
 
-즉, $X_1$, $X_2$를 이용해 $Y_1$, $Y_2$를 정의한 식을 잘 풀어서, $Y_1$, $Y_2$를 이용해 $X_1$, $X_2$를 기술한 식 $w_1$, $w_2$를 정의하여 그것으로 pmf를 유도한다는 말이다! 당연한 접근을 수식으로 formal하게 기술한 것 정도라고 생각하면 된다.
+즉, $X_1$, $X_2$를 이용해 $Y_1$, $Y_2$를 정의한 식을 잘 풀어서, $Y_1$, $Y_2$를 이용해 $X_1$, $X_2$를 기술한 식 $w_1$, $w_2$를 정의하고, 그것으로 pmf를 유도한다는 말이다! 당연한 접근을 수식으로 formal하게 기술한 것 정도라고 생각하면 된다.
 
 <br/>
 
 <span class="statement-title">Example.</span><br>
 
-Let $X \sim \text{Poi}(\lambda)$ and $Y \sim \text{Poi}(\mu)$m, and $X \perp Y$.
+Let $X \sim \text{Poi}(\lambda)$ and $Y \sim \text{Poi}(\mu)$, and $X \perp Y$.
 
 Find the distribution of $X + Y$.
 
@@ -165,6 +165,10 @@ $$
 f_Y (y) = f_X (h(y)) \cdot \left| h'(y) \right|
 $$
 
+Continuous의 경우, $\left\| h'(y) \right\|$ 텀이 곱해진다는 사실에 주목하자!
+
+<br/>
+
 <span class="statement-title">Example.</span><br>
 
 1\. Let $X \sim N(\mu, \sigma^2)$ and let $Y := \dfrac{X - \mu}{\sigma}$.
@@ -179,6 +183,8 @@ f_Y (y) &= f_X (h(y)) \cdot \left| h'(y) \right| \\
         &= \frac{1}{\sqrt{2\pi}} \cdot \exp \left( - y^2 / 2\right)
 \end{aligned}
 $$
+
+<hr/>
 
 2\. Let $X \sim \text{Gamma}(\alpha, 1)$, and let $Y := \beta X$.
 
@@ -209,6 +215,8 @@ $$
 
 <br/>
 
+<hr/>
+
 3\. Let $\theta \sim \text{Unif}(-\pi/2, \pi/2)$, and let $X = \tan \theta$.
 
 Find the pdf of $X$.
@@ -230,6 +238,8 @@ $$
 참고로 위와 같은 분포를 \<Cauchy Distribution\>라고 한다.
 
 <br/>
+
+<hr/>
 
 <span class="statement-title">Theorem.</span><br>
 
@@ -293,7 +303,7 @@ $$
 
 <br/>
 
-<span class="statement-title">**Theorem**.</span>Continuous case - Two Random Variables<br>
+<span class="statement-title">**Theorem**.</span> Continuous case - Two Random Variables<br>
 
 Let $(X, Y) \mapsto \left( u(X, Y), v(X, Y) \right)$ with the inverse $(U, V) \mapsto \left(w_1(U, V), w_2(U, V)\right)$.
 
