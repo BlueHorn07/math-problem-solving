@@ -10,9 +10,9 @@ tags: ["Probability"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- HyperGeometric Distribution
+- [HyperGeometric Distribution({{"/2021/03/24/discrete-probability-distributions-2.html#hypergeometric-distribution" | relative_url}})]
   - Multivariate HyperGeometric Distribution
-- Geometric Distribution
+- [Geometric Distribution]({{"/2021/03/24/discrete-probability-distributions-2.html#geometric-distribution" | relative_url}})
   - Negative Binomial Distribution
 
 <hr/>

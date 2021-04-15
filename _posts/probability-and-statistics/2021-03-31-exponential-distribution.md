@@ -57,7 +57,7 @@ $$
 
 만약, \<Poisson Process\> $\\{ N(t) \\}$에 대해 생각한다면, $t$ 시간까지 도착한 사건의 숫자인 $N(t)$는 포아송 분포 $N(t) \sim \text{POI}(\lambda t)$를 따른다.
 
-이런 상황을 생각해보자. 어떤 사건이 처음으로 발생하기 까지 걸린 시간을 RV $T$라고 해보자. 우리가 $P(T > t)$ 즉, 어떤 사건이 $T=t$ 시간에 발생할 확률을 구한다고 해보자. 이것을 Poisson Process의 관점에서 해석하면, $T=t$ 시간까지 어떤 사건도 일어나지 않은 상태, 즉 $N(t) = 0$인 상황이다. 우리는 $N(t)$에 대한 pdf를 알기 때문에 이것을 확률로 표현하면,
+이런 상황을 생각해보자. "어떤 사건이 처음으로 발생하기 까지 걸린 시간"을 RV $T$라고 해보자. 우리가 $P(T > t)$ 즉, 어떤 사건이 $T=t$ 시간 이후에 발생할 확률을 구한다고 해보자. 이것을 Poisson Process의 관점에서 해석하면, $T=t$ 시간까지 어떤 사건도 일어나지 않은 상태, 즉 $N(t) = 0$인 상황이다. 우리는 $N(t)$에 대한 pdf를 알기 때문에 이것을 확률로 표현하면,
 
 $$
 P(N(t) = 0) = e^{-\lambda t} \frac{(\lambda t)^0}{0!} = e^{-\lambda t}
@@ -79,7 +79,7 @@ $$
 
 익숙한 형태이지 않은가?? 바로 우리가 정의한 \<Exponential Distribution\>이다!! 😎
 
-즉, EXP는 어떤 사건이 처음으로 일어날 시간에 대해 분포를 대표한다고 할 수 있다!
+즉, EXP는 어떤 사건이 처음으로 일어날 시간에 대한 분포라고 할 수 있다!
 
 <br/>
 
@@ -108,7 +108,7 @@ $$
 본인은 위의 상황을 (minute - second) 변환을 바탕으로 이해했다. 만약 $X$가 분 단위에서 처음 도착하는 버스의 시간을 모델링하고, 그 때의 parameter가 $\lambda = 1$라고 하자. 우리는 이것을 초 단위인 $60X$로 변환할 수 있다. 이때의 tail probability는
 
 $$
-P(60X < x) = P(X < x/60) = e^{- x/60}
+P(60X > x) = P(X > x/60) = e^{- x/60}
 $$
 
 따라서, $60X \sim \text{EXP}(1/60)$이 된다. 이것은 $60X$에서 $\lambda$가 $\lambda = 1/60$이 됨을 의미한다. 이때, $\lambda$는 Poisson Process의 parameter로, Time Unit 당 도착하는 버스의 수를 모델링한다. 따라서 1초 당 평균적으로 1/60 대의 버스가 도착함을 의미한다. 이것을 $\beta = 1 / \lambda$로 해석하면, 버스가 한번 도착하는 시간이 평균적으로 60초가 됨을 의미한다!
@@ -209,7 +209,7 @@ $$
 <span class="statement-title">요약.</span><br>
 
 - 어떤 사건의 발생 횟수가 **포아송 분포**를 따른다면, 사건 사이의 대기 시간은 **지수 분포**를 따르게 된다. (또는 첫 사건이 발생하는 데까지 걸리는 시간은 지수 분포를 따른다.)
-- $\lambda$는 Unit time 동안 Event가 일어날 평균 **횟수**를 의미한다. 그리고 그 역수인 $\beta$는 한 번의 Event가 일어날 평균 **시간**을 의미한다.
+- $\lambda$는 Unit time 동안 Event가 일어날 평균 **횟수**를 의미한다. 그리고 그 역수인 $\beta$는 한 번의 Event가 발생하는 데 걸리는 평균 **시간**을 의미한다.
 - \<Exponential Distribution\>은 \<Geometric Distribution\>의 극한 버전이다. Geo에서 trial을 시행하는 시간 간격 $1/n$이 0에 가까워질 때, Geo가 EXP를 따르게 되는 것이다.
 
 <hr/>
@@ -222,4 +222,4 @@ $$
 
 ### References
 
-- [soohee410님의 포스트](https://soohee410.github.io/exponential_dist)
+- ['soohee410'님의 포스트](https://soohee410.github.io/exponential_dist)

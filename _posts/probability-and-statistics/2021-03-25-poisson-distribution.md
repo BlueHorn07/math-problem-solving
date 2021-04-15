@@ -129,7 +129,7 @@ $$
 
 <br/>
 
-1\. 각 time slot은 서로 독립(iid)이다.
+1\. 각 time slot은 서로 독립이다.
 
 Poisson Process도 이 성질을 가지므로, 아래의 명제가 성립한다.
 

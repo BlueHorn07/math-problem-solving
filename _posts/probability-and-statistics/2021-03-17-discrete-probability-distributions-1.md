@@ -156,3 +156,5 @@ $$
 - Geometric Distribution
 - Negative Binomial Distribution
 - Poisson Random Variable
+
+👉 [Discrete Probability Distribution - 2]({{"/2021/03/24/discrete-probability-distributions-2.html" | relative_url}})
