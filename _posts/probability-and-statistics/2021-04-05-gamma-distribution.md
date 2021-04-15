@@ -139,7 +139,7 @@ If $\alpha = n$, then $X \sim \text{Gamma}(n, \beta)$ can be used for the amount
 
 In fact, $X$ can be written as $X = X_1 + \cdots + X_n$ where $X_i$'s are independent $\text{EXP}(\lambda)$ RVs.
 
-예를 들어, 사건이 $3$번 일어나기까지 걸린 시간에 대한 분포는 $\text{Gamma}(3, \beta)$를 따른다는 말이다! 그래서 \<Exponential Distribution\>에 대한 일반화라고 볼 수도 있ㅏ.
+예를 들어, 사건이 $3$번 일어나기까지 걸린 시간에 대한 분포는 $\text{Gamma}(3, \beta)$를 따른다는 말이다! 그래서 \<Exponential Distribution\>에 대한 일반화라고 볼 수도 있다.
 
 <hr/>
 
