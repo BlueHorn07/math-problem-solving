@@ -155,7 +155,7 @@ $$
 \end{aligned}
 $$
 
-이때, $\binom{y+k-1}{k-1}$에 대해 아래의 식이 성립한다.
+이때, $\displaystyle \binom{y+k-1}{k-1}$에 대해 아래의 식이 성립한다.
 
 $$
 \binom{y+k-1}{k-1} = \left( -1 \right)^y \cdot \binom{-k}{y}
