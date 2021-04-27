@@ -5,6 +5,8 @@ author:
 description: > # this means to ignore newlines until "show_excerpts:"
   "The essence of mathematics lies in its freedom" - Cantor
 
+base_url: /mathematics
+
 show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format
