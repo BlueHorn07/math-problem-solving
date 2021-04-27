@@ -230,7 +230,7 @@ of degree $n$ ($n \ge 1$) has a solution.
 
 (귀류법) Supp. that $P(z)$ has no solution.
 
-Then $\dfrac{1}{P(z)}$ is entire, becuase there's no $z_0$ s.t. $p(z_0) = 0$)
+Then $\dfrac{1}{P(z)}$ is entire, becuase there's no $z_0$ s.t. $p(z_0) = 0$
 
 It is also **<u>bounded</u>** in the complex plane!
 
@@ -264,11 +264,7 @@ $$
 \left| P(z) \right| \ge 1 \iff \left| \frac{1}{P(z)} \right| \le 1
 $$
 
-반대로 $\left\| z \right\| < R$에선 $\dfrac{1}{P(z)}$가 continuous하기 때문에 아래가 성립한다.
-
-$$
-\left| \frac{1}{P(z)} \right| \; \text{is bounded since} \; \frac{1}{P(z)} \; \text{is continuous.}
-$$
+반대로 $\left\| z \right\| < R$에선 $\dfrac{1}{P(z)}$가 continuous하고, $P(z) = 0$이 되는 지점이 존재하지 않기 때문에 $\left\| \dfrac{1}{P(z)} \right\|$도 bounded 되어 있다!
 
 따라서, $\dfrac{1}{P(z)}$는 bounded 된 entire function이다. 그렇다면, 앞에서보인 \<리우빌의 정리\>에 의해 $\dfrac{1}{P(z)}$는 constant function이 된다. 하지만, $n \ge 0$이므로 $\dfrac{1}{P(z)}$는 명백히 constant function이 아니다!!
 
