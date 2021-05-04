@@ -92,7 +92,7 @@ $$
 ### Examples
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/t-distributon-example-1.png" | relative_url }}" width=550>
+<img src= "{{"/images/probability-and-statistics/t-distribution-example-1.png" | relative_url }}" width=550>
 </div>
 
 <div class="math-statement" markdown="1">
