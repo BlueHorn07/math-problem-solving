@@ -8,7 +8,7 @@ tags: ["Probability"]
 ### 서론
 2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-<br><span class="statement-title">TOC.</span><br>
+\<t-Distribution\>으로부터 유도하는 \<t-value\>는 두 분포의 평균에 대한 유의도를 평가하는 "검정 통계량"이다.
 
 <hr/>
 
@@ -87,3 +87,45 @@ $$
 
 </div>
 
+<hr/>
+
+### Examples
+
+<div class="img-wrapper">
+<img src= "{{"/images/probability-and-statistics/t-distributon-example-1.png" | relative_url }}" width=550>
+</div>
+
+<div class="math-statement" markdown="1">
+
+[population] $X$ follows Normal Distribution, $\mu = 500$, $\sigma$: unknown
+
+[sample] $n=25$, $\bar{x} = 518$, $s^2 = 40^2$
+
+[t-test] check weather or not $t \in [-t_{0.05}, t_{0.05}]$
+
+Let $T := \dfrac{\bar{x} - \mu}{S / \sqrt{n}} \overset{D}{=} t(n-1) = t(24)$
+
+t-value is 
+
+$$
+\frac{\bar{x} - \mu}{s/\sqrt{n}} = \frac{518-500}{40/5} = 2.25
+$$
+
+Here, $t_{0.05}(24) = 2.172$, and $t_{0.05} < 2.25$.
+
+t-value가 $t_{0.05}$보다 크므로 유의하다. 그래서 population mean $\mu$는 500보다 더 클지도 모른다. $\blacksquare$
+
+</div>
+
+<hr/>
+
+t-value는 평균의 차이에 대해 수치화한 지표이다. 그래서 t-value가 클수록 평균의 차이가 크다는 말이기 때문에 두 분포가 다를 가능성이 크다. 통계 검정에 대한 또다른 지표인 p-value는 0.05 이하로 값이 내려갈 경우, 유의하다는 결과가 나왔다. t-value와 비교하면, 유의 상황의 경우가 반대인 걸 볼 수 있다.
+
+- t-value 大 = 유의함
+- p-value 小 = 유의함
+
+<br/>
+
+이어지는 포스트에서는 \<F-Distribution\>에 대해 다루도록 하겠다.
+
+👉 [F-Distribution]()
