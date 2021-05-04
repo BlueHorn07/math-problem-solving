@@ -2,7 +2,7 @@
 title: "Student's t-Distribution"
 layout: post
 use_math: true
-tags: ["Probability"]
+tags: ["Statistics"]
 ---
 
 ### 서론

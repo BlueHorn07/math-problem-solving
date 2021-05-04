@@ -2,7 +2,7 @@
 title: "Sampling Distribution of Variance"
 layout: post
 use_math: true
-tags: ["Probability"]
+tags: ["Statistics"]
 ---
 
 ### 서론
