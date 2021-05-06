@@ -18,6 +18,8 @@ tags: ["Statistics"]
 
 <hr/>
 
+### Introduction to Estimation
+
 <div class="statement" markdown="1">
 
 "\<**Statistics**\> is the area of science which can make inferences from data set."
@@ -32,7 +34,7 @@ tags: ["Statistics"]
 
 Supp. someone gave you some data set $\\{ x_1, \dots, x_n \\}$ and it is known that this data set is taken from a normal random sample $X_i \sim N(\mu, 1)$.
 
-Q. You are asked to estimate $\mu$. What ca be a good estimate of $\mu$ from the sample?
+Q. You are asked to estimate $\mu$. What can be a good estimate of $\mu$ from the sample?
 
 A. $\bar{X}$, sample mean
 
@@ -64,7 +66,7 @@ A \<point estimation\> of some population parameter $\theta$ is <span class="hal
 
 Let $X_1, X_2, \dots, X_n$ be a random sample taken from $N(\mu, \sigma^2)$.
 
-Q1\. What ca be a point estimator of $\mu$?
+Q1\. What can be a point estimator of $\mu$?
 
 A1. sample mean, $\bar{X} = \dfrac{X_1 + \cdots + X_n}{n}$.
 
@@ -90,6 +92,8 @@ $$
 E[\hat{\Theta}] = \theta \quad \text{for all} \quad \theta
 $$
 
+즉, \<Estimator\>에 평균을 취했을 때, true population parameter $\theta$가 유도되는 estimator를 말한다!
+
 $E[\hat{\Theta} - \theta]$ is the bias of $\hat{\Theta}$ related to $\theta$.
 
 💥 $E[\hat{\Theta} - \theta] = 0$, unbiased!
@@ -100,7 +104,7 @@ $E[\hat{\Theta} - \theta]$ is the bias of $\hat{\Theta}$ related to $\theta$.
 
 Let $X_1, X_2, \dots, X_n$ be a random sample taken from $N(\mu, \sigma^2)$.
 
-Then, $\bar{X}$ is an unbiased estimator of $\mu$, and $\S^2$ is an unbiased estimator of $\mu$.
+Then, $\bar{X}$ is an unbiased estimator of $\mu$, and $S^2$ is an unbiased estimator of $\mu$.
 
 Note that $E \left[ \frac{2X_1 + 0.5 X_2 + 0.5 X_3 + \cdots + X_n}{n}\right] = \mu$, so that one is also an unbiased estimator!
 
@@ -203,6 +207,6 @@ where $\text{Bias} := E \left[ \hat{\Theta} - \theta \right]$.
 
 이어지는 포스트에서는 또다른 estimation 방식인 \<Interval Estimation\>에 대해 살펴보겠다.
 
-👉 [Interval Estimation]({{"/2021/05/05/interval-estimation.html" | relative_url}})
+👉 [Interval Estimation]({{"/2021/05/06/interval-estimation.html" | relative_url}})
 
 
