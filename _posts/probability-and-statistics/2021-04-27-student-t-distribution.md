@@ -126,6 +126,13 @@ t-value는 평균의 차이에 대해 수치화한 지표이다. 그래서 t-val
 
 <br/>
 
+\<t-Distribution\>은 뒤에 나오는 \<Interval Estimation\>에서 유용하게 사용된다. 
+
+👉 [Estimate $\mu$ when $\sigma^2$ is unknown]({{"/2021/05/06/interval-estimation.html#estimate-mu-when-sigma2-is-unknown" | relative_url}})
+
+
+<br/>
+
 이어지는 포스트에서는 \<F-Distribution\>에 대해 다루도록 하겠다.
 
-👉 [F-Distribution]()
+👉 [F-Distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
