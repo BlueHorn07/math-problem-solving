@@ -13,7 +13,12 @@ tags: ["Statistics"]
 - invertal estimator; $(\hat{\theta}_L, \hat{\theta}_U)$
 - $100 \cdot (1 - \alpha)$% confidence interval
   - confidence level; $1-\alpha$
-
+- [Estimate $\mu$ when $\sigma^2$ is known](#estimate-mu-when-sigma2-is-known)
+  - Z-Distribution by CLT
+  - [error of estimation](#error-of-estimation)
+  - [one-sided confidence bounds](#one-sided-confidence-bounds)
+- [Estimate $\mu$ when $\sigma^2$ is unknown](#estimate-mu-when-sigma2-is-unknown)
+  - t-Distribution
 <hr/>
 
 Let $X_1, X_2, \dots, X_n$ be a random sample with $X_i \sim f(x; \theta)$, and $x_1, x_2, \dots, x_n$ be the values of the sample.
@@ -44,6 +49,8 @@ We usually take $\alpha = 0.01, \; 0.05, \; 0.1$.
 - Estimate $\mu$ when $\sigma^2$ is unknown
 
 <hr/>
+
+### Estimate $\mu$ when $\sigma^2$ is known
 
 <span class="statement-title">Example.</span><br>
 
@@ -87,7 +94,7 @@ Let $x_1, \dots, x_n$ be given data points from a random sample $X_1, \dots, X_n
 If $\bar{x}$ is the sample mean, a $100(1-\alpha)\%$ confidence interval for $\mu$ is given by
 
 $$
-\left( \bar{x} - z_{\alpha/2} \frac{\sigma}{\sqrt{n}} , \bar{x} + z_{\alpha/2} \frac{\sigma}{\sqrt{n}} \right)
+\left( \bar{x} - z_{\alpha/2} \frac{\sigma}{\sqrt{n}} , \; \bar{x} + z_{\alpha/2} \frac{\sigma}{\sqrt{n}} \right)
 $$
 
 Note that this is an approximate interval unless $X_i \sim N(\mu, \sigma^2)$.
@@ -118,6 +125,10 @@ $\vdots$
 
 </div>
 
+<hr/>
+
+#### Error of Estimation
+
 <span class="statement-title">Definition.</span> Error of estimation<br>
 
 Now, let's consider the error $\| \bar{x} - \mu \|$.
@@ -132,7 +143,72 @@ $$
 
 If $\bar{x}$ is used as an estimate of $\mu$, we can be $100(1-\alpha)\%$ confident that the <u>error</u> will note exceed $z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$.
 
+<br/>
 
+<span class="statement-title">Thereom.</span><br>
+
+Q. How large can the sample size be if the error is at most $\epsilon$?
+
+A. We want $\text{Err} = z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$ to be less than $\epsilon$.
+
+$$
+\text{Err} = z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} \le \epsilon
+$$
+
+Solve the inequality for $n$!
+
+$$
+n \ge \left[ \frac{z_{\alpha/2} \cdot \sigma}{\epsilon} \right]^2
+$$
 
 <hr/>
 
+#### One-sided Confidence Bounds
+
+지금까지 우리는 양 끝의 상황을 살펴보는 Two-sided Confidence Interval을 살펴보았다. 그러나 때로는 한쪽의 상황만 관심이 대상이 될 수도 있다! 그래서 아래와 같이 One-side에 대한 Confidence Interval을 구해야 할 수도 있다.
+
+$$
+P(\hat{\theta}_L \le \mu) = 1 - \alpha
+$$
+
+사실 two-sided의 경우에서 약간만 수정해주면 된다! two-sided에서의 Confidence Interval이 아래와 같다면,
+
+$$
+\bar{x} - z_{\alpha/2} \frac{\sigma}{\sqrt{n}} \; \le \; \mu \; \le \; \bar{x} + z_{\alpha/2} \frac{\sigma}{\sqrt{n}}
+$$
+
+여기에서 한쪽만 취해 $\alpha$를 사용하면 된다. 즉,
+
+$$
+\bar{x} - z_{\textcolor{red}{\alpha}} \frac{\sigma}{\sqrt{n}} \; \le \; \mu
+$$
+
+이것은 곧
+
+$$
+P \left(\bar{x} - z_{\textcolor{red}{\alpha}} \frac{\sigma}{\sqrt{n}} \; \le \; \mu \right) = 1 - \alpha
+$$
+
+와 같다!
+
+<hr/>
+
+### Estimate $\mu$ when $\sigma^2$ is unknown
+
+앞에서 진행했던 과정을 다시 살펴보자. 우리는 CLT를 사용해 $\bar{X}$를 Normal 분포로 근사했다.
+
+$$
+Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}}
+$$
+
+그 이후에는 추정하려는 정도에 따라서 적당히 $z_{\alpha/2}$를 사용해 식을 완성했다.
+
+그런데! 지금 상황에서는 위와 같이 접근할 수 없다!! 😲 <span class="half_HL">우린 더이상 $\sigma$를 모르기 때문에 CLT 근사식에서 분모 부분에 $\sigma$를 쓸 수 없다!</span>
+
+우리가 그나마 $\sigma^2$와 비슷하다고 생각하는 것이 있다. 바로 "sample variance" $S^2$! 이 녀석으로 $\sigma$를 대체해 식을 다시 써보자.
+
+$$
+\frac{\bar{X} - \mu}{S / \sqrt{n}}
+$$
+
+이 식은 우리가 이미 살펴본 [student's t-Distribution]({{"https://bluehorn07.github.io/mathematics/2021/04/27/student-t-distribution.html" | relative_url}})
