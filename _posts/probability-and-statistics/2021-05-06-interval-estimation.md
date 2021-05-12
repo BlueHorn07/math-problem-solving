@@ -19,6 +19,8 @@ tags: ["Statistics"]
   - [one-sided confidence bounds](#one-sided-confidence-bounds)
 - [Estimate $\mu$ when $\sigma^2$ is unknown](#estimate-mu-when-sigma2-is-unknown)
   - t-Distribution
+- [Compare Point Estimator and Interval Estimator](#compare-point-estimator-and-interval-estimator)
+
 <hr/>
 
 Let $X_1, X_2, \dots, X_n$ be a random sample with $X_i \sim f(x; \theta)$, and $x_1, x_2, \dots, x_n$ be the values of the sample.
@@ -87,6 +89,8 @@ $\therefore$ A 95% confidence interval would be $(170 - 3.92, 170 + 3.92)$.
 
 </div>
 
+<div class="statement" markdown="1">
+
 <span class="statement-title">Remark.</span> Confidence Interval on $\mu$ when $\sigma^2$ is knonw<br>
 
 Let $x_1, \dots, x_n$ be given data points from a random sample $X_1, \dots, X_n$ with knwon population variance $\sigma^2$ and unkwown population mean $\mu$.
@@ -97,13 +101,14 @@ $$
 \left( \bar{x} - z_{\alpha/2} \frac{\sigma}{\sqrt{n}} , \; \bar{x} + z_{\alpha/2} \frac{\sigma}{\sqrt{n}} \right)
 $$
 
-Note that this is an approximate interval unless $X_i \sim N(\mu, \sigma^2)$.
+💥 Note that this is an approximate interval unless $X_i \sim N(\mu, \sigma^2)$.
 
-<br/>
+</div>
+
 
 Q1. IS it true that $P \left( \mu \in (\hat{\mu}_L, \hat{\mu}_U) \right) \overset{?}{=} 0.95$? 🔥
 
-A1. No!!
+A1. No!! <small>식을 잘 살펴보라! $\mu$가 아니라 sample mean $\bar{x}$에 대한 interval이다!</small>
 
 Q2. Then what does the confidence interval really mean?
 
@@ -211,4 +216,49 @@ $$
 \frac{\bar{X} - \mu}{S / \sqrt{n}}
 $$
 
-이 식은 우리가 이미 살펴본 [student's t-Distribution]({{"https://bluehorn07.github.io/mathematics/2021/04/27/student-t-distribution.html" | relative_url}})
+이 식은 우리가 [student's t-Distribution]({{"https://bluehorn07.github.io/mathematics/2021/04/27/student-t-distribution.html" | relative_url}})에서 이미 살펴보았다!
+
+$$
+\frac{\bar{X} - \mu}{S / \sqrt{n}} \; \overset{D}{\sim} \; t(n-1)
+$$
+
+그래서 $t(n-1)$ distribution에서 $(1-\alpha)\%$ confidence interval을 구한다면,
+
+$$
+P \left( -t_{\alpha/2} (n-1) < \frac{\bar{X} - \mu}{S / \sqrt{n}} < t_{\alpha/2}(n-1)> \right) = 1 - \alpha
+$$
+
+가 된다!
+
+<div class="statement" markdown="1">
+
+<span class="statement-title">Remark.</span> Confidence Interval on $\mu$ when $\sigma^2$ is unknonw<br>
+
+Let $x_1, \dots, x_n$ be given data points from a <span class="half_HL"><u>normal random sample</u></span> $X_1, \dots, X_n$ with mean $\mu$ and variance $\sigma^2$.
+
+Here, the population mean $\mu$ and the population variance $\sigma$ are both unknown.
+
+If $\bar{x}$ is the sample mean and $s^2$ is the sample variance, then a $100(1-\alpha)\%$ confidence interval for $\mu$ is given by
+
+$$
+\left( \bar{x} - t_{\alpha/2}(n-1) \frac{s}{\sqrt{n}} , \; \bar{x} + t_{\alpha/2}(n-1) \frac{s}{\sqrt{n}} \right)
+$$
+
+</div>
+
+<span class="statement-title">Remark.</span><br>
+
+1\. The width of the interval is random!
+
+$$
+\left| \bar{x} - \mu \right| < t_{\alpha/2}(n-1) \cdot \frac{s}{\sqrt{n}}
+$$
+
+2\. This confidence interval is not an approximation, since we assume sample $X_i$ as iid. normal $\mu$, $\sigma^2$.
+
+<hr/>
+
+### Compare Point Estimator and Interval Estimator
+
+
+
