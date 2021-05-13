@@ -40,7 +40,7 @@ $$
 
 Assume that $D_1, \dots, D_n$ is a normal random sample: $D_i \sim N(\mu_D, \sigma_D^2)$
 
-To find the confidence interval for $\mu_1 - \mu_2$, we use $\bar{D} = := \bar{X} - \bar{Y}$.
+To find the confidence interval for $\mu_1 - \mu_2$, we use $\bar{D} := \bar{X} - \bar{Y}$.
 
 Then, by CLT
 
