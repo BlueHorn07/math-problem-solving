@@ -108,7 +108,8 @@ $$
 
 Q1. IS it true that $P \left( \mu \in (\hat{\mu}_L, \hat{\mu}_U) \right) \overset{?}{=} 0.95$? 🔥
 
-A1. No!! <small>식을 잘 살펴보라! $\mu$가 아니라 sample mean $\bar{x}$에 대한 interval이다!</small>
+A1. No!!
+
 
 Q2. Then what does the confidence interval really mean?
 
@@ -260,5 +261,35 @@ $$
 
 ### Compare Point Estimator and Interval Estimator
 
+Q. Does  confidence interval give us more infromation about $\mu$ than a point estimate $\bar{x}$?
 
+A. <span calss="half_HL">Not really... 🤔</span>
 
+<div class="light-margin" markdown="1">
+
+[point estimator]
+
+For a pointe estimator $\bar{x}$,
+
+by LLN, $\bar{x} \rightarrow \mu$ as $n\rightarrow\infty$.
+
+And the variance $\text{Var}(\bar{x}) = \dfrac{\sigma^2}{n}$.
+
+</div>
+
+<div class="light-margin" markdown="1">
+
+[interval estimator]
+
+For an interval estimator $\left(\bar{x} - z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}, \; \bar{x} + z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} \right)$, 
+
+the error is $\left\| \bar{x} - \mu \right\| \le z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$.
+
+</div>
+💥 The width of the confidence interval is determined by the std. deviation of the point estimator!!
+
+<hr/>
+
+이어지는 포스트에서는 \<Interval Estimation\>의 변형들을 살펴볼 예정입니다 🤩
+
+👉 [Prediction & Tolerance Interval]({{"/2021/05/13/prediction-and-tolerance-interval.html" | relative_url}})
