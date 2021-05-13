@@ -36,10 +36,41 @@ hidden: true
   - Probability Distributions
     - PMF $f(x)$ & CDF $F(x)$ for Discrete RV
     - PDF $f(x)$ & CDF $F(x)$ for Continuous RV
+- [Joint Probability Distribution]({{"/2021/03/09/joint-probability-distribution.html" | relative_url}})
+- [Mean, Variance and Covariance]({{"/2021/03/16/mean-variance-covariance.html" | relative_url}})
+- [Chebyshev's Inequality]({{"/2021/03/17/chebyshev's-inequality.html" | relative_url}})
+- [Discrete Probability Distribution - 1]({{"/2021/03/17/discrete-probability-distributions-1.html" | relative_url}})
+  - (Discrete) Uniform Distribution
+  - Bernoulli Distribution
+  - Binomial Distribution
+  - Multinomial Distribution
+- D[iscrete Probability Distribution - 2]({{"/2021/03/24/discrete-probability-distributions-2.html" | relative_url}})
+  - HyperGeometric Distribution
+    - Multivariate HyperGeometric Distribution
+  - Geometric Distribution
+    - Negative Binomial Distribution
+- Continuous Probability Distribution
+  - [Uniform and Normal Distribution]({{"/2021/03/29/uniform-and-normal-distribution.html" | relative_url}})
+  - [Poisson Distribution]({{"/2021/03/25/poisson-distribution.html" | relative_url}})
+  - [Exponential Distribution]({{"/2021/03/31/exponential-distribution.html" | relative_url}})
+  - [Gamma Distribution]({{"/2021/04/05/gamma-distribution.html" | relative_url}})
+  - [Chi-square, Beta and Log-normal Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution.html" | relative_url}})
+  - [Weibull Distribution (optional)]({{"/2021/04/10/weibull-distribution.html" | relative_url}})
+- [Transformations of Random Variable - 1]({{"/2021/04/11/transformations-of-random-variable-1.html" | relative_url}})
+- [Transformations of Random Variable - 2]({{"/2021/04/12/transformations-of-random-variable-2.html" | relative_url}})
+- [Momemtum Generating Function]({{"/2021/04/13/momemtum-generating-function.html" | relative_url}})
 
 <hr/>
 
 ## Statistics
 
+- [Sampling Distribution]({{"/2021/04/25/sampling-distribution.html" | relative_url}})
+- [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance.html" | relative_url}})
+- [Student's t-Distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
+- [F-Distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
+- [Quantile]({{"/2021/05/04/Quantile.html" | relative_url}})
+- [Point Estimation]({{"/2021/05/05/point-estimation.html" | relative_url}})
+- [Interval Estimation]({{"/2021/05/06/interval-estimation.html" | relative_url}})
+- [Prediction & Tolerance Estimation]({{"/2021/05/13/prediction-and-tolerance-interval.html" | relative_url}})
 
 
