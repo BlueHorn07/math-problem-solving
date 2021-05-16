@@ -85,5 +85,9 @@ hidden: true
 - [Two Samples Estiatmion: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations.html" | relative_url}})
 - [Single Sample Estimation: Proportion Estimation]({{"/2021/05/14/single-sample-estimation-proportion-estimation.html" | relative_url}})
 - [Two Samples Estimation: Diff Btw Two Proportions]({{"/2021/05/16/two-samples-estimation-diff-btw-two-proportions.html" | relative_url}})
-- [Single Sample Estimation: Variance Estimation]({{"/2021/05/16/sinlge-sample-estimation-variance-estimation.html" | relative_url}})
+- [Variance Estimation]({{"/2021/05/16/variance-estimation.html" | relative_url}})
+  - Singe Sample Estimation: Varaicen Estimation
+  - Two Samples Estimation: The ratio of two variances
+
+
 
