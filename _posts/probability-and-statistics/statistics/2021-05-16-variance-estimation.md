@@ -98,3 +98,4 @@ $$
 
 이어지는 포스트에서는 또다른 Estimation 방법인 \<MLE; Maximum Likelihood Estimation\>에 대해 살펴본다.
 
+👉 [Maximum Likelihood Estimation]({{"/2021/05/17/maximum-likelihood-estimation.html" | relative_url}})
