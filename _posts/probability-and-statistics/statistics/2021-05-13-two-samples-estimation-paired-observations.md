@@ -58,4 +58,4 @@ $$
 
 이어지는 포스트에서는 오랜만에 Single Sample에 대한 estimation을 다룬다. 그 대상은 \<비율; proportion\>이다!
 
-👉 [Single Sample Estimation: Proportion Esitatmion]({{"/2021/05/14/single-sample-estimation-proportion-estimation.html" | relative_url}})
+👉 [Proportion Esitatmion]({{"/2021/05/14/proportion-estimation.html" | relative_url}})

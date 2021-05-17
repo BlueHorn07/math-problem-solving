@@ -1,5 +1,5 @@
 ---
-title: "Single Sample Estimation: Proportion Estimation"
+title: "Proportion Estimation"
 layout: post
 use_math: true
 tags: ["Statistics"]
@@ -8,7 +8,14 @@ tags: ["Statistics"]
 ### 서론
 2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
+<br><span class="statement-title">TOC.</span><br>
+
+- [Singe Sample Estimation: Proportion Estimation](#singe-sample-estimation-proportion-estimation)
+- [Two Samples Estimation: Diff Btw Two Proportions](#two-samples-estimation-diff-btw-two-proportions)
+
 <hr/>
+
+### Singe Sample Estimation: Proportion Estimation
 
 Supp. we have a p-coin. We want to verify that the coin is really a p-coin.
 
@@ -97,7 +104,35 @@ $$
 
 <hr/>
 
-이어지는 포스트에서는 두 개 샘플에서 proportion의 차이를 추정하는 방법에 대해 다룬다.
+### Two Samples Estimation: Diff Btw Two Proportions
 
-👉 [Two Samples Estimation: Diff btw Two Proportions]({{"/2021/05/16/two-samples-estimation-diff-btw-two-proportions.html" | relative_url}})
+
+<div class="img-wrapper">
+<img src= "{{"/images/probability-and-statistics/difference-btw-two-proportions-1.png" | relative_url }}" width=650>
+</div>
+
+Select $n_1$: math major, and $n_2$: physics major, independently.
+
+Assume $X_1, \dots, X_{n_1}$ and $Y_1, \dots, Y_{n_2}$ are two independent random samples.
+
+From the sample, we get $\hat{p_1} = \bar{x}$, $\hat{p_2} = \bar{y}$. Then, $\hat{p_1} - \hat{p_2}$ can be estimator for $p_1 - p_2$.
+
+By CLT,
+
+$$
+\frac{(\hat{p_1} - \hat{p_2}) - (p_1 - p_2)}{\sqrt{\dfrac{p_1q_1}{n_1} + \dfrac{p_2q_2}{n_2}}} \; \approx \; N(0, 1)
+$$
+
+Then, the $100(1-\alpha)\%$ confidence interval for $p_1 - p_2$ is 
+
+$$
+\left( (\hat{p_1} - \hat{p_2}) - z_{\alpha/2} \cdot \sqrt{\dfrac{\hat{p}_1\hat{q}_1}{n_1} + \dfrac{\hat{p}_2\hat{q}_2}{n_2}}, \;
+(\hat{p_1} - \hat{p_2}) + z_{\alpha/2} \cdot \sqrt{\dfrac{\hat{p}_1\hat{q}_1}{n_1} + \dfrac{\hat{p}_2\hat{q}_2}{n_2}} \right)
+$$
+
+<hr/>
+
+이어지는 포스트에서는 sample variance $s^2$로부터 population variance $\sigma^2$를 추정하는 방법에 대해 다룬다.
+
+👉 [Variance Estimation]({{"/2021/05/16/variance-estimation.html" | relative_url}})
 
