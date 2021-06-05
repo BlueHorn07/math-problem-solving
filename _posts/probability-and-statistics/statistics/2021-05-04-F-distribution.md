@@ -10,6 +10,8 @@ tags: ["Statistics"]
 
 <hr/>
 
+<div class="definition" markdown="1">
+
 <span class="statement-title">Definition.</span> F-distribution<br>
 
 If $V_1 \sim \chi^2(n_1)$ and $V_2 \sim \chi^2(n_2)$ are independent, 
@@ -20,7 +22,9 @@ $$
 F \sim F(n_1, n_2)
 $$
 
-ps) 일반적으로, $F(n_1, n_2) \ne F(n_2, n_1)$이다. F-distribution은 non-symmetric이라는 말.
+</div>
+
+ps) 일반적으로, $F(n_1, n_2) \ne F(n_2, n_1)$이다. <small>F-distribution은 non-symmetric이라는 말.</small>
 
 
 <div class="img-wrapper">
@@ -80,13 +84,15 @@ $\blacksquare$
 
 <br/>
 
+<div class="theorem" markdown="1">
+
 <span class="statement-title">Theorem.</span><br>
 
 Supp. we have two independent random samples $X_1, \dots, X_{n_1}$ from $N(\mu_1, \sigma_1^2)$ and $Y_1, \dots, Y_{n_2}$ from $N(\mu_2, \sigma_2^2)$.
 
 Let $S_1^2 = \dfrac{\sum^{n_1}_{i=1} (X_i - \bar{X})^2}{n_1 - 1}$ and $$S_2^2 = \dfrac{\sum^{n_2}_{i=1} (Y_i - \bar{Y})^2}{n_2 - 1}$$.
 
-Note that $S_1^2 \sim \chi^2 (n_1 - 1)$ and $S_2^2 \sim \chi^2 (n_2 - 1)$.
+Note that $(n_1 - 1)S_1^2/\sigma_1^2 \sim \chi^2 (n_1 - 1)$ and $(n_2 - 1)S_2^2/\sigma_2^2 \sim \chi^2 (n_2 - 1)$.
 
 Then,
 
@@ -94,7 +100,7 @@ $$
 F := \frac{S_1^2 / \sigma_1^2}{S_2^2 / \sigma_2^2} \sim F(n_1 - 1, n_2 - 1)
 $$
 
-※ Note: $\dfrac{S_1^2 / (n_1 - 1)}{S_2^2 / (n_2 - 1)} \sim F(n_1, n_2)$.
+</div>
 
 <div class="math-statement" markdown="1">
 
@@ -134,7 +140,7 @@ $$
 \end{aligned}
 $$
 
-Here, $f_{0.04}(20, 30)=1.93$ and $f_{0.01}(20, 30) = 2.55$.
+Here, $f_{0.05}(20, 30)=1.93$ and $f_{0.01}(20, 30) = 2.55$.
 
 The the value of $2$ is btw $1.93$ and $2.55$.
 
@@ -148,7 +154,11 @@ $$
 
 </div>
 
+<hr/>
 
+지금까지 우리는 population distribution의 parameter인 "평균"과 "분산"에 대해 추정했다. 이어지는 포스트에서는 sample로부터 얻는 분포인 **\<EDF; Empirical Distribution Function\>**으로부터 population distribution을 추정해본다. 이 과정에서 쓰는 것이 바로 **\<Quantile; 분위수\>**이다!
+
+👉 [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile.html" | relative_url}})
 
 <hr/>
 
