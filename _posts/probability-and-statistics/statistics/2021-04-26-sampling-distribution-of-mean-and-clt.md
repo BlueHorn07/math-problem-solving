@@ -257,6 +257,33 @@ $\blacksquare$
 
 <hr/>
 
+### Sampling Distribution of the difference btw two mean
+
+이번에는 두 개의 서로 population에서 뽑은 두 independent sample을 생각해보자!
+
+Let $X_1, \dots, X_{n_1}$, and $Y_1, \dots, Y_{n_2}$ be two independent random samples with $E[X_1] = \mu_1$, $\text{Var}(X_1) = \sigma_1^2$, and  $E[X_2] = \mu_2$, $\text{Var}(Y_2) = \sigma_2^2$.
+
+우리는 "두 샘플 평균의 차" $\mu_1 - \mu_2$에 대한 inference를 수행하고자 한다. 이때, $\overline{X} - \overline{Y}$를 사용하면 "두 샘플 평균의 차"에 대해 추론할 수 있다!!
+
+By CLT,
+
+$$
+\begin{aligned}
+    \frac{\overline{X} - \mu_1}{\frac{\sigma_1}{\sqrt{n_1}}} \sim N(0, 1) \quad & \iff \quad \overline{X} \sim N\left(\mu_1, \frac{\sigma_1^2}{n_1}\right) \\
+    \frac{\overline{Y} - \mu_2}{\frac{\sigma_2}{\sqrt{n_2}}} \sim N(0, 2) \quad & \iff \quad \overline{Y} \sim N\left(\mu_2, \frac{\sigma_2^2}{n_2}\right)
+\end{aligned}
+$$
+
+따라서, $\overline{X} - \overline{Y}$에 대한 분포는 independent한 두 normal distribution에 대한 덧셈으로 쉽게 유도할 수 있다!
+
+$$
+\overline{X} - \overline{Y} \sim N\left( \mu_1 - \mu_2, \; \frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2} \right)
+$$
+
+위의 사실을 이용해서, "두 샘플 평균의 차"에 대한 추론도 쉽게 수행할 수 있다 😉
+
+<hr/>
+
 이번 포스트에서는 표본평균 $\bar{X}$에 대한 분포인 "Sampling Distribuion of Mean"을 보았다. 또, 표본평균 $\bar{X}$의 분포를 파악하고, 활용하는데 필요한 \<WLLN\>과 \<CLT\>를 살펴보았다.
 
 이어지는 포스트에서는 "평균"과 함께, 확률 분포의 특성을 결정하는 parameter인 **"분산(Variance)"**이 Random Sample에서 어떻게 유도되는지 살펴볼 예정이다.
