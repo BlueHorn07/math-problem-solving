@@ -269,8 +269,8 @@ By CLT,
 
 $$
 \begin{aligned}
-    \frac{\overline{X} - \mu_1}{\frac{\sigma_1}{\sqrt{n_1}}} \sim N(0, 1) \quad & \iff \quad \overline{X} \sim N\left(\mu_1, \frac{\sigma_1^2}{n_1}\right) \\
-    \frac{\overline{Y} - \mu_2}{\frac{\sigma_2}{\sqrt{n_2}}} \sim N(0, 2) \quad & \iff \quad \overline{Y} \sim N\left(\mu_2, \frac{\sigma_2^2}{n_2}\right)
+    \frac{\overline{X} - \mu_1}{\sigma_1/\sqrt{n_1}} \sim N(0, 1) \quad & \iff \quad \overline{X} \sim N\left(\mu_1, \sigma_1^2/n_1\right) \\
+    \frac{\overline{Y} - \mu_2}{\sigma_2/\sqrt{n_2}} \sim N(0, 2) \quad & \iff \quad \overline{Y} \sim N\left(\mu_2, \sigma_2^2/n_2\right)
 \end{aligned}
 $$
 
