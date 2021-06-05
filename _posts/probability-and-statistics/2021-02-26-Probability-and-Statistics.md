@@ -89,6 +89,12 @@ hidden: true
 ## Statistics
 
 - [Sampling Distribution]({{"/2021/04/25/sampling-distribution.html" | relative_url}})
+  - statistic; 통계량
+    - sample distribution
+- [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})
+  - WLLN; Weak Law of Large Numbers
+  - CLT; Central Limit Theorem
+    - *proof*
 - [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance.html" | relative_url}})
 
 <br/>
