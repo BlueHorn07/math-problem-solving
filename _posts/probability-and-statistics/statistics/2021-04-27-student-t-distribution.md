@@ -139,7 +139,7 @@ t-value가 $t_{0.05}$보다 크므로 유의하다. 그래서 population mean $\
 
 \<t-distribution\>은 뒤에 나오는 \<Interval Estimation\>에서 유용하게 사용된다. 
 
-👉 [Estimate $\mu$ when $\sigma^2$ is unknown]({{"/2021/05/06/interval-estimation.html#estimate-mu-when-sigma2-is-unknown" | relative_url}})
+👉 [Estimate $\mu$ when $\sigma^2$ is unknown]({{"/2021/05/06/interval-estimation-and-confidence-level.html#estimate-mu-when-sigma2-is-unknown" | relative_url}})
 
 <br/>
 

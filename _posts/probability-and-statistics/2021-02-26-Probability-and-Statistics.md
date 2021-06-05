@@ -101,12 +101,13 @@ hidden: true
 
 - [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
 - [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
-- [Quantile]({{"/2021/05/04/Quantile.html" | relative_url}})
+- [Quantile]({{"/2021/05/04/EDF-and-Quantile.html" | relative_url}})
 
 <br/>
 
-- [Point Estimation]({{"/2021/05/05/point-estimation.html" | relative_url}})
-- [Interval Estimation]({{"/2021/05/06/interval-estimation.html" | relative_url}})
+- [Point Estimation, and unbiased estimator]({{"Point Estimation, and unbiased estimaor
+" | relative_url}})
+- [Interval Estimation]({{"/2021/05/06/interval-estimation-and-confidence-level.html" | relative_url}})
 - [Prediction & Tolerance Estimation]({{"/2021/05/13/prediction-and-tolerance-interval.html" | relative_url}})
 - [Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means.html" | relative_url}})
 - [Two Samples Estiatmion: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations.html" | relative_url}})
