@@ -111,14 +111,14 @@ div.eq-box {
 }
 
 // mathematical statement
-.math-statement {
+.math-statement, .proof {
   margin: 1rem;
   padding: 0.5rem;
   background-color: rgb(230, 230, 230);
 }
 
 // statement
-.statement {
+.statement, .theorem {
   margin: 1rem;
   padding: 0.5rem;
   background-color: #ffece9;
