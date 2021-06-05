@@ -99,8 +99,8 @@ hidden: true
 
 <br/>
 
-- [Student's t-Distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
-- [F-Distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
+- [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
+- [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
 - [Quantile]({{"/2021/05/04/Quantile.html" | relative_url}})
 
 <br/>

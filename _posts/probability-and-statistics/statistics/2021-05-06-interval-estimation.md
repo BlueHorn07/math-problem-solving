@@ -18,7 +18,7 @@ tags: ["Statistics"]
   - [error of estimation](#error-of-estimation)
   - [one-sided confidence bounds](#one-sided-confidence-bounds)
 - [Estimate $\mu$ when $\sigma^2$ is unknown](#estimate-mu-when-sigma2-is-unknown)
-  - t-Distribution
+  - t-distribution
 - [Compare Point Estimator and Interval Estimator](#compare-point-estimator-and-interval-estimator)
 
 <hr/>
@@ -217,7 +217,7 @@ $$
 \frac{\bar{X} - \mu}{S / \sqrt{n}}
 $$
 
-이 식은 우리가 [student's t-Distribution]({{"https://bluehorn07.github.io/mathematics/2021/04/27/student-t-distribution.html" | relative_url}})에서 이미 살펴보았다!
+이 식은 우리가 [student's t-distribution]({{"https://bluehorn07.github.io/mathematics/2021/04/27/student-t-distribution.html" | relative_url}})에서 이미 살펴보았다!
 
 $$
 \frac{\bar{X} - \mu}{S / \sqrt{n}} \; \overset{D}{\sim} \; t(n-1)

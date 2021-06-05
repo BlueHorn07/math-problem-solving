@@ -1,5 +1,5 @@
 ---
-title: "Student's t-Distribution"
+title: "Student's t-distribution"
 layout: post
 use_math: true
 tags: ["Statistics"]
@@ -8,7 +8,7 @@ tags: ["Statistics"]
 ### 서론
 2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-\<t-Distribution\>으로부터 유도하는 \<t-value\>는 두 분포의 평균에 대한 유의도를 평가하는 "검정 통계량"이다.
+\<t-distribution\>으로부터 유도하는 \<t-value\>는 두 분포의 평균에 대한 유의도를 평가하는 "검정 통계량"이다.
 
 <hr/>
 
@@ -126,13 +126,13 @@ t-value는 평균의 차이에 대해 수치화한 지표이다. 그래서 t-val
 
 <br/>
 
-\<t-Distribution\>은 뒤에 나오는 \<Interval Estimation\>에서 유용하게 사용된다. 
+\<t-distribution\>은 뒤에 나오는 \<Interval Estimation\>에서 유용하게 사용된다. 
 
 👉 [Estimate $\mu$ when $\sigma^2$ is unknown]({{"/2021/05/06/interval-estimation.html#estimate-mu-when-sigma2-is-unknown" | relative_url}})
 
 
 <br/>
 
-이어지는 포스트에서는 \<F-Distribution\>에 대해 다루도록 하겠다.
+이어지는 포스트에서는 \<F-distribution\>에 대해 다루도록 하겠다.
 
-👉 [F-Distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
+👉 [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})

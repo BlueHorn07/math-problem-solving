@@ -1,5 +1,5 @@
 ---
-title: "F-Distribution"
+title: "F-distribution"
 layout: post
 use_math: true
 tags: ["Statistics"]
@@ -10,17 +10,17 @@ tags: ["Statistics"]
 
 <hr/>
 
-<span class="statement-title">Definition.</span> F-Distribution<br>
+<span class="statement-title">Definition.</span> F-distribution<br>
 
 If $V_1 \sim \chi^2(n_1)$ and $V_2 \sim \chi^2(n_2)$ are independent, 
 
-then $F := \dfrac{V_1/n_1}{V_2/n_2}$ is called **\<Snedecor's F-Distribution\>**[^1] with degrees of freedom $n_1$ and $n_2$, and denoted as
+then $F := \dfrac{V_1/n_1}{V_2/n_2}$ is called **\<Snedecor's F-distribution\>**[^1] with degrees of freedom $n_1$ and $n_2$, and denoted as
 
 $$
 F \sim F(n_1, n_2)
 $$
 
-ps) 일반적으로, $F(n_1, n_2) \ne F(n_2, n_1)$이다. F-Distribution은 non-symmetric이라는 말.
+ps) 일반적으로, $F(n_1, n_2) \ne F(n_2, n_1)$이다. F-distribution은 non-symmetric이라는 말.
 
 
 <div class="img-wrapper">
@@ -104,7 +104,7 @@ $$
 F := \frac{S_1^2 / \sigma_1^2}{S_2^2 / \sigma_2^2} = \frac{\frac{(n_1 - 1) S_1^2}{\sigma_1^2} / (n_1 - 1)}{\frac{(n_2 - 1) S_2^2}{\sigma_2^2} / (n_2 - 1)}
 $$
 
-이때, $\dfrac{(n_1 - 1) S_1^2}{\sigma_1^2} \sim \chi^2 (n_1 - 1)$이므로 \<F-Distribution\>의 정의에 따라
+이때, $\dfrac{(n_1 - 1) S_1^2}{\sigma_1^2} \sim \chi^2 (n_1 - 1)$이므로 \<F-distribution\>의 정의에 따라
 
 $$
 F := \frac{S_1^2 / \sigma_1^2}{S_2^2 / \sigma_2^2} = \frac{V_1 / (n_1 - 1)}{V_2 / (n_2 - 1)} \sim F(n_1 - 1, n_2 - 1)
