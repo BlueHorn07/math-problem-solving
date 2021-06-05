@@ -210,6 +210,8 @@ However, if we approximate it to $\text{POI}(2)$, then $P(x = 39) = e^{-2} \frac
 
 그런데, 이런 \<binomial distribution\>을 좀더 확장해 \<normal distribution\>으로 근사할 수 있음을 기술하는 정리가 있다!! 🤩
 
+<div class="theorem" markdown="1">
+
 <span class="statement-title">Theorem.</span> De Moivre-Laplace Central Limit Theorem<br>
 
 Let $X \sim \text{BIN}(n, p)$, then we have
@@ -218,7 +220,11 @@ $$
 \lim_{n \rightarrow \infty} P\left( \frac{X - np}{\sqrt{npq}} \le x \right) = \Phi(x)
 $$
 
+where $\Phi(x)$ is CDF of normal $N(0, 1)$.
+
 ※ Note that this is one special case of CLT.
+
+</div>
 
 <br/>
 
