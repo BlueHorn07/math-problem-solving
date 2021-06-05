@@ -2,7 +2,7 @@
 title: "Modern Algebra I - PS1"
 layout: post
 use_math: true
-tags: ["Modern Algebra1"]
+tags: ["Modern Algebra1", "Problem Solving"]
 ---
 
 ### 서론
