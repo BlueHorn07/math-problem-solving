@@ -10,12 +10,12 @@ tags: ["Statistics"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- Singe Sample Estimation: Varaicen Estimation
+- Singe Sample Estimation: Variance Estimation
 - Two Samples Estimation: The ratio of two variances
 
 <hr/>
 
-### Singe Sample Estimation: Varaicen Estimation
+### Singe Sample Estimation: Variance Estimation
 
 Let $X_1, \dots, X_n$ be a random sample from $N(\mu, \sigma^2)$.
 
