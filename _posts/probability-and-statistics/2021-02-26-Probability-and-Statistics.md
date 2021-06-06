@@ -118,12 +118,22 @@ hidden: true
   - Singe Sample Estimation: Varaicen Estimation
   - Two Samples Estimation: The ratio of two variances
 
-- [Maximum Likelihodd Estimation]({{"/2021/05/17/maximum-likelihood-estimation.html" | relative_url}})
+- [Maximum Likelihood Estimation]({{"/2021/05/17/maximum-likelihood-estimation.html" | relative_url}})
 
 <br/>
 
 - [Introduction to Hypothesis Tests]({{"/2021/05/18/introduction-to-hypothesis-tests.html" | relative_url}})
+  - Null Hypothetsis $H_0$ & Alternative Hypothesis $H_1$
+  - Test Statistics
+    - Rejection Region or Critical Region; $X \ge C$
+    - Critical Value; $C$
+  - [Type 1 Error & Type 2 Error]({{"/2021/05/18/introduction-to-hypothesis-tests.html#t1-erorr--t2-error" | relative_url}})
+    - [Significance level; Size of Test; 유의 수준 $\alpha$]({{"/2021/05/18/introduction-to-hypothesis-tests.html#significance-level-alpha" | relative_url}}) 🔥
+    - [Power of Test; 검정력 $\gamma(\theta)$]({{"/2021/05/18/introduction-to-hypothesis-tests.html#power-of-test-gammatheta" | relative_url}}) 🔥
+    - [p-value; 유의 확률]({{"/2021/05/18/introduction-to-hypothesis-tests.html#p-value" | relative_url}}) 🔥🔥
 - [Test on Mean]({{"/2021/05/19/test-on-mean.html" | relative_url}})
-- [Test on Proportion and Variance]({{"/2021/05/27/test-on-proportion-and-variance.html" | relative_url}})
+- [Test on Proportion and Variance]({{"/2021/05/26/test-on-proportion-and-variance.html" | relative_url}})
 - [Chi-square Goodness-of-fit Test]({{"/2021/05/27/chi-square-goodness-of-fit-test.html" | relative_url}})
+  - Test on Independence
+  - Test on Homogeneity
 
