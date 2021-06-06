@@ -22,7 +22,7 @@ tags: ["Statistics"]
 
 Supp. there are two populations and assume that both follow some random distributions with means $\mu_1$ and $\mu_2$ and variances $\sigma_1^2$, $\sigma_2^2$ respectively. 
 
-Take random samples $X_1, \dots, X_{n_1}$ and $Y_1, \dots, Y_{n_2}$, and assume that $X_i$'2 and $Y_j$'2 are independent.
+Take random samples $X_1, \dots, X_{n_1}$ and $Y_1, \dots, Y_{n_2}$, and assume that $X_i$s and $Y_j$s are independent.
 
 Supp. that their observed sample means are $\bar{x}$ and $\bar{y}$, and their sample variances are $s_1^2$ and $s_2^2$.
 
@@ -51,23 +51,23 @@ $$
 \bar{x} - \bar{y} + z_{\alpha/2} \cdot \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}} \right)
 $$
 
-💥 이때, 주의할 점은 이것은 true interval이 아니라 approixmate interval이라는 점이다!
+💥 이때, 주의할 점은 이것은 true interval이 아니라 approximate interval이라는 점이다; by CLT
 
-💥 또, 이 근사는 $X_i$, $Y_i$이 모두 idd normal 이여야 가능하다!
+💥 또, 이 근사는 $X_i$, $Y_j$가 모두 iid normal이여야 가능하다!
 
 <hr/>
 
 #### $\sigma_1^2$ and $\sigma_2^2$ are unknown, but known that $\sigma_1^2 = \sigma_2^2$
 
-앞에서 우리는 CLT를 사용해 $\frac{\bar{X} - \mu}{\sigma / \sqrt{n}}$를 사용했었다. 하지만, 이번에는 정확한 $\sigma^2$의 값을 알지 못하기 때문에 우리는 population variacne $\sigma^2$ 대신 sample variance $s^2$을 사용한다!!
+앞에서 우리는 CLT를 사용해 $\frac{\bar{X} - \mu}{\sigma / \sqrt{n}}$를 사용했었다. 하지만, 이번에는 정확한 $\sigma^2$의 값을 알지 못하기 때문에 $\sigma^2$ 대신 sample variance $s^2$을 사용한다!!
 
 [Previous]
 
 $$
-\frac{(\bar{X} - \bar{Y}) - (\mu_1 - \mu_2)}{\color{red}{\sigma} \color{black}\sqrt{\frac{1}{n_1} + \frac{1}{n_2}}} \;\overset{D}{\sim} \; N(0, 1)
+\frac{(\bar{X} - \bar{Y}) - (\mu_1 - \mu_2)}{\sqrt{\dfrac{\color{red}{\sigma_1}}{n_1} + \dfrac{\color{red}{\sigma_2}}{n_2}}} \;\overset{D}{\sim} \; N(0, 1)
 $$
 
-이때, 우리는 $\sigma^2$를 대체하기 위해 \<pooled sample variance\>라는 두 샘플의 sample variance를 종합한 녀석을 사용하게 된다!
+이때, 우리는 $\sigma^2$를 대체하기 위해 \<**pooled sample variance**\>라는 두 샘플의 sample variance를 종합한 녀석을 사용하게 된다!
 
 <div class="statement" markdown="1">
 
@@ -122,10 +122,10 @@ $$
 \frac{(\bar{X} - \bar{Y}) - (\mu_1 - \mu_2)}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} \; \overset{D}{\sim} \; ??
 $$
 
-이때, 우변이 ??인 이유는 아직까지 위의 경우에 대해 정확한 분포를 모르기 때문이다!! 그래서 이것이 어떤 조건의 t-distribution을 만족한다고 근사하여 estimation을 진행한다!
+이때, 우변이 ??인 이유는 아직까지 위의 경우에 대해 정확한 분포를 모르기 때문이다!! 그래서 이것이 어떤 DOF $d$의 t-distribution을 만족한다고 근사하여 estimation을 진행한다!
 
 $$
-\frac{(\bar{X} - \bar{Y}) - (\mu_1 - \mu_2)}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} \; \overset{D}{\sim} \; t(D)
+\frac{(\bar{X} - \bar{Y}) - (\mu_1 - \mu_2)}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} \; \overset{D}{\sim} \; t(d)
 $$
 
 where 
@@ -134,10 +134,14 @@ $$
 d = \frac{(s_1^2/n_1 + s_2^2/n_2)^2}{(s_1^2/n_1)^2 / (n_1-1) + (s_2^2/n_2)^2 / (n_2-1)}
 $$
 
-이 근사법을 \<Welch's t-test\>라고 하며, 이때 dof를 구하기 위해 사용한 식을 \<Welch-Satterthwaite equation\>이라고 한다.
+이 근사법을 \<**Welch's t-test**\>라고 하며, 이때 dof를 구하기 위해 사용한 식을 \<Welch-Satterthwaite equation\>이라고 한다.
 
 <hr/>
 
 이어지는 포스트에서는 또다른 Two Samples Estimation인 \<Paired Observation\>의 경우를 살펴본다! 😁
 
 👉 [Two Samples Estimation: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations.html" | relative_url}})
+
+지금까지 우리의 관심사가 주로 population mean $\mu$에 대해 추정하거나 그 차이값에 대해 추정했다. 그 다음 포스트에서는 population variance $\sigma_2$에 대해 추정한다. $\sigma_2$를 추정하기도 하며, 두 샘플의 populiation variance의 비율인 $\sigma_1^2 / \sigma_2^2$를 추정한다.
+
+👉 [Variance Estimation]({{"/2021/05/16/variance-estimation.html" | relative_url}})
