@@ -58,4 +58,4 @@ $$
 
 지금까지는 \<Normal Distribution\>에서 뽑은 random sample에서 추정(Estimation)을 진행했다. 다음 포스트에서는 \<Binomial Distribution\>에서 수행하는 추정인 \<Proportion Estimation\>에 대해 살펴본다!! <small>(Binomial Distribution에서의 평균은 Proportion이다!! 😁)</small>
 
-👉 [Proportion Estimation on Binomial Distribution]({{"/2021/05/14/proportion-estimation-on-binomial-distribution.html" | relative_url}})
+👉 [Proportion Estimation on Bernoullid Distribution]({{"/2021/05/14/proportion-estimation-on-bernoulli.html" | relative_url}})

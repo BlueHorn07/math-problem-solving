@@ -1,5 +1,5 @@
 ---
-title: "Proportion Estimation on Binomial Distribution"
+title: "Proportion Estimation on Bernoullid Distribution"
 layout: post
 use_math: true
 tags: ["Statistics"]
