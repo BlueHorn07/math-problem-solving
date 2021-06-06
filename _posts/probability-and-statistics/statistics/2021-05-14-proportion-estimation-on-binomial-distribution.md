@@ -1,5 +1,5 @@
 ---
-title: "Proportion Estimation"
+title: "Proportion Estimation on Binomial Distribution"
 layout: post
 use_math: true
 tags: ["Statistics"]

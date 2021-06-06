@@ -111,7 +111,7 @@ hidden: true
 - [Prediction & Tolerance Estimation]({{"/2021/05/13/prediction-and-tolerance-interval.html" | relative_url}})
 - [Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means.html" | relative_url}})
 - [Two Samples Estimation: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations.html" | relative_url}})
-- [Proportion Estimation]({{"/2021/05/14/proportion-estimation.html" | relative_url}})
+- [Proportion Estimation]({{"/2021/05/14/proportion-estimation-on-binomial-distribution.html" | relative_url}})
   - Singe Sample Estimation: Proportion Estimation
   - Two Samples Estimation: Diff Btw Two Proportions
 - [Variance Estimation]({{"/2021/05/16/variance-estimation.html" | relative_url}})
