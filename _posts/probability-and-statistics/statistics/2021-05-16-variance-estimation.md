@@ -10,12 +10,12 @@ tags: ["Statistics"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- Singe Sample Estimation: Variance Estimation
+- Single Sample Estimation: Variance Estimation
 - Two Samples Estimation: The ratio of two variances
 
 <hr/>
 
-### Singe Sample Estimation: Variance Estimation
+### Single Sample Estimation: Variance Estimation
 
 Let $X_1, \dots, X_n$ be a random sample from $N(\mu, \sigma^2)$.
 
@@ -62,9 +62,9 @@ where $\chi^2_{\alpha/2}$ and $$\chi^2_{1-\alpha/2}$$ are $\chi^2$-values with $
 
 ### Two Samples Estimation: The ratio of two variances
 
-Let $X_1, \dots, X_{n_1}$ be a random sample from $N(\mu_1, \sigma_1^2)$.
+Let $X_1, \dots, X_{n_1}$ be random samples from $N(\mu_1, \sigma_1^2)$.
 
-Let $Y_1, \dots, Y_{n_2}$ be a random sample from $N(\mu_2, \sigma_2^2)$.
+Let $Y_1, \dots, Y_{n_2}$ be random samples from $N(\mu_2, \sigma_2^2)$.
 
 Supp. $X_i$s and $Y_j$s are independent.
 
@@ -96,6 +96,8 @@ $$
 
 <hr/>
 
-이어지는 포스트에서는 또다른 Estimation 방법인 \<MLE; Maximum Likelihood Estimation\>에 대해 살펴본다.
+지금까지 "추정(Statistical Estimation)" 과정에 대해 살펴보았다. $\bar{x}$와 $s^2$와 같이 **Point Estimator**를 구하는 경우도 있었고, $\bar{x} \pm z_{\alpha/2} \cdot s / \sqrt{n}$ 과 같이 **Interval Estimator**를 구하는 경우도 있었다. 또, Single Sample에서 Estimator를 구하는 것도 있었고, Two Samples에서 Estimator를 구하는 것도 있었다. 
+
+그러나 지금까지 살펴본 방식 외에도 또다른 Estimation 방법이 있다 😲 \<**MLE; Maximum Likelihood Estimation**\>는 Sample Distribution을 재현할 확률이 가장 높은 Parameter $\theta$를 찾는 방식으로 Estimator를 찾는다. \<MLE\>는 당연히 Point Estimator를 제시하며, 그 과정에서 $\theta$에 대해 편미분을 수행한다.
 
 👉 [Maximum Likelihood Estimation]({{"/2021/05/17/maximum-likelihood-estimation.html" | relative_url}})
