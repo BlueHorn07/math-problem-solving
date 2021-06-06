@@ -152,3 +152,8 @@ The degree of freedom $\nu$ = (#. of categories after pooling - 1) - #. of param
 
 <hr/>
 
+검정(Testing)에 대한 내용은 여기까지다!! 👏 이것으로 "통계학(Statistics)"의 기본적인 내용을 모두 살펴본 것이다!! 😆
+
+다음 포스트부터는 \<Simple Linear Regression\>이라는 새로운 챕터를 살펴본다. 주로 주어진 데이터에서 "Linear Regression"의 계수 $\beta_i$들을 어떻게 찾을 수 있을지를 다루는 챕터다!
+
+👉 [Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression.html" | relative_url}})
