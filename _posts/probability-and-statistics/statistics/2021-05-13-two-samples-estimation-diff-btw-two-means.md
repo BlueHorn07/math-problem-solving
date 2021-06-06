@@ -10,10 +10,10 @@ tags: ["Statistics"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- $\sigma_1^2$ and $\sigma_2^2$ are known
-- $\sigma_1^2$ and $\sigma_2^2$ are unknown, but known that $\sigma_1^2 = \sigma_2^2$
-  - pooled sample variance
-- $\sigma_1^2$ and $\sigma_2^2$ are unknown and unequal
+- [$\sigma_1^2$ and $\sigma_2^2$ are known](#sigma_12-and-sigma_22-are-known)
+- [$\sigma_1^2$ and $\sigma_2^2$ are unknown, but known that $\sigma_1^2 = \sigma_2^2$](#sigma_12-and-sigma_22-are-unknown-but-known-that-sigma_12--sigma_22)
+  - pooled sample variance; $S_p^2$
+- [$\sigma_1^2$ and $\sigma_2^2$ are unknown and unequal](#sigma_12-and-sigma_22-are-unknown-and-unequal)
   - Welch’s t-test
 
 <hr/>
