@@ -132,6 +132,7 @@ hidden: true
     - [Power of Test; 검정력 $\gamma(\theta)$]({{"/2021/05/18/introduction-to-hypothesis-tests.html#power-of-test-gammatheta" | relative_url}}) 🔥
     - [p-value; 유의 확률]({{"/2021/05/18/introduction-to-hypothesis-tests.html#p-value" | relative_url}}) 🔥🔥
 - [Test on Mean]({{"/2021/05/19/test-on-mean.html" | relative_url}})
+- [Choice of Sample Size for Testing Mean]({{"/2021/05/20/choice-of-sample-size-for-testing-mean.html" | relative_url}})
 - [Test on Proportion and Variance]({{"/2021/05/26/test-on-proportion-and-variance.html" | relative_url}})
 - [Chi-square Goodness-of-fit Test]({{"/2021/05/27/chi-square-goodness-of-fit-test.html" | relative_url}})
   - Test on Independence

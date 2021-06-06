@@ -128,7 +128,7 @@ $$
 
 다음 포스트에서는 \<검정력; power of test\> $\beta$를 도입해 평균(Mean)에 대해 검정(Testing)을 수행할 때 필요한 Sample Size $n$을 결정하는 방법에 대해 살펴본다.
 
-👉 [Choice of Sample Size for Testing Mean]({{"/2021/05/20/choice-of-sample-size-for-testing-mean.html" | relative_url"}})
+👉 [Choice of Sample Size for Testing Mean]({{"/2021/05/20/choice-of-sample-size-for-testing-mean.html" | relative_url}})
 
 <br/>
 
