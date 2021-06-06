@@ -13,18 +13,22 @@ tags: ["Statistics"]
 - Statistical Hypothesis
 - Null Hypothetsis $H_0$ & Alternative Hypothesis $H_1$
 - Test Statistics
-  - Rejection Region or Critical Region
-  - Critical Value
-- Type 1 Error & Type 2 Error
-- Significance level; Size of Test; 유의 수준 🔥
-- Power of Test; 검정력 🔥
-- p-value 🔥
+  - Rejection Region or Critical Region; $X \ge C$
+  - Critical Value; $C$
+- [Type 1 Error & Type 2 Error](#t1-erorr--t2-error)
+  - [Significance level; Size of Test; 유의 수준 $\alpha$](#significance-level-alpha) 🔥
+  - [Power of Test; 검정력 $\gamma(\theta)$](#power-of-test-gammatheta) 🔥
+  - [p-value; 유의 확률](#p-value) 🔥🔥
 
 <hr/>
+
+<div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> Statistical Hypothesis<br>
 
 A \<**statistical hypothesis**\> is a <span class="half_HL">statement about the population distribution</span>, usually, in terms of the parameter values.
+
+</div>
 
 <span class="statement-title">Example.</span><br>
 
@@ -35,36 +39,42 @@ Supp. we have a p-coin, I belive that it is a fair coin, on the other hand, you 
 
 <br/>
 
+<div class="definition" markdown="1">
+
 <span class="statement-title">Definition.</span> Null Hypothetsis $H_0$ & Alternative Hypothesis $H_1$<br>
 
 - Null Hypothetsis $H_0$: a hypothesis we expect to reject
 - Alternative Hypothesis $H_1$: a hypothesis we set out to prove
 
+</div>
+
 <div class="statement" markdown="1">
 
-Q. How do we do \<Hypothesis test\>?
+Q. How do we do \<Hypothesis Test\>?
 
-A. First, we should set a \<test statistics\>!
+A. First, we should set a \<Test Statistics\>!
 
 Let's toss a coin $n$-times independently. For each toss, let $X_i$ are $1$ for head and $0$ for otherwise.
 
 Then, $X := \sum X_i$, the num. of heads in $n$ tosses be $X \sim \text{BIN}(n, p)$.
 
-Then, we can use $X$ as a \<test statistics\>!
+Then, we can use $X$ as a \<Test Statistics\>!
 
 </div>
 
-우리는 이 \<**test statistics**\>로 가설 $H_0$를 reject 하거나 reject 하지 않을 것이다!
+우리는 이 \<**Test Statistics**\>로 가설 $H_0$를 reject 하거나 reject 하지 않을 것이다!
 
-위의 $H_0: p=0.5$, $H_1: p=0.7$의 경우에서 생각해보자면, 우리는 $X$가 large enough, 즉 "$X \ge C$ for some $C$"라면, $H_0$를 reject 하는게 합리적이다.
+위의 $H_0: p=0.5$, $H_1: p=0.7$의 경우에서 생각해보자. 만약 $X$가 large enough, 즉 "$X \ge C$ for some $C$"라면, $H_0$를 reject 하는게 합리적이다.
 
 우리는 이 $H_0$를 reject하는 기준이 되는 범위 $X \ge C$를 \<**rejection region**\> 또는 \<**critical region**\>이라고 하며, 이 범위를 잡을 때 쓰는 값 $C$를 \<**critial value**\>라고 한다!
 
 <hr/>
 
+### T1 Erorr & T2 Error
+
 <big>Q. How to choose $C$?</big>
 
-\<critical value\> $C$의 값을 잡기 위해서는 \<Type 1 Error\>, \<Type 2 Error\>를 살펴봐야 한다.
+\<critical value\> $C$의 값을 잡기 위해서는 \<**Type 1 Error**\>, \<**Type 2 Error**\>를 살펴봐야 한다.
 
 | | reject $H_0$ | not reject $H_0$ |
 |:---:|:---:|:---:|
@@ -73,11 +83,11 @@ Then, we can use $X$ as a \<test statistics\>!
 
 <div align="center">
 
-"It's best if we can make T1 & T2 errors as small as possible."
+"It is best to make T1 & T2 errors as small as possible."
 
 </div>
 
-<div class="light-margin" markdown="1">
+<div class="statement" markdown="1">
 
 <span class="statement-title">Case.</span> Type 1 error<br>
 
@@ -93,7 +103,7 @@ $$
 
 </div>
 
-<div class="light-margin" markdown="1">
+<div class="statement" markdown="1">
 
 <span class="statement-title">Case.</span> Type 2 error<br>
 
@@ -111,7 +121,7 @@ $$
 
 ?? 뭔가 이상하다. $P(T1)$를 줄이려면, $C$를 키워야 하고, $P(T2)$를 줄이려면, $C$를 줄여야 한다. 😕 뭐가 맞는 걸까?
 
-답은 우리는 $P(T1)$과 $P(T2)$, 둘 중 하나만 가능한 작게 만들 수 있다는 것이다 😱
+답은 $P(T1)$과 $P(T2)$, 둘 중 하나만 가능한 작게 만들 수 있다는 것이다 😱
 
 <div class="light-margin" align="center">
 
@@ -159,15 +169,23 @@ $$
 
 <hr/>
 
-<span class="statement-title">Definition.</span> Significance level; size of a test<br>
+#### Significance Level; $\alpha$
 
-The probability of committing a \<Type 1 Error\> is called the \<significance level\> and we use $\alpha$ to denote the significance level.
+<div class="definition" markdown="1">
+
+<span class="statement-title">Definition.</span> Significance level; size of a test; 유의 수준 $\alpha$<br>
+
+The probability of committing a \<Type 1 Error\> is called the \<significance level\>, and we use $\alpha$ to denote the significance level.
 
 $$
 \alpha = P(\text{T1 Err}) = P(\text{reject} \; H_0 \mid H_0 \; \text{is true})
 $$
 
 💥 commonly used values for $\alpha$ are $0.1$, $0.05$, $0.01$.
+
+💥 추정(Estimation)을 수행할 때, 비슷한 것을 보긴 했다!! 바로 \<Confidence Level\> $1-\alpha$다!
+
+</div>
 
 <hr/>
 
@@ -226,7 +244,7 @@ $$
 P(\text{BIN}(20, 0.7) \le 14) = 0.392 \approx 0.4
 $$
 
-We fail to reject $H_0$, but we can't accept $H_0$ because not enough statistical evidence to accept it, i.e. $P(T2)$ is high.
+If we fail to reject $H_0$, then we can't accept $H_0$ because $P(T2)$ is too hight to not accept $H_0$.
 
 </div>
 
@@ -246,11 +264,15 @@ $$
 P(\text{T2 Err}) = P(X < 14 \mid p=0.8) = P(\text{BIN}(20, 0.8) < 14>) \approx 0.0867
 $$
 
-So, we fail to reject $H_0$, also in this time, we can accept $H_0$!!
+In this time, if we fail to reject $H_0$, then we can accept $H_0$!!
 
 </div>
 
 <hr/>
+
+#### Power of Test; $\gamma(\theta)$
+
+<div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> Power of Test; 검정력<br>
 
@@ -262,26 +284,70 @@ $$
 
 💥 NOTE: $1-P(\text{T2 Err}) = \gamma(\theta_1)$
 
+</div>
+
 즉, \<power of test\>는 Null hypo $H_0$가 거짓일 때, $H_0$를 기각시키는 확률이다!
+
+\<검정력\>은 T2 Erorr가 클수록 그 값이 작아진다! 그래서 \<검정력\>을 높이고 싶다면, T2 Error를 줄이는 적절한 Alternative Hypothesis $H_1: \theta = \theta_1$를 제시해야 한다.
 
 이 \<power of test\>는 아래 상황일 때, 그 값이 커진다.
 
+- T2 Error를 줄이는 적절한 Alternative Hypothesis $H_1: \theta = \theta_1$
 - \<significance level\> $\alpha$ ▲
 - 표본의 크기 $n$ ▲
 
 <hr/>
 
-지금까지 우리는 \<significance level\> $\alpha$ 값에 따라서, \<critical value\> $C$를 구하고, 또 \<critical region\>을 구했다. 그런데 만약 $\alpha$ 값이 주어지지 않았다면, 어떻게 할까??
+#### p-value
 
-<span class="statement-title">Definition.</span> p-value<br>
+지금까지 우리는 \<significance level\> $\alpha$ 값에 따라서, \<critical value\> $C$를 구하고, 또 \<critical region\>을 구했다. 그런데 <span style="color: red">만약 $\alpha$ 값이 주어지지 않았다면, 어떻게 할까??</span>
+
+<div class="definition" markdown="1">
+
+<span class="statement-title">Definition.</span> p-value; 유의 확률<br>
 
 The \<p-value\> of a test is <span class="half_HL">the lowest significance level at which $H_0$ can be rejected</span> with the given data.
 
-즉, $H_0$를 reject 할 수 있는 가장 작은 $\alpha$ 값이 바로 \<p-value\>이다!
+</div>
 
+주어진 데이터를 기준으로 $H_0$를 reject 할 수 있는 가장 작은 $\alpha$ 값이 바로 \<p-value\>이다!
+
+예를 통해 제대로 이해해보자!
+
+<div class="math-statement" markdown="1">
+
+<span class="statement-title">Example.</span><br>
+
+Everything is same to above situation.
+
+- $H_0: p = 0.5$
+- $H_1: p = 0.7$
+
+Toss a coin 20 times independently, and obtained 14 heads.
+
+<span style="color: red">BUT, in this time, we don't have significance level $\alpha$!!</span>
+
+<span class="statement-title">Solve.</span><br>
+
+The rejection region is $\\{ X \ge C\\}$.
+
+$X = 14$라는 주어진 데이터에서 $H_0$를 기각하려면, $X=14$가 저 rejection region에 포함되어야 한다. $X$가 rejection region에 포함되도록 하는 가장 작은 $C$ 값은 $C=14$이다!
+
+어랏? 우리는 이미 $C=14$일 때의 T1 Error를 구했다.
+
+$$
+0.0577 = P(\text{BIN(20, 0.5)} \ge 14)
+$$
+
+즉, significance level $\alpha=0.0577$가 $H_0$를 기각하는 가장 작은 값이다. 이 $0.0577$이 바로 이 검정(Test)의 "p-value"다!!
+
+</div>
 
 <hr/>
 
-이어지는 포스트에선 본격적인 통계 검정을 수행한다.
+이제 "통계적 검정(Statistical Test)"를 수행하기 위해 필요한 기본적인 내용은 다 살펴봤다. 다음 포스트들부터 상황에 따라 어떻게 통계적 검정을 수행하는지 살펴볼 예정이다. 사실 그렇게 어렵진 않고, 요구하는 것들을 잘 파악해서 순서에 맞게 계산하기만 하면 된다.
 
-👉 [Test on Mean]({{"/2021/05/19/test-on-mean.html" | relative_url}})
+우리가 추정(Estimation)에서 살펴본 과정을 따라서 검정(Testing)을 살펴볼 것이다.
+
+- [Test on Mean]({{"/2021/05/19/test-on-mean.html" | relative_url}})
+- [Test on Proportion and Variance]({{"/2021/05/26/test-on-proportion-and-variance.html" | relative_url}})
