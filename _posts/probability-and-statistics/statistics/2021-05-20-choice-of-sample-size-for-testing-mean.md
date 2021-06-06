@@ -124,6 +124,6 @@ $$
 
 <hr/>
 
-이어지는 포스트에서는 \<Proportion\>과 \<Variance\>에 대해 살펴본다!! 😆
+이어지는 포스트에서는 \<Proportion\>과 \<Variance\>의 검정에 대해 살펴본다!! 😆
 
 👉 [Test on Proportion and Variance]({{"/2021/05/26/test-on-proportion-and-variance.html" | relative_url}})
