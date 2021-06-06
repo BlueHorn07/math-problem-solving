@@ -20,7 +20,7 @@ tags: ["Statistics"]
 
 <div class="light-margine" markdown="1">
 
-Q. Can we find a 95% confidence interval for the true mean of the differences btw the scores befare and after the MATH230?
+Q. Can we find a 95% confidence interval for the true mean of the differences btw the scores before and after the MATH230?
 
 Supp. $X_1, \dots, X_n$ and $Y_1, \dots, Y_n$ are random samples and $\sigma_1^2$ and $\sigma_2^2$ are known.
 
@@ -30,15 +30,15 @@ $$
 \left| \bar{x} - \bar{y} \right| \le z_{\alpha/2} \cdot \sqrt{\frac{\sigma_1^2}{n} + \frac{\sigma_2^2}{n}}
 $$
 
-💥 하!지!만! 위의 방법은 올바른 접근이 아니다! 왜냐하면, 현재 우리가 가진 샘플 $X_i$, $Y_i$에 대해 그 둘이 서로 dependent 하기 때문이다!! 위의 접근은 $X_i$와 $Y_i$가 independent 할 때만 가능하다!!
+💥 하!지!만! 위의 방법은 올바른 접근이 아니다! 왜냐하면, <span class="half_HL">현재 우리가 가진 샘플 $X_i$, $Y_i$에 대해 그 둘이 서로 dependent 하기 때문이다!!</span> 위의 접근은 $X_i$와 $Y_i$가 independent 할 때만 가능하다!!
 
 </div>
 
-그래서 우리는 각 $X_i$, $Y_i$를 개별적으로 생각하는 것이 아니라 그들을 paring인 Difference $D_i = X_i - Y_i$로 접근하고자 한다!
+그래서 우리는 각 $X_i$, $Y_i$를 개별적으로 생각하는 것이 아니라 그들을 paring한 Difference $D_i = X_i - Y_i$로 접근하고자 한다!
 
 이렇게 할 경우, 각 Pair는 서로 independet하게 된다!
 
-Assume that $D_1, \dots, D_n$ is a normal random sample: $D_i \sim N(\mu_D, \sigma_D^2)$
+Assume that $D_1, \dots, D_n$ are normal random samples: $D_i \sim N(\mu_D, \sigma_D^2)$
 
 To find the confidence interval for $\mu_1 - \mu_2$, we use $\bar{D} := \bar{X} - \bar{Y}$.
 
@@ -56,6 +56,6 @@ $$
 
 <hr/>
 
-이어지는 포스트에서는 오랜만에 Single Sample에 대한 estimation을 다룬다. 그 대상은 \<비율; proportion\>이다!
+지금까지는 \<Normal Distribution\>에서 뽑은 random sample에서 추정(Estimation)을 진행했다. 다음 포스트에서는 \<Binomial Distribution\>에서 수행하는 추정인 \<Proportion Estimation\>에 대해 살펴본다!! <small>(Binomial Distribution에서의 평균은 Proportion이다!! 😁)</small>
 
-👉 [Proportion Esitatmion]({{"/2021/05/14/proportion-estimation.html" | relative_url}})
+👉 [Proportion Estimation on Binomial Distribution]({{"/2021/05/14/proportion-estimation-on-binomial-distribution.html" | relative_url}})
