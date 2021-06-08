@@ -15,6 +15,7 @@ tags: ["Differntial Equation"]
   - orthogonality for functions
 - [Fourier Series](#fourier-series)
   - Fourier Coefficients
+- (next) [Fourier Series (Complex Representation)]({{"/2021/06/09/fourier-series-complex-representation.html" | relative_url}})
 
 <hr/>
 
@@ -258,8 +259,8 @@ $\blacksquare$
 
 <hr/>
 
-<span class="statement-title">스피드 웨건.</span><br>
+이어지는 포스트에서는 \<푸리에 급수\>를 복소지수 형태로 표현하는 방식에 대해 살펴볼 것이다. \<푸리에 변환\>을 기술할 때 주로 이 복소지수 형태를 사용하기 때문에, \<푸리에 변환\>을 공부하려면 꼭 미리 알고 있어야 한다.
 
-참고로 둘다 이름에 "푸리에"에 붙었지만 \<푸리에 급수\>와 \<푸리에 변환\>은 전혀 다른 개념이다. 심지어 \<푸리에 변환\> 과정에서 \<푸리에 급수\>는 전혀 등장하지 않는다. 물론 둘다 주기함수와 신호에 대한 탁월한 통찰을 제공하기에, 결국은 둘다 알아야 한다 😉
+👉 [Fourier Series (Complex Representation)]({{"/2021/06/09/fourier-series-complex-representation.html" | relative_url}})
 
 
