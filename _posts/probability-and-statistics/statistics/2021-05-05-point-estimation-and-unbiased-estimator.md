@@ -1,5 +1,5 @@
 ---
-title: "Point Estimation, and unbiased estimaor"
+title: "Point Estimation, and unbiased estimator"
 layout: post
 use_math: true
 tags: ["Statistics"]
@@ -109,7 +109,7 @@ $$
 
 <div class="light-margin"></div>
 
-$E[\hat{\Theta} - \theta]$ is the **bias** of $\hat{\Theta}$ related to $\theta$.
+$E[\hat{\Theta} - \theta]$ is the "**bias**" of $\hat{\Theta}$ related to $\theta$.
 
 💥 $E[\hat{\Theta} - \theta] = 0$, unbiased!
 
