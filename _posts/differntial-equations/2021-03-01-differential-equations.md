@@ -1,5 +1,5 @@
 ---
-title: "MATH200 - Differntial Equationss"
+title: "MATH200 - Differntial Equations"
 layout: post
 use_math: true
 tags: ["Differntial Equation"]
