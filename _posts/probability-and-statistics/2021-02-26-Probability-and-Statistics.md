@@ -27,6 +27,8 @@ hidden: true
 8. One- and Two-Sample Estimation Problems
 9. One- and Two-Sample Tests of Hypotheses
 
+\* [Problem Solving](#problem-solving)
+
 </div>
 
 <hr/>
@@ -137,4 +139,31 @@ hidden: true
   - Test on Independence
   - Test on Homogeneity
 
-- [Introduction to Linear Regression]({{"" | relative_url}})
+<br/>
+
+- [Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression.html" | relative_url}})
+  - Simple Linear Regression
+  - Least Square Method
+    - unbiased regression coefficients
+  - R-square $R^2$; 결정 계수
+- [Test on Regession]({{"/2021/06/09/test-on-regression.html" | relative_url}})
+  - Distribution of Regression Coefficients $B_0$ and $B_1$
+  - Estimator of $\sigma^2$
+- [Prediction on Regression]({{"/2021/06/10/prediction-on-regression.html" | relative_url}})
+  - Estimate on Mean Response $\mu_{Y \mid x_0}$
+  - Prediction Interval
+
+<hr/>
+
+## Problem Solving
+
+### Probability
+
+### Statistics
+
+- [PS1]({{"/2021/06/06/statistics-ps1.html" | relative_url}})
+  - sample variance $S^2$ is not the minimal variance estimator
+  - MSE(Mean Squared Error) is sum of variance and square of bias
+  - Compare $S^2$ and $\hat{S}^2$ using MSE
+- [PS2]({{"/2021/06/09/statistics-ps2.html" | relative_url}})
+- [PS3]({{"/2021/06/10/statistics-ps3.html" | relative_url}})
