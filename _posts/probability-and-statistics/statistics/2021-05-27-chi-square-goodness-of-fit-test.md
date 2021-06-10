@@ -10,11 +10,11 @@ tags: ["Statistics"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- Introduction to Goodness-of-fit Test
+- [Introduction to Goodness-of-fit Test](#introduction-to-goodness-of-fit-test)
   - Test statistics of Goodness-of-fit
   - DOF of Goodness-of-fit
-- Test on Independence
-- Test on Homogeneity
+- [Test on Independence](#test-for-independence)
+- [Test on Homogeneity](#test-for-homogeneity)
 
 <hr/>
 
@@ -138,7 +138,7 @@ The degree of freedom $\nu$ = (#. of categories after pooling - 1) - #. of param
 
 ### Test for Independence
 
-우리는 \<Chi-squared goodness-of-fit Test\>를 응용해 두 개의 카테고리가 서로 독립(independent)한지 검정할 수 있다!
+우리는 \<Chi-squared goodness-of-fit Test\>를 응용해 두 개의 카테고리가 서로 **독립(independent)**인지 검정할 수 있다!
 
 <div class="img-wrapper">
 <img src= "{{"/images/probability-and-statistics/goodness-of-fit-test-2.png" | relative_url }}" width=650>
@@ -155,15 +155,127 @@ $$
 P(\text{party } 1 \; \And \; \text{low}) = P(\text{part } 1) P(\text{low})
 $$
 
-위의 공식을 통해 우리는 
+위의 공식을 통해 우리는 각 상황에 대한 expected value를 얻을 수 있다.
 
+예를 들어 $e_{11}$에서는
 
+$$
+\begin{aligned}
+e_{11} &= 1500 \times P(\text{P1} \; \And \; \text{Low}) \\
+&= 1500 \times \frac{677}{1500} \times \frac{499}{1500} \\
+&= \frac{677 \cdot 499}{1500} = 225.21  
+\end{aligned}
+$$
+
+이런 방식으로 각 entry에 대해 expected value를 구한후 $\chi^2$-value를 구한다.
+
+$$
+\chi^2 = \sum_{i=1}^3 \sum_{j=1}^3 \frac{(o_{ij} - e_{ij})^2}{e_{ij}}
+$$
+
+다음으로 DOF를 구해보면,
+
+$$
+\begin{aligned}
+\nu 
+&= (9-1) - ((3-1) + (3-1)) \\
+&= 9 - 1 - 4 = 4  
+\end{aligned}
+$$
+
+이때 (#. of parameters estimated) 부분이 4가 되는 이유는 다음과 같다.
+
+우리가 'party'에 대한 parameter를 구하려면, 세 가지 경우에 대한 확률을 구해야 한다. 그런데, 확률의 경우 合이 1이 되기 때문에 세가지 경우 중 두 가지 경우만 구하면 된다. 따라서, 'part'에 대해서 두 가지 parameter를 estimate 해야 하고, 마찬가지로 'inomce'에 대해서도 두 가지 parameter를 estimate 해야 한다. 따라서, (#. of parameters estimated)는 4개이다.
+
+이것을 공식으로 작성하면 아래와 같다.
+
+$$
+\begin{aligned}
+\nu
+&= r \cdot c - 1 - ((r -1) + (c-1)) \\
+&= r(c-1) - (c-1) \\
+&= (r-1)(c-1)
+\end{aligned}
+$$
+
+$\chi^2$-value와 DOF $\nu$를 구했으면 그 다음은 검정을 수행하면 된다.
+
+Reject $H_0$ if $\chi^2 > \chi^2_{\alpha} ((r-c)(c-1))$.
 
 <hr/>
 
 ### Test for Homogeneity
 
-(바빠서 생략)
+이번에는 \<Goodness-of-fit Test\>를 응용해 각 카테고리에서의 분포가 **균일(homogenous)**한지 검정해보겠다.
+
+<div class="img-wrapper">
+<img src= "{{"/images/probability-and-statistics/goodness-of-fit-test-3.png" | relative_url }}" width=650>
+</div>
+
+먼저 무엇을 검정하고자 하는지 명확히 정의해보자.
+
+"Is the party preference homogenous among various regions?"
+
+이것을 확인하려면, 'part i'을 선호나는 비율이 각 지역마다 모두 동일한지 확인해야 한다. 이것은 곧 아래의 등식 성립함을 말한다.
+
+$$
+P(\text{party } i \mid \text{Seoul}) = P(\text{part } i \mid \text{Daejeon}) = P(\text{party } i \mid \text{Gwangju}) = P(\text{party } i \mid \text{Daegu})
+$$
+
+우리는 위의 등식을 null hypothesis $H_0$로 삼아 검정을 수행할 것이다!
+
+위의 표를 기준으로 $e_{11}$를 한번 구해보자. 먼저 'Seoul'의 총 인구는 500이다. 그리고 전체 사람 수 중 'party 1'을 선호하는 사람의 비율은 391/1000이다. 따라서, $e_{11}$은
+
+$$
+e_{11} = 500 \times \frac{391}{1000}
+$$
+
+마찬가지로 $e_{12}$의 경우는 $e_{12} = 100 \times 391 / 1000$로, $e_{21}$은 $e_{21} = 500 \times 537 / 1000$이다.
+
+✨ Homogeneity Test is Equivalent to Independence Test
+
+사실 Homogeneity Test는 앞에서 수행한 Independence Test와 완전 동일하다. Homogeneity Test의 경우 $H_0$의 형태가 직접적으로 Inpendence를 암시하고 있는 형태는 아니지만, 약간 변형하면 Independence로 유도할 수 있다.
+
+<div class="math-statement" markdown="1">
+
+편의를 위해 $\text{party } i = B_i$, $\textit{region } j = A_j$로 표시하겠다.
+
+$$
+\begin{aligned}
+P(B_i \mid A_1) = P(B_i \mid A_2) 
+&= P(B_i \mid A_3) = P(B_i \mid A_4) \\
+\frac{P(B_i \cap A_1)}{P(A_1)} = \frac{P(B_i \cap A_2)}{P(A_2)} 
+&= \frac{P(B_i \cap A_3)}{P(A_3)} = \frac{P(B_i \cap A_4)}{P(A_4)} = x
+\end{aligned}
+$$
+
+이때, 위의 식에서 정의한 값 $x$는 
+
+$$
+P(B_i \cap A_j) = x P(A_j)
+$$
+
+임을 이용해 값을 유도할 수 있다.
+
+by "law of total probability",
+
+$$
+P(B_i) = \sum_{j=1}^4 P(B_i \cap A_j) = x \cdot \cancelto{1}{\sum_{j=1}^4 P(A_j)} = x
+$$
+
+즉, $x = P(B_i)$인데, 이것은 $B_i$와 $A_j$가 서로 독립임을 의미한다!!! 😲 $\blacksquare$
+
+</div>
+
+다음으로 DOF 역시 \<Independence Test\> 때와 마찬가지로 구하면 된다.
+
+$$
+\nu = (r-1) (c-1)
+$$
+
+그리고 검정을 수행하면,
+
+Reject $H_0$ if $\chi^2 > \chi^2_{\alpha}((r-1)(c-1))$
 
 <hr/>
 
