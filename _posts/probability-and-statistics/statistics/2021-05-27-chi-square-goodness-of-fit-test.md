@@ -11,6 +11,8 @@ tags: ["Statistics"]
 <br><span class="statement-title">TOC.</span><br>
 
 - Introduction to Goodness-of-fit Test
+  - Test statistics of Goodness-of-fit
+  - DOF of Goodness-of-fit
 - Test on Independence
 - Test on Homogeneity
 
@@ -25,8 +27,6 @@ tags: ["Statistics"]
 <div class="img-wrapper">
 <img src= "{{"/images/probability-and-statistics/goodness-of-fit-test-1.png" | relative_url }}" width=650>
 </div>
-
-<div class="statement" markdown="1">
 
 1\. 문제 상황
 
@@ -98,8 +98,6 @@ $$
 \left| \frac{\hat{p} - p}{\sqrt{p(1-p) / n}}\right|^2 = \frac{(o_1 - e_1)^2}{e_1} + \frac{(o_2 - e_2)^2}{e_2}
 $$
 
-</div>
-
 그래서 rejection criterion을 다시 쓰면,
 
 $$
@@ -130,7 +128,7 @@ where $o_i$ and $e_i$ are the observed and expected frequencies respectively.
 
 <div class="definition" markdown="1">
 
-<span class="statement-title">Definition.</span> Dgree of Freedom for Goodness-of-fit<br>
+<span class="statement-title">Definition.</span> Degree of Freedom for Goodness-of-fit<br>
 
 The degree of freedom $\nu$ = (#. of categories after pooling - 1) - #. of parameters estimated
 
@@ -142,7 +140,24 @@ The degree of freedom $\nu$ = (#. of categories after pooling - 1) - #. of param
 
 우리는 \<Chi-squared goodness-of-fit Test\>를 응용해 두 개의 카테고리가 서로 독립(independent)한지 검정할 수 있다!
 
-(바빠서 생략)
+<div class="img-wrapper">
+<img src= "{{"/images/probability-and-statistics/goodness-of-fit-test-2.png" | relative_url }}" width=650>
+</div>
+
+우리는 'income'과 'political'이 서로 독립인지를 검정해야 한다. 이에 따라 우리는 아래와 같이 $H_0$와 $H_1$을 설정한다.
+
+- $H_0$: income-politicaa is independent
+- $H_1$: they are not independent
+
+$H_0$를 수식으로 표현하면 아래와 같다.
+
+$$
+P(\text{party } 1 \; \And \; \text{low}) = P(\text{part } 1) P(\text{low})
+$$
+
+위의 공식을 통해 우리는 
+
+
 
 <hr/>
 
