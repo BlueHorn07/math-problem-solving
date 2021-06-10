@@ -47,7 +47,7 @@ If a sample space $S$ contains a finite or an unending sequence of possibilities
 
 If a sample space $S$ contains an infinite number of possibilities or equal to the number of points on a line segment, it is called a \<continuous sample space\>.
 
-즉, Sample Space $S$의 Cardinality에 따라 "**Discrete**"이냐 "**Continous**"가 나뉜다.
+즉, Sample Space $S$의 Cardinality에 따라 **"Discrete"**이냐 **"Continous"**가 나뉜다.
 
 <br/>
 
@@ -59,7 +59,7 @@ A random variable is called a \<discrete random variable\>, if its set of possib
 
 A random variable is called a \<continuous random variable\>, if its set of possible outcomes it **uncountable**.
 
-즉, Random Variable의 치역의 Cardinality에 따라  "**Discrete**"이냐 "**Continous**"가 나뉜다.
+즉, Random Variable의 치역의 Cardinality에 따라  **"Discrete"**이냐 **"Continous"**가 나뉜다.
 
 <hr/>
 
@@ -117,7 +117,7 @@ $$
 
 ### Continuous Prability Distribution
 
-In Continuous RV, we assign a probability of 0 to the event. And tis probability distribution cannot be given in tabular form. <small>(확률 분포를 표로 적을 수 없다.)</small> However, it can be stated as a formula $f(x)$. we call that formula as a \<probability density function\>!
+In Continuous RV, we assign a probability of 0 to the event. And its probability distribution cannot be given in tabular form. <small>(확률 분포를 표로 적을 수 없다.)</small> However, it can be stated as a formula $f(x)$. We call that formula as a \<probability density function\>!
 
 <br><span class="statement-title">Definition.</span> Probability Density Function<br>
 
@@ -154,3 +154,5 @@ $$
 <hr/>
 
 지금까지는 하나의  \<Random Variable\>이 $X$ 하나인 상황을 다뤘다면, 이어지는 내용에선 \<Random Variable\>이 $X$, $Y$ 두 개인 상황을 다룬다! 이것을 \<**Joint Probability Distribution**\>이라고 한다!
+
+👉 [Joint Probability Distribution]({{"/2021/03/09/joint-probability-distribution.html" | relative_url}})

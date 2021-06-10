@@ -11,6 +11,8 @@ tags: ["Probability"]
 <br><span class="statement-title">TOC.</span><br>
 
 - Mean; Expectation
+  - Linearity of Expectation
+  - Expection with Independence
 - Variance
 - Covariance
   - Correlation
@@ -46,11 +48,13 @@ $$
 \mu_{g(X)} = E\left[g(X)\right] = \int^{\infty}_{\infty} g(x) f(x) \quad \text{if } X \text{ is continuous RV}
 $$
 
+<small>($g(x)$를 취하도 여전히 $x$의 정의역은 유지되므로, 위와 같이 $g(x) f(x)$를 사용하는 것은 타당하다.)</small>
+
 ps) 수업 시간에 교수님께서 이산 RV에 대한 증명은 쉽게 할 수 있지만, 연속 RV에 대한 증명은 좀 까다롭다고 하셨다.
 
 <br/>
 
-이번에는 joint distriubtion에 대한 \<Expecation\>을 살펴보자.
+이번에는 joint distriubtion에 대한 \<Expectation\>을 살펴보자.
 
 <span class="statement-title">Definition.</span><br>
 
@@ -61,7 +65,7 @@ $$
 $$
 
 $$
-\mu_{g(X, Y)} = E\left[g(X, Y)\right] = \int^{\infty}_{\infty} g(x, y) f(x, y) \quad \text{if } X \text{ and } Y \text{ is continuous RV}
+\mu_{g(X, Y)} = E\left[g(X, Y)\right] = \int^{\infty}_{-\infty} \int^{\infty}_{-\infty} g(x, y) f(x, y) \; dx dy \quad \text{if } X \text{ and } Y \text{ is continuous RV}
 $$
 
 <br/>
@@ -73,7 +77,7 @@ Conditional Distribution에 대해서도 \<Expectation\>을 생각해볼 수 있
 $$
 E\left[ X \mid Y = y \right] = \begin{cases}
     \displaystyle \sum_x x f(x \mid y) && X \; \text{is a discrete with joint pmf} f(x, y) \; \\
-    \displaystyle \int^{\infty}_{\infty} x f(x \mid y) dx  && X \; \text{is a continuous with joint pdf} \; f(x, y)
+    \displaystyle \int^{\infty}_{\infty} x f(x \mid y) \; dx  && X \; \text{is a continuous with joint pdf} \; f(x, y)
 \end{cases}
 $$
 
@@ -117,7 +121,7 @@ $$
 
 ## Variance and Covariance
 
-두 RV $X$, $Y$가 동일한 평균을 가지더라도; $E[X] = \mu = E[Y]$ RV의 개별 값들이 평균 $\mu$로부터 얼마나 멀리 떨어져 있는지를 다를 수 있다. \<분산 Variance\>는 이런 평균으로부터의 퍼진 정도를 측정하는 지표로 아래와 같이 정의한다.
+두 RV $X$, $Y$가 동일한 평균을 가지더라도; $E[X] = \mu = E[Y]$ RV의 개별 값들이 평균 $\mu$로부터 떨어져 있는 정도는 다를 수 있다. \<분산 Variance\>는 이런 평균으로부터의 퍼진 정도를 측정하는 지표로 아래와 같이 정의한다.
 
 <br><span class="statement-title">Definition.</span><br>
 
@@ -177,7 +181,7 @@ $$
 - $\text{Cov}(aX + b, Y) = a \cdot \text{Cov}(X, Y)$
 - $\text{Cov}(X, c) = 0$
 
-앞에서 살펴봤을 때, 두 RV $X$, $Y$가 **독립**이라면, $E(XY) = E(X)E(Y)$가 되었다. 따라서 두 RV가 독립일 때는 $\text{Cov}(X, Y) = 0$이 된다! 그러나 주의할 점은 명제의 역(易)인 $\text{Cov}(X, Y) = 0$일 때, 두 RV가 항상 독립임을 보장하지는 못한다!
+앞에서 살펴봤을 때, 두 RV $X$, $Y$가 **독립**이라면, $E(XY) = E(X)E(Y)$가 되었다. 따라서 두 RV가 독립일 때는 $\text{Cov}(X, Y) = 0$이 된다! 그러나 주의할 점은 명제의 역(易)인 <span class="half_HL">$\text{Cov}(X, Y) = 0$일 때, 두 RV가 항상 독립임을 보장하지는 않는다!</span>
 
 \<Covariance\>은 두 RV의 Linear Combination에 대한 분산을 구할 때도 사용한다.
 
@@ -270,7 +274,7 @@ $\blacksquare$
 $Z = \dfrac{X-\mu_X}{\sigma_X}$, $W = \dfrac{Y-\mu_Y}{\sigma_Y}$라고 표준화한다면, 이 둘의 공분산은 $X$, $Y$에 대한 Correlation과 같다.
 
 $$
-\text{Var}(Z, Y) = \text{Corr}(X, Y)
+\text{Var}(Z, W) = \text{Corr}(X, Y)
 $$
 
 딱 보면 증명 할 수 있을 것 같아서 따로 유도는 하지 않겠다.
@@ -305,7 +309,7 @@ A2. $Y=X^2$으로 설정하면 쉽게 보일 수 있다. 독립임을 보이기 
 
 <hr/>
 
-A3. & A4. 👉 [이곳](http://people.math.gatech.edu/~ecroot/3225/rho_notes.pdf)의 2p를 참고하라.
+A3. & A4. Q3는 이미 위에서 증명을 했다. 그러나 다른 방식으로도 증명할 수 있다! 👉 [이곳](http://people.math.gatech.edu/~ecroot/3225/rho_notes.pdf)의 [2, 3]p를 참고하라.
 
 </details>
 
@@ -323,4 +327,6 @@ A3. & A4. 👉 [이곳](http://people.math.gatech.edu/~ecroot/3225/rho_notes.pdf
 - Hypergeometric Distriubtion
 - etc...
 
-👉 [Discrete Probability Distributions]({{"/2021/03/17/discrete-probability-distributions.html" | relative_url}})
+👉 [Discrete Probability Distributions - 1]({{"/2021/03/17/discrete-probability-distributions-1.html" | relative_url}})
+
+👉 [Discrete Probability Distributions - 2]({{"/2021/03/24/discrete-probability-distributions-2.html" | relative_url}})
