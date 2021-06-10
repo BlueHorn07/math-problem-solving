@@ -13,7 +13,7 @@ tags: ["Statistics"]
 - [Prediction Interval](#prediction-interval)
 - [Tolerance Interval](#tolerance-interval)
   - $\mu$ and $\sigma^2$ both are known: Tolerance Interval
-  - $\mu$ and $\sigma^2$ both are known: Tolerance Limits
+  - $\mu$ and $\sigma^2$ both are unknown: Tolerance Limits
 
 <hr/>
 
@@ -55,7 +55,7 @@ Now, our interest is <u>the proportion of the distribution</u> where is the larg
 
 Q. Let $X \sim N(\mu, \sigma^2)$, can you find interval which contains 95% of the population distribution?
 
-<div class="light-margin">
+<div class="light-margin" markdown="1">
 
 [$\mu$ and $\sigma^2$ both are known]
 
@@ -71,7 +71,7 @@ $$
 
 [$\mu$ and $\sigma^2$ both are <span style="color:red">unknown</span>]
 
-대부분의 경우, 두 파라미터 $\mu$, $\sigma^2$에 대한 모른다. 이 경우, 우리는 sample mean $\bar{x}$, sample variance $s^2$를 사용해 아래와 가팅 interval을 만들 수 밖에 없다.
+대부분의 경우, 두 파라미터 $\mu$, $\sigma^2$에 대한 모른다. 이 경우, 우리는 sample mean $\bar{x}$, sample variance $s^2$를 사용해 아래와 같이 interval을 만들 수 밖에 없다.
 
 $$
 \bar{x} \pm k s

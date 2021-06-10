@@ -90,7 +90,7 @@ $$
 두 집합에서의 비율이 동일한지 검정하는 문제다. CLT를 적용하면 아래와 같다.
 
 $$
-\frac{(\hat{p}_1 - \hat{p}_2) - (p_1 - p_2)}{\sqrt{\frac{p_1 (1-p_1)}{n_1} + \frac{p_2(1-p_2)}{n_2}}} \sim N(0, 1)
+\frac{(\hat{p}_1 - \hat{p}_2) - (p_1 - p_2)}{\sqrt{\dfrac{p_1 q_1}{n_1} + \dfrac{p_2 q_2}{n_2}}} \sim N(0, 1)
 $$
 
 그런데, 이때 우리는 population의 $p_1$, $p_2$의 값을 모른다. 그래서, 아래와 같이 pooled proportion $\hat{p}$을 대신 사용해야 한다. 이것은 우리가 검정하고자 하는 것이 두 집단의 proportion이 동일하다는 것을 검정하는 것이기 때문에 null hypothesis $H_0$의 가정을 충족하는 자연스러운 접근이다.
@@ -102,10 +102,12 @@ $$
 식을 다시 쓰면,
 
 $$
-\frac{(\hat{p}_1 - \hat{p}_2) - (p_1 - p_2)}{\sqrt{\hat{p}(1-\hat{p}) \left(\frac{1}{n_1} + \frac{1}{n_2}\right)}} \sim N(0, 1)
+\frac{(\hat{p}_1 - \hat{p}_2) - (p_1 - p_2)}{\sqrt{\hat{p}\hat{q} \left(\dfrac{1}{n_1} + \dfrac{1}{n_2}\right)}} \sim N(0, 1)
 $$
 
 위의 공식을 통해 p-value를 구하고, p-value가 $\alpha$ 값보다 작다면, $H_0$를 기각한다!
+
+💥 주목할 점은 이전의 [\<Proportion Estimation\>]({{"/2021/05/14/proportion-estimation-on-bernoulli.html" | relative_url}})의 "Two Samples Estimation: Diff Btw Two Proportions"과 공식이 약간 다르다는 점이다. 위의 Estimation에서는 두 샘플의 sample proportion을 그대로 사용했고, 이번의 경우에는 pooled sample proportion $\hat{p}$을 사용했다.
 
 <hr/>
 
@@ -119,7 +121,7 @@ Variance에 대한 검정은 추정에서 다뤘던 내용에서 크게 달라�
 
 ex: $H_0: \sigma^2 = \sigma_0^2$ vs. $H_1: \sigma^2 \ne \sigma_0^2$를
 
-$S^2$를 Test Statistics로 잡고 $(n-1)S^2 / \sigma^2 \sin \chi^2 (n-1)$를 이용해서 \<chi-suqare distribution\>으로 검정 수행
+$S^2$를 Test Statistics로 잡고 $(n-1)S^2 / \sigma^2 \sim \chi^2 (n-1)$를 이용해서 \<chi-suqare distribution\>으로 검정 수행
 
 <div class="light-margin"></div>
 
