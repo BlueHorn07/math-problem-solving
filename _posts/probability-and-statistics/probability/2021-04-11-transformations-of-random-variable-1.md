@@ -11,7 +11,7 @@ tags: ["Probability"]
 <br><span class="statement-title">TOC.</span><br>
 
 - Introudciton
-- 1-1 Transformation
+- [1-1 Transformation](#1-1-transformation)
   - Discrete Case
     - Example: Two Possion
   - Continuous Case
@@ -23,7 +23,7 @@ tags: ["Probability"]
 
 이번 챕터 "Ch07. Functions of Random Variables"에서는 RV $X$에 어떤 함수 $f(x)$를 씌워 $Y = f(X)$라는 새로운 RV를 만들때, 이 RV $Y$에 대한 분포를 살펴본다. 즉, $f(X)$에 대한 pdf, cdf를 구한다는 말이다.
 
-쉬운 경우부터 조금 복잡한 경우까지 순서대로 살펴볼 것이며, $f(x)$가 1-1 function일 때, $f(X)$가 not 1-1일 때를 살펴본다. 뒷부분에서는 RV의 momemtum을 쉽게 구하는 도구인 \<MGF; Momentum Generating Function\> $M_X(t)$에 대해 살펴본다.
+쉬운 경우부터 조금 복잡한 경우까지 순서대로 살펴볼 것이며, $f(x)$가 1-1 function일 때, $f(x)$가 not 1-1일 때를 살펴본다. 뒷부분에서는 RV의 momemtum을 쉽게 구하는 도구인 \<MGF; Momentum Generating Function\> $M_X(t)$에 대해 살펴본다.
 
 <hr/>
 
@@ -63,6 +63,8 @@ $$
 
 <br/>
 
+<div class="theorem" markdown="1">
+
 <span class="statement-title">Theorem.</span> Discrete Case<br>
 
 1\. Supp. $X$ has pmf $f_X (x)$.
@@ -86,6 +88,8 @@ Then,
 $$
 f_{Y_1, Y_2} (y_1, y_2) = f_{X_1, X_2} \left( w_1(y_1, y_2), w_2(y_1, y_2) \right)
 $$
+
+</div>
 
 즉, $X_1$, $X_2$를 이용해 $Y_1$, $Y_2$를 정의한 식을 잘 풀어서, $Y_1$, $Y_2$를 이용해 $X_1$, $X_2$를 기술한 식 $w_1$, $w_2$를 정의하고, 그것으로 pmf를 유도한다는 말이다! 당연한 접근을 수식으로 formal하게 기술한 것 정도라고 생각하면 된다.
 
@@ -117,7 +121,7 @@ $$
 
 <div class="math-statement" markdown="1">
 
-We first find the joint pmf of $(X, X+Y)$, and then find th emarginal pmf of $X+Y$.
+We first find the joint pmf of $(X, X+Y)$, and then find the marginal pmf of $X+Y$.
 
 Let $U = X$, $V = X+Y$, then $X = U$, $Y = V - U$.
 
@@ -153,6 +157,8 @@ $$
 
 ### Continuous Case
 
+<div class="theorem" markdown="1">
+
 <span class="statement-title">Theorem.</span><br>
 
 Let $X$ be a continuous RV with pdf $f_X (x)$.
@@ -165,7 +171,9 @@ $$
 f_Y (y) = f_X (h(y)) \cdot \left| h'(y) \right|
 $$
 
-Continuous의 경우, $\left\| h'(y) \right\|$ 텀이 곱해진다는 사실에 주목하자!
+💥 Continuous의 경우, $\left\| h'(y) \right\|$ 텀이 곱해진다는 사실에 주목하자! 🔥
+
+</div>
 
 <br/>
 
@@ -301,9 +309,11 @@ $$
 
 덧붙이면, $U$에서 $X$로 가는 Transformation을 찾고 싶은데, 그걸 $F_X^{-1}$로 설정하면 아주 쉽게 $U$에서 $X$로 가는 Transform을 찾는게 된다는 말이다!! 🤩
 
-<br/>
+<hr/>
 
-<span class="statement-title">**Theorem**.</span> Continuous case - Two Random Variables<br>
+<div class="theorem" markdown="1">
+
+<span class="statement-title">Theorem.</span> Continuous case - Two Random Variables<br>
 
 Let $(X, Y) \mapsto \left( u(X, Y), v(X, Y) \right)$ with the inverse $(U, V) \mapsto \left(w_1(U, V), w_2(U, V)\right)$.
 
@@ -331,6 +341,8 @@ $$
 $$
 
 그래서 잘 살펴보면, $(U, V)$에 대한 pdf $f_{U, V}(u, v)$는 위의 식의 우변에서 적분 내부의 함수를 그대로 가져온 것임을 쉽게 확인할 수 있다!!
+
+</div>
 
 <br/>
 
