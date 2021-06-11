@@ -200,7 +200,7 @@ $Z$의 pdf가 $N(0, 1)$이므로 $Z \sim N(0, 1)$이다. $\blacksquare$
 
 ### Normal Approximation to the Binomial
 
-우리는 \<binomial distribution\>이 충분히 작은 확률 $p \ll 1$과 충분히 큰 trial $1 \ll n < \infty$라면, 이것을 \<poisson distribution\>으로 근사해서 사용할 수 있다.
+우리는 \<Binomial Distribution\>이 충분히 작은 확률 $p \ll 1$과 충분히 큰 trial $1 \ll n < \infty$라면, 이것을 \<Poisson Distribution\>으로 근사해서 사용할 수 있었다.
 
 <span class="statement-title">Example.</span><br>
 
@@ -208,7 +208,7 @@ Let $X \sim \text{BIN}(100, 0.02)$, then get the value of $P(X = 39)$ is hard. (
 
 However, if we approximate it to $\text{POI}(2)$, then $P(x = 39) = e^{-2} \frac{2^{39}}{39!}$.
 
-그런데, 이런 \<binomial distribution\>을 좀더 확장해 \<normal distribution\>으로 근사할 수 있음을 기술하는 정리가 있다!! 🤩
+그런데, 이런 \<Binomial Distribution\>을 좀더 확장해 \<Normal Distribution\>으로 근사할 수 있음을 기술하는 정리가 있다!! 🤩 이 경우는 "충분히 큰 trial"이라는 조건만 충족하면 된다!
 
 <div class="theorem" markdown="1">
 
@@ -234,11 +234,8 @@ where $\Phi(x)$ is CDF of normal $N(0, 1)$.
 
 이어지는 포스트에서는 좀더 다양하고, 엄청난 분포들을 만나게 된다.
 
-- Exponential Distribution
-- Gamma Distribution 🔥
-- Beta Distribution
-- ...
-
-👉 [Continuous Probability Distribution - 2]({{"/2021/03/31/continuous-probability-distribution-2.html" | relative_url}})
+  - [Exponential Distribution]({{"/2021/03/31/exponential-distribution.html" | relative_url}})
+  - [Gamma Distribution]({{"/2021/04/05/gamma-distribution.html" | relative_url}})
+  - [Chi-square, Beta and Log-normal Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution.html" | relative_url}})
 
 

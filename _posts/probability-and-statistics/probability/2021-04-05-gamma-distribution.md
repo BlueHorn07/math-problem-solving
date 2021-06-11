@@ -17,6 +17,8 @@ tags: ["Probability"]
 
 ## Gamma Distribution
 
+<div class="definition" markdown="1">
+
 <span class="statement-title">Definition.</span> Gamma Function<br>
 
 The \<**Gamma Function**\> $\Gamma(\alpha): (0, \infty) \rightarrow (0, \infty)$ is defined as
@@ -24,6 +26,8 @@ The \<**Gamma Function**\> $\Gamma(\alpha): (0, \infty) \rightarrow (0, \infty)$
 $$
 \Gamma(\alpha) = \int^{\infty}_0 t^{\alpha - 1} e^{-t} dt \quad \text{for} \; \alpha > 0
 $$
+
+</div>
 
 감마 함수는 1730년 오일러가 제시한 함수로 수학계에서 정말 유명한 함수다. 감마 함수는 정수에서 정의되는 \<factorial\> $n!$을 실수, 복소수 영역까지 확장하는 시도에서 등장한 함수이다. 즉, \<factorial\>의 일반화 버전이라고 생각하면 된다.
 
@@ -80,6 +84,8 @@ $$
 
 <br/>
 
+<div class="definition" markdown="1">
+
 <span class="statement-title">Definition.</span> Gamma Distribution<br/>
 
 Let $\alpha > 0$ and $\beta > 0$. We say that $X$ has a \<**Gamma Distribution**\> with a shape parameter $\alpha$ and a scale parameter $\beta$, if its pdf is given by
@@ -110,6 +116,8 @@ $$
 $$
 \text{Gamma}(x; \alpha, \beta) = \frac{1}{\Gamma(\alpha) \beta^{\alpha}} \cdot x^{\alpha - 1} e^{-\frac{x}{\beta}} \quad \text{for } x > 0
 $$
+
+</div>
 
 <hr/>
 
