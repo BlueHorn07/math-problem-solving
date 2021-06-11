@@ -158,4 +158,4 @@ $$
 
 이어지는 포스트에서는 RV의 확률을 이용해 \<평균\>, \<분산\>, \<공분산\>을 유도해본다!
 
-👉 [/2021/03/16/mean-variance-covariance.html]({{"" | relative_url}})
+👉 [Mean, Variance, and Covriance]({{"/2021/03/16/mean-variance-covariance.html" | relative_url}})

@@ -10,14 +10,16 @@ tags: ["Probability"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- Uniform Distribution
-- Bernoulli Distribution
-- Binomial Distribution
-- Multinomial Distribution
+- [Uniform Distribution](#discrete-uniform-distriubtion)
+- [Bernoulli Distribution](#bernoulli-distribution)
+- [Binomial Distribution](#binomial-distribution)
+- [Multinomial Distribution](#multinomial-distribution)
 
 <hr/>
 
 몇몇 Distribution의 경우 현실을 모사하고 잘 설명하기 때문에 유용하게 사용된다. 이번 포스트에선 Discrete RV에서 볼 수 있는 유명한 Distriubtion을 살펴본다. 각 Distribution이 다른 분포에 대한 Motivation이 되고, 각각이 모두 중요성을 갖기 때문에 그 의미를 곱씹고, 충분히 연습해야 한다.
+
+<hr/>
 
 ## Discrete Uniform Distriubtion
 
@@ -35,6 +37,8 @@ $$
 
 - $E[X]= \dfrac{\sum x_i}{N}$
 - $\text{Var}(X) = \dfrac{\sum x_i^2}{N} - \dfrac{(\sum x_i)^2}{N^2}$ <small>// 그냥 (제평-평제) 공식을 사용했다.</small>
+
+<hr/>
 
 ## Bernoulli Distribution
 
@@ -56,7 +60,7 @@ $$
 X \sim \text{Bernoulli}(p)
 $$
 
-여기서 주의할 점은 \<Bernoulli Trial\>은 단 한번만 시행하는 것이다! Trial을 여러번 한다면, 뒤에 나올 \<Binomial Ditribution\>이 된다.
+여기서 주의할 점은 \<Bernoulli Trial\>은 **단 한번만** 시행하는 것이다! Trial을 여러번 한다면, 뒤에 나올 \<Binomial Distribution\>이 된다.
 
 <br><span class="statement-title">Theorem.</span><br>
 
@@ -64,6 +68,8 @@ If $X$ is a **Bernoulli RV**, then
 
 - $\displaystyle E[X] = \sum x f(x) = 1 f(1) = p$
 - $\displaystyle \text{Var}(X) = E[X^2] - (E[X])^2 = p - p^2 = p (1-p) = pq$
+
+<hr/>
 
 ## Binomial Distribution
 
@@ -127,6 +133,8 @@ $\blacksquare$
 
 분산 $\text{Var}(X)$을 증명하는 건 조금 쉽지 않다. 증명은 Exercise로 남기지만, 반드시 직접 증명해봐야 하는 명제다 🎈
 
+<hr/>
+
 ## Multinomial Distribution
 
 지금까지 모두 동전 던지기에서 변주된 Distribution들을 살펴봤다. 그러나 현실의 모든 사건이 앞/뒤 두 결과만 있지 않듯이 \<Outcome\>이 여러 개인 경우의 분포도 생각해볼 수 있다! 우리는 이것을 \<**Multinomial Distribution**\>라고 한다.
@@ -143,7 +151,7 @@ $$
 P(X_1=x_1, \cdots, X_k = x_k) = \binom{n}{x_1 \cdots x_k} p_1^{x_1} \cdots p_k^{x_k} \quad \text{where} \quad x_1 + \cdots + x_k = n
 $$
 
-\<Multinomail distribution\>의 pmf $f(x_1, \dots, x_k)$는 일종의 joint pmf로서 해석할 수 있다. 그래서 \<Multinomail distribution\>에 대해 아래의 margnial distribution들을 생각해볼 수 있다.
+\<Multinomail distribution\>의 pmf $f(x_1, \dots, x_k)$는 일종의 joint pmf로 해석할 수 있다. 그래서 \<Multinomail distribution\>에 대해 아래의 margnial distribution들을 생각해볼 수 있다.
 
 - $X_k \sim \text{BIN}(n, p_k)$
 - $X_i + X_j \sim \text{BIN}(n, p_i + p_j)$

@@ -69,12 +69,12 @@ hidden: true
     - Multivariate HyperGeometric Distribution
   - Geometric Distribution
     - Negative Binomial Distribution
+- [Poisson Distribution]({{"/2021/03/25/poisson-distribution.html" | relative_url}})
 
 <br/>
 
 - Continuous Probability Distribution
   - [Uniform and Normal Distribution]({{"/2021/03/29/uniform-and-normal-distribution.html" | relative_url}})
-  - [Poisson Distribution]({{"/2021/03/25/poisson-distribution.html" | relative_url}})
   - [Exponential Distribution]({{"/2021/03/31/exponential-distribution.html" | relative_url}})
   - [Gamma Distribution]({{"/2021/04/05/gamma-distribution.html" | relative_url}})
   - [Chi-square, Beta and Log-normal Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution.html" | relative_url}})
