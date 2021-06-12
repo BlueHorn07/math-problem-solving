@@ -160,6 +160,8 @@ hidden: true
 
 ### Probability
 
+(준비중입니다! 😉)
+
 ### Statistics
 
 - [PS1]({{"/2021/06/06/statistics-ps1.html" | relative_url}})
@@ -171,7 +173,10 @@ hidden: true
   - $\sum x_i e_i = 0$
   - $\text{SST} = \text{SSR} + \text{SSE}$
 - [PS3]({{"/2021/06/10/statistics-ps3.html" | relative_url}})
-
+  - Variance of estimator $B_0$
+  - unbiased estimator of $\sigma^2$ is $s^2$
+  - (not yet) $s^2 \perp B_1$, and $s^2 \perp B_0$
+  - (not yet) the distribution of $s^2$
 
 <hr/>
 
