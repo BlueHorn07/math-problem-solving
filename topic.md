@@ -38,10 +38,6 @@ use_math: true
 
 #### [MATH203] Applied Linear Algebra
 
-#### [[MATH230] Probability and Statistics]({{"2021/02/26/Probability-and-Statistics.html" | relative_url}})
-
-
-
 <hr>
 
 #### [[MATH210] Applied Complex Variables]({{"2020/12/15/Complex-variable.html" | relative_url}})
@@ -54,6 +50,30 @@ use_math: true
   - Solution of Laplace's Equation
 
 <hr>
+
+#### [[MATH230] Probability and Statistics]({{"2021/02/26/Probability-and-Statistics.html" | relative_url}})
+
+- **Probability Theory**
+  - Basic Probability Theory
+  - Bayes' Rule
+  - Random Variables & Probability Distributions
+  - Discrete Probability Distributions
+  - Continous Probability Distributions
+  - Transormations of Random Variable
+  - Momentum Generating Function
+
+- **Statistics**
+  - Sampling Distributions
+    - Student's t-distribution
+    - F-distribution
+  - Point Estimation & Interval Estimation
+  - Maximum Likelihood Estimation
+  - Hypothesis Tests
+    - confidence level
+    - p-value
+  - Simple Linear Regression
+
+<hr/>
 
 #### [[MATH301] Modern Algebra]({{"2020/12/15/Modern-algebra-1.html" | relative_url}})
 - **Part Ⅰ.**

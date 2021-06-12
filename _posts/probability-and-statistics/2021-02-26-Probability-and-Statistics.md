@@ -13,7 +13,7 @@ hidden: true
 #### 참고 교재
 - 『Probability & Statistics for Engineers & Scientists』 Walpole·Myers·Myers·Ye, 9th ed. 
 
-<div class="math-statement" markdown="1">
+<div class="math-statement" style="padding: 10px 20px" markdown="1">
 
 [목차]
 
@@ -26,6 +26,7 @@ hidden: true
 7. Fundamental Sampling Distributions
 8. One- and Two-Sample Estimation Problems
 9. One- and Two-Sample Tests of Hypotheses
+10. Simple Linear Regression
 
 \* [Problem Solving](#problem-solving)
 
@@ -44,7 +45,7 @@ hidden: true
     - Independent Events
 - [Bayes' Rule]({{"2021/03/02/Bayes'-Rule.html" | relative_url}})
   - Law of Total Probability
-- [Monti Hall Problem]({{"2021/03/02/Monti-Hall-Problem.html" | relative_url}})
+- [Monti Hall Problem]({{"2021/03/02/Monti-Hall-Problem.html" | relative_url}})[^1]
 
 <br/>
 
@@ -63,7 +64,7 @@ hidden: true
   - (Discrete) Uniform Distribution
   - Bernoulli Distribution
   - Binomial Distribution
-  - Multinomial Distribution
+    - Multinomial Distribution
 - [Discrete Probability Distribution - 2]({{"/2021/03/24/discrete-probability-distributions-2.html" | relative_url}})
   - HyperGeometric Distribution
     - Multivariate HyperGeometric Distribution
@@ -166,4 +167,12 @@ hidden: true
   - MSE(Mean Squared Error) is sum of variance and square of bias
   - Compare $S^2$ and $\hat{S}^2$ using MSE
 - [PS2]({{"/2021/06/09/statistics-ps2.html" | relative_url}})
+  - $\sum e_i = 0$
+  - $\sum x_i e_i = 0$
+  - $\text{SST} = \text{SSR} + \text{SSE}$
 - [PS3]({{"/2021/06/10/statistics-ps3.html" | relative_url}})
+
+
+<hr/>
+
+[^1]: 정규수업 내용은 아니지만, 교수님께서 수업 시간에 잠깐 언급하셨습니다 😊
