@@ -10,7 +10,7 @@ tags: ["Probability"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- Joint Probabilit Distribution
+- Joint Probability Distribution
 - Marginal Distribution
 - Conditional Probability Distribution
 - Statistical Independence
@@ -55,7 +55,7 @@ $$
 for the discrete case, and
 
 $$
-g(x) = \int^\infty_\infty f(x, y) \; dy \quad \text{and} \quad h(y) = \int^\infty_\infty f(x, y) \; dx
+g(x) = \int^\infty_{-\infty} f(x, y) \; dy \quad \text{and} \quad h(y) = \int^\infty_{-\infty} f(x, y) \; dx
 $$
 
 for the continuous case.
@@ -71,7 +71,7 @@ $$
 P(Y = y \mid X = x) = \frac{P(X=x, Y=y)}{P(X=x)} = \frac{f(x, y)}{f_{X} (x)}, \quad \text{provided} \; f_X (x) > 0
 $$
 
-위와 같이 \<Conditional Probability\>를 일반적인 형태인 \<분포 Distribution\>으로 기술한 것을 \<Conditional Probability Distribution\>라고 한다!
+위와 같이 \<Conditional Probability\>를 "분포(Distribution)"의 형태로 기술한 것을 \<Conditional Probability Distribution\>라고 한다!
 
 <br><span class="statement-title">Definition.</span> Conditional Probability Distribution<br>
 
@@ -111,7 +111,7 @@ $$
 f(x, y) = f_Y (y) \cdot g(x)
 $$
 
-그런데 이때, 동일한 과정은 $f(y \mid x)$에 수행해보면, 이번에는 $f(x, y) = f_X (x) \cdot h(y)$가 나온다. 그래서 이 두 결과를 잘 조합하면, \<독립\>에 대해 위와 같이 \<marginal distribution\>의 곱이 \<probability distribution\>이다라고 정의하는 것이 자연스러운 것이다! 😆
+그런데 똑같은 작업을 $f(y \mid x)$에 수행해보면, 이번에는 $f(x, y) = f_X (x) \cdot h(y)$가 나온다. 그래서 이 두 결과를 잘 조합하면, \<독립\>에 대해 위와 같이 \<marginal distribution\>의 곱이 \<probability distribution\>이다라고 정의하는 것이 자연스러운 것이다! 😆
 
 <br/>
 
@@ -155,3 +155,7 @@ $$
 <hr/>
 
 이번 파트에선 \<Joint Probability\>를 구하기 위해 적분을 조금 해야 했다. 하지만, 그렇게 어려운 적분은 아니기 때문에 몇번만 연습하면 금방 익숙해진다!! 😊
+
+이어지는 포스트에서는 RV의 확률을 이용해 \<평균\>, \<분산\>, \<공분산\>을 유도해본다!
+
+👉 [Mean, Variance, and Covriance]({{"/2021/03/16/mean-variance-covariance.html" | relative_url}})

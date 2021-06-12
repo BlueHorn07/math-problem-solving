@@ -13,21 +13,24 @@ tags: ["Probability"]
 - [HyperGeometric Distribution]({{"/2021/03/24/discrete-probability-distributions-2.html#hypergeometric-distribution" | relative_url}})
   - Multivariate HyperGeometric Distribution
 - [Geometric Distribution]({{"/2021/03/24/discrete-probability-distributions-2.html#geometric-distribution" | relative_url}})
+  - Memoryless Property
   - Negative Binomial Distribution
 
 <hr/>
 
 이전 포스트에서 이산 분포의 기본이 되는 \<Bernoulli Distribution\>, \<Binomial Distribution\> 등등을 살펴봤다. 이번 포스트에서는 좀더 재미있는 분포들이 등장한다!
 
+<hr/>
+
 ## HyperGeometric Distribution
 
-\<HyperGeometric Distribution\>은 앞에서 살펴본 \<Binomial Distribution\>과 상황이 정말 비슷하다. 하지만, **Sampling 방식**에서 \<Binomial Distribution\>은 각 trial이 독립적이고, **with replacement**인 반면에 \<HyperGeometric Distribution\>은 각 trial이 dependent하고 **w/o replacement**로 진행된다!
+\<HyperGeometric Distribution\>은 앞에서 살펴본 \<Binomial Distribution\>과 상황이 정말 비슷하다. 하지만, **Sampling 방식**에서 \<Binomial Distribution\>은 각 trial이 독립적이고, **with replacement**인 반면에 <span class="half_HL">\<HyperGeometric Distribution\>은 각 trial이 dependent하고 **w/o replacement**로 진행</span>된다!
 
-**w/o replacement** 방식으로 샘플링하는 것의 예에는 \<acceptance sampling\>이 있다. 물품을 품질을 검수하는 이 작업선 테스팅 후에 물품이 파괴되거나 더이상 쓰지 못하게 될 수 있기 때문에 replacement를 할 수가 없다. 그렇기 때문에 **w/o replacement**를 바탕으로 하는 샘플링에 대한 논의는 곡 필요한 것이다.
+**w/o replacement** 방식으로 샘플링하는 것의 예에는 \<acceptance sampling\>이 있다. 물품을 품질을 검수하는 이 작업선 테스팅 후에 물품이 파괴되거나 더이상 쓰지 못하게 될 수 있기 때문에 replacement를 할 수가 없다. 그렇기 때문에 **w/o replacement**를 바탕으로 하는 샘플링에 대한 논의는 꼭 필요하다.
 
 <span class="statement-title">Definition.</span> HyperGeometric Distribution<br>
 
-성공으로 표시된 $k$개의 샘플과 실패로 표시된 $N-k$개의 샘플이 있는 $N$개의 샘플에서, 무작위로 $n$개의 샘플을 **w/o replacement**로 뽑는다고 하자. 이것을 \<HyperGeometric Experiement\>라고 한다. 이때, RV $X$는 \<HyperGeometric Experiment\>에서 성공을 뽑은 횟수이다. 이 RV $X$를 \<HyperGeometric RV\>라고 한다.
+성공으로 표시된 $K$개의 샘플과 실패로 표시된 $N-K$개의 샘플이 있는 $N$개의 샘플에서, 무작위로 $n$개의 샘플을 **w/o replacement**로 뽑는다고 하자. 이것을 \<HyperGeometric Experiement\>라고 한다. 이때, RV $X$는 \<HyperGeometric Experiment\>에서 성공을 뽑은 횟수이다. 이 RV $X$를 \<HyperGeometric RV\>라고 한다.
 
 \<HyperGeometric RV\> $X$의 pmf는 아래와 같이 정의된다.
 
@@ -69,10 +72,12 @@ HyperGeo의 $\dfrac{K}{N}$를 Binomial의 $p$로 해석한다면, Binomail의 �
 If $N \gg n$ and $K \gg n$, then
 
 $$
-h(x; N, K, n) \approx b(x; n, \frac{K}{N})
+h(x; N, K, n) \approx \text{BIN}(x; n, \frac{K}{N})
 $$
 
 위의 정리와 마찬가지로 증명은 뒤에서 따로 제시하겠다.
+
+<hr/>
 
 ### Multivariate HyperGeometric Distribution
 
@@ -96,7 +101,7 @@ with $\displaystyle \sum^k_{i=1} x_i = n$ and $\displaystyle \sum^k_{i=1} a_i = 
 
 <span class="statement-title">Definition.</span> Geometric Distribution<br>
 
-$p$-coin을 독립적으로 tossing 하는 상황을 생각해보자. 이때, 우리는 처음으로 Head가 나올 때까지 $p$-coin을 던질 것이다. 이때, 첫 Head가 나오기까지 시도한 Tossing 횟수를 Random Variable $X$라고 하면, 이것의 pmf는 아래와 같다.
+$p$-coin을 독립적으로 tossing 하는 상황을 생각해보자. 이때, 우리는 <span class="half_HL">처음으로 Head가 나올 때까지 $p$-coin을 던질 것이다.</span> 이때, 첫 Head가 나오기까지 시도한 Tossing 횟수를 Random Variable $X$라고 하면, 이것의 pmf는 아래와 같다.
 
 $$
 g(x; p) = pq^{x-1}, \quad x = 1, 2, 3, \dots
@@ -116,7 +121,7 @@ $$
 
 위와 같이 확률 合이 1이 됨을 보이는 과정에서 "Geometric Series"가 등장하기 때문에 "Geometric" Distribution이라는 이름이 붙었다!!
 
-<span class="statement-title">Property.</span> Memeryless property<br>
+<span class="statement-title">Property.</span> Memeryless property 🔥<br>
 
 Geometric Distribution의 경우, 재미있는 성질을 가지고 있다. 바로 \<Memoryless Property\>라는 건데, 수식으로 기술하면 아래와 같다.
 
@@ -208,9 +213,11 @@ $$
 
 </details>
 
+<hr/>
+
 ### Negative Binomial Distribution
 
-이번에는 Geo와 비슷한 상황이지만, $k$개의 Head가 나올 때까지 동전을 던진다고 해보자. 이때 Tossing 횟수를 Random Variable $X$라고 하면, 이것은 \<Negative Binomial Distribution\>을 따른다.
+이번에는 Geo와 비슷한 상황이지만, <span class="half_HL">$k$개의 Head가 나올 때까지 동전을 던진다.</span> 이때 Tossing 횟수를 Random Variable $X$라고 하면, 이것은 \<Negative Binomial Distribution\>을 따른다.
 
 <span class="statement-title">Definition.</span> Negative Binomial Distribution<br>
 
@@ -220,7 +227,7 @@ $$
 b^{*}(x; k,p) =\binom{x-1}{k-1} p^k q^{x-k} \quad \text{for} \quad x = k, k+1, \dots
 $$
 
-이것의 유도는 $x-1$ 시도까지 $(k-1)$번 만큼의 Head가 나와야 한다고 생각하면, $x-1$번의 시도는 Binomial Distribution을 따르게 된다. 
+이것의 유도는 $(x-1)$ 시도까지 $(k-1)$번 만큼의 Head가 나와야 한다고 생각하면, $(x-1)$번의 시도는 \<Binomial Distribution\>을 따르게 된다. 
 
 $$
 \binom{x-1}{k-1} p^{k-1} q^{x-k}
@@ -228,7 +235,7 @@ $$
 
 마지막에는 반드시 Head가 나와야 하므로 위의 Binomial에 $p$를 곱해주면, Negative Binomial을 얻게 된다!
 
-Negative Binomial은 서로 독립인 $n$개의 Geometric RV라고 생각해볼 수도 있다. 그래서 NegBionm $Y$는 Geo $X_i$에 대해
+Negative Binomial은 서로 독립인 $n$개의 Geometric RV라고 생각해볼 수도 있다. 그래서 NegBIN $Y$는 Geo $X_i$에 대해
 
 $$
 Y = X_1 + \cdots X_n

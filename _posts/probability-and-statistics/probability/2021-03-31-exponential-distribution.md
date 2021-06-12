@@ -11,7 +11,8 @@ tags: ["Probability"]
 <br><span class="statement-title">TOC.</span><br>
 
 - Exponential Distribution
-  - derived from Geometric Distribution
+  - derived from Poisson Process
+  - memoeryless property
   - mean & variance
 
 <hr/>
@@ -21,6 +22,8 @@ tags: ["Probability"]
 ### Exponential Distribution
 
 먼저 분포에 대한 식을 먼저 제시하고, 그 상황과 의미를 살펴보자.
+
+<div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> Exponential Distribution<br>
 
@@ -34,6 +37,8 @@ f(x) = \begin{cases}
 $$
 
 , and we denote such RV $X$ as $X \sim \text{EXP}(\lambda)$.
+
+</div>
 
 
 <span class="statement-title">Remark.</span><br>
@@ -79,23 +84,23 @@ $$
 
 익숙한 형태이지 않은가?? 바로 우리가 정의한 \<Exponential Distribution\>이다!! 😎
 
-즉, EXP는 어떤 사건이 처음으로 일어날 시간에 대한 분포라고 할 수 있다!
+<span class="half_HL">즉, EXP는 어떤 사건이 처음으로 일어날 시간에 대한 확률 분포라고 할 수 있다!</span>
 
 <br/>
 
-\<Exponential Distribution\>은 $\lambda$, $\beta$ 두 가지 형태의 parameter로 기술할 수 있다. 이때, $\lambda$는 Poisson Process에서 유래한 것으로 Time Unit(=interval) 당 발생하는 Event의 평균적인 **횟수**를 의미한다. EXP는 $\beta$로도 모델링할 수 있는데, 이때 $\beta$는 $\lambda$의 역수(reciprocol)이다. 따라서, $\beta$는 첫 Event가 발생하는게 걸리는 평균적인 **시간**을 의미한다.
+\<Exponential Distribution\>은 $\lambda$, $\beta$ 두 가지 형태로 기술할 수 있다. 이때, $\lambda$는 Poisson Process에서 유래한 것으로 Time Unit(=interval) 당 발생하는 Event의 평균적인 **횟수**를 의미한다. EXP는 $\beta$로도 모델링할 수 있는데, 이때 $\beta$는 $\lambda$의 역수(reciprocol)이다. 따라서, $\beta$는 첫 Event가 발생하는게 걸리는 평균적인 **시간**을 의미한다.
 
 $$
 X \sim \text{EXP}(\lambda) \iff f(x) = \lambda e^{-\lambda x}
 $$
 
-- $\lambda$는 Unit time 동안 Event가 일어날 평균 **횟수**를 의미한다. 
+- <span class="half_HL">$\lambda$는 Unit time 동안 Event가 일어날 평균 **횟수**</span>를 의미한다. 
 
 $$
 X \sim \text{EXP}(\beta) \iff f(x) = \frac{1}{\beta} e^{-x/\beta}
 $$
 
-- $\lambda$의 역수인 $\beta$는 한 번의 Event가 일어날 평균 **시간**을 의미한다.
+- $\lambda$의 역수인 <span class="half_HL">$\beta$는 한 번의 Event가 일어날 평균 **시간**</span>을 의미한다.
 
 <hr/>
 
@@ -161,7 +166,9 @@ $$
 
 </details>
 
-<br/>
+<hr/>
+
+<div class="theorem" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 
@@ -170,9 +177,11 @@ Let $X \sim \text{EXP}(\lambda)$, then
 - $E[X] = \dfrac{1}{\lambda}$
 - $\text{Var}(X) = \dfrac{1}{\lambda^2}$
 
-<span class="statement-title">*Proof*.</span><br>
+</div>
 
 <div class="math-statement" markdown="1">
+
+<span class="statement-title">*Proof*.</span><br>
 
 Let $Y \sim \text{EXP}(1)$, then what are the mean and variacen of $Y$?
 
