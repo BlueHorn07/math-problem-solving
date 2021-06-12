@@ -47,7 +47,7 @@ $$
 
 <br><span class="statement-title">Theorem.</span> Bayes' Rule<br>
 
-If the vents $B_1$, $B_2$, ..., $B_k$ be a partition fo $S$,
+If the events $B_1$, $B_2$, ..., $B_k$ be a partition fo $S$,
 
 then for any event $A$ with $P(A) > 0$
 
@@ -55,9 +55,9 @@ $$
 P(B_k \mid A) = \frac{P(B_k \cap A)}{P(A)} = \frac{P(A \mid B_k)P(B_k)}{\sum^{n}_{i=1} P(A \mid B_i)P(B_i)}
 $$
 
-<br><span class="statement-title">proof.</span><br>
-
 <div class="math-statement" markdown="1">
+
+<br><span class="statement-title">proof.</span><br>
 
 증명은 간단하다. 
 
