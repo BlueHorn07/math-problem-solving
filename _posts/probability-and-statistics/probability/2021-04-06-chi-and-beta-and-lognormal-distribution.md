@@ -10,15 +10,17 @@ tags: ["Probability"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- Chi-square Distribution; $\chi^2(n)$
-- Beta Distribution; $\text{Beta}(\alpha, \beta)$
-- Log-normal Distribution; $\text{LN}(\mu, \sigma^2)$
+- [Chi-square Distribution](#chi-square-distribution) $\chi^2(n)$
+- [Beta Distribution](#beta-distribution); $\text{Beta}(\alpha, \beta)$
+- [Log-normal Distribution](#log-normal-distribution) $\text{LN}(\mu, \sigma^2)$
 
 <hr/>
 
 ## Chi-square Distribution
 
-<span class="statement-title">Definition.</span>Chi-square Distribution<br/>
+<div class="definition" markdown="1">
+
+<span class="statement-title">Definition.</span> Chi-square Distribution<br/>
 
 A RV $X$ is called a \<**Chi-square RV**\> with <u>$n$ degrees of freedom</u>, denoted as $X \sim \chi^2(n)$, <br/>
 if it has a <span class="half_HL">Gamma distribution with $\alpha = n/2$ and $\beta=2$</span>.
@@ -32,6 +34,8 @@ $$
 $$
 \chi^2(n) = \text{Gamma}\left(\frac{n}{2}, 2\right)
 $$
+
+</div>
 
 <span class="statement-title">Remark.</span><br/>
 
@@ -111,7 +115,11 @@ $$
 - $E[X] = n$
 - $\text{Var}(X) = 2n$
 
+<hr/>
+
 ## Beta Distribution
+
+<div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> Beta function; $B(\alpha, \beta)$<br/>
 
@@ -121,11 +129,17 @@ $$
 B(\alpha, \beta) = \int^1_0 x^{\alpha-1}(1-x)^{\beta-1} dx
 $$
 
+</div>
+
+<div class="theorem" markdown="1">
+
 <span class="statement-title">Claim.</span><br/>
 
 $$
 B(\alpha, \beta) = \frac{\Gamma(\alpha) \Gamma(\beta)}{\Gamma(\alpha + \beta)}
 $$
+
+</div>
 
 <div class="math-statement" markdown="1">
 
@@ -178,6 +192,8 @@ $\blacksquare$
 
 </div>
 
+<div class="definition" markdown="1">
+
 <span class="statement-title">Definition.</span> Beta Distribution; $\text{Beta}(\alpha, \beta)$<br/>
 
 Let $\alpha>0$ and $\beta>0$. A RV $X$ is called a \<**beta RV**\> and decnoted as $X \sim \text{Beta}(\alpha, \beta)$ if its pdf is given by
@@ -185,6 +201,8 @@ Let $\alpha>0$ and $\beta>0$. A RV $X$ is called a \<**beta RV**\> and decnoted 
 $$
 f(x) = \frac{x^{\alpha - 1} \cdot (1-x)^{\beta-1}}{B(\alpha, \beta)} \quad \text{for } x \in (0, 1)
 $$
+
+</div>
 
 <span class="statement-title">Remark.</span><br/>
 
@@ -255,8 +273,11 @@ $$
 
 </div>
 
+<hr/>
 
 ## Log-normal Distribution
+
+<div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span><br/>
 
@@ -264,7 +285,7 @@ A RV $X$ is called a \<log-normal RV\> if $\log X \sim N(\mu, \sigma^2)$. We den
 
 즉, RV $X$에 log를 취한 것이 normal distribution이 된다면, "log-normal"이라고 부르는 것이다.
 
-<br/>
+</div>
 
 <span class="statement-title">Remark.</span><br/>
 

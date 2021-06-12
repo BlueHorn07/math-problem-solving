@@ -10,24 +10,27 @@ tags: ["Probability"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- moment and MGF
-- Examples
+- [moment and MGF](#moment-generating-function)
+- [Examples](#mgf-examples)
   - MGF of BIN
   - MGF of POI
   - MGF of NegBIN & Geo
   - MGF of Gamma & Exp
   - MGF of Normal
-- Uniqueness Theorem for MGF
-- MGF with Independence
+- [Uniqueness Theorem for MGF](#uniqueness-theorem-for-mgf)
+- [MGF with Independence](#mgf-with-independence)
 
 <hr/>
 
 ## Moment Generating Function
 
+<div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> moment<br>
 
 We call $E[X^k]$ as the \<$k$-th moment\> of $X$.
+
+</div>
 
 <span class="statement-title">Remark.</span><br>
 
@@ -39,6 +42,8 @@ We call $E[X^k]$ as the \<$k$-th moment\> of $X$.
 
 <br/>
 
+<div class="definition" markdown="1">
+
 <span class="statement-title">Definition.</span> MGF; Moment Generating Function<br>
 
 The \<moment generating function\> of $X$ is given by
@@ -46,6 +51,8 @@ The \<moment generating function\> of $X$ is given by
 $$
 M_X(t) := E[e^{tX}]
 $$
+
+</div>
 
 Q. Why is this called the "moment" generating function?
 
@@ -86,6 +93,8 @@ $$
 $$
 
 <hr/>
+
+### MGF Examples
 
 <span class="statement-title">Example.</span><br>
 
@@ -254,17 +263,21 @@ $$
 M_Y (t) = e^{bt} \cdot M_X(at)
 $$
 
-<br/>
-
 <hr/>
 
+### Uniqueness Theorem for MGF
+
 mgf는 미분만 하면 momentum을 쉽게 구할 수 있다는 장점도 있지만, \<Uniqueness Theroem\>이라는 아래의 정리에 의해 두 RV이 동일한 분포를 가지는 것을 보장하는 조건이 되기도 한다.
+
+<div class="theorem" markdown="1">
 
 <span class="statement-title">Theorem.</span> Uniqueness Theorem<br>
 
 If $M_X(t) = M_Y(t)$ for all $t \in (-\delta, \delta)$ for some $\delta > 0$,
 
 then $X$ and $Y$ have the same distribution.
+
+</div>
 
 따라서, 두 RV이 동일한 분포를 가지는지 확인하려면, 두 RV의 mgf를 확인해보면 된다!
 
@@ -308,7 +321,14 @@ $$
 위에서 언급한 \<Uniqueness Theorem for MGF\>에 의해 $X$와 $Y$는 동일한 분포를 가진다. $\blacksquare$
 
 <br/>
+
+스포를 조금 하자면, \<Uniqueness Theorem of MGF\>는 나중에 \<CLT; Central Limit Theorem\>을 증명할 때, 중요하게 사용된다.
+
+👉 [*Proof* of CLT]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html#proof-of-clt" | relative_url}})
+
 <hr/>
+
+### MGF with Independence
 
 If $X \perp Y$, then 
 

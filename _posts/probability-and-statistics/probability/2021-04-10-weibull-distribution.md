@@ -13,7 +13,11 @@ tags: ["Probability"]
 - Weibull Distribution; $\text{Weibull}(\alpha, \beta)$
   - Failure rate & Reliability
 
+<hr/>
+
 ## Weibull Distribution
+
+<div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span><br/>
 
@@ -23,6 +27,8 @@ if its pdf $f(x)$ is given by
 $$
 f(x; \alpha, \beta) = \alpha \beta \cdot x^{\beta - 1} \cdot e^{-\alpha x^{\beta}} \quad \text{for } x > 0
 $$
+
+</div>
 
 \<Weibull Distribution\>은 이런 분포가 있다 정도만 소개하고 넘어간다.
 
@@ -44,6 +50,8 @@ F(x) = \int^x_0 f(y) \, dy = \begin{cases}
 $$
 
 위의 식을 미분해보면, Weibull의 pdf가 나온다는 걸 쉽게 확인할 수 있다.
+
+<hr/>
 
 ### Failure rate & Reliability
 

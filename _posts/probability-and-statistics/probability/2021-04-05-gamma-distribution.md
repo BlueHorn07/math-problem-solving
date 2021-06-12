@@ -151,6 +151,8 @@ In fact, $X$ can be written as $X = X_1 + \cdots + X_n$ where $X_i$'s are indepe
 
 <hr/>
 
+<div class="theorem" markdown="1">
+
 <span class="statement-title">Theorem.</span><br/>
 
 If $X \sim \text{Gamma}(\alpha, \beta)$, then 
@@ -158,9 +160,11 @@ If $X \sim \text{Gamma}(\alpha, \beta)$, then
 - $E[X] = \alpha \beta$
 - $\text{Var}(X) = \alpha \beta^2$
 
-<span class="statement-title">*Proof*.</span><br/>
+</div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
+
+<span class="statement-title">*Proof*.</span><br/>
 
 $$
 \begin{aligned}
