@@ -177,6 +177,7 @@ hidden: true
   - unbiased estimator of $\sigma^2$ is $s^2$
   - (not yet) $s^2 \perp B_1$, and $s^2 \perp B_0$
   - (not yet) the distribution of $s^2$
+- [[칼럼] Values in Statistics]({{"/2021/06/05/values-in-statistics.html" | relative_url}})
 
 <hr/>
 

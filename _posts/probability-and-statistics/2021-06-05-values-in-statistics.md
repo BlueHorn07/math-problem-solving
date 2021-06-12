@@ -78,7 +78,7 @@ $$
 
 <br/>
 
-마지막으로, \<$\chi^2$-value\>는 single sample 상황에서 sample variance $s^2$로 population variance $\sigma^2$에 대해 추정할 때 사용한다.
+마지막으로, \<$\chi^2$-value\>는 single sample 상황에서 sample variance $s^2$로 population variance $\sigma^2$에 대해 추정할 때, 또는 \<Goodness-of-fit\>에 대해 검정을 수행할 때 사용한다.
 
 $$
 \chi^2 = \frac{(n-1)s^2}{\sigma^2}
@@ -86,16 +86,28 @@ $$
 
 👉 [[Single Sample Estimation] Variance Estimation]({{"/2021/05/16/variance-estimation.html#single-sample-estimation-variance-estimation" | relative_url}})
 
+👉 [Chi-square Goodness-of-fit Test]({{"/2021/05/27/chi-square-goodness-of-fit-test.html" | relative_url}})
+
 <hr/>
 
 ### p-value
 
+\<p-value; 유의확률\>은 검정(Test)를 수행할 때 $H_0$를 기각하도록 만드는 가장 작은 significance level $\alpha$ 값을 의미한다. 우리는 이 p-value의 값을 $\alpha$ 값과 비교해 $H_0$를 기각할지를 결정한다.
+
+<div align="center" style="font-size: larger; margin: 8px">
+
+"Reject $H_0$ is the p-value is less than $\alpha$."
+
+</div>
+
+이것은 p-value가 critical region에 포함된다는 말과 동치다!
+
+p-value는 분포에서 reject이 가능하도록 하는 넓이를 의미하기 때문에, Normal 분포를 포함해 t-distribution, F-distribution 등 모든 분포 모형에서 수행하는 검정(Test)에서 정의할 수 있다.
+
+참고로 p-value는 우리가 지금까지 살펴본 z-value, t-value 등의 값과 전혀 다른 성격인데, p-value는 분포 상의 어떤 값이 아니라 넓이를 의미하기 때문이다. 그래서 p-value는 늘 $\alpha$ 값과 함께 사용된다.
 
 
-
-
-
-나의 의문! 그럼 $\sigma^2$를 알고 있을 때는 어떤 value를 쓰는거냐??
+👉 [Introduction to Hypothesis Tests: p-value]({{"/2021/05/18/introduction-to-hypothesis-tests.html#p-value" | relative_url}})
 
 <hr/>
 
