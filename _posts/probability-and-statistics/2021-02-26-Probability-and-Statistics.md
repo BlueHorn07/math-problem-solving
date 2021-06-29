@@ -71,6 +71,8 @@ hidden: true
   - Geometric Distribution
     - Negative Binomial Distribution
 - [Poisson Distribution]({{"/2021/03/25/poisson-distribution.html" | relative_url}})
+  - Law of Rare Events
+  - Bernoulli Process & Poisson Process
 
 <br/>
 
