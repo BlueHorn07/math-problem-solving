@@ -81,7 +81,14 @@ Then, we can use $X$ as a \<Test Statistics\>!
 |$H_0$ is true | <span class="half_HL">Type 1 Error</span> | good|
 |$H_0$ is false | good | <span class="half_HL">Type 2 Error</span>|
 
-<div align="center">
+<div class="img-wrapper">
+
+<img src="https://chemicalstatistician.files.wordpress.com/2014/05/pregnant.jpg" alt="hypothetical error">
+<p>이 사진이 Type 1, Type 2 Error를 가장 잘 표현하는 사진인 것 같다 ㅋㅋㅋ</p>
+
+</div>
+
+<div align="center" style="font-size: large">
 
 "It is best to make T1 & T2 errors as small as possible."
 
@@ -89,7 +96,7 @@ Then, we can use $X$ as a \<Test Statistics\>!
 
 <div class="statement" markdown="1">
 
-<span class="statement-title">Case.</span> Type 1 error<br>
+<span class="statement-title">Case.</span> Type 1 error; $\alpha$ error; 잘못된 인정<br>
 
 $$
 \begin{aligned}
@@ -105,7 +112,7 @@ $$
 
 <div class="statement" markdown="1">
 
-<span class="statement-title">Case.</span> Type 2 error<br>
+<span class="statement-title">Case.</span> Type 2 error; $\beta$ error; 잘못된 부정<br>
 
 $$
 \begin{aligned}
@@ -117,6 +124,10 @@ $$
 
 이때, $P(T2)$를 최대한 줄이려면, $C$를 최대한 줄여서 웬만한 경우가 아니면 $X$가 $X < C$의 조건을 만족시키지 못하도록 만들면 된다.
 
+</div>
+
+<div class="img-wrapper" style="margin: 10px">
+<img src="https://wiki.ubc.ca/images/d/de/Combined_-_Critical_Value_3.png" alt="critical value" width="500px">
 </div>
 
 ?? 뭔가 이상하다. $P(T1)$를 줄이려면, $C$를 키워야 하고, $P(T2)$를 줄이려면, $C$를 줄여야 한다. 😕 뭐가 맞는 걸까?
