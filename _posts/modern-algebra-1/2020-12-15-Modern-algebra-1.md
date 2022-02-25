@@ -45,7 +45,7 @@ If $H$ is a subgrop of a group $G$, then $\lvert H \rvert \mid \lvert G \rvert$,
 
 </div>
 
-- [Cyclic Group]({{"2020/10/18/Cyclic-group-and-subgroup.html" | relative_url}})
+- [Cyclic Group]({{"2020/10/18/cyclic-group-and-subgroup.html" | relative_url}})
 - Symmetric Group
 - Coset
 - [Lagrange Theorem]({{"2020/10/14/Lagrange-thm.html" | relative_url}}) 🔥🔥

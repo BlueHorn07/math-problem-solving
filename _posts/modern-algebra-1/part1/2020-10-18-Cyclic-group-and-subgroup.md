@@ -34,7 +34,7 @@ And it is trivial that $\left<{a^n}\right> \leq H$.
 
 Every $h\in H$ it is $h \in G$, so $h = a^m$ for some $m \in \mathbb{Z}$.
 
-By division algorithm, $m = nq + r$ ($0 \leq r < m$). Then,
+By division algorithm, $m = nq + r$ ($0 \leq r < n$). Then,
 
 <div>
 $$a^m = a^{nq+r} = {(a^n)^q}a^r$$
