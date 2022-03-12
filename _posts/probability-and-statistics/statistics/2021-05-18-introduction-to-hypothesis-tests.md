@@ -106,7 +106,7 @@ P(\text{T1 error})
 \end{aligned}
 $$
 
-이때, $P(T1)$을 최대한 줄이려면, $C$를 최대한 키워서 웬만한 경우가 아니면 $X$가 $X \ge C$의 조건을 만족시키지 못 하도록 만들면 된다.
+이때, $P(T1)$을 최대한 줄이려면, $C$를 최대한 키워서 웬만한 경우가 아니면 $X$가 $X \ge C$의 조건을 만족시키지 못 하도록 만들면 된다. 즉, $H_0$를 reject 하는 기준을 빡세게 만든다.
 
 </div>
 
@@ -122,7 +122,7 @@ P(\text{T2 error})
 \end{aligned}
 $$
 
-이때, $P(T2)$를 최대한 줄이려면, $C$를 최대한 줄여서 웬만한 경우가 아니면 $X$가 $X < C$의 조건을 만족시키지 못하도록 만들면 된다.
+이때, $P(T2)$를 최대한 줄이려면, $C$를 최대한 줄여서 웬만하면 $X$가 $X \ge C$를 만족 시키도록 만들면 된다. 즉, 웬만하면 $H_0$를 reject하게 만든다.
 
 </div>
 
@@ -194,7 +194,7 @@ $$
 
 💥 commonly used values for $\alpha$ are $0.1$, $0.05$, $0.01$.
 
-💥 추정(Estimation)을 수행할 때, 비슷한 것을 보긴 했다!! 바로 \<Confidence Level\> $1-\alpha$다!
+💥 [Interval Estimation](https://bluehorn07.github.io/mathematics/2021/05/06/interval-estimation-and-confidence-level.html#introduction-to-interval-estimation)을 수행할 때, 비슷한 것을 봤었다! 바로 \<Confidence Level\> $1-\alpha$다!
 
 </div>
 
@@ -354,17 +354,21 @@ $$
 
 </div>
 
-우리는 "p-value"를 지표로 삼아 $H_0$를 기각할지 결저할 수 있다.
+우리는 "p-value"를 지표로 삼아 $H_0$를 기각할지 결정할 수 있다.
 
 만약, confidence level $\alpha$와 비교했을 때, "p-value"의 값이 더 작다면, 즉 $\alpha$가 생성하는 넓이가 "p-value"가 생성하는 넓이를 포함한다면, 이것은 주어진 데이터가 $\alpha$의 critical region에 속한다는 말이기 때문에, $H_0$를 기각한다!
 
 반대로 "p-value"의 값이 더 크다면, $H_0$를 기각할 수 없다.
 
+<br/>
+
+보통 p-value가 5%(=0.05)보다 다면 유의한 차이가 있다고 얘기한다. 이때 '유의한 차이'의 의미는 기존 이론인 $H_0$과 실험 결과를 비교했을 때, $H_0$를 reject 해야 한다는 것을 의미한다.
+
 <hr/>
 
-이제 "통계적 검정(Statistical Test)"를 수행하기 위해 필요한 기본적인 내용은 다 살펴봤다. 다음 포스트들부터 상황에 따라 어떻게 통계적 검정을 수행하는지 살펴볼 예정이다. 사실 그렇게 어렵진 않고, 요구하는 것들을 잘 파악해서 순서에 맞게 계산하기만 하면 된다.
+이제 "통계적 검정(Statistical Test)"를 수행하기 위해 필요한 기본적인 내용은 다 살펴봤다. 다음 포스트부터 상황에 따라 어떻게 통계적 검정을 수행하는지 살펴볼 예정이다. 사실 그렇게 어렵진 않고, 요구하는 것들을 잘 파악해서 순서에 맞게 계산하기만 하면 된다.
 
-우리가 추정(Estimation)에서 살펴본 과정을 따라서 검정(Testing)을 살펴볼 것이다.
+우리가 추정(Estimation)에서 살펴본 순서와 동일하게 검정(Testing)을 살펴볼 것이다.
 
 - [Test on Mean]({{"/2021/05/19/test-on-mean.html" | relative_url}})
 - [Test on Proportion and Variance]({{"/2021/05/26/test-on-proportion-and-variance.html" | relative_url}})
