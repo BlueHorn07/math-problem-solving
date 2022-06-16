@@ -58,9 +58,9 @@ $$
 
 - [[Interval Estimatation] Estimate $\mu$ when $\sigma^2$]({{"/2021/05/06/interval-estimation-and-confidence-level.html#estimate-mu-when-sigma2-is-unknown" | relative_url}})
 - [[Two Samples Estimation] Difference btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means.html" | relative_url}})
-  - $\sigma_1^2$ and $\sigma_2^2$ are unkown, but know that $\sigma_1^2 = \sigma_2^2$
+  - $\sigma_1^2$ and $\sigma_2^2$ are unknown, but know that $\sigma_1^2 = \sigma_2^2$
     - pooled sample variance
-  - $\sigma_1^2$ and $\sigma_2^2$ are unkown and unequal
+  - $\sigma_1^2$ and $\sigma_2^2$ are unknown and unequal
     - Wlech's t-test
 - 그외에도 popluation variance $\sigma^2$를 모르는 상황이라면 언제나!!
 

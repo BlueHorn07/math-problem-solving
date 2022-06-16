@@ -48,12 +48,18 @@ $$
 <span class="statement-title">*proof*.</span><br>
 
 $$
-B_1 := \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}{S_{xx}} = \frac{\sum_{i=1}^n (x_i - \bar{x})y_i}{S_{xx}}
+\begin{aligned}
+B_1 
+&:= \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}{S_{xx}} \\
+&= \frac{\sum_{i=1}^n (x_i - \bar{x})y_i}{S_{xx}}
+\end{aligned}
 $$
 
-is a liner combination of normal random variables $y_i$s, thus $B_1$ is also normal.
+is a linear combination of normal random variables $y_i$s, thus $B_1$ is also a normal RV.
 
 Hense, we only need to find the mean and the variance of $B_1$.
+
+<br/>
 
 1\. Mean
 

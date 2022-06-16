@@ -33,7 +33,7 @@ $$
 Y = \beta_0 + \beta_1 x + \epsilon
 $$
 
-이때, regression parameter $\beta_0$, $\beta_1$가 unkwon이며, 우리는 이것을 sample point로부터 추정(Estimate)할 것이다!
+이때, regression parameter $\beta_0$, $\beta_1$가 unknown이며, 우리는 이것을 sample point로부터 추정(Estimate)할 것이다!
 
 \* $\epsilon$은 error를 대변하며, random variable이다!
 
@@ -324,8 +324,15 @@ $$
 
 be the "coefficient of determination; 결정 계수".
 
-- $R^2 = 1 \iff \text{SSE} = 0$
-- $R^2 = 0 \iff \text{SSE} = \text{SST} \iff \text{SSR} = 0 \iff \hat{y}_i = \bar{y}$
+- $R^2 = 1$ is equivalent to
+  - $\text{SSE} = 0$
+  - $\hat{y_i} = y_i$ for all inputs
+  - Regression model work very well!
+- $R^2 = 0$ is equivalent to
+  - $\text{SSE} = \text{SST}$
+  - $\text{SSR} = 0$
+  - $\hat{y}_i = \bar{y}$ for all inputs
+  - Regression model outputs a constant.
 
 </div>
 
@@ -340,7 +347,7 @@ be the "coefficient of determination; 결정 계수".
 
 (a) If $R^2=1$, then $SSE = 0$, this means $\hat{y}_i = y_i$.
 
-All obs fall on the line.
+All observations fall on the line.
 
 (b) If $R^2 = 0$, then $\text{SSE} = \text{SST}$ or $\text{SSR} = 0$.
 

@@ -126,7 +126,7 @@ $$
 P(X > a + t \mid X >a) = P(X > t)
 $$
 
-EXP가 위의 Memorylss Property를 가지는지 확인해보자.
+EXP가 위의 Memoryless Property를 가지는지 확인해보자.
 
 $$
 \begin{aligned}

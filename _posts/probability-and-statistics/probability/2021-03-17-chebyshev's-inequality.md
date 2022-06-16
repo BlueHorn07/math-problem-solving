@@ -10,7 +10,7 @@ tags: ["Probability"]
 
 <hr/>
 
-\<체비쇼프의 부등식 Chebyshev's Inequality\>은 평균 $\mu$로부터 $\lambda$ 거리만큼 떨어진 변수에 대한 Probability Distribution의 상한을 제시한다. 식은 아래와 같이 정의되어 있다.
+\<체비쇼프의 부등식 Chebyshev's Inequality\>은 평균 $\mu$로부터 $\lambda$ 거리 이상 멀어진 경우, 즉 tail 상황에 대한 확률의 상한을 제시한다. 즉, "The upper bound of tail probability"인 셈이다. 식은 아래와 같이 정의되어 있다.
 
 <span class="statement-title">Theorem.</span> Chebyshev's Theroem<br>
 
@@ -20,7 +20,7 @@ $$
 P \left( \left| X - \mu \right| \ge \lambda \right) \le \frac{\text{Var}(X)}{\lambda^2}
 $$
 
-사실 \<Chebyshev's inequality\>는 평균으로부터 바깥쪽보다는 평균 안쪽에 대한 Probability Distribution을 구할 때 주로 사용한다.
+사실 \<Chebyshev's inequality\>는 평균으로부터 바깥쪽보다는 평균 안쪽에 대한 확률을 구할 때 주로 사용한다.
 
 <span class="statement-title">Example.</span><br>
 

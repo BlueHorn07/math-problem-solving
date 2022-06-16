@@ -279,7 +279,7 @@ $$
 
 Q. Does  confidence interval give us more information about $\mu$ than a point estimator $\bar{x}$?
 
-A. <span calss="half_HL">Not really... 🤔</span>
+A. <span class="half_HL">Not really... 🤔</span>
 
 <div class="light-margin" markdown="1">
 
