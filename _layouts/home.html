@@ -20,10 +20,14 @@ layout: default
   {%- if posts.size > 0 -%}
 
     <!-- tag lists -->
-    {% for tag in site.tags %}
-      {% capture tag_name %}{{ tag | first }}{% endcapture %}
-        <span class="tag" data-tag="{{tag_name}}">{{tag_name}} | {{site.tags[tag_name].size}}</span>
-    {% endfor %}
+    <div>
+      {% for tag in site.tags %}
+        {% capture tag_name %}{{ tag | first }}{% endcapture %}
+          <span class="tag" data-tag="{{tag_name}}">
+            {{tag_name}} | {{site.tags[tag_name].size}}
+          </span>
+      {% endfor %}
+    </div>
 
     <hr>
 
