@@ -5,7 +5,7 @@ use_math: true
 tags: ["Differntial Equation"]
 ---
 
-### 서론
+
 2019-2학기, 대학에서 들은 '미분방정식' 수업을 복습하는 차원에서 정리하게 된 글입니다. 지적은 언제나 환영입니다 :)
 
 <br><span class="statement-title">TOC.</span><br>

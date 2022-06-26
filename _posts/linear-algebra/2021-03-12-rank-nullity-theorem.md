@@ -5,7 +5,7 @@ use_math: true
 tags: ["Linear Algebra"]
 ---
 
-### 서론
+
 
 <br><span class="statement-title">TOC.</span><br>
 
