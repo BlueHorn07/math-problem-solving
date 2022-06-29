@@ -8,7 +8,7 @@ tags: ["Statistics", "Problem Solving"]
 
 2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-이 글은 "[Point Estimation, and unbiased estimator]({{"/2021/05/05/point-estimation-and-unbiased-estimator.html" | relative_url}})" 포스트에 제시되어 있던 문제들을 풀이한 포스트입니다.
+이 글은 "[Point Estimation, and unbiased estimator]({{"/2021/05/05/point-estimation.html" | relative_url}})" 포스트에 제시되어 있던 문제들을 풀이한 포스트입니다.
 
 <span class="statement-title">TOC.</span><br>
 
@@ -73,7 +73,7 @@ $$
 \text{Var}(\hat{S}^2) = \frac{(n-1)^2}{n^2}\text{Var}(S^2) < \text{Var}(S^2)
 $$
 
-이다. 즉, $S^2$ 보다 낮은 variance를 갖는 estiamtor가 존재한다. $\blacksquare$ <br/>
+이다. 즉, $S^2$ 보다 낮은 variance를 갖는 estimator가 존재한다. $\blacksquare$ <br/>
 (단, $\hat{S}^2$는 biased estimator임!)
 
 </div>
@@ -169,7 +169,7 @@ $$
 \end{aligned}
 $$
 
-We've already got the variance of two estimators. Then, the MSE for two estiamtors are:
+We've already got the variance of two estimators. Then, the MSE for two estimators are:
 
 $$
 \text{MSE}(S^2) = \frac{2\sigma^4}{(n-1)} + 0

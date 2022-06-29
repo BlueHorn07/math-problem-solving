@@ -105,7 +105,7 @@ $\blacksquare$
 
 <span class="statement-title">Theorem.</span><br>
 
-The unbiased estiamtor of $\sigma^2$ is 
+The unbiased estimator of $\sigma^2$ is 
 
 $$
 s^2 := \frac{\sum_{i=1}^n (y_i - \hat{y}_i)^2}{n-2} = \frac{\text{SSE}}{n-2}

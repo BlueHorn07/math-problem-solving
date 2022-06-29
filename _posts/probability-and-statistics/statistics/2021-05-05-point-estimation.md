@@ -1,5 +1,5 @@
 ---
-title: "Point Estimation, and unbiased estimator"
+title: "Point Estimation"
 layout: post
 use_math: true
 tags: ["Statistics"]
@@ -13,13 +13,13 @@ tags: ["Statistics"]
 - [Introduction to Estimation](#introduction-to-estimation)
 - [Point Estimation](#point-estimation)
   - unbiased estimator 🔥
-  - variance of estiamtor 🔥
+  - variance of estimator 🔥
   - the most efficient estimator of $\theta$
   - MSE of an estimator
 
 <hr/>
 
-### Introduction to Estimation
+## Introduction to Estimation
 
 <div class="statement" markdown="1">
 
@@ -29,7 +29,7 @@ tags: ["Statistics"]
 
 <div class="statement" markdown="1">
 
-"\<**Statistical inference**\> means making generalization about the <u>population properties</u> <u>based on a random sample</u>."
+"\<**Statistical Inference; 통계적 추론**\> means making generalization about the <u>population properties</u> <u>based on a random sample</u>."
 
 </div>
 
@@ -37,37 +37,34 @@ Supp. someone gave you some data set $\\{ x_1, \dots, x_n \\}$ and it is known t
 
 Q. You are asked to estimate $\mu$. What can be a good estimate of $\mu$ from the sample?
 
-A. $\bar{X}$, sample mean<br/>
-why? by LLN, $\bar{X} \rightarrow \mu$ as $n \rightarrow \infty$.
+A. $\bar{x}$, sample mean<br/>
+why? by LLN, $\bar{x} \rightarrow \mu$ as $n \rightarrow \infty$.
 
-<div class="light-margin"></div>
+<br/>
 
-Sample mean $\bar{X}$의 경우, true parameter $\mu$에 대해 $\mathbb{R}$에 속하는 어떤 값 하나를 주게 된다. 이런 형태의 estimation을 \<**point estimation**\>이라고 한다.
+위의 sample mean $\bar{x}$ 같이 모집단(population)의 성질을 추론하는 것을 \<**추정(Estimation)**\>이라고 한다.
 
-<div class="light-margin"></div>
+추정에는 \<Point Estimation\>과 \<Interval Estimation\>, 2가지 방식이 존재한다.
 
+population mean $\mu$을 추정하기 위해 sample mean $\bar{x}$를 사용하는 것은 \<Point Estimation\> 방식이다.
 
-We may provide some **interval** which $\mu$ sits with some "high confidence".
+만약 "population mean $\mu$는 어떤 범위(interval) $(a, b)$에서 높은 확률로 존재할 것이다"라고 interval $(a, b)$을 제시하는 방식을 \<Interval Estimation\>이라고 한다.
 
 ex) $P\left( \mu \in (a, b) \right) \approx 0.99 \quad \text{or} \quad 0.95$.
-
-<div class="light-margin"></div>
-
-이런 형태의 estimation을 \<**interval estimation**\>이라고 한다.
-
-<div class="light-margin"></div>
 
 💥 Note: For true distribution $N(\mu, \sigma^2)$, $\mu$, $\sigma$ are <span class="half_HL">unknown, and not random</span>!!
 
 <hr/>
 
-### Point Estimation
+## Point Estimation
 
 Let $X_1, \dots, X_n$ be a random sample and $X_i \sim f(x; \theta)$ for some pdf(or pmf), and let $x_1, \dots, x_n$ be sample points.
 
-A \<point estimation\> of some population parameter $\theta$ is <span class="half_HL">a single value $\hat{\theta}$ of statistic $\hat{\Theta}$</span>.
+A \<Point Estimation\> of some population parameter $\theta$ is <span class="half_HL">a single value $\hat{\theta}$ of statistic[^1] $\hat{\Theta}$</span>.
 
-💥 이때, <span class="half_HL">$\hat{\Theta}$는 estimator이며, Random Variable이다</span>.
+이때, statistic $\hat{\Theta}$를 estimator라고 하며, <span class="half_HL">estimator $\hat{\Theta}$는 Random Variable이다</span>.
+
+(hat $\hat{x}$이 붙으면 random sample로부터 유도되는 대상이다.)
 
 <br>
 
@@ -91,13 +88,13 @@ or $\displaystyle \hat{S}^2 = \dfrac{1}{n} \sum^n_i (X_i - \bar{X})^2$ where $E[
 
 Q3. 두 estimator 중 어떤 것이 더 좋은가?
 
-A3. 두 estimator의 \<**bias**\>를 비교해보자!
+A3. 두 estimator의 \<**bias**\>를 비교한다!
 
-<br/>
+### Unbiased Estimator
 
 <div class="definition" markdown="1">
 
-<span class="statement-title">Definition.</span> unbaised estimator 🔥<br>
+<span class="statement-title">Definition.</span> unbiased estimator 🔥<br>
 
 A statistic $\hat{\Theta}$ is called an \<**unbiased estimator**\> if
 
@@ -124,7 +121,7 @@ Then, $\bar{X}$ is an unbiased estimator of $\mu$, and $S^2$ is an unbiased esti
 
 Note that $E \left[ \frac{2X_1 + 0.5 X_2 + 0.5 X_3 + \cdots + X_n}{n}\right] = \mu$, so that one is also an unbiased estimator!
 
-Let's consider a weigted average $\displaystyle\bar{X}_w = \sum^n_i w_i X_i$. This estimator is also an unbiased estimator.
+(Generalization) Let's consider a weigted average $\displaystyle\bar{X}_w = \sum^n_i w_i X_i$. This estimator is also an unbiased estimator.
 
 $$
 E\left[ \bar{X}_w \right] = \sum^n_i w_i E[X_i] = \cancelto{1}{\left( \sum^n_i w_i \right)} \mu = \mu
@@ -138,17 +135,23 @@ $$
 \text{Var}(\bar{X}) = E \left[ (\bar{X} - \mu)^2 \right] = \frac{\sigma^2}{n} \le \text{Var}(\bar{X}_w)
 $$
 
+### Variance of Estimator
+
 <div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> variance of estimator 🔥<br>
 
-For an estiamtor $\hat{\Theta}$, the variance of estiamtor is
+For an estimator $\hat{\Theta}$, the variance of estimator is
 
 $$
 \text{Var}(\hat{\Theta}) = E \left[ (\hat{\Theta} - E[\hat{\Theta}])^2 \right]
 $$
 
+\* Variance의 정의를 그대로 따른다. 그러나 $\hat{\Theta}$가 statistic, 즉 function of random samples $\hat{\Theta} = f(X_1, ..., X_n)$이기 떄문에 실제 계산은 random sample의 distribution $X_i \sim g(x; \mu, \sigma)$를 활용하면 된다. $\text{Var}(\hat{\Theta}) = \text{Var}(g(X_1, ..., X_n))$
+
 </div>
+
+<br/>
 
 
 <span class="statement-title">Claim.</span><br>
@@ -184,9 +187,9 @@ $\blacksquare$
 
 </div>
 
-<br/>
+### Most Efficient Estimator
 
-이제, "bias"와 "variance"를 종합해 어떤 estiamtor가 좋은 estimator인지 제시해보자!
+"bias"와 "variance"를 종합해 어떤 estimator가 좋은 estimator인지 판단할 수 있다.
 
 <div class="definition" markdown="1">
 
@@ -204,7 +207,7 @@ When $X_i$'s are iid $N(\mu, \sigma^2)$, it is known that $\bar{X}$ is the most 
 
 <br/>
 
-Q. biased estimator 중에서 variance가 가장 작은게 있을 수도 있지 않을까?
+Q. 왜 most efficient estimator는 unbiased estimator 중에서 고르는 걸까? biased estimator 중에서 variance가 가장 작은게 있을 수도 있지 않을까?
 
 A. Yes, it is possble that <span class="half_HL">a biased estimator can have smaller variance</span> than an unbiased estimator.
 
@@ -220,34 +223,54 @@ Show that $\text{Var}(S^2) > \text{Var}(\hat{S}^2)$.
 
 (Homework🎈)
 
-<br/>
+### Mean Squared Error
 
-<hr/>
+\<MSE; Mean Squared Error\>를 Point Estimator의 평가 지표로 사용할 수도 있다!
+
+<div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> MSE; Mean Squared Error 🔥<br>
 
 The \<MSE; Mean Squared Error\> of an estimator is defined as 
 
 $$
-\text{MSE} := E \left[ \hat{\Theta} - \theta \right]^2 = \text{Var}(\hat{\Theta}) + \left[ \text{Bias} \right]^2
+\text{MSE} := E \left[ \left( \hat{\Theta} - \theta \right)^2 \right]
+$$
+
+</div>
+
+<div class="statement" markdown="1">
+
+<span class="statement-title">Claim.</span><br/>
+
+$$
+\text{MSE} 
+:= E \left[ \left( \hat{\Theta} - \theta \right)^2 \right] 
+= \text{Var}(\hat{\Theta}) + \left[ \text{Bias} \right]^2
 $$
 
 where $\text{Bias} := E \left[ \hat{\Theta} - \theta \right]$.
+
+</div>
 
 <div class="math-statement" markdown="1">
 
 <span class="statement-title">*Proof*.</span><br/>
 
-(Homework🎈)
+(Homework🎈) / [(Solution)]({{"/2021/06/06/statistics-ps1.html" | relative_url}})
 
 </div>
 
 <hr/>
 
-이어지는 포스트에서는 또다른 estimation 방식인 \<Interval Estimation\>에 대해 살펴보겠다. 이때, 제시한 Interval이 어느 정도 좋은지 알려주는 지표가 바로 \<confidence level\> $1 - \alpha$다!
+이어지는 포스트에서는 또다른 estimation 방식인 \<Interval Estimation\>에 대해 살펴보겠다. 이때, 주어진 Interval이 얼마나 좋은지 알려주는 지표가 바로 \<confidence level\> $1 - \alpha$다!
 
 👉 [Interval Estimation, and confidence level]({{"/2021/05/06/interval-estimation-and-confidence-level.html" | relative_url}})
 
 포스트에 제시 되었던 HW 문제들은 아래의 포스트에 별도로 정리해두었다.
 
 👉 [Statistics - PS1]({{"/2021/06/06/statistics-ps1.html" | relative_url}})
+
+<hr/>
+
+[^1]: \<statistic; 통계량\>은 random samples $X_1, ..., X_n$의 함수 $f(X_1, ..., X_n)$을 말한다. [Sampling Distribution]({{"/2021/04/25/sampling-distribution.html" | relative_url}}) 포스트 참고
