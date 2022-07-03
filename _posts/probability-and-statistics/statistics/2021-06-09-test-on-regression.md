@@ -8,10 +8,19 @@ tags: ["Statistics"]
 
 2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
+[Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression.html" | relative_url}}) 포스트에서 이어지는 포스트입니다. 
+
 <br><span class="statement-title">TOC.</span><br>
 
+- [Review]
 - [Distribution of Regression Coefficients $B_0$ and $B_1$](#distribution-of-regression-coefficients)
 - [Estimator of Error Variance $\sigma^2$](#estimator-of-error-variance)
+
+<hr/>
+
+### Review
+
+
 
 <hr/>
 
@@ -19,7 +28,7 @@ tags: ["Statistics"]
 
 Q1. What are the distributions of $B_1$ and $B_0$?
 
-Q2. What can be an estiamtor for $\sigma^2$?
+Q2. What can be an estimator for $\sigma^2$?
 
 <hr/>
 
@@ -116,7 +125,7 @@ Recall that $\sigma^2 = \text{Var}(\epsilon_i)$, and the $\epsilon_i$ was the di
 
 <span class="statement-title">Theorem.</span><br>
 
-The unbiased estiamtor of $\sigma^2$ is 
+The unbiased estimator of $\sigma^2$ is 
 
 $$
 s^2 := \frac{\sum_{i=1}^n (y_i - \hat{y}_i)^2}{n-2} = \frac{\text{SSE}}{n-2}
@@ -156,7 +165,7 @@ Supp. we have sample points $(x_1, y_1), \dots, (x_n, y_n)$ from $Y_i = \beta_0 
 
 <div class="statement" markdown="1">
 
-우리는 $\beta_1$에 대한 point estiamtor로 $B_1 = S_{xy} / S_{xx}$를 사용했고, 이때 $B_1$의 분포는 아래와 같았다.
+우리는 $\beta_1$에 대한 point estimator로 $B_1 = S_{xy} / S_{xx}$를 사용했고, 이때 $B_1$의 분포는 아래와 같았다.
 
 $$
 B_1 \sim N \left( \beta_1, \; \sigma^2/S_{xx} \right)

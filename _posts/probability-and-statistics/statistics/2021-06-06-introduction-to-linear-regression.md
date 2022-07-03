@@ -1,12 +1,16 @@
 ---
-title: "Introduction to Linear Regression"
+title: "Regression Analysis and Simple Linear Regression"
 layout: post
 use_math: true
 tags: ["Statistics"]
 ---
 
+<!-- Least Square 방법을 별도의 포스트로 분리하는게 좋을 듯 -->
+
 
 2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
+
+이번 포스트에선 \<Regression Analysis\>의 컨셉을 살펴봅니다. \<Regression\>이 deterministic relationship과 어떻게 다른지, 랜덤성을 포함하기 위해 어떤 가정을 하는지를 중점적으로 살펴봅시다.
 
 <br><span class="statement-title">TOC.</span><br>
 
@@ -16,38 +20,76 @@ tags: ["Statistics"]
 
 <hr/>
 
-### Introduction to Linear Regression
+## Introduction to Regression
 
-\<Regression\>을 간단하게 설명하자면, 아래와 같다.
+우리가 $n$번의 실험을 통해 $n$개의 데이터 $\\{ (x_i, y_i) \\}_n$를 얻었다고 하자. 이 데이터를 유심히 살펴보니... $n$개 데이터에서 아래와 같은 관계를 발견했다. 
 
-<div class="statement" style="font-size: larger" align="center" markdown="1">
+$$
+Y = \beta_0 + \beta_1 x
+$$
+
+와우! 이 관계가 사실이라면, 우리는 $x$ 값만으로 정확한 $y$ 값을 얻을 수 있다! 이런 형태의 관계식을 *deterministic* relationship이라고 한다. 이런 관계는 랜덤성이나 확률적이지 않은 상황에서만 유효할 것이다.
+
+그러나 이런 deterministic 케이스는 흔치 않다. 우리가 모든 실험을 통제할 수 없고, 모든 dependent variable $x_i$를 분별할 수 있지 않기 때문에 우리가 얻은 데이터 $\\{ (x_i, y_i) \\}_n$에는 probabilistic한 성질이 존재할 수 밖에 없다. 그리고 그러는 편이 generalization 관점에서 더 안전하다!
+
+앞으로 공부할 컨셉을 한 문장으로 요약하면 아래와 같다.
+
+<div class="statement" align="center" markdown="1">
 
 Model the relationship btw $x$ and $y$ <br/>
-by finding a function $y = f(x)$ that is a close fit to the data
+by finding a function $y = f(x)$ <br/>
+that is a close fit to the given data $\\{ (x_i, y_i) \\}_n$
 
 </div>
 
-<span class="statement-title">Mathematical Model</span>
+위와 같은 모델링을 **\<Regression Analysis\>**라고 한다. 
+
+### Multiple, Simple, Linear
+
+만약 \<Regression Analysis\>에서 둘 이상의 dependent variable을 다루는 $y = f(x_1, x_2)$라면, \<multiple regression\>에 대한 분석이다. 반대로 하나의 dependent variable $y = f(x_1)$라면, \<simple regression\>에 대한 분석이다.
+
+또, \<Regression Analysis\>에서 관계를 Linear로 가정한다면: $y = \beta_0 + \beta_1 x_1 + \beta_2 x_2$ 또는 $y = \beta_0 + \beta_1 x_1$라면, \<linear regression\>에 대한 분석이다.
+
+우리는 통계의 입문 수업을 듣고 있기에 가장 쉬운 \<simple lienar regression; SLR\>에 대해 공부할 예정이다.
+
+<hr/>
+
+## Simple Linear Regression
+
+앞 문단에서 \<Regression Analysis\>가 두 변수의 non-deterministic relation을 모델링하는 과정이라고 정의했다. 이런 non-deterministic 경우를 "\<random component\>가 있다"라고 표현하기도 한다. 
+
+동일한 $x$ 값으로 실험을 하더라도 여러 요인에 의해 $y$은 변할 수 있다. 따라서 response $y$에 랜덤성이 있다고 보는 것이 적절하다. 만약 $y$를 $Y$로 표현한다면, random variable로써 표현한 것이다. $y_i$는 데이터셋 $\\{ (x_i, y_i) \\}_n$의 한 값으로써 표현한 것이다. 둘을 구분해야 한다.
+
+<br/>
+
+자, 이제 \<Regression Analysis\>를 수행하기 위한 Model을 정의해보자. 우리는 Simple Linear Regression Model을 정의할 것이다.
 
 $$
 Y = \beta_0 + \beta_1 x + \epsilon
 $$
 
-이때, regression parameter $\beta_0$, $\beta_1$가 unknown이며, 우리는 이것을 sample point로부터 추정(Estimate)할 것이다!
+$\beta_0$와 $\beta_1$는 익숙하듯 regression parameter이다. 각각 intercept와 slope의 역할이다.
 
-\* $\epsilon$은 error를 대변하며, random variable이다!
+$\epsilon$은 random variable이다. 실험과 데이터셋의 랜덤성, 불확실성을 표현하는 역할이다. 이때, random variable $\epsilon$은 평균과 분산이 $E(\epsilon) = 0$, $\text{Var}(\epsilon) = \sigma^2$으로 정의된다. 
+
+내용을 더 진행하기 전에 몇가지 사실들을 정리하고 가자.
+
+- $x$는 not random이고, value일 뿐이다.
+- $Y$는 random variable이다. 왜냐하면, $\epsilon$이 random variable이기 때문이다.
+
+<!-- 여기에서 beta_0, beta_1은 무슨 의미인지 언급해야 할까...? 아님 그 둘에 대해선 뒤에서 밝혀진다고 할까? -->
+
+### Random Error
+
+
 
 <hr/>
-
-### Simple Linear Regression
 
 <div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> Simple Linear Regression Model<br>
 
-$n$개 sample points를 갖고 있다고 하자: $(x_1, y_1), \dots, (x_n, y_n)$.
-
-$y_i$가 $x_i$에 dependent 하다고 가정한다. 이때, 둘은 random factor에 의해 영향을 받는다. 이 random factor는 $\epsilon_i$로 표현된다.
+For $n$ sample points $(x_1, y_1), \dots, (x_n, y_n)$,
 
 $$
 y_i = \beta_0 + \beta_1 x_i + \epsilon_i
@@ -58,7 +100,7 @@ where $\epsilon_i$ are independent random variables with mean 0 and variance $\s
 위와 같은 Regression Modeling을 \<**Simple Linear Regression Model**\>이라고 한다!!
 
 </div>
-
+$y_i$가 $x_i$에 dependent 하다고 가정한다. 이때, 둘은 random factor에 의해 영향을 받는다. 이 random factor는 $\epsilon_i$로 표현된다.
 
 <div class="statement" markdown="1">
 
@@ -220,7 +262,7 @@ A. Yes!!
 
 <span class="statement-title">Theorem.</span><br>
 
-$b_1$ and $b_0$ are unibased for $\beta_1$ and $\beta_0$ respectively.
+$b_1$ and $b_0$ are unbiased for $\beta_1$ and $\beta_0$ respectively.
 
 $$
 E[b_1] = \beta_1 \quad \text{and} \quad E[b_0] = \beta_0 

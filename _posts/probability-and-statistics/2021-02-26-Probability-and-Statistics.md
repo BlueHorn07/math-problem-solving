@@ -110,7 +110,11 @@ hidden: true
 
 <br/>
 
-- [Point Estimation, and unbiased estimator]({{"/2021/05/05/point-estimation.html" | relative_url}})
+- [Point Estimation]({{"/2021/05/05/point-estimation.html" | relative_url}})
+  - unbiased estimator: $E(\hat{\Theta}) = \theta$
+  - variance of estimator: $\text{Var}(\hat{\Theta})$
+  - the most efficient estimator
+  - Mean Squared Error of estimator
 - [Interval Estimation]({{"/2021/05/06/interval-estimation-and-confidence-level.html" | relative_url}})
 - [Prediction & Tolerance Estimation]({{"/2021/05/13/prediction-and-tolerance-interval.html" | relative_url}})
 - [Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means.html" | relative_url}})

@@ -174,7 +174,7 @@ IF the distribution of $X$ is very close to $N(0, 1)$, then a \<Normal Quantile-
 
 다음 포스트부터는 "통계적 추론"의 방식 중 하나인 **\<Estimation; 추정\>**에 대해 다룬다. estimator의 \<bias\>와 \<variance\>에 대해 살펴보며, 신뢰 구간을 구하는 \<Interval Estimation\>을 수행한다 😁
 
-👉 [Point Estimation, and unbiased estimator]({{"/2021/05/05/point-estimation.html" | relative_url}})
+👉 [Point Estimation]({{"/2021/05/05/point-estimation.html" | relative_url}})
 
 👉 [Interval Estimation, and confidence level]({{"/2021/05/06/interval-estimation-and-confidence-level.html" | relative_url}})
 

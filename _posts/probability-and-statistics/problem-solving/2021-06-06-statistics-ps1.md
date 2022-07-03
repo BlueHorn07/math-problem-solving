@@ -8,15 +8,83 @@ tags: ["Statistics", "Problem Solving"]
 
 2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-이 글은 "[Point Estimation, and unbiased estimator]({{"/2021/05/05/point-estimation.html" | relative_url}})" 포스트에 제시되어 있던 문제들을 풀이한 포스트입니다.
+이 글은 "[Point Estimation]({{"/2021/05/05/point-estimation.html" | relative_url}})" 포스트에서 제시한 숙제 문제들을 풀이한 포스트입니다.
 
 <span class="statement-title">TOC.</span><br>
 
-- sample variance $S^2$ is not the minimal variance estimator
-- MSE(Mean Squared Error) is sum of variance and square of bias
-- Compare $S^2$ and $\hat{S}^2$ using MSE
+- [MSE(Mean Squared Error) is the sum of variance and square of bias](#mse-is-the-sum-of-variance-and-square-of-bias)
+- [Sample ariance $S^2$ is not the minimal variance estimator](#sample-variance-is-note-the-minimal-variance-estimator)
+- [Compare $S^2$ and $\hat{S}^2$ which one is the most efficient variance estimator?](#which-one-is-the-most-efficient-variance-estimator)
 
 <hr/>
+
+## MSE is the sum of variance and square of bias
+
+<div class="statement" markdown="1">
+
+<span class="statement-title">Theorem.</span><br>
+
+The \<MSE; Mean Squared Error\> of an estimator is defined as 
+
+$$
+\text{MSE} := E \left[ \left( \hat{\Theta} - \theta \right)^2 \right] = \text{Var}(\hat{\Theta}) + \left[ \text{Bias} \right]^2
+$$
+
+where $\text{Bias} := E [ \hat{\Theta} - \theta ]$.
+
+</div>
+
+<div class="proof" markdown="1">
+
+<span class="statement-title">*Proof*.</span><br>
+
+먼저, MSE(Mean Square Error)는 아래와 같이 표현할 수 있다.
+
+$$
+\text{MSE} = E [(\hat{\Theta} - \theta)^2]
+$$
+
+위의 식을 변형하면 아래와 같고, 이를 전개해보자.
+
+$$
+\begin{aligned}
+E [(\hat{\Theta} - \theta)^2]
+&= E \left[ (\hat{\Theta} - E[\hat{\Theta}] + E[\hat{\Theta}] - \theta)^2 \right] \\
+&= E \left[ \left((\hat{\Theta} - E[\hat{\Theta}]) + (E[\hat{\Theta}] - \theta)\right)^2 \right] \\
+&= E \left[ \cancelto{\text{Var}(\hat{\Theta})}{(\hat{\Theta} - E[\hat{\Theta}])^2} + (\hat{\Theta} - E[\hat{\Theta}]) (E[\hat{\Theta}] - \theta) + (E[\hat{\Theta}] - \theta)^2 \right] \\
+&= \text{Var}(\hat{\Theta}) + E \left[ (\hat{\Theta} - E[\hat{\Theta}]) (E[\hat{\Theta}] - \theta) + (E[\hat{\Theta}] - \theta)^2 \right] \\
+&= \text{Var}(\hat{\Theta}) + E \left[ \hat{\Theta} E[\hat{\Theta}] - \cancel{E[\hat{\Theta}]^2} - \hat{\Theta} \theta + \theta E [\hat{\Theta}] + \cancel{E[\hat{\Theta}]^2} + 2 \theta E[\hat{\Theta}] + \theta^2\right] \\
+&= \text{Var}(\hat{\Theta}) + E \left[ \hat{\Theta} E[\hat{\Theta}] - \hat{\Theta} \theta - \theta E[\hat{\Theta}] + \theta^2\right]
+\end{aligned}
+$$
+
+위의 식의 오른편의 텀을 아래와 같이 묶어준다.
+
+$$
+\begin{aligned}
+E \left[ \hat{\Theta} E[\hat{\Theta}] - \hat{\Theta} \theta - \theta E[\hat{\Theta}] + \theta^2\right] 
+&= E \left[ (\hat{\Theta} - \theta) E[\hat{\Theta}] - (\hat{\Theta} - \theta )\theta\right] \\
+&= E \left[ (\hat{\Theta} - \theta) (E[\hat{\Theta}] - \theta)\right] \\
+&= E \left[ (\hat{\Theta} - \theta) \cdot \cancelto{\text{bias}}{E[\hat{\Theta} - \theta]}\right] \\
+&= \text{bias} \cdot \cancelto{\text{bias}}{E \left[ \hat{\Theta} - \theta \right]} \\
+&= \text{bias} \cdot \text{bias} = (\text{bias})^2
+\end{aligned}
+$$
+
+따라서, MSE는 아래와 같다.
+
+$$
+\text{MSE} = \text{Var}(\hat{\Theta}) + (\text{bias})^2
+$$
+
+$\blacksquare$
+
+</div>
+
+<hr/>
+
+
+## Sample Variance is not the minimal variance estimator
 
 <div class="statement" markdown="1">
 
@@ -80,68 +148,8 @@ $$
 
 <hr/>
 
-<div class="statement" markdown="1">
 
-<span class="statement-title">Theorem.</span><br>
-
-The \<MSE; Mean Squared Error\> of an estimator is defined as 
-
-$$
-\text{MSE} := E \left[ \hat{\Theta} - \theta \right]^2 = \text{Var}(\hat{\Theta}) + \left[ \text{Bias} \right]^2
-$$
-
-where $\text{Bias} := E [ \hat{\Theta} - \theta ]$.
-
-</div>
-
-<div class="proof" markdown="1">
-
-<span class="statement-title">*Proof*.</span><br>
-
-먼저, MSE(Mean Square Error)는 아래와 같이 표현할 수 있다.
-
-$$
-\text{MSE} = E [(\hat{\theta} - \theta)^2]
-$$
-
-위의 식을 변형하면 아래와 같고, 이를 전개해보자.
-
-$$
-\begin{aligned}
-E [(\hat{\theta} - \theta)^2]
-&= E \left[ (\hat{\theta} - E[\hat{\theta}] + E[\hat{\theta}] - \theta)^2 \right] \\
-&= E \left[ \left((\hat{\theta} - E[\hat{\theta}]) + (E[\hat{\theta}] - \theta)\right)^2 \right] \\
-&= E \left[ \cancelto{\text{Var}(\hat{\theta})}{(\hat{\theta} - E[\hat{\theta}])^2} + (\hat{\theta} - E[\hat{\theta}]) (E[\hat{\theta}] - \theta) + (E[\hat{\theta}] - \theta)^2 \right] \\
-&= \text{Var}(\hat{\theta}) + E \left[ (\hat{\theta} - E[\hat{\theta}]) (E[\hat{\theta}] - \theta) + (E[\hat{\theta}] - \theta)^2 \right] \\
-&= \text{Var}(\hat{\theta}) + E \left[ \hat{\theta} E[\hat{\theta}] - \cancel{E[\hat{\theta}]^2} - \hat{\theta} \theta + \theta E [\hat{\theta}] + \cancel{E[\hat{\theta}]^2} + 2 \theta E[\hat{\theta}] + \theta^2\right] \\
-&= \text{Var}(\hat{\theta}) + E \left[ \hat{\theta} E[\hat{\theta}] - \hat{\theta} \theta - \theta E[\hat{\theta}] + \theta^2\right]
-\end{aligned}
-$$
-
-위의 식의 오른편의 텀을 아래와 같이 묶어준다.
-
-$$
-\begin{aligned}
-E \left[ \hat{\theta} E[\hat{\theta}] - \hat{\theta} \theta - \theta E[\hat{\theta}] + \theta^2\right] 
-&= E \left[ (\hat{\theta} - \theta) E[\hat{\theta}] - (\hat{\theta} - \theta )\theta\right] \\
-&= E \left[ (\hat{\theta} - \theta) (E[\hat{\theta}] - \theta)\right] \\
-&= E \left[ (\hat{\theta} - \theta) \cdot \cancelto{\text{bias}}{E[\hat{\theta} - \theta]}\right] \\
-&= \text{bias} \cdot \cancelto{\text{bias}}{E \left[ \hat{\theta} - \theta \right]} \\
-&= \text{bias} \cdot \text{bias} = (\text{bias})^2
-\end{aligned}
-$$
-
-따라서, MSE는 아래와 같다.
-
-$$
-\text{MSE} = \text{Var}(\hat{\theta}) + (\text{bias})^2
-$$
-
-$\blacksquare$
-
-</div>
-
-<hr/>
+## Which one is the most efficient variance estimator?
 
 <div class="statement" markdown="1">
 
