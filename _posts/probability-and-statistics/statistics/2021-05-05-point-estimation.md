@@ -263,7 +263,7 @@ where $\text{Bias} := E \left[ \hat{\Theta} - \theta \right]$.
 
 일단 위의 명제는 참이라고 받아들이고, 이 명제가 왜 중요한지를 설명해보겠다.
 
-Estimator $\hat{\Theta}$가 statistic이라는 것을 기억하는가? $\hat{\Theta}$를 random sample $X_i$의 함수로 표현된다.
+Estimator $\hat{\Theta}$가 statistic이라는 것을 기억하는가? Estimator $\hat{\Theta}$는 random sample $X_i$의 함수로 표현된다.
 
 $$
 \hat{\Theta} = f(X_1, X_2, ..., X_n)
@@ -279,9 +279,9 @@ $$
 
 마찬가지로 Estimator $\hat{\Theta}$의 분산도 random sample의 분포를 이용해 쉽게 유도할 수 있다.
 
-그런데, Estiamtor의 MSE는 그렇지 않다. mean과 variance 때와는 달리 random sample의 분포에서 유도하는 방법이 straight 하게 떠오르지 않을 것이다. 그래서 위의 "MSE는 Estiamtor의 분산과 biase의 제곱의 합이다"라는 명제를 활용해 Estiamtor의 MSE를 구하는 것이 훨씬훨씬 쉽다.
+그런데, Estimator의 MSE는 그렇지 않다. mean과 variance와는 달리 random sample의 분포에서 유도하는 방법이 straight 하게 떠오르지 않을 것이다. 그래서 위의 "MSE는 Estimator의 분산과 bias의 제곱의 합이다"라는 명제를 활용해 Estimator의 MSE를 구하는 것이 훨씬훨씬 쉽다.
 
-만약 이런 배경을 모르고, MSE를 마주한다면 꽤 혼란스럽다. 본인은 머신 러닝이나 데이터 분석을 하면서 모델의 MSE를 먼저 접했기 때문에 Estimator의 MSE를 구하는 것이 꽤 뜬금없다고 느꼈다. Estiamtor의 MSE는 모델의 MSE처럼 값으로 받아들이는 것이 아니라 수식을 통해 배경을 이해하고 받아야 들여야 하는 개념이다.
+만약 이런 배경을 모르고, MSE를 마주한다면 꽤 혼란스럽다. 본인은 머신 러닝이나 데이터 분석을 하면서 모델의 MSE를 먼저 접했는데, Estimator의 MSE를 구하는 것이 꽤 뜬금없다고 느꼈다. 모델의 MSE는 `300.5`와 같이 값으로 얻어진다. 그러나 Estimator의 MSE는 배경을 이해하고 위의 명제를 받아 들여야 한다.
 
 <hr/>
 

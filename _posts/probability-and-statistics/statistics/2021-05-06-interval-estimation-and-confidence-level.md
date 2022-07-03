@@ -10,7 +10,7 @@ tags: ["Statistics"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- interval estimator; $(\hat{\theta}_L, \hat{\theta}_U)$
+- Interval Estimator; $(\hat{\theta}_L, \hat{\theta}_U)$
 - $100 \cdot (1 - \alpha)$% confidence interval
   - confidence level; $1-\alpha$
 - [Estimate $\mu$ when $\sigma^2$ is known](#estimate-mu-when-sigma2-is-known)

@@ -33,7 +33,7 @@ H H T H T T H H H T
 
 </div>
 
-앞에서 배운 \<proportion estimation\>의 방법으로 접근하면, $p$는 Point Estiamtor $\hat{p} = 6/10$으로 추정된다.
+앞에서 배운 \<proportion estimation\>의 방법으로 접근하면, $p$는 Point Estimator $\hat{p} = 6/10$으로 추정된다.
 
 <br/>
 
