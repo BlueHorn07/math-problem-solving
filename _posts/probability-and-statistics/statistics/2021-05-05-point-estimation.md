@@ -147,7 +147,7 @@ $$
 \text{Var}(\hat{\Theta}) = E \left[ (\hat{\Theta} - E[\hat{\Theta}])^2 \right]
 $$
 
-\* Variance의 정의를 그대로 따른다. 그러나 $\hat{\Theta}$가 statistic, 즉 function of random samples $\hat{\Theta} = f(X_1, ..., X_n)$이기 떄문에 실제 계산은 random sample의 distribution $X_i \sim g(x; \mu, \sigma)$를 활용하면 된다. $\text{Var}(\hat{\Theta}) = \text{Var}(g(X_1, ..., X_n))$
+\* Variance의 정의를 그대로 따른다. 그러나 $\hat{\Theta}$가 statistic, 즉 function of random samples $\hat{\Theta} = f(X_1, ..., X_n)$이기 때문에 실제 계산은 random sample의 distribution $X_i \sim g(x; \mu, \sigma)$를 활용하면 된다. $\text{Var}(\hat{\Theta}) = \text{Var}(g(X_1, ..., X_n))$
 
 </div>
 
@@ -287,7 +287,7 @@ $$
 
 이어지는 포스트에서는 또다른 estimation 방식인 \<Interval Estimation\>에 대해 살펴보겠다. 이때, 주어진 Interval이 얼마나 좋은지 알려주는 지표가 바로 \<confidence level\> $1 - \alpha$다!
 
-👉 [Interval Estimation, and confidence level]({{"/2021/05/06/interval-estimation-and-confidence-level.html" | relative_url}})
+👉 [Interval Estimation]({{"/2021/05/06/interval-estimation.html" | relative_url}})
 
 포스트에 제시 되었던 HW 문제들은 아래의 포스트에 별도로 정리해두었다.
 

@@ -12,12 +12,12 @@ tags: ["Statistics"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- [Singe Sample Estimation: Proportion Estimation](#singe-sample-estimation-proportion-estimation)
+- [Single Sample Estimation: Proportion Estimation](#singe-sample-estimation-proportion-estimation)
 - [Two Samples Estimation: Diff Btw Two Proportions](#two-samples-estimation-diff-btw-two-proportions)
 
 <hr/>
 
-### Singe Sample Estimation: Proportion Estimation
+### Single Sample Estimation: Proportion Estimation
 
 Supp. we have a p-coin. We want to verify that the coin is really a p-coin.
 

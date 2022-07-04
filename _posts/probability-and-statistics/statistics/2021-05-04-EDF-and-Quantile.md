@@ -176,6 +176,6 @@ IF the distribution of $X$ is very close to $N(0, 1)$, then a \<Normal Quantile-
 
 👉 [Point Estimation]({{"/2021/05/05/point-estimation.html" | relative_url}})
 
-👉 [Interval Estimation, and confidence level]({{"/2021/05/06/interval-estimation-and-confidence-level.html" | relative_url}})
+👉 [Interval Estimation]({{"/2021/05/06/interval-estimation.html" | relative_url}})
 
 

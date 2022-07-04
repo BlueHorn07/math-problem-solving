@@ -56,7 +56,7 @@ $$
 
 \<t-value\>는 \<t-test\>에서 쓰는 지표이니, 더 확실하게 기억하고 싶다면 \<t-test\>의 상황을 살펴보고 익히는 것을 추천한다.
 
-- [[Interval Estimatation] Estimate $\mu$ when $\sigma^2$]({{"/2021/05/06/interval-estimation-and-confidence-level.html#estimate-mu-when-sigma2-is-unknown" | relative_url}})
+- [[Interval Estimatation] Estimate $\mu$ when $\sigma^2$]({{"/2021/05/06/interval-estimation.html#estimate-mu-when-sigma2-is-unknown" | relative_url}})
 - [[Two Samples Estimation] Difference btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means.html" | relative_url}})
   - $\sigma_1^2$ and $\sigma_2^2$ are unknown, but know that $\sigma_1^2 = \sigma_2^2$
     - pooled sample variance

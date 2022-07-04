@@ -115,15 +115,15 @@ hidden: true
   - variance of estimator: $\text{Var}(\hat{\Theta})$
   - the most efficient estimator
   - Mean Squared Error of estimator
-- [Interval Estimation]({{"/2021/05/06/interval-estimation-and-confidence-level.html" | relative_url}})
+- [Interval Estimation]({{"/2021/05/06/interval-estimation.html" | relative_url}})
 - [Prediction & Tolerance Estimation]({{"/2021/05/13/prediction-and-tolerance-interval.html" | relative_url}})
 - [Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means.html" | relative_url}})
 - [Two Samples Estimation: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations.html" | relative_url}})
 - [Proportion Estimation]({{"/2021/05/14/proportion-estimation-on-bernoulli.html" | relative_url}})
-  - Singe Sample Estimation: Proportion Estimation
+  - Single Sample Estimation: Proportion Estimation
   - Two Samples Estimation: Diff Btw Two Proportions
 - [Variance Estimation]({{"/2021/05/16/variance-estimation.html" | relative_url}})
-  - Singe Sample Estimation: Varaicen Estimation
+  - Single Sample Estimation: Varaicen Estimation
   - Two Samples Estimation: The ratio of two variances
 
 - [Maximum Likelihood Estimation]({{"/2021/05/17/maximum-likelihood-estimation.html" | relative_url}})

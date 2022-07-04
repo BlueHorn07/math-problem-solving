@@ -19,7 +19,7 @@ tags: ["Statistics"]
 
 ### Prediction Interval
 
-Supp. the data points $x_1, x_2, \dots, x_n$ are drawn from $N(\mu, \sigma^2)$ with knwon $\sigma^2$. Now, we draw one more data point $x_0$. Can we estimate where this new data point $x_0$ can be?
+Supp. the data points $x_1, x_2, \dots, x_n$ are drawn from $N(\mu, \sigma^2)$ with known $\sigma^2$. Now, we draw one more data point $x_0$. Can we estimate where this new data point $x_0$ can be?
 
 <br/>
 

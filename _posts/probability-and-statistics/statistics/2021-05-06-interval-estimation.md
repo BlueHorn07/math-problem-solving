@@ -1,5 +1,5 @@
 ---
-title: "Interval Estimation, and confidence level"
+title: "Interval Estimation"
 layout: post
 use_math: true
 tags: ["Statistics"]
@@ -47,7 +47,7 @@ We usually take $\alpha = 0.01, \; 0.05, \; 0.1$.
 
 <hr/>
 
-지금부터는 사례들을 살펴보며, \<interval estimation\>에 대해 살펴보겠다!
+이제 상황에 따른 \<Interval Estimation\> 방법을 살펴보겠다!
 
 - Estimate $\mu$ when $\sigma^2$ is known
 - Estimate $\mu$ when $\sigma^2$ is unknown
@@ -95,7 +95,7 @@ $\therefore$ A 95% confidence interval would be $(170 - 3.92, 170 + 3.92)$.
 
 <span class="statement-title">Remark.</span> Confidence Interval on $\mu$ when $\sigma^2$ is knonw<br>
 
-Let $x_1, \dots, x_n$ be given data points from a random sample $X_1, \dots, X_n$ with knwon population variance $\sigma^2$ and unkwown population mean $\mu$.
+Let $x_1, \dots, x_n$ be given data points from a random sample $X_1, \dots, X_n$ with known population variance $\sigma^2$ and unknown population mean $\mu$.
 
 If $\bar{x}$ is the sample mean, a $100(1-\alpha)\%$ confidence interval for $\mu$ is given by
 
@@ -159,7 +159,7 @@ $$
 
 <span class="statement-title">Thereom.</span><br>
 
-If $\bar{x}$ is used as an estimate of $\mu$, we can be $100(1-\alpha)\%$ confident that the <u>error</u> will note exceed $z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$.
+If $\bar{x}$ is used as an estimate of $\mu$, we can be $100(1-\alpha)\%$ confident that the <u>error</u> will not exceed $z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$.
 
 </div>
 
@@ -283,7 +283,7 @@ A. <span class="half_HL">Not really... 🤔</span>
 
 <div class="light-margin" markdown="1">
 
-[point estimator]
+[Point Estimator]
 
 For a point estimator $\bar{x}$,
 
@@ -295,25 +295,26 @@ And the variance $\text{Var}(\bar{x}) = \sigma^2/n$.
 
 <div class="light-margin" markdown="1">
 
-[interval estimator]
+[Interval Estimator]
 
 For an interval estimator $\left(\bar{x} - z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}, \; \bar{x} + z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} \right)$, 
 
 the error is $\left\| \bar{x} - \mu \right\| \le z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$.
 
 </div>
-💥 The width of the confidence interval is determined by the std. deviation of the point estimator!!
+
+💥 This means the width of the confidence interval is determined by the standard deviation of the point estimator!! 이것은 둘 중 한 Estimator가 개선되면, 다른 하나의 성능도 개선됨을 말한다.
 
 <hr/>
 
-이어지는 포스트들에서는 \<Interval Estimation\>의 변형들을 살펴볼 예정입니다! 🤩 거의 대부분의 Estimation 과정은 \<Interval Estimation\>으로 진행됩니다 ㅎㅎ
+이어지는 포스트들에서는 좀더 구체적인 상황에서 어떻게 \<Interval Estimation\>을 할 수 있는지 살펴볼 예정이다! 🤩
 
 - [Prediction & Tolerance Estimation]({{"/2021/05/13/prediction-and-tolerance-interval.html" | relative_url}})
 - [Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means.html" | relative_url}})
 - [Two Samples Estimation: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations.html" | relative_url}})
 - [Proportion Estimation]({{"/2021/05/14/proportion-estimation-on-bernoulli.html" | relative_url}})
-  - Singe Sample Estimation: Proportion Estimation
-  - Two Samples Estimation: Diff Btw Two Proportions
+  - Single Sample Estimation: Proportion Estimation
+  - Two Samples Estimation: Diff btw Two Proportions
 - [Variance Estimation]({{"/2021/05/16/variance-estimation.html" | relative_url}})
-  - Singe Sample Estimation: Varaicen Estimation
-  - Two Samples Estimation: The ratio of two variances
+  - Single Sample Estimation: Varaicen Estimation
+  - Two Samples Estimation: The Ratio of Two Variances
