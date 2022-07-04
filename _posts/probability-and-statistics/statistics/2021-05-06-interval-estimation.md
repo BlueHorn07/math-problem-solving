@@ -10,20 +10,16 @@ tags: ["Statistics"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- Interval Estimator; $(\hat{\theta}_L, \hat{\theta}_U)$
-- $100 \cdot (1 - \alpha)$% confidence interval
-  - confidence level; $1-\alpha$
-- [Estimate $\mu$ when $\sigma^2$ is known](#estimate-mu-when-sigma2-is-known)
-  - Z-Distribution by CLT
-  - [error of estimation](#error-of-estimation)
-  - [one-sided confidence bounds](#one-sided-confidence-bounds)
-- [Estimate $\mu$ when $\sigma^2$ is unknown](#estimate-mu-when-sigma2-is-unknown)
-  - t-distribution
+- [Interval Estimation](#interval-estimation)
+  - [Estimate $\mu$ when $\sigma^2$ is known](#estimate-mu-when-sigma2-is-known)
+    - [Error of Interval Estimation](#error-of-interval-estimation)
+    - [one-sided confidence bounds](#one-sided-confidence-bounds)
+  - [Estimate $\mu$ when $\sigma^2$ is unknown](#estimate-mu-when-sigma2-is-unknown)
 - [Compare Point Estimator and Interval Estimator](#compare-point-estimator-and-interval-estimator)
 
 <hr/>
 
-### Introduction to Interval Estimation
+## Introduction to Interval Estimation
 
 Let $X_1, X_2, \dots, X_n$ be a random sample with $X_i \sim f(x; \theta)$, and $x_1, x_2, \dots, x_n$ be the values of the sample.
 
@@ -46,6 +42,8 @@ We usually take $\alpha = 0.01, \; 0.05, \; 0.1$.
 💥 Note that $(\hat{\theta}_L, \hat{\theta}_U)$ is not unique!! (꼭 대칭일 필요는 없다는 말)
 
 <hr/>
+
+## Interval Estimation
 
 이제 상황에 따른 \<Interval Estimation\> 방법을 살펴보겠다!
 
@@ -137,7 +135,7 @@ $\vdots$
 
 <hr/>
 
-#### Error of Estimation
+#### Error of Interval Estimation
 
 <div class="definition" markdown="1">
 
@@ -275,9 +273,9 @@ $$
 
 <hr/>
 
-### Compare Point Estimator and Interval Estimator
+## Compare Point Estimator and Interval Estimator
 
-Q. Does  confidence interval give us more information about $\mu$ than a point estimator $\bar{x}$?
+Q. Does confidence interval give us more information about $\mu$ than a point estimator $\bar{x}$?
 
 A. <span class="half_HL">Not really... 🤔</span>
 

@@ -8,6 +8,8 @@ tags: ["Statistics"]
 
 2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
+[Interval Estimation]({{"/2021/05/06/interval-estimation.html" | relative_url}}) 포스트에서 다룬 \<Interval Estimation\>을 특정 상황에 어떻게 적용할 수 있는지를 다루는 포스트입니다.
+
 지금까지의 추정(Estimation)은 모두 \<Normal Distribution\>에서 추출한 샘플을 바탕으로 진행됐다. 이번에는 \<Binomial Distribution\>에서 추정을 수행하는 방법을 살펴본다! 참고로 \<Binomial Distribution\>에서의 평균이 바로 \<**Proportion; 비율**\>이다!
 
 <br><span class="statement-title">TOC.</span><br>
